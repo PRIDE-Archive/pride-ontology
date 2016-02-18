@@ -1,0 +1,5057 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://purl.obolibrary.org/obo/pride_cv.obo>
+
+
+AnnotationProperty: <http://purl.obolibrary.org/obo/created_by>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/creation_date>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/def>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOWL#hasRelatedSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOWL#xref>
+
+    
+AnnotationProperty: owl:deprecated
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: xsd:boolean
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of>
+
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000000>
+
+    Annotations: 
+        rdfs:label "Reference additional parameter"^^xsd:string,
+        rdfs:comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000001>
+
+    Annotations: 
+        rdfs:label "Protocol step description additional parameter"^^xsd:string,
+        rdfs:comment "Root node for terms relating to the description of a protocol as ordered steps, in relation to the PRIDE.xml element ExperimentCollection/Experiment/Protocol/ProtocolSteps/StepDescription"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000002>
+
+    Annotations: 
+        rdfs:comment "Root node for terms relating to the description of a ModificationItem (post translational modification or artifactual modification) in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/ModificationItem/additional/cvParam"^^xsd:string,
+        rdfs:label "ModificationItem additional parameter"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000003>
+
+    Annotations: 
+        rdfs:comment "Root node for terms relating to the description of a PeptideItem in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/additional/cvParam"^^xsd:string,
+        rdfs:label "Peptide item additional parameter"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000004>
+
+    Annotations: 
+        rdfs:label "Identification additional parameter"^^xsd:string,
+        rdfs:comment "Root node for terms relating to the description of an Identification in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/additional/cvParam"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000005>
+
+    Annotations: 
+        rdfs:comment "Root node for terms relating to the description of a Gel in relation to the PRIDE.xml element ExperimentCollection/Experiment/TwoDimensionalIdentification/Gel/additional/cvParam"^^xsd:string,
+        rdfs:label "Gel additional parameter"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000006>
+
+    Annotations: 
+        rdfs:comment "Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam"^^xsd:string,
+        rdfs:label "Experiment additional parameter"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000007>
+
+    Annotations: 
+        rdfs:comment "Version number / identifier for search engine."^^xsd:string,
+        rdfs:label "SearchEngineVersion"^^xsd:string,
+        owl:deprecated true
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000008>
+
+    Annotations: 
+        rdfs:label "Protein search engine output parameter"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000009>
+
+    Annotations: 
+        rdfs:label "Ion mass tolerance"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000010>
+
+    Annotations: 
+        rdfs:label "PrecursorIon mass tolerance"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000009>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000011>
+
+    Annotations: 
+        rdfs:label "MS2 ion mass tolerance"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000009>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000012>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "1.0 - normalized correlation score"^^xsd:string,
+        rdfs:label "Delta Cn"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000013>
+
+    Annotations: 
+        rdfs:label "X correlation"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000014>
+
+    Annotations: 
+        rdfs:label "X correlation (+1)"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000013>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000015>
+
+    Annotations: 
+        rdfs:label "X correlation (+2)"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000013>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000016>
+
+    Annotations: 
+        rdfs:label "X correlation (+3)"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000013>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000017>
+
+    Annotations: 
+        rdfs:comment "Root term for parameters in the context of ExperimentCollection/Experiment/mzData/description/admin/sampleDescription/cvParam"^^xsd:string,
+        rdfs:label "Sample description additional parameter"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000018>
+
+    Annotations: 
+        rdfs:comment "Term to describe the fact that the sample derives from an organism which has been positively shown to be free of disease, e.g. as the consequence of a broad-spectrum screen.  NOTE: A request has been made to have this concept added to MeSH.  Once this has been achieved, this term will be dropped from the PRIDE CV and all uses of the this term will be updated to the appropriate MeSH concept."^^xsd:string,
+        rdfs:label "Disease free"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000017>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000019>
+
+    Annotations: 
+        rdfs:label "Solubilization"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "To make something soluble or more soluble, especially in water, by the action of a detergent or other agent."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000020>
+
+    Annotations: 
+        rdfs:label "Depletion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The removal of specific components of a complex mixture of proteins or peptides on the basis of some specific property of those components."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000021>
+
+    Annotations: 
+        rdfs:label "Fractionation"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The removal of some components of a complex mixture of proteins or peptides on the basis of some general property of those components to yeild a less complex mixture."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000022>
+
+    Annotations: 
+        rdfs:label "Separation"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "To divide a complex mixture of proteins or peptides into the component individual proteins or peptides."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000023>
+
+    Annotations: 
+        rdfs:label "Band excision"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The removal of a region of a gel which contains protein(s) of interest"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000024>
+
+    Annotations: 
+        rdfs:label "Enzyme digestion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The fragmentation of proteins into peptides through the use of an enzyme such as trypsin"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000025>
+
+    Annotations: 
+        rdfs:label "Reduction"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000026>
+
+    Annotations: 
+        rdfs:label "Alkylation"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The transfer of an alkyl group from one molecule to another"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000027>
+
+    Annotations: 
+        rdfs:label "Mass spectrometry"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "This is a measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000028>
+
+    Annotations: 
+        rdfs:comment "Valid values for cvLabel entries referencing external database / CV / ontology."^^xsd:string,
+        rdfs:label "Cv Label"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000029>
+
+    Annotations: 
+        rdfs:label "PubMed"^^xsd:string,
+        rdfs:comment "Valid value for the cvLabel entry referencing PubMed."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000030>
+
+    Annotations: 
+        rdfs:label "PRIDE"^^xsd:string,
+        rdfs:comment "Valid value for the cvLabel entry referencing PRIDE"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000031>
+
+    Annotations: 
+        rdfs:comment "Valid value for the cvLabel entry referencing GO."^^xsd:string,
+        rdfs:label "GO"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000032>
+
+    Annotations: 
+        rdfs:label "MeSH"^^xsd:string,
+        rdfs:comment "Valid value for the cvLabel entry referencing Medical Subject Headings (MeSH)"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000033>
+
+    Annotations: 
+        rdfs:comment "Valid value for the cvLabel entry referencing NEWT or the NCBI taxonomy."^^xsd:string,
+        rdfs:label "NEWT"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000034>
+
+    Annotations: 
+        rdfs:label "PSI"^^xsd:string,
+        rdfs:comment "Valid value for the cvLabel entry referencing the PSI ontology"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000035>
+
+    Annotations: 
+        rdfs:label "UNIMOD"^^xsd:string,
+        rdfs:comment "Valid value for the cvLabel entry referencing UNIMOD"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000036>
+
+    Annotations: 
+        rdfs:comment "Valid value for the cvLabel entry referencing RESID."^^xsd:string,
+        rdfs:label "RESID"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000037>
+
+    Annotations: 
+        rdfs:label "Staining"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000038>
+
+    Annotations: 
+        rdfs:comment "Valid value for the cvLabel entry referencing ISBN"^^xsd:string,
+        rdfs:label "ISBN"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000039>
+
+    Annotations: 
+        rdfs:label "Organelle isolation"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Any technique which separates differentiated structures from the cell."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000040>
+
+    Annotations: 
+        rdfs:label "Experiment description"^^xsd:string,
+        rdfs:comment "This CV term should be used in association with a value that is a free-text description of the experiment."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000041>
+
+    Annotations: 
+        rdfs:label "Search database protein sequence"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000042>
+
+    Annotations: 
+        rdfs:label "DOI"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000043>
+
+    Annotations: 
+        rdfs:label "FIX"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000028>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000044>
+
+    Annotations: 
+        rdfs:label "Search algorithm"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000045>
+
+    Annotations: 
+        rdfs:label "Sequest"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000046>
+
+    Annotations: 
+        rdfs:label "Mascot"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000047>
+
+    Annotations: 
+        rdfs:comment "Really X"^^xsd:string,
+        rdfs:label "X|Tandem"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000048>
+
+    Annotations: 
+        owl:deprecated true,
+        rdfs:label "OutputParameter"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000049>
+
+    Annotations: 
+        rdfs:label "Peptide search engine output parameter"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000050>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Final correlation score rank and preliminary score rank"^^xsd:string,
+        rdfs:label "Rank/Sp"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000051>
+
+    Annotations: 
+        rdfs:label "(M+H)+"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "m/z of the singly-charged precursor (precursor mass + mass of hydrogen atom)"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000052>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "normalized correlation score"^^xsd:string,
+        rdfs:label "Cn"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000053>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasRelatedSynonym> "C*10^4"^^xsd:string,
+        rdfs:label "Sequest score"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "raw correlation score (Sequest)"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000054>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "preliminary score"^^xsd:string,
+        rdfs:label "Sp"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000055>
+
+    Annotations: 
+        rdfs:label "Ions"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "the number of frament ions matched (in the preliminary scoring process) out of the total number of fragment masses for the peptide"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000056>
+
+    Annotations: 
+        rdfs:label "Bioworks"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000057>
+
+    Annotations: 
+        rdfs:label "Molecular weight"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Molecular weight of a protein"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000056>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000058>
+
+    Annotations: 
+        rdfs:label "z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000056>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000059>
+
+    Annotations: 
+        rdfs:label "File"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000060>
+
+    Annotations: 
+        rdfs:label "Scan"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000061>
+
+    Annotations: 
+        rdfs:label "Coverage"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000056>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000062>
+
+    Annotations: 
+        rdfs:label "rsp"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000056>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000063>
+
+    Annotations: 
+        rdfs:label "Protein description line"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000064>
+
+    Annotations: 
+        rdfs:label "Secondary accession"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000065>
+
+    Annotations: 
+        rdfs:label "Upstream flanking sequence"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Any sequence reported before the start of the peptide"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000066>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Any sequence reported after the end of the peptide seqeuence"^^xsd:string,
+        rdfs:label "Downstream flanking seqeuence"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000067>
+
+    Annotations: 
+        rdfs:label "Reference reporting this experiment"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000000>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000068>
+
+    Annotations: 
+        rdfs:label "Reference describing sample preparation"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000000>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000069>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Score as defined for the Mascot search algorithm"^^xsd:string,
+        rdfs:label "Mascot score"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000046>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000070>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Cleavage of the peptide bond"^^xsd:string,
+        rdfs:label "Peptide cleavage"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000024>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000071>
+
+    Annotations: 
+        rdfs:label "Search engine setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000072>
+
+    Annotations: 
+        rdfs:label "Fixed modification setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000073>
+
+    Annotations: 
+        rdfs:label "Variable modification setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000074>
+
+    Annotations: 
+        rdfs:label "Maximum Missed Cleavages Setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000075>
+
+    Annotations: 
+        rdfs:label "Mass value type setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000076>
+
+    Annotations: 
+        rdfs:label "Mass value type setting monoisotopic"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000075>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000077>
+
+    Annotations: 
+        rdfs:label "Mass value type setting average"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000075>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000078>
+
+    Annotations: 
+        rdfs:label "Peptide mass tolerance setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000079>
+
+    Annotations: 
+        rdfs:label "Accurate mass mode setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000080>
+
+    Annotations: 
+        rdfs:label "Accurate mass mode setting true"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000079>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000081>
+
+    Annotations: 
+        rdfs:label "Accurate mass mode setting false"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000079>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000082>
+
+    Annotations: 
+        rdfs:label "Mass error type setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000083>
+
+    Annotations: 
+        rdfs:label "mass error type setting ppm"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000082>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000084>
+
+    Annotations: 
+        rdfs:label "mass error type setting mmu"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000082>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000085>
+
+    Annotations: 
+        rdfs:label "mass error type setting percent"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000082>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000086>
+
+    Annotations: 
+        rdfs:label "mass error type setting Daltons"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000082>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000087>
+
+    Annotations: 
+        rdfs:label "Protonated setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000088>
+
+    Annotations: 
+        rdfs:label "Protonated setting MH+"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000087>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000089>
+
+    Annotations: 
+        rdfs:label "Protonated setting Mr"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000087>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000090>
+
+    Annotations: 
+        rdfs:label "Protonated setting M-H-"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000087>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000091>
+
+    Annotations: 
+        rdfs:label "Rank"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000092>
+
+    Annotations: 
+        rdfs:label "All peptides matched"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000093>
+
+    Annotations: 
+        rdfs:label "All peptides matched true"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000092>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000094>
+
+    Annotations: 
+        rdfs:label "All peptides matched false"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000092>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000095>
+
+    Annotations: 
+        rdfs:label "Masses matched"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000096>
+
+    Annotations: 
+        rdfs:label "Reported Chromosome"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000097>
+
+    Annotations: 
+        rdfs:label "Project"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Allows experiments to be grouped or organised under projects.  Experiments may be grouped under more than one project."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000098>
+
+    Annotations: 
+        rdfs:label "Indistinguishable alternative protein accession"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A qualifier is mandatory when using this term.  The qualifier is an alternative protein accession that is indistinguishable from the primary protein accession based upon observed peptide sequences only."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000099>
+
+    Annotations: 
+        
+            Annotations: 
+                         Annotations: rdfs:comment "PRIDE"^^xsd:string
+                                     
+                                     <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The probability score for this peptide assignment to be correct, as calculated by PeptideProphet."^^xsd:string,
+        rdfs:label "PeptideProphet probability score"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000101>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000100>
+
+    Annotations: 
+        rdfs:label "ProteinProphet probability score"^^xsd:string,
+        
+            Annotations: 
+                         Annotations: rdfs:comment "PRIDE"^^xsd:string
+                                     
+                                     <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The probability score for this protein identification to be correct, as calculated by ProteinProphet."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000102>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000101>
+
+    Annotations: 
+        rdfs:label "PeptideProphet"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The PeptideProphet algorithm."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000102>
+
+    Annotations: 
+        rdfs:label "ProteinProphet"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The ProteinProphet algorithm"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000103>
+
+    Annotations: 
+        rdfs:label "Gel run date"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The date upon which the gel was run.  A value is mandatory - must be formatted as xsd:dateTime"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000005>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000104>
+
+    Annotations: 
+        rdfs:label "Sample volume loaded"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000005>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000105>
+
+    Annotations: 
+        rdfs:label "Width in pixels"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The width of the referenced gel image in pixels.  Mandatory value of type xsd:int"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000005>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000106>
+
+    Annotations: 
+        rdfs:label "Height in pixels"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The height of the referenced gel image in pixels.  Mandatory value of type xsd:int"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000005>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000107>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Parameters describing the spot on a gel that has been analysed resulting in the annotated protein identification."^^xsd:string,
+        rdfs:label "Gel spot parameter"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000108>
+
+    Annotations: 
+        rdfs:label "Gel spot intensity"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The intensity of the spot on the gel.   Mandatory value of type xsd:double"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000107>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000109>
+
+    Annotations: 
+        rdfs:label "Gel spot area"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The area of the spot on the gel measured in millimetres squared.   Mandatory value of type xsd:double"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000107>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000110>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The volume of the spot on the gel measured in millimetres cubed.  Mandatory value of type xsd:double"^^xsd:string,
+        rdfs:label "Gel spot volume"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000131>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000111>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A reference annotated with this term describes analysis of the data presented in the enclosing PRIDE experiment"^^xsd:string,
+        rdfs:label "Reference describing data analysis"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000000>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000112>
+
+    Annotations: 
+        rdfs:label "Identified by peptide mass fingerprint"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The annotated protein identification arises from peptide mass fingerprinting.  Peptide identifications may or may not be included."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "PMF"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000113>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The protein identification annotated with this term has been identified by peptide fragmentation and subsequent database searching."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "PFF"^^xsd:string,
+        rdfs:label "Identified by peptide fragmentation"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000114>
+
+    Annotations: 
+        rdfs:label "iTRAQ reagent 114"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 114."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000115>
+
+    Annotations: 
+        rdfs:label "iTRAQ reagent 115"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 115."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000116>
+
+    Annotations: 
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 116."^^xsd:string,
+        rdfs:label "iTRAQ reagent 116"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000117>
+
+    Annotations: 
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 117."^^xsd:string,
+        rdfs:label "iTRAQ reagent 117"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000118>
+
+    Annotations: 
+        rdfs:label "iTRAQ intensity 114"^^xsd:string,
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 114."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000119>
+
+    Annotations: 
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 115."^^xsd:string,
+        rdfs:label "iTRAQ intensity 115"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000120>
+
+    Annotations: 
+        rdfs:label "iTRAQ intensity 116"^^xsd:string,
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 116."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000121>
+
+    Annotations: 
+        rdfs:label "iTRAQ intensity 117"^^xsd:string,
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 117."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000122>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A type of gel electrophoresis in which proteins are first separated by charge and then by molecular weight, enabling the analysis of complex protein mixtures."^^xsd:string,
+        rdfs:label "Two Dimensional Polyacrylamide Gel Electrophoresis"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000022>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000123>
+
+    Annotations: 
+        rdfs:label "Immobilized pH Gradient Electrophoresis"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "\"Electrophoresis using an gel  which has a  pH gradient along its length.  [PRIDE:PRIDE]"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000122>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000124>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE."^^xsd:string,
+        rdfs:label "Sodium dodecyl sulfate polyacrylamide gel electrophoresis"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000122>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000125>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The lowest pH of an immobilised pH gradient gel"^^xsd:string,
+        rdfs:label "pH low value"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000123>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000126>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The highest pH of an immobilised pH gradient gel"^^xsd:string,
+        rdfs:label "pH high value"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000123>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000127>
+
+    Annotations: 
+        rdfs:label "IPG strip length cm"^^xsd:string,
+        rdfs:comment "This value associated with this CV term should always be in centimeters."^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The length in centimeters of an immobilised pH gradient gel"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000123>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000128>
+
+    Annotations: 
+        rdfs:comment "This CV term should be used in association with a value that is a free-text description of the first dimension details"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Details of immobilised pH gradient gel electrophoresis which exclude the pH range of the gel and strip length parameters."^^xsd:string,
+        rdfs:label "First dimension details"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000123>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000129>
+
+    Annotations: 
+        rdfs:comment "This CV term should be used in association with a value that is a free-text description of the second dimension details"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Details of sodium dodecyl sulfate polyacrylamide gel electrophoresis."^^xsd:string,
+        rdfs:label "Second dimension details"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000124>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000130>
+
+    Annotations: 
+        owl:deprecated true,
+        rdfs:label "Obsoleted parameters"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_Rc>
+        <http://purl.obolibrary.org/obo/def> "Obsoleted terms."^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000131>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A value for spot volume which is standardized across gels and is derived from the individual gel spot volume values"^^xsd:string,
+        rdfs:label "Spot normalized volume"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000107>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000132>
+
+    Annotations: 
+        rdfs:label "Spot normalized volume method"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The method by which the normalized value for spot volume is derived from the individual gel spot volume values"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000107>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000133>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The amino acids glutamine (Q) (mol wt = 146) cannot be distinguished from lysine (K) (mol wt = 146)"^^xsd:string,
+        rdfs:label "Isobaric residue K/Q"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000134>
+
+    Annotations: 
+        rdfs:label "Anticoagulant"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A substance that prevents coagulation; that is, it stops blood from clotting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000135>
+
+    Annotations: 
+        rdfs:label "Mapping date"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Date of last mapping of given identifier to current UniProt accession number"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000136>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "\"Status of last mapping of given identifier to current UniProt accession number. Valid values are 'mappingAllOK', 'not mapped peptide mismatch', 'not mapped accession not found' and 'not mapped taxon not found'  [PRIDE:PRIDE]"^^xsd:string,
+        rdfs:label "Mapping status"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000137>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "\"Status of last mapping of given identifier to current UniProt accession number. Valid values are 'unchanged since last mapping', 'changed accession' and 'changed version of accession'  [PRIDE:PRIDE]"^^xsd:string,
+        rdfs:label "Mapping history"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000138>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "PeptideProphet discriminant score fval"^^xsd:string,
+        rdfs:label "Discriminant score"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000101>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000139>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Error message: SOAP protocol failed"^^xsd:string,
+        rdfs:label "Not Mapped SOAP Error"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000140>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Error message: Error with queried database"^^xsd:string,
+        rdfs:label "Not Mapped Database Error"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000141>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Error message: Unable to match given identifier"^^xsd:string,
+        rdfs:label "Not Mapped No Mapping Found"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000142>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Error message: One or more peptide sequences did not match query sequence"^^xsd:string,
+        rdfs:label "Not Mapped Peptide Mismatch"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000143>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Error message: No mapping to proteins from defined taxon"^^xsd:string,
+        rdfs:label "Mapped Taxon Not Found"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000144>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Sucessful completion of operation message"^^xsd:string,
+        rdfs:label "Mapped All Ok"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000145>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The PepSplice algorithm"^^xsd:string,
+        rdfs:label "PepSplice"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000146>
+
+    Annotations: 
+        rdfs:label "PepSplice precision"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "[PRIDE:PRIDE]"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000145>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000147>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "\"The  [PRIDE:PRIDE]"^^xsd:string,
+        rdfs:label "PepSplice False Discovery Rate"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000145>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000148>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A Score based on the hypergeometric model"^^xsd:string,
+        rdfs:label "PepSplice P-value"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000145>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000149>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The Difference between the pvalues of the 1st and the 2nd best peptide; if two peptides have the same pvalue, they are taken together"^^xsd:string,
+        rdfs:label "PepSplice Deltascore"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000145>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000150>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The score count"^^xsd:string,
+        rdfs:label "PepSplice Score Count"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000145>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000151>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The Sum of all penalties for the peptide assignment"^^xsd:string,
+        rdfs:label "PepSplice Penalty"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000145>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000152>
+
+    Annotations: 
+        rdfs:label "PepSplice Read Direction"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The reading direction on the DNA"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000145>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000153>
+
+    Annotations: 
+        rdfs:label "PepSplice Forward Read Direction"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The reading direction on the DNA is 5' to 3'"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000152>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000154>
+
+    Annotations: 
+        rdfs:label "PepSplice Reverse Read Direction"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The reading direction on the DNA 3' to 5'"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000152>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000155>
+
+    Annotations: 
+        rdfs:label "Unmappable"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "unsucessful mapping"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000156>
+
+    Annotations: 
+        rdfs:label "Project identifier"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "Project ID"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "unique identifier of project"^^xsd:string
+    
+    SubClassOf: 
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000097>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000157>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "type of search"^^xsd:string,
+        rdfs:label "Search type"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000158>
+
+    Annotations: 
+        rdfs:label "MS search"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000157>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000159>
+
+    Annotations: 
+        rdfs:label "MS/MS search"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000157>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000160>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "\"type of enzyme used to fragment the protein. The value will equal the name of the enxzyme used e.g.  [PRIDE:PRIDE]"^^xsd:string,
+        rdfs:label "Enzyme"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000161>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "range of acceptable fragment masses accepted by instrument"^^xsd:string,
+        rdfs:label "Fragment mass tolerance setting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000162>
+
+    Annotations: 
+        rdfs:label "Allowed missed cleavages"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "number of missed cleavage sites taken into account"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000163>
+
+    Annotations: 
+        rdfs:label "Instrument type"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "name of instrument used in analysis"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000071>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000164>
+
+    Annotations: 
+        rdfs:label "Mapped Without Supporting Peptides"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Sucessful mapping without supporting evidence from peptides"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000136>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000165>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "PICR tool has allocated the accession number"^^xsd:string,
+        rdfs:label "Automatic allocation"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000166>
+
+    Annotations: 
+        rdfs:label "Ambiguous modification"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Modification with a MonoDeltaMass, which can not unambiguously be  assigned to only one modification and for which several possibilities exist"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000002>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000167>
+
+    Annotations: 
+        rdfs:label "Novel locus information"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Detailed information about a genomic locus identified by whole genome searches"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000168>
+
+    Annotations: 
+        rdfs:label "Nucleic acid sequence"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000169>
+
+    Annotations: 
+        rdfs:label "Start position of the nucleic acid sequence on the chromosome"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000170>
+
+    Annotations: 
+        rdfs:label "Stop position of the nucleic acid sequence on the chromosome"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000171>
+
+    Annotations: 
+        rdfs:label "funding reference"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000000>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000172>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Value of average of all individual peptide identifications for this protein"^^xsd:string,
+        rdfs:label "Search database protein sequence length"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000173>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Value of average of all individual peptide scores"^^xsd:string,
+        rdfs:label "MeanOfPeptideScores"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000174>
+
+    Annotations: 
+        rdfs:label "Isoelectric point"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "pI"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Isoelectric point of a protein"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000008>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000056>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000175>
+
+    Annotations: 
+        rdfs:label "XML generation software"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The software which was used to generate the PRIDE XML file"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000176>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "\"The X"^^xsd:string,
+        rdfs:label "X\\"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000177>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The Spectrum Mill score for the peptide"^^xsd:string,
+        rdfs:label "Spectrum Mill peptide score"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000178>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "A protocol step to select for a particular type of peptides"^^xsd:string,
+        rdfs:label "Peptide selection"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000001>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000179>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "X|Tandem dot product score"^^xsd:string,
+        rdfs:label "dotproduct"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000047>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000180>
+
+    Annotations: 
+        rdfs:label "delta"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "X|Tandem delta score"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000047>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000181>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "X|Tandem delta star score"^^xsd:string,
+        rdfs:label "deltastar"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000047>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000182>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "X|Tandem Z score"^^xsd:string,
+        rdfs:label "zscore"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000047>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000183>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "X|Tandem expectancy score"^^xsd:string,
+        rdfs:label "expect"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000047>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000184>
+
+    Annotations: 
+        rdfs:label "Query number"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Search parameter that allows users to find query results from old data."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000046>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000185>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "E-value parameter from OMSSA."^^xsd:string,
+        rdfs:label "OMSSA E-value"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000186>
+
+    Annotations: 
+        rdfs:label "OMSSA P-value"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "P-value parameter from OMSSA."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000187>
+
+    Annotations: 
+        rdfs:label "Fragment Ion Annotation"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Fragment ion annotation of the peptide."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "product ion property"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000188>
+
+    Annotations: 
+        rdfs:label "product ion m/z"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "fragment ion mass"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Mass."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000187>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000189>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "fragment ion intensity"^^xsd:string,
+        rdfs:label "product ion intensity"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Intensity."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000187>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000190>
+
+    Annotations: 
+        rdfs:label "product ion mass error"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Mass error."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "fragment ion mass error"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000187>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000191>
+
+    Annotations: 
+        rdfs:label "product ion retention time error"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Retention time error in minutes"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "fragment ion retention time error"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000187>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000192>
+
+    Annotations: 
+        rdfs:label "product ion type"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "fragment ion type"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Product ion type."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000187>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000193>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Y ion type."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "y fragment ion"^^xsd:string,
+        rdfs:label "y ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000194>
+
+    Annotations: 
+        rdfs:label "b ion"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "b fragment ion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "B ion type."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000195>
+
+    Annotations: 
+        rdfs:label "b ion -NH3"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "b fragment ion -NH3"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "B ion type with a neutral loss of an ammonia group."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000194>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000196>
+
+    Annotations: 
+        rdfs:label "b ion -H2O"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "b fragment ion -H2O"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "B ion type with a neutral loss of a water molecule."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000194>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000197>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "y fragment ion -H2O"^^xsd:string,
+        rdfs:label "y ion -H2O"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Y ion type with the neutral loss of a molecule water."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000193>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000198>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Y ion type with the neutral loss of an ammonia group."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "y fragment ion -NH3"^^xsd:string,
+        rdfs:label "y ion -NH3"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000193>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000199>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Ion resulting from in-source fragmentation."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "in-source ion"^^xsd:string,
+        rdfs:label "in source ion"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "in source fragment ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000200>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "unidentified ion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Fragment ion that could not be assigned to a predicted fragment ion mass."^^xsd:string,
+        rdfs:label "non-identified ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000201>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Fragment ion that was matched to another, co-eluting peptide precursor."^^xsd:string,
+        rdfs:label "co-eluting ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000202>
+
+    Annotations: 
+        rdfs:label "Parent Ion Annotation"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Parent ion annotation of the peptide."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000203>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Retention time in minutes."^^xsd:string,
+        rdfs:label "parent ion retention time"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000202>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000204>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "fragment ion charge"^^xsd:string,
+        rdfs:label "product ion charge"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Charge state."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000187>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000205>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "A general term for any stable isotope method."^^xsd:string,
+        owl:deprecated true,
+        rdfs:label "Heavy stable isotope label"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000206>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "The precise amino acid that has been modified."^^xsd:string,
+        owl:deprecated true,
+        rdfs:label "Heavy stable isotope label residue"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000207>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "A general term for any stable isotope method."^^xsd:string,
+        owl:deprecated true,
+        rdfs:label "Light stable isotope label"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000208>
+
+    Annotations: 
+        owl:deprecated true,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "The precise amino acid that has been modified."^^xsd:string,
+        rdfs:label "Light stable isotope label residue"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000209>
+
+    Annotations: 
+        rdfs:label "Peptide pair id"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Facilitate mapping between peptide pairs (usually heavy/light) to which the stable isotope ratio below relates."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000210>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Ratio of peptide pair the sequence/sample is the numerator in the ratio."^^xsd:string,
+        rdfs:label "Stable isotope ratio"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000211>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "This links back to the value given to the heavy/light stable isotope label to relate the peptide ratio back to the sample."^^xsd:string,
+        rdfs:label "Quantitative sample reference"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000212>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Expect value as defined for the Mascot search algorithm."^^xsd:string,
+        rdfs:label "Mascot expect value"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000046>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000213>
+
+    Annotations: 
+        rdfs:label "Inspect"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "The Inspect search algorithm."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000214>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Quality score of a match."^^xsd:string,
+        rdfs:label "Inspect MQScore"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000213>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000215>
+
+    Annotations: 
+        rdfs:label "Inspect p-value"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Probability that the top match is correct."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000213>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000216>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "ProteomExchange accession number of the project where the PRIDE experiment is included."^^xsd:string,
+        rdfs:label "ProteomExchange project accession number"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000217>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Hash in Tranche of the whole ProteomExchange project where the PRIDE experiment is included."^^xsd:string,
+        rdfs:label "ProteomExchange project hash"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000218>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Original format of the file containing MS data."^^xsd:string,
+        rdfs:label "Original MS data file format"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000219>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Date when the search was performed"^^xsd:string,
+        rdfs:label "Date of search"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000220>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "m/z value converted from the MH+ value, according to this formula: CalculatedMZ = (precursorMH+ - HYDROGEN_MASS + (precursorCharge * HYDROGEN_MASS))/ precursorCharge"^^xsd:string,
+        rdfs:label "Calculated Mass To Charge Ratio"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000221>
+
+    Annotations: 
+        rdfs:label "parent ion retention time error"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Retention time error in minutes."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000202>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000222>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "average iTRAQ ratio sample over control"^^xsd:string,
+        owl:deprecated true,
+        rdfs:label "spectrum iTRAQ ratio"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000223>
+
+    Annotations: 
+        rdfs:label "peptide iTRAQ ratio average"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Average spectrum iTRAQ ratio (=geometric mean) for the peptide"^^xsd:string,
+        owl:deprecated true
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000224>
+
+    Annotations: 
+        owl:deprecated true,
+        rdfs:label "protein iTRAQ ratio average"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Average spectrum iTRAQ ratio (=geometric mean) for the protein"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000225>
+
+    Annotations: 
+        rdfs:label "protein iTRAQ ratio number of contributing spectra"^^xsd:string,
+        owl:deprecated true,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Number of quantified spectra contributing to the protein iTRAQ ratio"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000226>
+
+    Annotations: 
+        rdfs:label "protein iTRAQ ratio standard deviation"^^xsd:string,
+        owl:deprecated true,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Geometric sample standard deviation of the protein iTRAQ ratio"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000227>
+
+    Annotations: 
+        rdfs:label "x ion"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "x fragment ion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "X ion type."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000228>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "x fragment ion -H2O"^^xsd:string,
+        rdfs:label "x ion -H2O"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "X ion type with the neutral loss of a molecule water."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000227>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000229>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "X ion type with the neutral loss of an ammonia group."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "x fragment ion -NH3"^^xsd:string,
+        rdfs:label "x ion -NH3"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000227>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000230>
+
+    Annotations: 
+        rdfs:label "z ion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Z ion type."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "z fragment ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000231>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "z fragment ion -H2O"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Z ion type with the neutral loss of a molecule water."^^xsd:string,
+        rdfs:label "z ion -H2O"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000230>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000232>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "z fragment ion -NH3"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Z ion type with the neutral loss of an ammonia group."^^xsd:string,
+        rdfs:label "z ion -NH3"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000230>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000233>
+
+    Annotations: 
+        rdfs:label "a ion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "A ion type."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "a fragment ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000234>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "a fragment ion -H2O"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "A ion type with the neutral loss of a molecule water."^^xsd:string,
+        rdfs:label "a ion -H2O"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000233>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000235>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "a fragment ion -NH3"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "A ion type with the neutral loss of an ammonia group."^^xsd:string,
+        rdfs:label "a ion -NH3"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000233>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000236>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "C ion type."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "c fragment ion"^^xsd:string,
+        rdfs:label "c ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000237>
+
+    Annotations: 
+        rdfs:label "c ion -H2O"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "c fragment ion -H2O"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "C ion type with the neutral loss of a molecule water."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000236>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000238>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "c fragment ion -NH3"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "C ion type with the neutral loss of an ammonia group."^^xsd:string,
+        rdfs:label "c ion -NH3"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000236>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000239>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type."^^xsd:string,
+        rdfs:label "immonium ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000192>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000240>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for alanine."^^xsd:string,
+        rdfs:label "immonium A"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000241>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for cysteine."^^xsd:string,
+        rdfs:label "immonium C"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000242>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for aspartic acid."^^xsd:string,
+        rdfs:label "immonium D"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000243>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for glutamic acid."^^xsd:string,
+        rdfs:label "immonium E"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000244>
+
+    Annotations: 
+        rdfs:label "immonium F"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for phenylalanine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000245>
+
+    Annotations: 
+        rdfs:label "immonium G"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for glycine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000246>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for histidine."^^xsd:string,
+        rdfs:label "immonium H"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000247>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for isoleucine."^^xsd:string,
+        rdfs:label "immonium I"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000248>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for lysine."^^xsd:string,
+        rdfs:label "immonium K"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000249>
+
+    Annotations: 
+        rdfs:label "immonium L"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for leucine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000250>
+
+    Annotations: 
+        rdfs:label "immonium M"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for methionine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000251>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for asparagine."^^xsd:string,
+        rdfs:label "immonium N"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000252>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for proline."^^xsd:string,
+        rdfs:label "immonium P"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000253>
+
+    Annotations: 
+        rdfs:label "immonium Q"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for glutamine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000254>
+
+    Annotations: 
+        rdfs:label "immonium R"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for arginine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000255>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for serine."^^xsd:string,
+        rdfs:label "immonium S"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000256>
+
+    Annotations: 
+        rdfs:label "immonium T"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for threnine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000257>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for valine."^^xsd:string,
+        rdfs:label "immonium V"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000258>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for tryptophan."^^xsd:string,
+        rdfs:label "immonium W"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000259>
+
+    Annotations: 
+        rdfs:label "immonium Y"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Immonium ion type for tyrosine."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000239>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000260>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "parent ion type"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "precursor ion type."^^xsd:string,
+        rdfs:label "precursor ion type"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000202>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000261>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "parent ion -H2O"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Precursor ion type with the neutral loss of a molecule water."^^xsd:string,
+        rdfs:label "precursor ion -H2O"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000263>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000262>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "parent ion -NH3"^^xsd:string,
+        rdfs:label "precursor ion -NH3"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Precursor ion type with the neutral loss of an ammonia group."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000263>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000263>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "parent ion"^^xsd:string,
+        rdfs:label "precursor ion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_JAV>
+        <http://purl.obolibrary.org/obo/def> "Precursor ion."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000260>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000264>
+
+    Annotations: 
+        rdfs:label "iTRAQ reagent 113"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 113 [Curator:JAV]."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000265>
+
+    Annotations: 
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 118 [Curator:JAV]."^^xsd:string,
+        rdfs:label "iTRAQ reagent 118"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000266>
+
+    Annotations: 
+        rdfs:label "iTRAQ reagent 119"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 119 [Curator:JAV]."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000267>
+
+    Annotations: 
+        rdfs:comment "The name of the sample labelled with iTRAQ reagent 121 [Curator:JAV]."^^xsd:string,
+        rdfs:label "iTRAQ reagent 121"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000329>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000268>
+
+    Annotations: 
+        rdfs:label "iTRAQ intensity 113"^^xsd:string,
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 113 [Curator:JAV]."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000269>
+
+    Annotations: 
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 118 [Curator:JAV]."^^xsd:string,
+        rdfs:label "iTRAQ intensity 118"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000270>
+
+    Annotations: 
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 119 [Curator:JAV]."^^xsd:string,
+        rdfs:label "iTRAQ intensity 119"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000271>
+
+    Annotations: 
+        rdfs:label "iTRAQ intensity 121"^^xsd:string,
+        rdfs:comment "The intensity of the sample labelled with iTRAQ reagent 121 [Curator:JAV]."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000272>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Allows experiments inside the same project to be grouped or organised as subprojects. This will not be displayed in the PRIDE web page."^^xsd:string,
+        rdfs:label "Project secondary name"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000273>
+
+    Annotations: 
+        rdfs:label "SloMo score threshold for valid modification location"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000274>
+
+    Annotations: 
+        rdfs:label "MaxQuant percentage threshold for valid modification location"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000275>
+
+    Annotations: 
+        rdfs:label "SloMo score"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000276>
+
+    Annotations: 
+        rdfs:label "MaxQuant percentage"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000044>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000277>
+
+    Annotations: 
+        rdfs:label "Valid location"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000002>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000278>
+
+    Annotations: 
+        rdfs:label "Processing method additional parameter"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000279>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Enzyme that is selected as a parameter of the search engine"^^xsd:string,
+        rdfs:label "In silico enzyme digestion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000278>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000280>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_RWANG>
+        <http://purl.obolibrary.org/obo/def> "Z ion type with one extra proton"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "zH fragment ion"^^xsd:string,
+        rdfs:label "zH ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000230>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000281>
+
+    Annotations: 
+        rdfs:label "zHH ion"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/Curator#_RWANG>
+        <http://purl.obolibrary.org/obo/def> "Z ion type with two extra protons"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "zHH fragment ion"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000230>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000282>
+
+    Annotations: 
+        rdfs:label "Fixed modification"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Fixed type of post-translational modification"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000002>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000283>
+
+    Annotations: 
+        rdfs:label "Variable modification"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Variable type of post-translational modification"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000002>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000284>
+
+    Annotations: 
+        rdfs:label "Sf"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The Sf score for each peptide is calculated by a neural network algorithm that incorporates teh Xcorr, DeltaCn, Sp, RSp, peptide mass, charge state, and the number of matched peptides for the search. The protein Sf score is the sum of peptide Sf scores for all the peptides associated with that protein."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000049>,
+        <Optional.of(http://purl.obolibrary.org/obo/pride_cv.obo)#part_of> some <http://purl.obolibrary.org/obo/PRIDE_0000045>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000285>
+
+    Annotations: 
+        rdfs:comment "The name of the sample labelled with TMT reagent 126"^^xsd:string,
+        rdfs:label "TMT reagent 126"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000337>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000286>
+
+    Annotations: 
+        rdfs:comment "The name of the sample labelled with TMT reagent 127"^^xsd:string,
+        rdfs:label "TMT reagent 127"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000337>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000287>
+
+    Annotations: 
+        rdfs:label "TMT reagent 128"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with TMT reagent 128"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000337>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000288>
+
+    Annotations: 
+        rdfs:label "TMT reagent 129"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with TMT reagent 129"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000337>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000289>
+
+    Annotations: 
+        rdfs:label "TMT reagent 130"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with TMT reagent 130"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000337>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000290>
+
+    Annotations: 
+        rdfs:label "TMT reagent 131"^^xsd:string,
+        rdfs:comment "The name of the sample labelled with TMT reagent 131"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000337>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000291>
+
+    Annotations: 
+        rdfs:comment "The intensity value of the sample labelled with TMT reagent 126 [Curator:ACSORDAS]"^^xsd:string,
+        rdfs:label "TMT intensity 126"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000292>
+
+    Annotations: 
+        rdfs:label "TMT intensity 127"^^xsd:string,
+        rdfs:comment "The intensity value of the sample labelled with TMT reagent 127 [Curator:ACSORDAS]"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000293>
+
+    Annotations: 
+        rdfs:comment "The intensity value of the sample labelled with TMT reagent 128 [Curator:ACSORDAS]"^^xsd:string,
+        rdfs:label "TMT intensity 128"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000294>
+
+    Annotations: 
+        rdfs:label "TMT intensity 129"^^xsd:string,
+        rdfs:comment "The intensity value of the sample labelled with TMT reagent 129 [Curator:ACSORDAS]"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000295>
+
+    Annotations: 
+        rdfs:comment "The intensity value of the sample labelled with TMT reagent 130 [Curator:ACSORDAS]"^^xsd:string,
+        rdfs:label "TMT intensity 130"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000296>
+
+    Annotations: 
+        rdfs:label "TMT intensity 131"^^xsd:string,
+        rdfs:comment "The intensity value of the sample labelled with TMT reagent 131 [Curator:ACSORDAS]"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000297>
+
+    Annotations: 
+        rdfs:comment "Name of the gene that has been identified (if a nucleotide database was used to perform the search)"^^xsd:string,
+        rdfs:label "Gene name"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000298>
+
+    Annotations: 
+        rdfs:comment "Position of the modification in the protein sequence"^^xsd:string,
+        rdfs:label "Modification Position in Protein Sequence"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000299>
+
+    Annotations: 
+        rdfs:label "Submitted Protein Accession"^^xsd:string,
+        rdfs:comment "The original submitted protein accession for this identification. This might have been curated as part of the submission process."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000300>
+
+    Annotations: 
+        rdfs:label "Gel spot identifier"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The gel spot's identifier. This identifier should resemble the one used in, for example, the associated publication."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-05-12T11:32:07Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000107>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000301>
+
+    Annotations: 
+        rdfs:label "Non-significant protein identification"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Identifies a protein identification that is not significant as defined by the search engine input parameters (for example the set threshold or the set required expect value)."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-05-12T11:39:59Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000302>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Identifies a peptide identification that is not significant as defined by the search engine input parameters (for example the set threshold or the set required expect value)."^^xsd:string,
+        rdfs:label "Non-significant peptide identification"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-05-12T11:50:00Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000303>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Indicates that this protein identification comes from the used decoy database."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-05-12T11:58:52Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Decoy hit"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000304>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "The gel's identifier. This identifier should resemble the one used in, for example, the associated publication."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-05-25T11:22:05Z"^^xsd:string,
+        rdfs:label "Gel identifier"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000107>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000305>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Defines a gel-based proteomics experiment"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Gel-based experiment"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-05-25T05:44:24Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000428>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000306>
+
+    Annotations: 
+        rdfs:label "Imported from NCBI Peptidome"^^xsd:string,
+        rdfs:comment "Experiment.[Curator:ACSORDAS]"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000307>
+
+    Annotations: 
+        rdfs:label "Quantification method"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:15:33Z"^^xsd:string,
+        rdfs:comment "Defines various quantification methods"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000391>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000308>
+
+    Annotations: 
+        rdfs:label "Gel-based quantification method"^^xsd:string,
+        rdfs:comment "Describes gel-based quantification methods"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:16:24Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000307>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000309>
+
+    Annotations: 
+        rdfs:comment "Describes gel-free quantification methods"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Gel-free quantification method"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:17:03Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000307>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000310>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:17:34Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Isotope labeling"^^xsd:string,
+        rdfs:comment "Describes quantification techniques using isotope labeling"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000309>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000311>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Describes quantification techniques based on selected / multiple reaction monitoring"^^xsd:string,
+        rdfs:label "Selected Reaction Monitoring"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:18:39Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000309>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000312>
+
+    Annotations: 
+        rdfs:comment "Describes label free quantification techniques."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:19:54Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Label free"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000309>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000313>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "iTRAQ"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:20:23Z"^^xsd:string,
+        rdfs:comment "Quantification technique developed by Applied Biosystems using various reporter ions that can be detected at MS2 level"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000317>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000314>
+
+    Annotations: 
+        rdfs:comment "Tandem Mass Tag is a MS2 based isotope labeling quantification technique"^^xsd:string,
+        rdfs:label "TMT"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "Tandem Mass Tag"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:23:12Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000317>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000315>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "Stable isotope labeling with amino acids in cell culture"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "SILAC"^^xsd:string,
+        rdfs:comment "Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:25:50Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000316>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000316>
+
+    Annotations: 
+        rdfs:comment "Describes isotope labeling quantification techniques detectable at MS1 level."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "MS1 based isotope labeling"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:28:05Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000310>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000317>
+
+    Annotations: 
+        rdfs:comment "Describes isotope labeling quantification techniques detectable at MS1 level."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:29:15Z"^^xsd:string,
+        rdfs:label "MS2 based isotope labeling"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000310>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000318>
+
+    Annotations: 
+        rdfs:label "18O"^^xsd:string,
+        rdfs:comment "The 18O quantification method relies on the differentiation of two samples using different stable isotopes of oxygen."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:30:12Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000316>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000319>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "Isotope-Coded Affinity Tags"^^xsd:string,
+        rdfs:label "ICAT"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:31:24Z"^^xsd:string,
+        rdfs:comment "Isotope-Coded Affinity Tags is an isotope labeling quantification technique and uses tags that consist of three elements."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000316>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000320>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "AQUA"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:32:46Z"^^xsd:string,
+        rdfs:comment "AQUA is an isotope labeling based quantification technique that uses known peptides."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000316>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000321>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "Isotope-coded protein label"^^xsd:string,
+        rdfs:label "ICPL"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:34:37Z"^^xsd:string,
+        rdfs:comment "Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000316>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000322>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "Exponentially Modified Protein Abundance Index"^^xsd:string,
+        rdfs:label "emPAI"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:36:57Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000323>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "The Total Ion Current (TIC) can be measured or calculated in order to target specific ions."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:38:17Z"^^xsd:string,
+        rdfs:label "TIC"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "Total Ion Current"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000324>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:43:30Z"^^xsd:string,
+        rdfs:label "Quantification reagent"^^xsd:string,
+        rdfs:comment "A reagent used for quantification."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000017>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000391>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000325>
+
+    Annotations: 
+        rdfs:label "SILAC heavy"^^xsd:string,
+        rdfs:comment "The heavy label used in SILAC experiments."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:44:18Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000328>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000326>
+
+    Annotations: 
+        rdfs:label "SILAC light"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:45:40Z"^^xsd:string,
+        rdfs:comment "The light reagent used in SILAC experiments."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000328>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000327>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:47:09Z"^^xsd:string,
+        rdfs:label "SILAC medium"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "The medium weight reagent used in SILAC experiments."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000328>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000328>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:48:42Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Reagent used in SILAC labeling."^^xsd:string,
+        rdfs:label "SILAC reagent"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000433>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000329>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Reagent used in iTRAQ experiments."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T09:49:46Z"^^xsd:string,
+        rdfs:label "iTRAQ reagent"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000433>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000330>
+
+    Annotations: 
+        rdfs:label "Arbitrary quantification unit"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2012-03-06T11:32:24Z"^^xsd:string,
+        rdfs:comment "A unit describing values that can only be interpreted within the same spectrum but cannot be compared to values found in other spectra and or experiments."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000392>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000331>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2012-03-06T11:33:13Z"^^xsd:string,
+        rdfs:comment "Quantification values reported as arbitrary counts (most often ion counts)."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Counts"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000330>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000337>
+
+    Annotations: 
+        rdfs:label "TMT reagent"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:08:04Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Reagent used in TMT experiments."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000433>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000344>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:19:04Z"^^xsd:string,
+        rdfs:label "ICAT reagent"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Reagent used in ICAT experiments."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000433>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000345>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:19:38Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "ICAT light reagent"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000344>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000346>
+
+    Annotations: 
+        rdfs:label "ICAT heavy reagent"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:19:38Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000344>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000347>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Reagent used in ICPL experiments."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:22:42Z"^^xsd:string,
+        rdfs:label "ICPL reagent"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000433>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000348>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "ICPL 0 reagent"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:24:42Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000347>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000349>
+
+    Annotations: 
+        rdfs:label "ICPL 4 reagent"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:24:42Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000347>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000350>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:24:42Z"^^xsd:string,
+        rdfs:label "ICPL 6 reagent"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000347>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000351>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:24:42Z"^^xsd:string,
+        rdfs:label "ICPL 10 reagent"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000347>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000352>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Quantification value"^^xsd:string,
+        rdfs:comment "Parameters to report quantification values."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:26:08Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000391>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000353>
+
+    Annotations: 
+        rdfs:comment "Parameters describing quantification values for multiplexed samples."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:26:33Z"^^xsd:string,
+        rdfs:label "Multiplexed quantification value"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000352>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000354>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string,
+        rdfs:label "Intensity subsample 1"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000355>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string,
+        rdfs:label "Intensity subsample 2"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000356>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string,
+        rdfs:label "Intensity subsample 3"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000357>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string,
+        rdfs:label "Intensity subsample 4"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000358>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string,
+        rdfs:label "Intensity subsample 5"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000359>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string,
+        rdfs:label "Intensity subsample 6"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000360>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Intensity subsample 7"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000361>
+
+    Annotations: 
+        rdfs:label "Intensity subsample 8"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:27:30Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000362>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:55:31Z"^^xsd:string,
+        rdfs:comment "Values from other quantification techniques."^^xsd:string,
+        rdfs:label "Other quantification value"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000352>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000363>
+
+    Annotations: 
+        rdfs:comment "The emPAI for the protein."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "emPAI value"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:55:56Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000362>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000364>
+
+    Annotations: 
+        rdfs:comment "The Total Ion Count for the given entity."^^xsd:string,
+        rdfs:label "TIC value"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:57:36Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000362>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000365>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Multiplexed sample description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T10:59:57Z"^^xsd:string,
+        rdfs:comment "Describes multiples subsamples."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000017>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000366>
+
+    Annotations: 
+        rdfs:comment "Identifies samples that are made up of multiplexed subsamples."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:00:32Z"^^xsd:string,
+        rdfs:label "Contains multiple subsamples"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000367>
+
+    Annotations: 
+        rdfs:label "Subsample 1 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000368>
+
+    Annotations: 
+        rdfs:label "Subsample 2 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000369>
+
+    Annotations: 
+        rdfs:label "Subsample 3 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000370>
+
+    Annotations: 
+        rdfs:label "Subsample 4 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000371>
+
+    Annotations: 
+        rdfs:label "Subsample 5 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000372>
+
+    Annotations: 
+        rdfs:label "Subsample 6 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000373>
+
+    Annotations: 
+        rdfs:label "Subsample 7 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000374>
+
+    Annotations: 
+        rdfs:label "Subsample 8 description"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:02:56Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000365>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000375>
+
+    Annotations: 
+        rdfs:label "Standard deviation subsample 1"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000376>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Standard deviation subsample 2"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000377>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Standard deviation subsample 3"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000378>
+
+    Annotations: 
+        rdfs:label "Standard deviation subsample 4"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000379>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        rdfs:label "Standard deviation subsample 5"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000380>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Standard deviation subsample 6"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000381>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Standard deviation subsample 7"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000382>
+
+    Annotations: 
+        rdfs:label "Standard deviation subsample 8"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000383>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Standard error subsample 1"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000384>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        rdfs:label "Standard error subsample 2"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000385>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Standard error subsample 3"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000386>
+
+    Annotations: 
+        rdfs:label "Standard error subsample 4"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000387>
+
+    Annotations: 
+        rdfs:label "Standard error subsample 5"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000388>
+
+    Annotations: 
+        rdfs:label "Standard error subsample 6"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000389>
+
+    Annotations: 
+        rdfs:label "Standard error subsample 7"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000390>
+
+    Annotations: 
+        rdfs:label "Standard error subsample 8"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-22T11:04:09Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000353>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000391>
+
+    Annotations: 
+        rdfs:comment "Quantification related parameter."^^xsd:string,
+        rdfs:label "Quantification parameter"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-26T03:59:31Z"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000392>
+
+    Annotations: 
+        rdfs:comment "Unit used to report quantification results."^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-26T04:00:17Z"^^xsd:string,
+        rdfs:label "Quantification unit"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>,
+        <http://purl.obolibrary.org/obo/PRIDE_0000391>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000393>
+
+    Annotations: 
+        rdfs:label "Relative quantification unit"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-26T04:01:53Z"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Unit to report relative quantification results."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000392>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000394>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-26T04:02:29Z"^^xsd:string,
+        rdfs:label "Absolute quantification unit"^^xsd:string,
+        rdfs:comment "Unit used to describe absolute quantification results."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000392>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000395>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:label "Ratio"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-26T04:12:44Z"^^xsd:string,
+        rdfs:comment "Quantification results represent ratios."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000393>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000396>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jg"^^xsd:string,
+        rdfs:comment "Quantification results are reported as copies per cell."^^xsd:string,
+        rdfs:label "Copies per cell"^^xsd:string,
+        <http://purl.obolibrary.org/obo/creation_date> "2011-07-26T04:13:32Z"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000394>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000397>
+
+    Annotations: 
+        rdfs:label "Data derived from previous dataset"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:comment "One dataset is a reanalysis of previously published data"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000398>
+
+    Annotations: 
+        rdfs:comment "No post-translational-modifications are been included in the identified peptides of one dataset"^^xsd:string,
+        rdfs:label "No PTMs are included in the dataset"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000399>
+
+    Annotations: 
+        rdfs:label "Accepted manuscript"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:comment "A dataset has one associated manuscript, which has been accepted but no PubMedID is available yet."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000400>
+
+    Annotations: 
+        rdfs:comment "Literature reference associated with one dataset (including the authors, title, year and journal details). The value field can be used for the PubMedID, or to specify if one manuscript is just submitted or accepted, but it does not have a PubMedID yet."^^xsd:string,
+        rdfs:label "Reference"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000401>
+
+    Annotations: 
+        rdfs:comment "This means that the experimental information available has been improved, for instance precursor charges were added."^^xsd:string,
+        rdfs:label "Experimental information has been refined since this experiment was originally made publicly available"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000402>
+
+    Annotations: 
+        rdfs:comment "One dataset is not a reanalysis of previously published data"^^xsd:string,
+        rdfs:label "Original data"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000403>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "Associated file URI"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        rdfs:comment "URI of one external file associated to the PRIDE experiment (maybe through a PX submission)."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000404>
+
+    Annotations: 
+        rdfs:comment "URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission)."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        rdfs:label "Associated raw file URI"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000403>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000405>
+
+    Annotations: 
+        rdfs:comment "Indicates that this PRIDE experiment contains interaction data and should be submitted to IntAct (maybe through a PX submission)."^^xsd:string,
+        rdfs:label "Submit PRIDE Experiment to IntAct"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "rc"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000406>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "URI associated to one PX submission in ProteomeCentral"^^xsd:string,
+        rdfs:label "ProteomeCentral dataset URI"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000407>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "Result file URI"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "URI of one file labeled as 'Result', associated to one PX submission"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000403>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000408>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        <http://purl.obolibrary.org/obo/def> "URI of one search engine output file associated to one PX submission."^^xsd:string,
+        rdfs:label "Search engine output file URI"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000403>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000409>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        <http://purl.obolibrary.org/obo/def> "URI of one of one search engine output file associated to one PX submission."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "Peak list file URI"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000403>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000410>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "URI of one file labeled as 'Other', associated to one PX submission."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "'Other' type file URI"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000403>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000411>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        rdfs:label "Dataset FTP location"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "FTP location of one entire PX data set"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000412>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "Dataset with no associated published manuscript"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "A dataset which does not have an associated published manuscript."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000413>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "The value of this term (related to one PRIDE experiment) can be used to provide the name of instruments that are not included in any other CV yet."^^xsd:string,
+        rdfs:label "Instrument name"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000414>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "Peer-reviewed dataset"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Dataset has been peer-reviewed somehow."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000415>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "Non peer-reviewed dataset"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Dataset that has not been peer-reviewed by any means."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000416>
+
+    Annotations: 
+        rdfs:label "Supported dataset by repository"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "The PX dataset is supported by and is available through the submission repository"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000417>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "The PX dataset is not fully supported by the submission repository"^^xsd:string,
+        rdfs:label "Unsupported dataset by repository"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000418>
+
+    Annotations: 
+        rdfs:label "Other member of protein ambiguity group"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Accession of another protein that was assigned to the same protein ambiguity group. This term must be repeated to include all protein group members, except for itself"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000004>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000419>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "b fragment ion -H3PO4"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "B ion type with a neutral loss of a phosphate molecule"^^xsd:string,
+        rdfs:label "b ion -H3PO4"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000194>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000420>
+
+    Annotations: 
+        rdfs:label "b ion -2H3PO4"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "b fragment ion -2H3PO4"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "B ion type with a neutral loss of 2 phosphate molecules"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000194>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000421>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "B ion type with a neutral loss of 3 phosphate molecules"^^xsd:string,
+        rdfs:label "b ion -3H3PO4"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "b fragment ion -3H3PO4"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000194>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000422>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "y fragment ion -H3PO4"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Y ion type with a neutral loss of a phosphate molecule"^^xsd:string,
+        rdfs:label "y ion -H3PO4"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000193>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000423>
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Y ion type with a neutral loss of 2 phosphate molecules"^^xsd:string,
+        rdfs:label "y ion -2H3PO4"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "y fragment ion -2H3PO4"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000193>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000424>
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOWL#hasExactSynonym> "y fragment ion -3H3PO4"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/PRIDE#_PRIDE>
+        <http://purl.obolibrary.org/obo/def> "Y ion type with a neutral loss of 3 phosphate molecules"^^xsd:string,
+        rdfs:label "y ion -3H3PO4"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000193>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000425>
+
+    Annotations: 
+        rdfs:label "MS1 intensity based label-free quantification method"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "rw"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000309>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000426>
+
+    Annotations: 
+        rdfs:comment "The basic mass spectrometry strategy used in the experiment."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "Mass spectrometry proteomics experimental strategy"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000427>
+
+    Annotations: 
+        rdfs:label "Top-down proteomics"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:comment "Proteins enter directly the mass spectrometer."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000426>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000428>
+
+    Annotations: 
+        rdfs:label "Bottom-up proteomics"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:comment "Proteins go through proteolytic digestion yielding peptides before entering the mass spectrometer."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000426>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000429>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "MS/MS shotgun proteomics"^^xsd:string,
+        rdfs:comment "Bottom-up MS/MS shotgun experiment with data-dependent acquisition, using nomenclature in PMID 20622845, the method of choice for the a priori identification of the protein components of complex samples."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000428>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000430>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:comment "Chemical cross-linking of proteins coupled with mass spectrometry analysis (CXMS) to provide information about protein folding and protein-protein interaction."^^xsd:string,
+        rdfs:label "Chemical cross-linking coupled with mass spectrometry proteomics"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000428>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000431>
+
+    Annotations: 
+        rdfs:comment "Affinity purification combined with mass spectrometry (AP�MS) has been used to understand protein-complex composition and protein-protein interaction."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "Affinity purification coupled with mass spectrometry proteomics"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000428>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000432>
+
+    Annotations: 
+        rdfs:comment "A dataset which has an associated manuscript pending for publication."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "rw"^^xsd:string,
+        rdfs:label "Dataset with its publication pending"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000433>
+
+    Annotations: 
+        rdfs:label "Reagents used in Labeled Methods"^^xsd:string,
+        rdfs:comment "Labeled reagents used for quantification."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000324>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000434>
+
+    Annotations: 
+        rdfs:comment "An unlabeled sample used for quantification."^^xsd:string,
+        rdfs:label "Unlabeled sample"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000324>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000435>
+
+    Annotations: 
+        rdfs:comment "Use of the number of peptides for an identified protein as a measure of abundance. Method reviewed in PMID 22772140."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "Peptide counting"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000436>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "Spectrum counting"^^xsd:string,
+        rdfs:comment "Use of the number of PSMs for an identified protein as a measure of abundance. Method reviewed in PMID 22772140"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000437>
+
+    Annotations: 
+        rdfs:comment "Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140"^^xsd:string,
+        rdfs:label "Protein Abundance Index - PAI"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000438>
+
+    Annotations: 
+        rdfs:label "Spectrum count/molecular weight"^^xsd:string,
+        rdfs:comment "Spectrum count is divided by the molecular weight of a protein. Method reviewed in PMID 22772140"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000439>
+
+    Annotations: 
+        rdfs:label "Spectral Abundance Factor - SAF"^^xsd:string,
+        rdfs:comment "The spectrum count is normalized for protein length. Method reviewed in PMID 22772140"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000440>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "Normalized Spectral Abundance Factor - NSAF"^^xsd:string,
+        rdfs:comment "Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000441>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "APEX - Absolute Protein Expression"^^xsd:string,
+        rdfs:comment "Spectrum counting method using machine learning classification to derive peptide detection probabilities to predict detectable peptides for any protein. Method reviewed in PMID 22772140"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000312>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000442>
+
+    Annotations: 
+        rdfs:label "Tissue not applicable to dataset"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Tissue not applicable to dataset"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "rw"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000443>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "The NCBI FTP location of the original Sample - Experiment level Peptidome submission data"^^xsd:string,
+        rdfs:label "Original NCBI Peptidome submission files"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000444>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        rdfs:label "PRIDE experiment accession"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Accession number of a given PRIDE experiment (called assay in the PRIDE-3 system)"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000006>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000445>
+
+    Annotations: 
+        rdfs:label "PRIDE Cluster score"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "It is an integer that gives an indication about the quality of a peptide spectrum match in PRIDE-Q. It uses the PRIDE-Cluster algorithm (described in PMID: 23361086) and different criteria to assign it (number of spectra in a cluster, ratio of the predominant peptide identification in the cluster, etc)."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000446>
+
+    Annotations: 
+        rdfs:label "PRIDE peptide score"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Score used in PRIDE-Q to give an indication of the quality of a peptide spectrum match. It is described in PMID:16964243."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000003>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000447>
+
+    Annotations: 
+        rdfs:label "SWATH MS"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "ABsciex Data Independent Acquisition method that consists of unfractionated samples acquisition by using duty cycles adapted to HPLC chromatography, acquiring sequential wide fragment ions spectra, typically covering the precursor mass space from 400 m/z to 1200 m/z on each duty cycle. Acquired data is interrogated by using libraries of peptide coordinates (normalised elution time, fragment ion masses and intensities). It is described in PMID:22261725."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000450>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000448>
+
+    Annotations: 
+        rdfs:label "Additional associated raw file URI"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "jav"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>,
+        rdfs:comment "Additional URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission). The URI is provided via an additional resource to PRIDE."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000403>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000449>
+
+    Annotations: 
+        rdfs:comment "URI of one gel image file associated to one PX submission."^^xsd:string,
+        rdfs:label "Gel image file URI"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "tt"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOWL#xref> <http://purl.obolibrary.org/obo/value-type#_xsd\:string>
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000403>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000450>
+
+    Annotations: 
+        rdfs:label "Data-independent acquisition"^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Predefined m/z ranges are interrogated either by fragmenting all ions entering the mass spectrometer at every single point in chromatographic time; or by dividing the m/z range into smaller m/z ranges for isolation and fragmentation. See review in PMID:24281846."^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000428>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000451>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Waters data independent acquisition method based on UPLC chromatography and MS acquisition of cycles of two spectra, in low and high energy respectively, in a QQ-TOF instrument. It is described in PMID: 16755610."^^xsd:string,
+        rdfs:label "MSE"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000450>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000452>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/def> "Waters data independent acquisition method, which consists of using an additional on-line separation dimension (Ion Mobility drift) and an MSE acquisition. It is described in PMID: 22811061."^^xsd:string,
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        rdfs:label "HDMSE"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000450>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000453>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "Precursor Acquisition Independent From Ion Count. A Data Independent Acquisition method performed in ion traps that consists of the acquisition of 2.5 m/z width sequential windows over several injections of the same material, until a precursor m/z range of about 400 to 1200 m/z is covered. It is described in PMID: 21341720."^^xsd:string,
+        rdfs:label "PAcIFIC"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000450>
+    
+    
+Class: <http://purl.obolibrary.org/obo/PRIDE_0000454>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/created_by> "acsordas"^^xsd:string,
+        <http://purl.obolibrary.org/obo/def> "MS Data Independent Acquisition performed in Thermo Orbitrap instruments. It consists of the acquisition of cycles of two spectra, a precursor mass MS1 spectrum, and a fragment ions MS2 spectrum where a wide mass filter (typically over 800 m/z) is applied to the precursors. It is described in PMID: 20610777."^^xsd:string,
+        rdfs:label "All-ion fragmentation"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/PRIDE_0000450>
+    
+    
+Individual: <http://purl.obolibrary.org/obo/part_of>
+
+    Annotations: 
+        rdfs:label "part of"^^xsd:string
+    
+    
