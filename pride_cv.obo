@@ -1,8 +1,13 @@
 format-version: 1.2
 date: 06:03:2012 11:34
 saved-by: jg
-auto-generated-by: OBO-Edit 2.1-beta8
-default-namespace: file:E:/DaveWork/PRIDE/schema/pride_cv.obo
+auto-generated-by: OBO-Edit 2.3
+default-namespace: PRIDE
+
+[Typedef]
+id: part_of
+name: part_of
+is_transitive: true
 
 [Term]
 id: PRIDE:0000000
@@ -69,7 +74,7 @@ is_a: PRIDE:0000009 ! Ion mass tolerance
 [Term]
 id: PRIDE:0000012
 name: Delta Cn
-def: "1.0 - normalized correlation score" [PRIDE:PRIDE]
+def: "1.0 - normalized correlation score." [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
@@ -133,13 +138,13 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000023
 name: Band excision
-def: "The removal of a region of a gel which contains protein(s) of interest" [PRIDE:PRIDE]
+def: "The removal of a region of a gel which contains protein(s) of interest." [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000024
 name: Enzyme digestion
-def: "The fragmentation of proteins into peptides through the use of an enzyme such as trypsin" [PRIDE:PRIDE]
+def: "The fragmentation of proteins into peptides through the use of an enzyme such as trypsin." [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -150,7 +155,7 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000026
 name: Alkylation
-def: "The transfer of an alkyl group from one molecule to another" [PRIDE:PRIDE]
+def: "The transfer of an alkyl group from one molecule to another." [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -283,28 +288,28 @@ is_a: PRIDE:0000003 ! Peptide item additional parameter
 [Term]
 id: PRIDE:0000050
 name: Rank/Sp
-def: "Final correlation score rank and preliminary score rank" [PRIDE:PRIDE]
+def: "Final correlation score rank and preliminary score rank." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000051
 name: (M+H)+
-def: "m/z of the singly-charged precursor (precursor mass + mass of hydrogen atom)" [PRIDE:PRIDE]
+def: "m/z of the singly-charged precursor (precursor mass + mass of hydrogen atom)." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000052
 name: Cn
-def: "normalized correlation score" [PRIDE:PRIDE]
+def: "normalized correlation score." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000053
 name: Sequest score
-def: "raw correlation score (Sequest)" [PRIDE:PRIDE]
+def: "raw correlation score (Sequest)." [PRIDE:PRIDE]
 synonym: "C*10^4" RELATED []
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
@@ -313,14 +318,14 @@ relationship: part_of PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000054
 name: Sp
-def: "preliminary score" [PRIDE:PRIDE]
+def: "preliminary score." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000055
 name: Ions
-def: "the number of frament ions matched (in the preliminary scoring process) out of the total number of fragment masses for the peptide" [PRIDE:PRIDE]
+def: "the number of frament ions matched (in the preliminary scoring process) out of the total number of fragment masses for the peptide." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
@@ -332,7 +337,7 @@ is_a: PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000057
 name: Molecular weight
-def: "Molecular weight of a protein" [PRIDE:PRIDE]
+def: "Molecular weight of a protein." [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
 
@@ -377,13 +382,13 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000065
 name: Upstream flanking sequence
-def: "Any sequence reported before the start of the peptide" [PRIDE:PRIDE]
+def: "Any sequence reported before the start of the peptide." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000066
 name: Downstream flanking seqeuence
-def: "Any sequence reported after the end of the peptide seqeuence" [PRIDE:PRIDE]
+def: "Any sequence reported after the end of the peptide seqeuence." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
@@ -399,14 +404,14 @@ is_a: PRIDE:0000000 ! Reference additional parameter
 [Term]
 id: PRIDE:0000069
 name: Mascot score
-def: "Score as defined for the Mascot search algorithm" [PRIDE:PRIDE]
+def: "Score as defined for the Mascot search algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000046 ! Mascot
 
 [Term]
 id: PRIDE:0000070
 name: Peptide cleavage
-def: "Cleavage of the peptide bond" [PRIDE:PRIDE]
+def: "Cleavage of the peptide bond." [PRIDE:PRIDE]
 is_a: PRIDE:0000024 ! Enzyme digestion
 
 [Term]
@@ -575,32 +580,32 @@ is_a: PRIDE:0000044 ! Search algorithm
 [Term]
 id: PRIDE:0000102
 name: ProteinProphet
-def: "The ProteinProphet algorithm" [PRIDE:PRIDE]
+def: "The ProteinProphet algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000103
 name: Gel run date
-def: "The date upon which the gel was run.  A value is mandatory - must be formatted as xsd:dateTime" [PRIDE:PRIDE]
+def: "The date upon which the gel was run.  A value is mandatory - must be formatted as xsd:dateTime." [PRIDE:PRIDE]
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
 id: PRIDE:0000104
 name: Sample volume loaded
-def: "The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double" [PRIDE:PRIDE]
+def: "The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double." [PRIDE:PRIDE]
 xref: PRIDE:PRIDE
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
 id: PRIDE:0000105
 name: Width in pixels
-def: "The width of the referenced gel image in pixels.  Mandatory value of type xsd:int" [PRIDE:PRIDE]
+def: "The width of the referenced gel image in pixels.  Mandatory value of type xsd:int." [PRIDE:PRIDE]
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
 id: PRIDE:0000106
 name: Height in pixels
-def: "The height of the referenced gel image in pixels.  Mandatory value of type xsd:int" [PRIDE:PRIDE]
+def: "The height of the referenced gel image in pixels.  Mandatory value of type xsd:int." [PRIDE:PRIDE]
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
@@ -612,25 +617,25 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000108
 name: Gel spot intensity
-def: "The intensity of the spot on the gel.   Mandatory value of type xsd:double" [PRIDE:PRIDE]
+def: "The intensity of the spot on the gel.   Mandatory value of type xsd:double." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000109
 name: Gel spot area
-def: "The area of the spot on the gel measured in millimetres squared.   Mandatory value of type xsd:double" [PRIDE:PRIDE]
+def: "The area of the spot on the gel measured in millimetres squared.   Mandatory value of type xsd:double." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000110
 name: Gel spot volume
-def: "The volume of the spot on the gel measured in millimetres cubed.  Mandatory value of type xsd:double" [PRIDE:PRIDE]
+def: "The volume of the spot on the gel measured in millimetres cubed.  Mandatory value of type xsd:double." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000131 ! Spot normalized volume
 
 [Term]
 id: PRIDE:0000111
 name: Reference describing data analysis
-def: "A reference annotated with this term describes analysis of the data presented in the enclosing PRIDE experiment" [PRIDE:PRIDE]
+def: "A reference annotated with this term describes analysis of the data presented in the enclosing PRIDE experiment." [PRIDE:PRIDE]
 is_a: PRIDE:0000000 ! Reference additional parameter
 
 [Term]
@@ -653,28 +658,24 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 id: PRIDE:0000114
 name: iTRAQ reagent 114
 comment: The name of the sample labelled with iTRAQ reagent 114.
-
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000115
 name: iTRAQ reagent 115
 comment: The name of the sample labelled with iTRAQ reagent 115.
-
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000116
 name: iTRAQ reagent 116
 comment: The name of the sample labelled with iTRAQ reagent 116.
-
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000117
 name: iTRAQ reagent 117
 comment: The name of the sample labelled with iTRAQ reagent 117.
-
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
@@ -714,7 +715,7 @@ is_a: PRIDE:0000022 ! Separation
 [Term]
 id: PRIDE:0000123
 name: Immobilized pH Gradient Electrophoresis
-def: "Electrophoresis using an gel  which has a  pH gradient along its length. " [PRIDE:PRIDE]
+def: "Electrophoresis using an gel  which has a  pH gradient along its length. ." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
 
 [Term]
@@ -726,19 +727,19 @@ relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electro
 [Term]
 id: PRIDE:0000125
 name: pH low value
-def: "The lowest pH of an immobilised pH gradient gel" [PRIDE:PRIDE]
+def: "The lowest pH of an immobilised pH gradient gel." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
 [Term]
 id: PRIDE:0000126
 name: pH high value
-def: "The highest pH of an immobilised pH gradient gel" [PRIDE:PRIDE]
+def: "The highest pH of an immobilised pH gradient gel." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
 [Term]
 id: PRIDE:0000127
 name: IPG strip length cm
-def: "The length in centimeters of an immobilised pH gradient gel" [PRIDE:PRIDE]
+def: "The length in centimeters of an immobilised pH gradient gel." [PRIDE:PRIDE]
 comment: This value associated with this CV term should always be in centimeters.
 relationship: part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
@@ -765,165 +766,165 @@ is_obsolete: true
 [Term]
 id: PRIDE:0000131
 name: Spot normalized volume
-def: "A value for spot volume which is standardized across gels and is derived from the individual gel spot volume values" [PRIDE:PRIDE]
+def: "A value for spot volume which is standardized across gels and is derived from the individual gel spot volume values." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000132
 name: Spot normalized volume method
-def: "The method by which the normalized value for spot volume is derived from the individual gel spot volume values" [PRIDE:PRIDE]
+def: "The method by which the normalized value for spot volume is derived from the individual gel spot volume values." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000133
 name: Isobaric residue K/Q
-def: "The amino acids glutamine (Q) (mol wt = 146) cannot be distinguished from lysine (K) (mol wt = 146)" [PRIDE:PRIDE]
+def: "The amino acids glutamine (Q) (mol wt = 146) cannot be distinguished from lysine (K) (mol wt = 146)." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000134
 name: Anticoagulant
-def: "A substance that prevents coagulation; that is, it stops blood from clotting" [PRIDE:PRIDE]
+def: "A substance that prevents coagulation; that is, it stops blood from clotting." [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000135
 name: Mapping date
-def: "Date of last mapping of given identifier to current UniProt accession number" [PRIDE:PRIDE]
+def: "Date of last mapping of given identifier to current UniProt accession number." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000136
 name: Mapping status
-def: "Status of last mapping of given identifier to current UniProt accession number. Valid values are 'mappingAllOK', 'not mapped peptide mismatch', 'not mapped accession not found' and 'not mapped taxon not found' " [PRIDE:PRIDE]
+def: "Status of last mapping of given identifier to current UniProt accession number. Valid values are 'mappingAllOK', 'not mapped peptide mismatch', 'not mapped accession not found' and 'not mapped taxon not found' ." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000137
 name: Mapping history
-def: "Status of last mapping of given identifier to current UniProt accession number. Valid values are 'unchanged since last mapping', 'changed accession' and 'changed version of accession' " [PRIDE:PRIDE]
+def: "Status of last mapping of given identifier to current UniProt accession number. Valid values are 'unchanged since last mapping', 'changed accession' and 'changed version of accession' ." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000138
 name: Discriminant score
-def: "PeptideProphet discriminant score fval" [PRIDE:PRIDE]
+def: "PeptideProphet discriminant score fval." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000101 ! PeptideProphet
 
 [Term]
 id: PRIDE:0000139
 name: Not Mapped SOAP Error
-def: "Error message: SOAP protocol failed" [PRIDE:PRIDE]
+def: "Error message: SOAP protocol failed." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000140
 name: Not Mapped Database Error
-def: "Error message: Error with queried database" [PRIDE:PRIDE]
+def: "Error message: Error with queried database." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000141
 name: Not Mapped No Mapping Found
-def: "Error message: Unable to match given identifier" [PRIDE:PRIDE]
+def: "Error message: Unable to match given identifier." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000142
 name: Not Mapped Peptide Mismatch
-def: "Error message: One or more peptide sequences did not match query sequence" [PRIDE:PRIDE]
+def: "Error message: One or more peptide sequences did not match query sequence." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000143
 name: Mapped Taxon Not Found
-def: "Error message: No mapping to proteins from defined taxon" [PRIDE:PRIDE]
+def: "Error message: No mapping to proteins from defined taxon." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000144
 name: Mapped All Ok
-def: "Sucessful completion of operation message" [PRIDE:PRIDE]
+def: "Sucessful completion of operation message." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000145
 name: PepSplice
-def: "The PepSplice algorithm" [PRIDE:PRIDE]
+def: "The PepSplice algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000146
 name: PepSplice precision
-def: " " [PRIDE:PRIDE]
+def: " ." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000147
 name: PepSplice False Discovery Rate
-def: "The " [PRIDE:PRIDE]
+def: "The ." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000148
 name: PepSplice P-value
-def: "A Score based on the hypergeometric model" [PRIDE:PRIDE]
+def: "A Score based on the hypergeometric model." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000149
 name: PepSplice Deltascore
-def: "The Difference between the pvalues of the 1st and the 2nd best peptide; if two peptides have the same pvalue, they are taken together" [PRIDE:PRIDE]
+def: "The Difference between the pvalues of the 1st and the 2nd best peptide; if two peptides have the same pvalue, they are taken together." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000150
 name: PepSplice Score Count
-def: "The score count" [PRIDE:PRIDE]
+def: "The score count." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000151
 name: PepSplice Penalty
-def: "The Sum of all penalties for the peptide assignment" [PRIDE:PRIDE]
+def: "The Sum of all penalties for the peptide assignment." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000152
 name: PepSplice Read Direction
-def: "The reading direction on the DNA" [PRIDE:PRIDE]
+def: "The reading direction on the DNA." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000153
 name: PepSplice Forward Read Direction
-def: "The reading direction on the DNA is 5' to 3'" [PRIDE:PRIDE]
+def: "The reading direction on the DNA is 5' to 3'." [PRIDE:PRIDE]
 is_a: PRIDE:0000152 ! PepSplice Read Direction
 
 [Term]
 id: PRIDE:0000154
 name: PepSplice Reverse Read Direction
-def: "The reading direction on the DNA 3' to 5'" [PRIDE:PRIDE]
+def: "The reading direction on the DNA 3' to 5'." [PRIDE:PRIDE]
 is_a: PRIDE:0000152 ! PepSplice Read Direction
 
 [Term]
 id: PRIDE:0000155
 name: Unmappable
-def: "unsucessful mapping" [PRIDE:PRIDE]
+def: "unsucessful mapping." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000156
 name: Project identifier
-def: "unique identifier of project" [PRIDE:PRIDE]
+def: "unique identifier of project." [PRIDE:PRIDE]
 synonym: "Project ID" EXACT []
 relationship: part_of PRIDE:0000097 ! Project
 
 [Term]
 id: PRIDE:0000157
 name: Search type
-def: "type of search" [PRIDE:PRIDE]
+def: "type of search." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
@@ -939,49 +940,49 @@ is_a: PRIDE:0000157 ! Search type
 [Term]
 id: PRIDE:0000160
 name: Enzyme
-def: "type of enzyme used to fragment the protein. The value will equal the name of the enxzyme used e.g. " [PRIDE:PRIDE]
+def: "type of enzyme used to fragment the protein. The value will equal the name of the enxzyme used e.g. ." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000161
 name: Fragment mass tolerance setting
-def: "range of acceptable fragment masses accepted by instrument" [PRIDE:PRIDE]
+def: "range of acceptable fragment masses accepted by instrument." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000162
 name: Allowed missed cleavages
-def: "number of missed cleavage sites taken into account" [PRIDE:PRIDE]
+def: "number of missed cleavage sites taken into account." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000163
 name: Instrument type
-def: "name of instrument used in analysis" [PRIDE:PRIDE]
+def: "name of instrument used in analysis." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000164
 name: Mapped Without Supporting Peptides
-def: "Sucessful mapping without supporting evidence from peptides" [PRIDE:PRIDE]
+def: "Sucessful mapping without supporting evidence from peptides." [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
 id: PRIDE:0000165
 name: Automatic allocation
-def: "PICR tool has allocated the accession number" [PRIDE:PRIDE]
+def: "PICR tool has allocated the accession number." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000166
 name: Ambiguous modification
-def: "Modification with a MonoDeltaMass, which can not unambiguously be  assigned to only one modification and for which several possibilities exist" [PRIDE:PRIDE]
+def: "Modification with a MonoDeltaMass, which can not unambiguously be  assigned to only one modification and for which several possibilities exist." [PRIDE:PRIDE]
 is_a: PRIDE:0000002 ! ModificationItem additional parameter
 
 [Term]
 id: PRIDE:0000167
 name: Novel locus information
-def: "Detailed information about a genomic locus identified by whole genome searches" [PRIDE:PRIDE]
+def: "Detailed information about a genomic locus identified by whole genome searches." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
@@ -1010,19 +1011,19 @@ is_a: PRIDE:0000000 ! Reference additional parameter
 [Term]
 id: PRIDE:0000172
 name: Search database protein sequence length
-def: "Value of average of all individual peptide identifications for this protein" [PRIDE:PRIDE]
+def: "Value of average of all individual peptide identifications for this protein." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000173
 name: MeanOfPeptideScores
-def: "Value of average of all individual peptide scores" [PRIDE:PRIDE]
+def: "Value of average of all individual peptide scores." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000174
 name: Isoelectric point
-def: "Isoelectric point of a protein" [PRIDE:PRIDE]
+def: "Isoelectric point of a protein." [PRIDE:PRIDE]
 synonym: "pI" EXACT []
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
@@ -1030,73 +1031,73 @@ relationship: part_of PRIDE:0000056 ! Bioworks
 [Term]
 id: PRIDE:0000175
 name: XML generation software
-def: "The software which was used to generate the PRIDE XML file" [PRIDE:PRIDE]
+def: "The software which was used to generate the PRIDE XML file." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000176
 name: X\!Tandem Hyperscore
-def: "The X!Tandem hyperscore for the peptide" [PRIDE:PRIDE]
+def: "The X!Tandem hyperscore for the peptide." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000177
 name: Spectrum Mill peptide score
-def: "The Spectrum Mill score for the peptide" [PRIDE:PRIDE]
+def: "The Spectrum Mill score for the peptide." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000178
 name: Peptide selection
-def: "A protocol step to select for a particular type of peptides" [PRIDE:PRIDE]
+def: "A protocol step to select for a particular type of peptides." [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000179
 name: dotproduct
-def: "X|Tandem dot product score" [PRIDE:PRIDE]
+def: "X|Tandem dot product score." [PRIDE:PRIDE]
 is_a: PRIDE:0000047 ! X|Tandem
 
 [Term]
 id: PRIDE:0000180
 name: delta
-def: "X|Tandem delta score" [PRIDE:PRIDE]
+def: "X|Tandem delta score." [PRIDE:PRIDE]
 is_a: PRIDE:0000047 ! X|Tandem
 
 [Term]
 id: PRIDE:0000181
 name: deltastar
-def: "X|Tandem delta star score" [PRIDE:PRIDE]
+def: "X|Tandem delta star score." [PRIDE:PRIDE]
 is_a: PRIDE:0000047 ! X|Tandem
 
 [Term]
 id: PRIDE:0000182
 name: zscore
-def: "X|Tandem Z score" [PRIDE:PRIDE]
+def: "X|Tandem Z score." [PRIDE:PRIDE]
 is_a: PRIDE:0000047 ! X|Tandem
 
 [Term]
 id: PRIDE:0000183
 name: expect
-def: "X|Tandem expectancy score" [PRIDE:PRIDE]
+def: "X|Tandem expectancy score." [PRIDE:PRIDE]
 is_a: PRIDE:0000047 ! X|Tandem
 
 [Term]
 id: PRIDE:0000184
 name: Query number
-def: "Search parameter that allows users to find query results from old data." [Curator:JAV]
+def: "Search parameter that allows users to find query results from old data." [PRIDE:PRIDE]
 is_a: PRIDE:0000046 ! Mascot
 
 [Term]
 id: PRIDE:0000185
 name: OMSSA E-value
-def: "E-value parameter from OMSSA." [Curator:JAV]
+def: "E-value parameter from OMSSA." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000186
 name: OMSSA P-value
-def: "P-value parameter from OMSSA." [Curator:JAV]
+def: "P-value parameter from OMSSA." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
@@ -1130,7 +1131,7 @@ is_a: PRIDE:0000187 ! Fragment Ion Annotation
 [Term]
 id: PRIDE:0000191
 name: product ion retention time error
-def: "Retention time error in minutes" [PRIDE:PRIDE]
+def: "Retention time error in minutes." [PRIDE:PRIDE]
 synonym: "fragment ion retention time error" EXACT []
 is_a: PRIDE:0000187 ! Fragment Ion Annotation
 
@@ -1207,454 +1208,446 @@ is_a: PRIDE:0000192 ! product ion type
 [Term]
 id: PRIDE:0000202
 name: Parent Ion Annotation
-def: "Parent ion annotation of the peptide." [Curator:JAV]
+def: "Parent ion annotation of the peptide." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000203
 name: parent ion retention time
-def: "Retention time in minutes." [Curator:JAV]
+def: "Retention time in minutes." [PRIDE:PRIDE]
 is_a: PRIDE:0000202 ! Parent Ion Annotation
 
 [Term]
 id: PRIDE:0000204
 name: product ion charge
-def: "Charge state." [Curator:JAV]
+def: "Charge state." [PRIDE:PRIDE]
 synonym: "fragment ion charge" EXACT []
 is_a: PRIDE:0000187 ! Fragment Ion Annotation
 
 [Term]
 id: PRIDE:0000205
 name: Heavy stable isotope label
-def: "A general term for any stable isotope method." [Curator:JAV]
-
+def: "A general term for any stable isotope method." [PRIDE:PRIDE]
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000206
 name: Heavy stable isotope label residue
-def: "The precise amino acid that has been modified." [Curator:JAV]
-
+def: "The precise amino acid that has been modified." [PRIDE:PRIDE]
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000207
 name: Light stable isotope label
-def: "A general term for any stable isotope method." [Curator:JAV]
-
+def: "A general term for any stable isotope method." [PRIDE:PRIDE]
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000208
 name: Light stable isotope label residue
-def: "The precise amino acid that has been modified." [Curator:JAV]
-
+def: "The precise amino acid that has been modified." [PRIDE:PRIDE]
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000209
 name: Peptide pair id
-def: "Facilitate mapping between peptide pairs (usually heavy/light) to which the stable isotope ratio below relates." [Curator:JAV]
+def: "Facilitate mapping between peptide pairs (usually heavy/light) to which the stable isotope ratio below relates." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000210
 name: Stable isotope ratio
-def: "Ratio of peptide pair the sequence/sample is the numerator in the ratio." [Curator:JAV]
+def: "Ratio of peptide pair the sequence/sample is the numerator in the ratio." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000211
 name: Quantitative sample reference
-def: "This links back to the value given to the heavy/light stable isotope label to relate the peptide ratio back to the sample." [Curator:JAV]
+def: "This links back to the value given to the heavy/light stable isotope label to relate the peptide ratio back to the sample." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000212
 name: Mascot expect value
-def: "Expect value as defined for the Mascot search algorithm." [Curator:JAV]
+def: "Expect value as defined for the Mascot search algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000046 ! Mascot
 
 [Term]
 id: PRIDE:0000213
 name: Inspect
-def: "The Inspect search algorithm." [Curator:JAV]
+def: "The Inspect search algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000214
 name: Inspect MQScore
-def: "Quality score of a match." [Curator:JAV]
+def: "Quality score of a match." [PRIDE:PRIDE]
 is_a: PRIDE:0000213 ! Inspect
 
 [Term]
 id: PRIDE:0000215
 name: Inspect p-value
-def: "Probability that the top match is correct." [Curator:JAV]
+def: "Probability that the top match is correct." [PRIDE:PRIDE]
 is_a: PRIDE:0000213 ! Inspect
 
 [Term]
 id: PRIDE:0000216
 name: ProteomExchange project accession number
-def: "ProteomExchange accession number of the project where the PRIDE experiment is included." [Curator:JAV]
+def: "ProteomExchange accession number of the project where the PRIDE experiment is included." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000217
 name: ProteomExchange project hash
-def: "Hash in Tranche of the whole ProteomExchange project where the PRIDE experiment is included." [Curator:JAV]
+def: "Hash in Tranche of the whole ProteomExchange project where the PRIDE experiment is included." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000218
 name: Original MS data file format
-def: "Original format of the file containing MS data." [Curator:JAV]
+def: "Original format of the file containing MS data." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000219
 name: Date of search
-def: "Date when the search was performed" [Curator:JAV]
+def: "Date when the search was performed." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000220
 name: Calculated Mass To Charge Ratio
-def: "m/z value converted from the MH+ value, according to this formula: CalculatedMZ = (precursorMH+ - HYDROGEN_MASS + (precursorCharge * HYDROGEN_MASS))/ precursorCharge" [Curator:JAV]
+def: "m/z value converted from the MH+ value, according to this formula: CalculatedMZ = (precursorMH+ - HYDROGEN_MASS + (precursorCharge * HYDROGEN_MASS))/ precursorCharge." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000221
 name: parent ion retention time error
-def: "Retention time error in minutes." [Curator:JAV]
+def: "Retention time error in minutes." [PRIDE:PRIDE]
 is_a: PRIDE:0000202 ! Parent Ion Annotation
 
 [Term]
 id: PRIDE:0000222
 name: spectrum iTRAQ ratio
-def: "average iTRAQ ratio sample over control" [Curator:JAV]
+def: "average iTRAQ ratio sample over control." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000223
 name: peptide iTRAQ ratio average
-def: "Average spectrum iTRAQ ratio (=geometric mean) for the peptide" [Curator:JAV]
+def: "Average spectrum iTRAQ ratio (=geometric mean) for the peptide." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000224
 name: protein iTRAQ ratio average
-def: "Average spectrum iTRAQ ratio (=geometric mean) for the protein" [Curator:JAV]
+def: "Average spectrum iTRAQ ratio (=geometric mean) for the protein." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000225
 name: protein iTRAQ ratio number of contributing spectra
-def: "Number of quantified spectra contributing to the protein iTRAQ ratio" [Curator:JAV]
+def: "Number of quantified spectra contributing to the protein iTRAQ ratio." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000226
 name: protein iTRAQ ratio standard deviation
-def: "Geometric sample standard deviation of the protein iTRAQ ratio" [Curator:JAV]
+def: "Geometric sample standard deviation of the protein iTRAQ ratio." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000227
 name: x ion
-def: "X ion type." [Curator:JAV]
+def: "X ion type." [PRIDE:PRIDE]
 synonym: "x fragment ion" EXACT []
 is_a: PRIDE:0000192 ! product ion type
 
 [Term]
 id: PRIDE:0000228
 name: x ion -H2O
-def: "X ion type with the neutral loss of a molecule water." [Curator:JAV]
+def: "X ion type with the neutral loss of a molecule water." [PRIDE:PRIDE]
 synonym: "x fragment ion -H2O" EXACT []
 is_a: PRIDE:0000227 ! x ion
 
 [Term]
 id: PRIDE:0000229
 name: x ion -NH3
-def: "X ion type with the neutral loss of an ammonia group." [Curator:JAV]
+def: "X ion type with the neutral loss of an ammonia group." [PRIDE:PRIDE]
 synonym: "x fragment ion -NH3" EXACT []
 is_a: PRIDE:0000227 ! x ion
 
 [Term]
 id: PRIDE:0000230
 name: z ion
-def: "Z ion type." [Curator:JAV]
+def: "Z ion type." [PRIDE:PRIDE]
 synonym: "z fragment ion" EXACT []
 is_a: PRIDE:0000192 ! product ion type
 
 [Term]
 id: PRIDE:0000231
 name: z ion -H2O
-def: "Z ion type with the neutral loss of a molecule water." [Curator:JAV]
+def: "Z ion type with the neutral loss of a molecule water." [PRIDE:PRIDE]
 synonym: "z fragment ion -H2O" EXACT []
 is_a: PRIDE:0000230 ! z ion
 
 [Term]
 id: PRIDE:0000232
 name: z ion -NH3
-def: "Z ion type with the neutral loss of an ammonia group." [Curator:JAV]
+def: "Z ion type with the neutral loss of an ammonia group." [PRIDE:PRIDE]
 synonym: "z fragment ion -NH3" EXACT []
 is_a: PRIDE:0000230 ! z ion
 
 [Term]
 id: PRIDE:0000233
 name: a ion
-def: "A ion type." [Curator:JAV]
+def: "A ion type." [PRIDE:PRIDE]
 synonym: "a fragment ion" EXACT []
 is_a: PRIDE:0000192 ! product ion type
 
 [Term]
 id: PRIDE:0000234
 name: a ion -H2O
-def: "A ion type with the neutral loss of a molecule water." [Curator:JAV]
+def: "A ion type with the neutral loss of a molecule water." [PRIDE:PRIDE]
 synonym: "a fragment ion -H2O" EXACT []
 is_a: PRIDE:0000233 ! a ion
 
 [Term]
 id: PRIDE:0000235
 name: a ion -NH3
-def: "A ion type with the neutral loss of an ammonia group." [Curator:JAV]
+def: "A ion type with the neutral loss of an ammonia group." [PRIDE:PRIDE]
 synonym: "a fragment ion -NH3" EXACT []
 is_a: PRIDE:0000233 ! a ion
 
 [Term]
 id: PRIDE:0000236
 name: c ion
-def: "C ion type." [Curator:JAV]
+def: "C ion type." [PRIDE:PRIDE]
 synonym: "c fragment ion" EXACT []
 is_a: PRIDE:0000192 ! product ion type
 
 [Term]
 id: PRIDE:0000237
 name: c ion -H2O
-def: "C ion type with the neutral loss of a molecule water." [Curator:JAV]
+def: "C ion type with the neutral loss of a molecule water." [PRIDE:PRIDE]
 synonym: "c fragment ion -H2O" EXACT []
 is_a: PRIDE:0000236 ! c ion
 
 [Term]
 id: PRIDE:0000238
 name: c ion -NH3
-def: "C ion type with the neutral loss of an ammonia group." [Curator:JAV]
+def: "C ion type with the neutral loss of an ammonia group." [PRIDE:PRIDE]
 synonym: "c fragment ion -NH3" EXACT []
 is_a: PRIDE:0000236 ! c ion
 
 [Term]
 id: PRIDE:0000239
 name: immonium ion
-def: "Immonium ion type." [Curator:JAV]
+def: "Immonium ion type." [PRIDE:PRIDE]
 is_a: PRIDE:0000192 ! product ion type
 
 [Term]
 id: PRIDE:0000240
 name: immonium A
-def: "Immonium ion type for alanine." [Curator:JAV]
+def: "Immonium ion type for alanine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000241
 name: immonium C
-def: "Immonium ion type for cysteine." [Curator:JAV]
+def: "Immonium ion type for cysteine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000242
 name: immonium D
-def: "Immonium ion type for aspartic acid." [Curator:JAV]
+def: "Immonium ion type for aspartic acid." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000243
 name: immonium E
-def: "Immonium ion type for glutamic acid." [Curator:JAV]
+def: "Immonium ion type for glutamic acid." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000244
 name: immonium F
-def: "Immonium ion type for phenylalanine." [Curator:JAV]
+def: "Immonium ion type for phenylalanine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000245
 name: immonium G
-def: "Immonium ion type for glycine." [Curator:JAV]
+def: "Immonium ion type for glycine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000246
 name: immonium H
-def: "Immonium ion type for histidine." [Curator:JAV]
+def: "Immonium ion type for histidine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000247
 name: immonium I
-def: "Immonium ion type for isoleucine." [Curator:JAV]
+def: "Immonium ion type for isoleucine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000248
 name: immonium K
-def: "Immonium ion type for lysine." [Curator:JAV]
+def: "Immonium ion type for lysine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000249
 name: immonium L
-def: "Immonium ion type for leucine." [Curator:JAV]
+def: "Immonium ion type for leucine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000250
 name: immonium M
-def: "Immonium ion type for methionine." [Curator:JAV]
+def: "Immonium ion type for methionine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000251
 name: immonium N
-def: "Immonium ion type for asparagine." [Curator:JAV]
+def: "Immonium ion type for asparagine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000252
 name: immonium P
-def: "Immonium ion type for proline." [Curator:JAV]
+def: "Immonium ion type for proline." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000253
 name: immonium Q
-def: "Immonium ion type for glutamine." [Curator:JAV]
+def: "Immonium ion type for glutamine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000254
 name: immonium R
-def: "Immonium ion type for arginine." [Curator:JAV]
+def: "Immonium ion type for arginine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000255
 name: immonium S
-def: "Immonium ion type for serine." [Curator:JAV]
+def: "Immonium ion type for serine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000256
 name: immonium T
-def: "Immonium ion type for threnine." [Curator:JAV]
+def: "Immonium ion type for threnine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000257
 name: immonium V
-def: "Immonium ion type for valine." [Curator:JAV]
+def: "Immonium ion type for valine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000258
 name: immonium W
-def: "Immonium ion type for tryptophan." [Curator:JAV]
+def: "Immonium ion type for tryptophan." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000259
 name: immonium Y
-def: "Immonium ion type for tyrosine." [Curator:JAV]
+def: "Immonium ion type for tyrosine." [PRIDE:PRIDE]
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
 id: PRIDE:0000260
 name: precursor ion type
-def: "precursor ion type." [Curator:JAV]
+def: "precursor ion type." [PRIDE:PRIDE]
 synonym: "parent ion type" EXACT []
 is_a: PRIDE:0000202 ! Parent Ion Annotation
 
 [Term]
 id: PRIDE:0000261
 name: precursor ion -H2O
-def: "Precursor ion type with the neutral loss of a molecule water." [Curator:JAV]
+def: "Precursor ion type with the neutral loss of a molecule water." [PRIDE:PRIDE]
 synonym: "parent ion -H2O" EXACT []
 is_a: PRIDE:0000263 ! precursor ion
 
 [Term]
 id: PRIDE:0000262
 name: precursor ion -NH3
-def: "Precursor ion type with the neutral loss of an ammonia group." [Curator:JAV]
+def: "Precursor ion type with the neutral loss of an ammonia group." [PRIDE:PRIDE]
 synonym: "parent ion -NH3" EXACT []
 is_a: PRIDE:0000263 ! precursor ion
 
 [Term]
 id: PRIDE:0000263
 name: precursor ion
-def: "Precursor ion." [Curator:JAV]
+def: "Precursor ion." [PRIDE:PRIDE]
 synonym: "parent ion" EXACT []
 is_a: PRIDE:0000260 ! precursor ion type
 
 [Term]
 id: PRIDE:0000264
 name: iTRAQ reagent 113
-comment: The name of the sample labelled with iTRAQ reagent 113 [Curator:JAV].
-
+comment: The name of the sample labelled with iTRAQ reagent 113 [PRIDE:PRIDE].
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000265
 name: iTRAQ reagent 118
-comment: The name of the sample labelled with iTRAQ reagent 118 [Curator:JAV].
-
+comment: The name of the sample labelled with iTRAQ reagent 118 [PRIDE:PRIDE].
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000266
 name: iTRAQ reagent 119
-comment: The name of the sample labelled with iTRAQ reagent 119 [Curator:JAV].
-
+comment: The name of the sample labelled with iTRAQ reagent 119 [PRIDE:PRIDE].
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000267
 name: iTRAQ reagent 121
-comment: The name of the sample labelled with iTRAQ reagent 121 [Curator:JAV].
-
+comment: The name of the sample labelled with iTRAQ reagent 121 [PRIDE:PRIDE].
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000268
 name: iTRAQ intensity 113
-comment: The intensity of the sample labelled with iTRAQ reagent 113 [Curator:JAV].
+comment: The intensity of the sample labelled with iTRAQ reagent 113 [PRIDE:PRIDE].
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000269
 name: iTRAQ intensity 118
-comment: The intensity of the sample labelled with iTRAQ reagent 118 [Curator:JAV].
+comment: The intensity of the sample labelled with iTRAQ reagent 118 [PRIDE:PRIDE].
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000270
 name: iTRAQ intensity 119
-comment: The intensity of the sample labelled with iTRAQ reagent 119 [Curator:JAV].
+comment: The intensity of the sample labelled with iTRAQ reagent 119 [PRIDE:PRIDE].
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000271
 name: iTRAQ intensity 121
-comment: The intensity of the sample labelled with iTRAQ reagent 121 [Curator:JAV].
+comment: The intensity of the sample labelled with iTRAQ reagent 121 [PRIDE:PRIDE].
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
@@ -1696,7 +1689,7 @@ name: Processing method additional parameter
 [Term]
 id: PRIDE:0000279
 name: In silico enzyme digestion
-def: "Enzyme that is selected as a parameter of the search engine" [PRIDE:PRIDE]
+def: "Enzyme that is selected as a parameter of the search engine." [PRIDE:PRIDE]
 is_a: PRIDE:0000278 ! Processing method additional parameter
 
 [Term]
@@ -1716,13 +1709,13 @@ is_a: PRIDE:0000230 ! z ion
 [Term]
 id: PRIDE:0000282
 name: Fixed modification
-def: "Fixed type of post-translational modification" [PRIDE:PRIDE]
+def: "Fixed type of post-translational modification." [PRIDE:PRIDE]
 is_a: PRIDE:0000002 ! ModificationItem additional parameter
 
 [Term]
 id: PRIDE:0000283
 name: Variable modification
-def: "Variable type of post-translational modification" [PRIDE:PRIDE]
+def: "Variable type of post-translational modification." [PRIDE:PRIDE]
 is_a: PRIDE:0000002 ! ModificationItem additional parameter
 
 [Term]
@@ -1871,7 +1864,7 @@ creation_date: 2011-05-25T11:22:05Z
 [Term]
 id: PRIDE:0000305
 name: Gel-based experiment
-def: "Defines a gel-based proteomics experiment" [PRIDE:PRIDE]
+def: "Defines a gel-based proteomics experiment." [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 created_by: jg
 creation_date: 2011-05-25T05:44:24Z
@@ -2556,7 +2549,7 @@ created_by: rc
 [Term]
 id: PRIDE:0000406
 name: ProteomeCentral dataset URI
-def: URI associated to one PX submission in ProteomeCentral
+def: "URI associated to one PX submission in ProteomeCentral." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
@@ -2564,7 +2557,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000407
 name: Result file URI
-def: URI of one file labeled as 'Result', associated to one PX submission
+def: "URI of one file labeled as 'Result', associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 created_by: jav
@@ -2572,7 +2565,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000408
 name: Search engine output file URI
-def: URI of one search engine output file associated to one PX submission.
+def: "URI of one search engine output file associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 created_by: jav
@@ -2580,7 +2573,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000409
 name: Peak list file URI
-def: URI of one of one search engine output file associated to one PX submission.
+def: "URI of one of one search engine output file associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 created_by: jav
@@ -2588,7 +2581,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000410
 name: 'Other' type file URI
-def: URI of one file labeled as 'Other', associated to one PX submission.
+def: "URI of one file labeled as 'Other', associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 created_by: jav
@@ -2596,7 +2589,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000411
 name: Dataset FTP location
-def: FTP location of one entire PX data set
+def: "FTP location of one entire PX data set." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
@@ -2604,14 +2597,14 @@ created_by: jav
 [Term]
 id: PRIDE:0000412
 name: Dataset with no associated published manuscript
-def: A dataset which does not have an associated published manuscript.
+def: "A dataset which does not have an associated published manuscript." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000413
 name: Instrument name
-def: The value of this term (related to one PRIDE experiment) can be used to provide the name of instruments that are not included in any other CV yet.
+def: "The value of this term (related to one PRIDE experiment) can be used to provide the name of instruments that are not included in any other CV yet." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
@@ -2619,77 +2612,77 @@ created_by: jav
 [Term]
 id: PRIDE:0000414
 name: Peer-reviewed dataset
-def: Dataset has been peer-reviewed somehow.
+def: "Dataset has been peer-reviewed somehow." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000415
 name: Non peer-reviewed dataset
-def: Dataset that has not been peer-reviewed by any means.
+def: "Dataset that has not been peer-reviewed by any means." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000416
 name: Supported dataset by repository
-def: The PX dataset is supported by and is available through the submission repository
+def: "The PX dataset is supported by and is available through the submission repository." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000417
 name: Unsupported dataset by repository
-def: The PX dataset is not fully supported by the submission repository
+def: "The PX dataset is not fully supported by the submission repository." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000418
 name: Other member of protein ambiguity group
-def: Accession of another protein that was assigned to the same protein ambiguity group. This term must be repeated to include all protein group members, except for itself
+def: "Accession of another protein that was assigned to the same protein ambiguity group. This term must be repeated to include all protein group members, except for itself." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000419
 name: b ion -H3PO4
-def: "B ion type with a neutral loss of a phosphate molecule" [PRIDE:PRIDE]
+def: "B ion type with a neutral loss of a phosphate molecule." [PRIDE:PRIDE]
 synonym: "b fragment ion -H3PO4" EXACT []
 is_a: PRIDE:0000194 ! b ion
 
 [Term]
 id: PRIDE:0000420
 name: b ion -2H3PO4
-def: "B ion type with a neutral loss of 2 phosphate molecules" [PRIDE:PRIDE]
+def: "B ion type with a neutral loss of 2 phosphate molecules." [PRIDE:PRIDE]
 synonym: "b fragment ion -2H3PO4" EXACT []
 is_a: PRIDE:0000194 ! b ion
 
 [Term]
 id: PRIDE:0000421
 name: b ion -3H3PO4
-def: "B ion type with a neutral loss of 3 phosphate molecules" [PRIDE:PRIDE]
+def: "B ion type with a neutral loss of 3 phosphate molecules." [PRIDE:PRIDE]
 synonym: "b fragment ion -3H3PO4" EXACT []
 is_a: PRIDE:0000194 ! b ion
 
 [Term]
 id: PRIDE:0000422
 name: y ion -H3PO4
-def: "Y ion type with a neutral loss of a phosphate molecule" [PRIDE:PRIDE]
+def: "Y ion type with a neutral loss of a phosphate molecule." [PRIDE:PRIDE]
 synonym: "y fragment ion -H3PO4" EXACT []
 is_a: PRIDE:0000193 ! y ion
 
 [Term]
 id: PRIDE:0000423
 name: y ion -2H3PO4
-def: "Y ion type with a neutral loss of 2 phosphate molecules" [PRIDE:PRIDE]
+def: "Y ion type with a neutral loss of 2 phosphate molecules." [PRIDE:PRIDE]
 synonym: "y fragment ion -2H3PO4" EXACT []
 is_a: PRIDE:0000193 ! y ion
 
 [Term]
 id: PRIDE:0000424
 name: y ion -3H3PO4
-def: "Y ion type with a neutral loss of 3 phosphate molecules" [PRIDE:PRIDE]
+def: "Y ion type with a neutral loss of 3 phosphate molecules." [PRIDE:PRIDE]
 synonym: "y fragment ion -3H3PO4" EXACT []
 is_a: PRIDE:0000193 ! y ion
 
@@ -2737,7 +2730,7 @@ created_by: acsordas
 [Term]
 id: PRIDE:0000431
 name: Affinity purification coupled with mass spectrometry proteomics
-comment: Affinity purification combined with mass spectrometry (AP�MS) has been used to understand protein-complex composition and protein-protein interaction.
+comment: Affinity purification combined with mass spectrometry (AP-MS) has been used to understand protein-complex composition and protein-protein interaction.
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 created_by: acsordas
 
@@ -2814,42 +2807,42 @@ created_by: acsordas
 [Term]
 id: PRIDE:0000442
 name: Tissue not applicable to dataset
-def: Tissue not applicable to dataset
+def: "Tissue not applicable to dataset." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: rw
 
 [Term]
 id: PRIDE:0000443
 name: Original NCBI Peptidome submission files
-def: The NCBI FTP location of the original Sample - Experiment level Peptidome submission data
+def: "The NCBI FTP location of the original Sample - Experiment level Peptidome submission data." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000444
 name: PRIDE experiment accession
-def: Accession number of a given PRIDE experiment (called assay in the PRIDE-3 system)
+def: "Accession number of a given PRIDE experiment (called assay in the PRIDE-3 system)." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000445
 name:PRIDE Cluster score
-def:It is an integer that gives an indication about the quality of a peptide spectrum match in PRIDE-Q. It uses the PRIDE-Cluster algorithm (described in PMID: 23361086) and different criteria to assign it (number of spectra in a cluster, ratio of the predominant peptide identification in the cluster, etc).
+def: "It is an integer that gives an indication about the quality of a peptide spectrum match in PRIDE-Q. It uses the PRIDE-Cluster algorithm (described in PMID: 23361086) and different criteria to assign it (number of spectra in a cluster, ratio of the predominant peptide identification in the cluster, etc)." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000446
 name:PRIDE peptide score
-def:Score used in PRIDE-Q to give an indication of the quality of a peptide spectrum match. It is described in PMID:16964243.
+def: "Score used in PRIDE-Q to give an indication of the quality of a peptide spectrum match. It is described in PMID:16964243." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000447
 name: SWATH MS
-def:  ABsciex Data Independent Acquisition method that consists of unfractionated samples acquisition by using duty cycles adapted to HPLC chromatography, acquiring sequential wide fragment ions spectra, typically covering the precursor mass space from 400 m/z to 1200 m/z on each duty cycle. Acquired data is interrogated by using libraries of peptide coordinates (normalised elution time, fragment ion masses and intensities). It is described in PMID:22261725.
+def: "ABsciex Data Independent Acquisition method that consists of unfractionated samples acquisition by using duty cycles adapted to HPLC chromatography, acquiring sequential wide fragment ions spectra, typically covering the precursor mass space from 400 m/z to 1200 m/z on each duty cycle. Acquired data is interrogated by using libraries of peptide coordinates (normalised elution time, fragment ion masses and intensities). It is described in PMID:22261725." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: jav
 
@@ -2873,14 +2866,14 @@ created_by: tt
 [Term]
 id: PRIDE:0000450
 name: Data-independent acquisition
-def: Predefined m/z ranges are interrogated either by fragmenting all ions entering the mass spectrometer at every single point in chromatographic time; or by dividing the m/z range into smaller m/z ranges for isolation and fragmentation. See review in PMID:24281846.
+def: "Predefined m/z ranges are interrogated either by fragmenting all ions entering the mass spectrometer at every single point in chromatographic time; or by dividing the m/z range into smaller m/z ranges for isolation and fragmentation. See review in PMID:24281846." [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000451
 name: MSE
-def: Waters data independent acquisition method based on UPLC chromatography and MS acquisition of cycles of two spectra, in low and high energy respectively, in a QQ-TOF instrument. It is described in PMID: 16755610.
+def: "Waters data independent acquisition method based on UPLC chromatography and MS acquisition of cycles of two spectra, in low and high energy respectively, in a QQ-TOF instrument. It is described in PMID: 16755610." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
 
@@ -2888,7 +2881,7 @@ created_by: acsordas
 [Term]
 id: PRIDE:0000452
 name: HDMSE
-def: Waters data independent acquisition method, which consists of using an additional on-line separation dimension (Ion Mobility drift) and an MSE acquisition. It is described in PMID: 22811061.
+def: "Waters data independent acquisition method, which consists of using an additional on-line separation dimension (Ion Mobility drift) and an MSE acquisition. It is described in PMID: 22811061." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
 
@@ -2896,7 +2889,7 @@ created_by: acsordas
 [Term]
 id: PRIDE:0000453
 name: PAcIFIC
-def: Precursor Acquisition Independent From Ion Count. A Data Independent Acquisition method performed in ion traps that consists of the acquisition of 2.5 m/z width sequential windows over several injections of the same material, until a precursor m/z range of about 400 to 1200 m/z is covered. It is described in PMID: 21341720.
+def: "Precursor Acquisition Independent From Ion Count. A Data Independent Acquisition method performed in ion traps that consists of the acquisition of 2.5 m/z width sequential windows over several injections of the same material, until a precursor m/z range of about 400 to 1200 m/z is covered. It is described in PMID: 21341720." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
 
@@ -2904,12 +2897,6 @@ created_by: acsordas
 [Term]
 id: PRIDE:0000454
 name: All-ion fragmentation
-def: MS Data Independent Acquisition performed in Thermo Orbitrap instruments. It consists of the acquisition of cycles of two spectra, a precursor mass MS1 spectrum, and a fragment ions MS2 spectrum where a wide mass filter (typically over 800 m/z) is applied to the precursors. It is described in PMID: 20610777.
+def: "MS Data Independent Acquisition performed in Thermo Orbitrap instruments. It consists of the acquisition of cycles of two spectra, a precursor mass MS1 spectrum, and a fragment ions MS2 spectrum where a wide mass filter (typically over 800 m/z) is applied to the precursors. It is described in PMID: 20610777." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
-
-
-[Typedef]
-id: part_of
-name: part of
-
