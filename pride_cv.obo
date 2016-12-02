@@ -2900,3 +2900,19 @@ name: All-ion fragmentation
 def: "MS Data Independent Acquisition performed in Thermo Orbitrap instruments. It consists of the acquisition of cycles of two spectra, a precursor mass MS1 spectrum, and a fragment ions MS2 spectrum where a wide mass filter (typically over 800 m/z) is applied to the precursors. It is described in PMID: 20610777." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
+
+[Term]
+id: PRIDE:0000455
+name: Protein-protein cross-linking experiment
+comment: Protein-protein cross-linking experiment to provide information about protein folding and protein-protein interaction.
+is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
+created_by: acsordas
+
+
+[Term]
+id: PRIDE:0000456
+name: Protein-RNA cross-linking experiment
+comment: Protein-RNA cross-linking experiment to provide information about Protein-RNA interaction.
+is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
+created_by: acsordas
+
