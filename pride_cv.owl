@@ -188,10 +188,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000361"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000397"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000276"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000276"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000397"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000385"/>
@@ -1109,6 +1109,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000214"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000456"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000202"/>
     </Declaration>
     <Declaration>
@@ -1257,6 +1260,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000225"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000455"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000346"/>
@@ -3408,6 +3414,14 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000454"/>
         <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000450"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000455"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000430"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000456"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PRIDE_0000430"/>
     </SubClassOf>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#part_of"/>
@@ -14184,6 +14198,56 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">All-ion fragmentation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000455</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">acsordas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000455</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PRIDE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000455</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000455</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000455</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Protein-protein cross-linking experiment to provide information about protein folding and protein-protein interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000455</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Protein-protein cross-linking experiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000456</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">acsordas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000456</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PRIDE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000456</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000456</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000456</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Protein-RNA cross-linking experiment to provide information about Protein-RNA interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/PRIDE_0000456</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Protein-RNA cross-linking experiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>#part_of</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PRIDE</Literal>
@@ -14227,5 +14291,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
