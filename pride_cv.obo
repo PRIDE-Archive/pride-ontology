@@ -2901,60 +2901,64 @@ def: "MS Data Independent Acquisition performed in Thermo Orbitrap instruments. 
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
 
-
 [Term]
 id: PRIDE:0000455
-name: Experiment Type
-comment: Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method. [PRIDE:PRIDE]
+name: Protein-protein cross-linking experiment
+comment: Protein-protein cross-linking experiment to provide information about protein folding and protein-protein interaction.
+is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
 created_by: acsordas
-
 
 [Term]
 id: PRIDE:0000456
+name: Protein-RNA cross-linking experiment
+comment: Protein-RNA cross-linking experiment to provide information about Protein-RNA interaction.
+is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000457
+name: Experiment Type
+comment: Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method. [PRIDE:PRIDE]
+
+[Term]
+id: PRIDE:0000458
 name: Metaproteomics
 def: Studying all protein samples of diverse host environments like the human body, soil or sea water. [PRIDE:PRIDE]
-is_a: PRIDE:0000455 ! Experiment Type
+is_a: PRIDE:0000457 ! Experiment Type
 synonym: "Community Proteomics" EXACT []
 synonym: "Environmental Proteomics" RELATED []
 created_by: acsordas
 
-
-[Term]
-id: PRIDE:0000457
-name: Human Metaproteomics
-def: Investigating both human host proteins and associated microbial proteins at the same time from human samples. [PRIDE:PRIDE]
-is_a: PRIDE:0000456 ! Metaproteomics
-created_by: acsordas
-
-
-[Term]
-id: PRIDE:0000458
-name: Proteogenomics
-comment: Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies. [PRIDE:PRIDE]
-is_a: PRIDE:0000455 ! Experiment Type
-created_by: acsordas
-
-
 [Term]
 id: PRIDE:0000459
-name: Multi-omics study
-def: Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples. [PRIDE:PRIDE]
-is_a: PRIDE:0000455 ! Experiment Type
+name: Human Metaproteomics
+def: Investigating both human host proteins and associated microbial proteins at the same time from human samples. [PRIDE:PRIDE]
+is_a: PRIDE:0000458 ! Metaproteomics
 created_by: acsordas
-
 
 [Term]
 id: PRIDE:0000460
+name: Proteogenomics
+comment: Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies. [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000461
+name: Multi-omics study
+def: Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples. [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000462
 name: SONAR
 def: Waters data independent acquisition method. [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
 
-
 [Term]
-id: PRIDE:0000461
+id: PRIDE:0000463
 name: Parallel Reaction Monitoring (PRM)
 def: Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis. [PRIDE:PRIDE]
 is_a: PRIDE:0000311 ! Selected Reaction Monitoring
-created_by: acsordas
-
