@@ -1,6 +1,5 @@
 # pride-ontology
 The PRIDE ontology.
-Test
 
 # License
 
