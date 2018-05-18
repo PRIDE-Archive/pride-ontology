@@ -2827,14 +2827,14 @@ created_by: jav
 
 [Term]
 id: PRIDE:0000445
-name:PRIDE Cluster score
+name: PRIDE Cluster score
 def: "It is an integer that gives an indication about the quality of a peptide spectrum match in PRIDE-Q. It uses the PRIDE-Cluster algorithm (described in PMID: 23361086) and different criteria to assign it (number of spectra in a cluster, ratio of the predominant peptide identification in the cluster, etc)." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 created_by: jav
 
 [Term]
 id: PRIDE:0000446
-name:PRIDE peptide score
+name: PRIDE peptide score
 def: "Score used in PRIDE-Q to give an indication of the quality of a peptide spectrum match. It is described in PMID:16964243." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 created_by: jav
