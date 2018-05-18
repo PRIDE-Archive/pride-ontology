@@ -2962,3 +2962,20 @@ id: PRIDE:0000463
 name: Parallel Reaction Monitoring (PRM)
 def: Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis. [PRIDE:PRIDE]
 is_a: PRIDE:0000311 ! Selected Reaction Monitoring
+
+[Term]
+id: PRIDE:0000464
+name: Fasta file URI
+comment: URI of one external Fasta file associated to the PRIDE experiment (maybe through a PX submission).
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+is_a: PRIDE:0000006 ! Experiment additional parameter
+created_by: ypriverol
+
+[Term]
+id: PRIDE:0000465
+name: Spectral Library file URI
+comment: URI of one external Spectral Library file associated to the PRIDE experiment (maybe through a PX submission).
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+is_a: PRIDE:0000006 ! Experiment additional parameter
+created_by: ypriverol
+
