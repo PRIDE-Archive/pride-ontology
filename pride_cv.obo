@@ -2995,3 +2995,20 @@ xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: ypriverol
 
+[Term]
+id: PRIDE:0000468
+name: Aspera Protocol
+comment: URI for an Aspera Download Protocol
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+is_a: PRIDE:0000006 ! Experiment additional parameter
+created_by: ypriverol
+
+[Term]
+id: PRIDE:0000469
+name: FTP Protocol
+comment: URI for an FTP Download Protocol
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+is_a: PRIDE:0000006 ! Experiment additional parameter
+created_by: ypriverol
+
+
