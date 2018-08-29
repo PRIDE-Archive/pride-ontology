@@ -1,0 +1,3144 @@
+format-version: 1.2
+date: 29:08:2018 14:55
+saved-by: ypriverol
+auto-generated-by: OBO-Edit 2.3.1
+default-namespace: file:/private/var/folders/hm/w90zk0x90sv25st_pm8xdw940000gq/T/owl2obo8066861450782991216.obo
+ontology: PRIDE_PRIDE
+property_value: http://purl.obolibrary.org/obo/auto-generated-by "OBO-Edit 2.3" xsd:string
+property_value: http://purl.obolibrary.org/obo/date "06:03:2012 11:34" xsd:string
+property_value: http://purl.obolibrary.org/obo/format-version "1.2" xsd:string
+property_value: http://purl.obolibrary.org/obo/saved-by "jg" xsd:string
+
+[Term]
+id: PRIDE:0000001
+name: Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to the description of a protocol as ordered steps, in relation to the PRIDE.xml element ExperimentCollection/Experiment/Protocol/ProtocolSteps/StepDescription" xsd:string
+
+[Term]
+id: PRIDE:0000002
+name: ModificationItem additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to the description of a ModificationItem (post translational modification or artifactual modification) in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/ModificationItem/additional/cvParam" xsd:string
+
+[Term]
+id: PRIDE:0000003
+name: Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to the description of a PeptideItem in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/additional/cvParam" xsd:string
+
+[Term]
+id: PRIDE:0000004
+name: Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to the description of an Identification in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/additional/cvParam" xsd:string
+
+[Term]
+id: PRIDE:0000005
+name: Gel additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to the description of a Gel in relation to the PRIDE.xml element ExperimentCollection/Experiment/TwoDimensionalIdentification/Gel/additional/cvParam" xsd:string
+
+[Term]
+id: PRIDE:0000006
+name: Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam" xsd:string
+
+[Term]
+id: PRIDE:0000007
+name: SearchEngineVersion
+property_value: http://purl.obolibrary.org/obo/comment "Version number / identifier for search engine." xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000008
+name: Protein search engine output parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000009
+name: Ion mass tolerance
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000010
+name: PrecursorIon mass tolerance
+is_a: PRIDE:0000009 ! Ion mass tolerance
+
+[Term]
+id: PRIDE:0000011
+name: MS2 ion mass tolerance
+is_a: PRIDE:0000009 ! Ion mass tolerance
+
+[Term]
+id: PRIDE:0000012
+name: Delta Cn
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"1.0 - normalized correlation score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000013
+name: X correlation
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000014
+name: X correlation (+1)
+is_a: PRIDE:0000013 ! X correlation
+
+[Term]
+id: PRIDE:0000015
+name: X correlation (+2)
+is_a: PRIDE:0000013 ! X correlation
+
+[Term]
+id: PRIDE:0000016
+name: X correlation (+3)
+is_a: PRIDE:0000013 ! X correlation
+
+[Term]
+id: PRIDE:0000017
+name: Sample description additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root term for parameters in the context of ExperimentCollection/Experiment/mzData/description/admin/sampleDescription/cvParam" xsd:string
+
+[Term]
+id: PRIDE:0000018
+name: Disease free
+is_a: PRIDE:0000017 ! Sample description additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Term to describe the fact that the sample derives from an organism which has been positively shown to be free of disease, e.g. as the consequence of a broad-spectrum screen.  NOTE: A request has been made to have this concept added to MeSH.  Once this has been achieved, this term will be dropped from the PRIDE CV and all uses of the this term will be updated to the appropriate MeSH concept." xsd:string
+
+[Term]
+id: PRIDE:0000019
+name: Solubilization
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"To make something soluble or more soluble, especially in water, by the action of a detergent or other agent.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000020
+name: Depletion
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The removal of specific components of a complex mixture of proteins or peptides on the basis of some specific property of those components.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000021
+name: Fractionation
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The removal of some components of a complex mixture of proteins or peptides on the basis of some general property of those components to yeild a less complex mixture.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000022
+name: Separation
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"To divide a complex mixture of proteins or peptides into the component individual proteins or peptides.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000023
+name: Band excision
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The removal of a region of a gel which contains protein(s) of interest.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000024
+name: Enzyme digestion
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The fragmentation of proteins into peptides through the use of an enzyme such as trypsin.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000025
+name: Reduction
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+
+[Term]
+id: PRIDE:0000026
+name: Alkylation
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The transfer of an alkyl group from one molecule to another.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000027
+name: Mass spectrometry
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"This is a measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000028
+name: Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid values for cvLabel entries referencing external database / CV / ontology." xsd:string
+
+[Term]
+id: PRIDE:0000029
+name: PubMed
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing PubMed." xsd:string
+
+[Term]
+id: PRIDE:0000030
+name: PRIDE
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing PRIDE" xsd:string
+
+[Term]
+id: PRIDE:0000031
+name: GO
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing GO." xsd:string
+
+[Term]
+id: PRIDE:0000032
+name: MeSH
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing Medical Subject Headings (MeSH)" xsd:string
+
+[Term]
+id: PRIDE:0000033
+name: NEWT
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing NEWT or the NCBI taxonomy." xsd:string
+
+[Term]
+id: PRIDE:0000034
+name: PSI
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing the PSI ontology" xsd:string
+
+[Term]
+id: PRIDE:0000035
+name: UNIMOD
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing UNIMOD" xsd:string
+
+[Term]
+id: PRIDE:0000036
+name: RESID
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing RESID." xsd:string
+
+[Term]
+id: PRIDE:0000037
+name: Staining
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+
+[Term]
+id: PRIDE:0000038
+name: ISBN
+is_a: PRIDE:0000028 ! Cv Label
+property_value: http://purl.obolibrary.org/obo/comment "Valid value for the cvLabel entry referencing ISBN" xsd:string
+
+[Term]
+id: PRIDE:0000039
+name: Organelle isolation
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Any technique which separates differentiated structures from the cell.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000040
+name: Experiment description
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "This CV term should be used in association with a value that is a free-text description of the experiment." xsd:string
+
+[Term]
+id: PRIDE:0000041
+name: Search database protein sequence
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000042
+name: DOI
+is_a: PRIDE:0000028 ! Cv Label
+
+[Term]
+id: PRIDE:0000043
+name: FIX
+is_a: PRIDE:0000028 ! Cv Label
+
+[Term]
+id: PRIDE:0000044
+name: Search algorithm
+
+[Term]
+id: PRIDE:0000045
+name: Sequest
+is_a: PRIDE:0000044 ! Search algorithm
+
+[Term]
+id: PRIDE:0000046
+name: Mascot
+is_a: PRIDE:0000044 ! Search algorithm
+
+[Term]
+id: PRIDE:0000047
+name: X|Tandem
+is_a: PRIDE:0000044 ! Search algorithm
+property_value: http://purl.obolibrary.org/obo/comment "Really X" xsd:string
+
+[Term]
+id: PRIDE:0000048
+name: OutputParameter
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000049
+name: Peptide search engine output parameter
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+
+[Term]
+id: PRIDE:0000050
+name: Rank/Sp
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"Final correlation score rank and preliminary score rank.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000051
+name: (M+H)+
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"m/z of the singly-charged precursor (precursor mass + mass of hydrogen atom).\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000052
+name: Cn
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"normalized correlation score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000053
+name: Sequest score
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"raw correlation score (Sequest).\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "C*10^4" xsd:string
+
+[Term]
+id: PRIDE:0000054
+name: Sp
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"preliminary score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000055
+name: Ions
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"the number of frament ions matched (in the preliminary scoring process) out of the total number of fragment masses for the peptide.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000056
+name: Bioworks
+is_a: PRIDE:0000045 ! Sequest
+
+[Term]
+id: PRIDE:0000057
+name: Molecular weight
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000056 ! Bioworks
+property_value: http://purl.obolibrary.org/obo/def "\\"Molecular weight of a protein.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000058
+name: z
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000056 ! Bioworks
+
+[Term]
+id: PRIDE:0000059
+name: File
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000060
+name: Scan
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000061
+name: Coverage
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000056 ! Bioworks
+
+[Term]
+id: PRIDE:0000062
+name: rsp
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000056 ! Bioworks
+
+[Term]
+id: PRIDE:0000063
+name: Protein description line
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000064
+name: Secondary accession
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000065
+name: Upstream flanking sequence
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Any sequence reported before the start of the peptide.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000066
+name: Downstream flanking seqeuence
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Any sequence reported after the end of the peptide seqeuence.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000067
+name: Reference reporting this experiment
+is_a: PRIDE:0000000 ! Reference additional parameter
+
+[Term]
+id: PRIDE:0000068
+name: Reference describing sample preparation
+is_a: PRIDE:0000000 ! Reference additional parameter
+
+[Term]
+id: PRIDE:0000069
+name: Mascot score
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000046 ! Mascot
+property_value: http://purl.obolibrary.org/obo/def "\\"Score as defined for the Mascot search algorithm.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000070
+name: Peptide cleavage
+is_a: PRIDE:0000024 ! Enzyme digestion
+property_value: http://purl.obolibrary.org/obo/def "\\"Cleavage of the peptide bond.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000071
+name: Search engine setting
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+
+[Term]
+id: PRIDE:0000072
+name: Fixed modification setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000073
+name: Variable modification setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000074
+name: Maximum Missed Cleavages Setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000075
+name: Mass value type setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000076
+name: Mass value type setting monoisotopic
+is_a: PRIDE:0000075 ! Mass value type setting
+
+[Term]
+id: PRIDE:0000077
+name: Mass value type setting average
+is_a: PRIDE:0000075 ! Mass value type setting
+
+[Term]
+id: PRIDE:0000078
+name: Peptide mass tolerance setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000079
+name: Accurate mass mode setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000080
+name: Accurate mass mode setting true
+is_a: PRIDE:0000079 ! Accurate mass mode setting
+
+[Term]
+id: PRIDE:0000081
+name: Accurate mass mode setting false
+is_a: PRIDE:0000079 ! Accurate mass mode setting
+
+[Term]
+id: PRIDE:0000082
+name: Mass error type setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000083
+name: mass error type setting ppm
+is_a: PRIDE:0000082 ! Mass error type setting
+
+[Term]
+id: PRIDE:0000084
+name: mass error type setting mmu
+is_a: PRIDE:0000082 ! Mass error type setting
+
+[Term]
+id: PRIDE:0000085
+name: mass error type setting percent
+is_a: PRIDE:0000082 ! Mass error type setting
+
+[Term]
+id: PRIDE:0000086
+name: mass error type setting Daltons
+is_a: PRIDE:0000082 ! Mass error type setting
+
+[Term]
+id: PRIDE:0000087
+name: Protonated setting
+is_a: PRIDE:0000071 ! Search engine setting
+
+[Term]
+id: PRIDE:0000088
+name: Protonated setting MH+
+is_a: PRIDE:0000087 ! Protonated setting
+
+[Term]
+id: PRIDE:0000089
+name: Protonated setting Mr
+is_a: PRIDE:0000087 ! Protonated setting
+
+[Term]
+id: PRIDE:0000090
+name: Protonated setting M-H-
+is_a: PRIDE:0000087 ! Protonated setting
+
+[Term]
+id: PRIDE:0000091
+name: Rank
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000092
+name: All peptides matched
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000093
+name: All peptides matched true
+is_a: PRIDE:0000092 ! All peptides matched
+
+[Term]
+id: PRIDE:0000094
+name: All peptides matched false
+is_a: PRIDE:0000092 ! All peptides matched
+
+[Term]
+id: PRIDE:0000095
+name: Masses matched
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000096
+name: Reported Chromosome
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000097
+name: Project
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Allows experiments to be grouped or organised under projects.  Experiments may be grouped under more than one project.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000098
+name: Indistinguishable alternative protein accession
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"A qualifier is mandatory when using this term.  The qualifier is an alternative protein accession that is indistinguishable from the primary protein accession based upon observed peptide sequences only.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000099
+name: PeptideProphet probability score
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000101 ! PeptideProphet
+property_value: http://purl.obolibrary.org/obo/def "\\"The probability score for this peptide assignment to be correct, as calculated by PeptideProphet.\\" [PRIDE:PRIDE \\"PRIDE\\"]" xsd:string
+
+[Term]
+id: PRIDE:0000100
+name: ProteinProphet probability score
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000102 ! ProteinProphet
+property_value: http://purl.obolibrary.org/obo/def "\\"The probability score for this protein identification to be correct, as calculated by ProteinProphet.\\" [PRIDE:PRIDE \\"PRIDE\\"]" xsd:string
+
+[Term]
+id: PRIDE:0000101
+name: PeptideProphet
+is_a: PRIDE:0000044 ! Search algorithm
+property_value: http://purl.obolibrary.org/obo/def "\\"The PeptideProphet algorithm.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000102
+name: ProteinProphet
+is_a: PRIDE:0000044 ! Search algorithm
+property_value: http://purl.obolibrary.org/obo/def "\\"The ProteinProphet algorithm.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000103
+name: Gel run date
+is_a: PRIDE:0000005 ! Gel additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The date upon which the gel was run.  A value is mandatory - must be formatted as xsd:dateTime.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000104
+name: Sample volume loaded
+is_a: PRIDE:0000005 ! Gel additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref PRIDE:PRIDE xsd:string
+
+[Term]
+id: PRIDE:0000105
+name: Width in pixels
+is_a: PRIDE:0000005 ! Gel additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The width of the referenced gel image in pixels.  Mandatory value of type xsd:int.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000106
+name: Height in pixels
+is_a: PRIDE:0000005 ! Gel additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The height of the referenced gel image in pixels.  Mandatory value of type xsd:int.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000107
+name: Gel spot parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Parameters describing the spot on a gel that has been analysed resulting in the annotated protein identification.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000108
+name: Gel spot intensity
+is_a: PRIDE:0000107 ! Gel spot parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The intensity of the spot on the gel.   Mandatory value of type xsd:double.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000109
+name: Gel spot area
+is_a: PRIDE:0000107 ! Gel spot parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The area of the spot on the gel measured in millimetres squared.   Mandatory value of type xsd:double.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000110
+name: Gel spot volume
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000131 ! Spot normalized volume
+property_value: http://purl.obolibrary.org/obo/def "\\"The volume of the spot on the gel measured in millimetres cubed.  Mandatory value of type xsd:double.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000111
+name: Reference describing data analysis
+is_a: PRIDE:0000000 ! Reference additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"A reference annotated with this term describes analysis of the data presented in the enclosing PRIDE experiment.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000112
+name: Identified by peptide mass fingerprint
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The annotated protein identification arises from peptide mass fingerprinting.  Peptide identifications may or may not be included.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "PMF" xsd:string
+
+[Term]
+id: PRIDE:0000113
+name: Identified by peptide fragmentation
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The protein identification annotated with this term has been identified by peptide fragmentation and subsequent database searching.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "PFF" xsd:string
+
+[Term]
+id: PRIDE:0000114
+name: iTRAQ reagent 114
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 114." xsd:string
+
+[Term]
+id: PRIDE:0000115
+name: iTRAQ reagent 115
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 115." xsd:string
+
+[Term]
+id: PRIDE:0000116
+name: iTRAQ reagent 116
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 116." xsd:string
+
+[Term]
+id: PRIDE:0000117
+name: iTRAQ reagent 117
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 117." xsd:string
+
+[Term]
+id: PRIDE:0000118
+name: iTRAQ intensity 114
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 114." xsd:string
+
+[Term]
+id: PRIDE:0000119
+name: iTRAQ intensity 115
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 115." xsd:string
+
+[Term]
+id: PRIDE:0000120
+name: iTRAQ intensity 116
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 116." xsd:string
+
+[Term]
+id: PRIDE:0000121
+name: iTRAQ intensity 117
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 117." xsd:string
+
+[Term]
+id: PRIDE:0000122
+name: Two Dimensional Polyacrylamide Gel Electrophoresis
+is_a: PRIDE:0000022 ! Separation
+property_value: http://purl.obolibrary.org/obo/def "\\"A type of gel electrophoresis in which proteins are first separated by charge and then by molecular weight, enabling the analysis of complex protein mixtures.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000123
+name: Immobilized pH Gradient Electrophoresis
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
+property_value: http://purl.obolibrary.org/obo/def "\\"Electrophoresis using an gel  which has a  pH gradient along its length. .\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000124
+name: Sodium dodecyl sulfate polyacrylamide gel electrophoresis
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
+property_value: http://purl.obolibrary.org/obo/def "\\"A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000125
+name: pH low value
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
+property_value: http://purl.obolibrary.org/obo/def "\\"The lowest pH of an immobilised pH gradient gel.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000126
+name: pH high value
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
+property_value: http://purl.obolibrary.org/obo/def "\\"The highest pH of an immobilised pH gradient gel.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000127
+name: IPG strip length cm
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
+property_value: http://purl.obolibrary.org/obo/comment "This value associated with this CV term should always be in centimeters." xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"The length in centimeters of an immobilised pH gradient gel.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000128
+name: First dimension details
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
+property_value: http://purl.obolibrary.org/obo/comment "This CV term should be used in association with a value that is a free-text description of the first dimension details" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Details of immobilised pH gradient gel electrophoresis which exclude the pH range of the gel and strip length parameters.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000129
+name: Second dimension details
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000124 ! Sodium dodecyl sulfate polyacrylamide gel electrophoresis
+property_value: http://purl.obolibrary.org/obo/comment "This CV term should be used in association with a value that is a free-text description of the second dimension details" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Details of sodium dodecyl sulfate polyacrylamide gel electrophoresis.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000130
+name: Obsoleted parameters
+property_value: http://purl.obolibrary.org/obo/def "\\"Obsoleted terms.\\" [Curator:Rc]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000131
+name: Spot normalized volume
+is_a: PRIDE:0000107 ! Gel spot parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"A value for spot volume which is standardized across gels and is derived from the individual gel spot volume values.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000132
+name: Spot normalized volume method
+is_a: PRIDE:0000107 ! Gel spot parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The method by which the normalized value for spot volume is derived from the individual gel spot volume values.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000133
+name: Isobaric residue K/Q
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The amino acids glutamine (Q) (mol wt = 146) cannot be distinguished from lysine (K) (mol wt = 146).\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000134
+name: Anticoagulant
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"A substance that prevents coagulation; that is, it stops blood from clotting.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000135
+name: Mapping date
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Date of last mapping of given identifier to current UniProt accession number.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000136
+name: Mapping status
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Status of last mapping of given identifier to current UniProt accession number. Valid values are 'mappingAllOK', 'not mapped peptide mismatch', 'not mapped accession not found' and 'not mapped taxon not found' .\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000137
+name: Mapping history
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Status of last mapping of given identifier to current UniProt accession number. Valid values are 'unchanged since last mapping', 'changed accession' and 'changed version of accession' .\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000138
+name: Discriminant score
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000101 ! PeptideProphet
+property_value: http://purl.obolibrary.org/obo/def "\\"PeptideProphet discriminant score fval.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000139
+name: Not Mapped SOAP Error
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"Error message: SOAP protocol failed.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000140
+name: Not Mapped Database Error
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"Error message: Error with queried database.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000141
+name: Not Mapped No Mapping Found
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"Error message: Unable to match given identifier.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000142
+name: Not Mapped Peptide Mismatch
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"Error message: One or more peptide sequences did not match query sequence.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000143
+name: Mapped Taxon Not Found
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"Error message: No mapping to proteins from defined taxon.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000144
+name: Mapped All Ok
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"Sucessful completion of operation message.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000145
+name: PepSplice
+is_a: PRIDE:0000044 ! Search algorithm
+property_value: http://purl.obolibrary.org/obo/def "\\"The PepSplice algorithm.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000146
+name: PepSplice precision
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000145 ! PepSplice
+property_value: http://purl.obolibrary.org/obo/def "\\" .\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000147
+name: PepSplice False Discovery Rate
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000145 ! PepSplice
+property_value: http://purl.obolibrary.org/obo/def "\\"The .\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000148
+name: PepSplice P-value
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000145 ! PepSplice
+property_value: http://purl.obolibrary.org/obo/def "\\"A Score based on the hypergeometric model.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000149
+name: PepSplice Deltascore
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000145 ! PepSplice
+property_value: http://purl.obolibrary.org/obo/def "\\"The Difference between the pvalues of the 1st and the 2nd best peptide; if two peptides have the same pvalue, they are taken together.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000150
+name: PepSplice Score Count
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000145 ! PepSplice
+property_value: http://purl.obolibrary.org/obo/def "\\"The score count.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000151
+name: PepSplice Penalty
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000145 ! PepSplice
+property_value: http://purl.obolibrary.org/obo/def "\\"The Sum of all penalties for the peptide assignment.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000152
+name: PepSplice Read Direction
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000145 ! PepSplice
+property_value: http://purl.obolibrary.org/obo/def "\\"The reading direction on the DNA.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000153
+name: PepSplice Forward Read Direction
+is_a: PRIDE:0000152 ! PepSplice Read Direction
+property_value: http://purl.obolibrary.org/obo/def "\\"The reading direction on the DNA is 5' to 3'.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000154
+name: PepSplice Reverse Read Direction
+is_a: PRIDE:0000152 ! PepSplice Read Direction
+property_value: http://purl.obolibrary.org/obo/def "\\"The reading direction on the DNA 3' to 5'.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000155
+name: Unmappable
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"unsucessful mapping.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000156
+name: Project identifier
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000097 ! Project
+property_value: http://purl.obolibrary.org/obo/def "\\"unique identifier of project.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Project ID" xsd:string
+
+[Term]
+id: PRIDE:0000157
+name: Search type
+is_a: PRIDE:0000071 ! Search engine setting
+property_value: http://purl.obolibrary.org/obo/def "\\"type of search.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000158
+name: MS search
+is_a: PRIDE:0000157 ! Search type
+
+[Term]
+id: PRIDE:0000159
+name: MS/MS search
+is_a: PRIDE:0000157 ! Search type
+
+[Term]
+id: PRIDE:0000160
+name: Enzyme
+is_a: PRIDE:0000071 ! Search engine setting
+property_value: http://purl.obolibrary.org/obo/def "\\"type of enzyme used to fragment the protein. The value will equal the name of the enxzyme used e.g. .\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000161
+name: Fragment mass tolerance setting
+is_a: PRIDE:0000071 ! Search engine setting
+property_value: http://purl.obolibrary.org/obo/def "\\"range of acceptable fragment masses accepted by instrument.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000162
+name: Allowed missed cleavages
+is_a: PRIDE:0000071 ! Search engine setting
+property_value: http://purl.obolibrary.org/obo/def "\\"number of missed cleavage sites taken into account.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000163
+name: Instrument type
+is_a: PRIDE:0000071 ! Search engine setting
+property_value: http://purl.obolibrary.org/obo/def "\\"name of instrument used in analysis.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000164
+name: Mapped Without Supporting Peptides
+is_a: PRIDE:0000136 ! Mapping status
+property_value: http://purl.obolibrary.org/obo/def "\\"Sucessful mapping without supporting evidence from peptides.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000165
+name: Automatic allocation
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"PICR tool has allocated the accession number.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000166
+name: Ambiguous modification
+is_a: PRIDE:0000002 ! ModificationItem additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Modification with a MonoDeltaMass, which can not unambiguously be  assigned to only one modification and for which several possibilities exist.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000167
+name: Novel locus information
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Detailed information about a genomic locus identified by whole genome searches.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000168
+name: Nucleic acid sequence
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000169
+name: Start position of the nucleic acid sequence on the chromosome
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000170
+name: Stop position of the nucleic acid sequence on the chromosome
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+
+[Term]
+id: PRIDE:0000171
+name: funding reference
+is_a: PRIDE:0000000 ! Reference additional parameter
+
+[Term]
+id: PRIDE:0000172
+name: Search database protein sequence length
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Value of average of all individual peptide identifications for this protein.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000173
+name: MeanOfPeptideScores
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Value of average of all individual peptide scores.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000174
+name: Isoelectric point
+is_a: PRIDE:0000008 ! Protein search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000056 ! Bioworks
+property_value: http://purl.obolibrary.org/obo/def "\\"Isoelectric point of a protein.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "pI" xsd:string
+
+[Term]
+id: PRIDE:0000175
+name: XML generation software
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The software which was used to generate the PRIDE XML file.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000176
+name: X\\
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The X" xsd:string
+
+[Term]
+id: PRIDE:0000177
+name: Spectrum Mill peptide score
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"The Spectrum Mill score for the peptide.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000178
+name: Peptide selection
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"A protocol step to select for a particular type of peptides.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000179
+name: dotproduct
+is_a: PRIDE:0000047 ! X|Tandem
+property_value: http://purl.obolibrary.org/obo/def "\\"X|Tandem dot product score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000180
+name: delta
+is_a: PRIDE:0000047 ! X|Tandem
+property_value: http://purl.obolibrary.org/obo/def "\\"X|Tandem delta score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000181
+name: deltastar
+is_a: PRIDE:0000047 ! X|Tandem
+property_value: http://purl.obolibrary.org/obo/def "\\"X|Tandem delta star score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000182
+name: zscore
+is_a: PRIDE:0000047 ! X|Tandem
+property_value: http://purl.obolibrary.org/obo/def "\\"X|Tandem Z score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000183
+name: expect
+is_a: PRIDE:0000047 ! X|Tandem
+property_value: http://purl.obolibrary.org/obo/def "\\"X|Tandem expectancy score.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000184
+name: Query number
+is_a: PRIDE:0000046 ! Mascot
+property_value: http://purl.obolibrary.org/obo/def "\\"Search parameter that allows users to find query results from old data.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000185
+name: OMSSA E-value
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"E-value parameter from OMSSA.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000186
+name: OMSSA P-value
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"P-value parameter from OMSSA.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000187
+name: Fragment Ion Annotation
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Fragment ion annotation of the peptide.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "product ion property" xsd:string
+
+[Term]
+id: PRIDE:0000188
+name: product ion m/z
+is_a: PRIDE:0000187 ! Fragment Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Mass.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "fragment ion mass" xsd:string
+
+[Term]
+id: PRIDE:0000189
+name: product ion intensity
+is_a: PRIDE:0000187 ! Fragment Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Intensity.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "fragment ion intensity" xsd:string
+
+[Term]
+id: PRIDE:0000190
+name: product ion mass error
+is_a: PRIDE:0000187 ! Fragment Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Mass error.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "fragment ion mass error" xsd:string
+
+[Term]
+id: PRIDE:0000191
+name: product ion retention time error
+is_a: PRIDE:0000187 ! Fragment Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Retention time error in minutes.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "fragment ion retention time error" xsd:string
+
+[Term]
+id: PRIDE:0000192
+name: product ion type
+is_a: PRIDE:0000187 ! Fragment Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Product ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "fragment ion type" xsd:string
+
+[Term]
+id: PRIDE:0000193
+name: y ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"Y ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "y fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000194
+name: b ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"B ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "b fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000195
+name: b ion -NH3
+is_a: PRIDE:0000194 ! b ion
+property_value: http://purl.obolibrary.org/obo/def "\\"B ion type with a neutral loss of an ammonia group.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "b fragment ion -NH3" xsd:string
+
+[Term]
+id: PRIDE:0000196
+name: b ion -H2O
+is_a: PRIDE:0000194 ! b ion
+property_value: http://purl.obolibrary.org/obo/def "\\"B ion type with a neutral loss of a water molecule.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "b fragment ion -H2O" xsd:string
+
+[Term]
+id: PRIDE:0000197
+name: y ion -H2O
+is_a: PRIDE:0000193 ! y ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Y ion type with the neutral loss of a molecule water.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "y fragment ion -H2O" xsd:string
+
+[Term]
+id: PRIDE:0000198
+name: y ion -NH3
+is_a: PRIDE:0000193 ! y ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Y ion type with the neutral loss of an ammonia group.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "y fragment ion -NH3" xsd:string
+
+[Term]
+id: PRIDE:0000199
+name: in source ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"Ion resulting from in-source fragmentation.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "in source fragment ion" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "in-source ion" xsd:string
+
+[Term]
+id: PRIDE:0000200
+name: non-identified ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"Fragment ion that could not be assigned to a predicted fragment ion mass.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "unidentified ion" xsd:string
+
+[Term]
+id: PRIDE:0000201
+name: co-eluting ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"Fragment ion that was matched to another, co-eluting peptide precursor.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000202
+name: Parent Ion Annotation
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Parent ion annotation of the peptide.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000203
+name: parent ion retention time
+is_a: PRIDE:0000202 ! Parent Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Retention time in minutes.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000204
+name: product ion charge
+is_a: PRIDE:0000187 ! Fragment Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Charge state.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "fragment ion charge" xsd:string
+
+[Term]
+id: PRIDE:0000205
+name: Heavy stable isotope label
+property_value: http://purl.obolibrary.org/obo/def "\\"A general term for any stable isotope method.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000206
+name: Heavy stable isotope label residue
+property_value: http://purl.obolibrary.org/obo/def "\\"The precise amino acid that has been modified.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000207
+name: Light stable isotope label
+property_value: http://purl.obolibrary.org/obo/def "\\"A general term for any stable isotope method.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000208
+name: Light stable isotope label residue
+property_value: http://purl.obolibrary.org/obo/def "\\"The precise amino acid that has been modified.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000209
+name: Peptide pair id
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Facilitate mapping between peptide pairs (usually heavy/light) to which the stable isotope ratio below relates.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000210
+name: Stable isotope ratio
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Ratio of peptide pair the sequence/sample is the numerator in the ratio.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000211
+name: Quantitative sample reference
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"This links back to the value given to the heavy/light stable isotope label to relate the peptide ratio back to the sample.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000212
+name: Mascot expect value
+is_a: PRIDE:0000046 ! Mascot
+property_value: http://purl.obolibrary.org/obo/def "\\"Expect value as defined for the Mascot search algorithm.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000213
+name: Inspect
+is_a: PRIDE:0000044 ! Search algorithm
+property_value: http://purl.obolibrary.org/obo/def "\\"The Inspect search algorithm.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000214
+name: Inspect MQScore
+is_a: PRIDE:0000213 ! Inspect
+property_value: http://purl.obolibrary.org/obo/def "\\"Quality score of a match.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000215
+name: Inspect p-value
+is_a: PRIDE:0000213 ! Inspect
+property_value: http://purl.obolibrary.org/obo/def "\\"Probability that the top match is correct.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000216
+name: ProteomExchange project accession number
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"ProteomExchange accession number of the project where the PRIDE experiment is included.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000217
+name: ProteomExchange project hash
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Hash in Tranche of the whole ProteomExchange project where the PRIDE experiment is included.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000218
+name: Original MS data file format
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Original format of the file containing MS data.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000219
+name: Date of search
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Date when the search was performed.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000220
+name: Calculated Mass To Charge Ratio
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"m/z value converted from the MH+ value, according to this formula: CalculatedMZ = (precursorMH+ - HYDROGEN_MASS + (precursorCharge * HYDROGEN_MASS))/ precursorCharge.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000221
+name: parent ion retention time error
+is_a: PRIDE:0000202 ! Parent Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"Retention time error in minutes.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000222
+name: spectrum iTRAQ ratio
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"average iTRAQ ratio sample over control.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000223
+name: peptide iTRAQ ratio average
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Average spectrum iTRAQ ratio (=geometric mean) for the peptide.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000224
+name: protein iTRAQ ratio average
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Average spectrum iTRAQ ratio (=geometric mean) for the protein.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000225
+name: protein iTRAQ ratio number of contributing spectra
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Number of quantified spectra contributing to the protein iTRAQ ratio.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000226
+name: protein iTRAQ ratio standard deviation
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Geometric sample standard deviation of the protein iTRAQ ratio.\\" [PRIDE:PRIDE]" xsd:string
+property_value: is:obsolete "true" xsd:string
+
+[Term]
+id: PRIDE:0000227
+name: x ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"X ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "x fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000228
+name: x ion -H2O
+is_a: PRIDE:0000227 ! x ion
+property_value: http://purl.obolibrary.org/obo/def "\\"X ion type with the neutral loss of a molecule water.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "x fragment ion -H2O" xsd:string
+
+[Term]
+id: PRIDE:0000229
+name: x ion -NH3
+is_a: PRIDE:0000227 ! x ion
+property_value: http://purl.obolibrary.org/obo/def "\\"X ion type with the neutral loss of an ammonia group.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "x fragment ion -NH3" xsd:string
+
+[Term]
+id: PRIDE:0000230
+name: z ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"Z ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "z fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000231
+name: z ion -H2O
+is_a: PRIDE:0000230 ! z ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Z ion type with the neutral loss of a molecule water.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "z fragment ion -H2O" xsd:string
+
+[Term]
+id: PRIDE:0000232
+name: z ion -NH3
+is_a: PRIDE:0000230 ! z ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Z ion type with the neutral loss of an ammonia group.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "z fragment ion -NH3" xsd:string
+
+[Term]
+id: PRIDE:0000233
+name: a ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"A ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "a fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000234
+name: a ion -H2O
+is_a: PRIDE:0000233 ! a ion
+property_value: http://purl.obolibrary.org/obo/def "\\"A ion type with the neutral loss of a molecule water.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "a fragment ion -H2O" xsd:string
+
+[Term]
+id: PRIDE:0000235
+name: a ion -NH3
+is_a: PRIDE:0000233 ! a ion
+property_value: http://purl.obolibrary.org/obo/def "\\"A ion type with the neutral loss of an ammonia group.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "a fragment ion -NH3" xsd:string
+
+[Term]
+id: PRIDE:0000236
+name: c ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"C ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "c fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000237
+name: c ion -H2O
+is_a: PRIDE:0000236 ! c ion
+property_value: http://purl.obolibrary.org/obo/def "\\"C ion type with the neutral loss of a molecule water.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "c fragment ion -H2O" xsd:string
+
+[Term]
+id: PRIDE:0000238
+name: c ion -NH3
+is_a: PRIDE:0000236 ! c ion
+property_value: http://purl.obolibrary.org/obo/def "\\"C ion type with the neutral loss of an ammonia group.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "c fragment ion -NH3" xsd:string
+
+[Term]
+id: PRIDE:0000239
+name: immonium ion
+is_a: PRIDE:0000192 ! product ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000240
+name: immonium A
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for alanine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000241
+name: immonium C
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for cysteine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000242
+name: immonium D
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for aspartic acid.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000243
+name: immonium E
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for glutamic acid.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000244
+name: immonium F
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for phenylalanine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000245
+name: immonium G
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for glycine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000246
+name: immonium H
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for histidine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000247
+name: immonium I
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for isoleucine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000248
+name: immonium K
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for lysine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000249
+name: immonium L
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for leucine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000250
+name: immonium M
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for methionine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000251
+name: immonium N
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for asparagine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000252
+name: immonium P
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for proline.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000253
+name: immonium Q
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for glutamine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000254
+name: immonium R
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for arginine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000255
+name: immonium S
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for serine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000256
+name: immonium T
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for threnine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000257
+name: immonium V
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for valine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000258
+name: immonium W
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for tryptophan.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000259
+name: immonium Y
+is_a: PRIDE:0000239 ! immonium ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Immonium ion type for tyrosine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000260
+name: precursor ion type
+is_a: PRIDE:0000202 ! Parent Ion Annotation
+property_value: http://purl.obolibrary.org/obo/def "\\"precursor ion type.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "parent ion type" xsd:string
+
+[Term]
+id: PRIDE:0000261
+name: precursor ion -H2O
+is_a: PRIDE:0000263 ! precursor ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Precursor ion type with the neutral loss of a molecule water.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "parent ion -H2O" xsd:string
+
+[Term]
+id: PRIDE:0000262
+name: precursor ion -NH3
+is_a: PRIDE:0000263 ! precursor ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Precursor ion type with the neutral loss of an ammonia group.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "parent ion -NH3" xsd:string
+
+[Term]
+id: PRIDE:0000263
+name: precursor ion
+is_a: PRIDE:0000260 ! precursor ion type
+property_value: http://purl.obolibrary.org/obo/def "\\"Precursor ion.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "parent ion" xsd:string
+
+[Term]
+id: PRIDE:0000264
+name: iTRAQ reagent 113
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 113 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000265
+name: iTRAQ reagent 118
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 118 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000266
+name: iTRAQ reagent 119
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 119 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000267
+name: iTRAQ reagent 121
+is_a: PRIDE:0000329 ! iTRAQ reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with iTRAQ reagent 121 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000268
+name: iTRAQ intensity 113
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 113 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000269
+name: iTRAQ intensity 118
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 118 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000270
+name: iTRAQ intensity 119
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 119 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000271
+name: iTRAQ intensity 121
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity of the sample labelled with iTRAQ reagent 121 [PRIDE:PRIDE]." xsd:string
+
+[Term]
+id: PRIDE:0000272
+name: Project secondary name
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Allows experiments inside the same project to be grouped or organised as subprojects. This will not be displayed in the PRIDE web page.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000273
+name: SloMo score threshold for valid modification location
+is_a: PRIDE:0000044 ! Search algorithm
+
+[Term]
+id: PRIDE:0000274
+name: MaxQuant percentage threshold for valid modification location
+is_a: PRIDE:0000044 ! Search algorithm
+
+[Term]
+id: PRIDE:0000275
+name: SloMo score
+is_a: PRIDE:0000044 ! Search algorithm
+
+[Term]
+id: PRIDE:0000276
+name: MaxQuant percentage
+is_a: PRIDE:0000044 ! Search algorithm
+
+[Term]
+id: PRIDE:0000277
+name: Valid location
+is_a: PRIDE:0000002 ! ModificationItem additional parameter
+
+[Term]
+id: PRIDE:0000278
+name: Processing method additional parameter
+
+[Term]
+id: PRIDE:0000279
+name: In silico enzyme digestion
+is_a: PRIDE:0000278 ! Processing method additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Enzyme that is selected as a parameter of the search engine.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000280
+name: zH ion
+is_a: PRIDE:0000230 ! z ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Z ion type with one extra proton\\" [Curator:RWANG]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "zH fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000281
+name: zHH ion
+is_a: PRIDE:0000230 ! z ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Z ion type with two extra protons\\" [Curator:RWANG]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "zHH fragment ion" xsd:string
+
+[Term]
+id: PRIDE:0000282
+name: Fixed modification
+is_a: PRIDE:0000002 ! ModificationItem additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Fixed type of post-translational modification.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000283
+name: Variable modification
+is_a: PRIDE:0000002 ! ModificationItem additional parameter
+property_value: http://purl.obolibrary.org/obo/def "\\"Variable type of post-translational modification.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000284
+name: Sf
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+relationship: http://purl.obolibrary.org/obo/PRIDE_part_of PRIDE:0000045 ! Sequest
+property_value: http://purl.obolibrary.org/obo/def "\\"The Sf score for each peptide is calculated by a neural network algorithm that incorporates teh Xcorr, DeltaCn, Sp, RSp, peptide mass, charge state, and the number of matched peptides for the search. The protein Sf score is the sum of peptide Sf scores for all the peptides associated with that protein.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000285
+name: TMT reagent 126
+is_a: PRIDE:0000337 ! TMT reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with TMT reagent 126" xsd:string
+
+[Term]
+id: PRIDE:0000286
+name: TMT reagent 127
+is_a: PRIDE:0000337 ! TMT reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with TMT reagent 127" xsd:string
+
+[Term]
+id: PRIDE:0000287
+name: TMT reagent 128
+is_a: PRIDE:0000337 ! TMT reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with TMT reagent 128" xsd:string
+
+[Term]
+id: PRIDE:0000288
+name: TMT reagent 129
+is_a: PRIDE:0000337 ! TMT reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with TMT reagent 129" xsd:string
+
+[Term]
+id: PRIDE:0000289
+name: TMT reagent 130
+is_a: PRIDE:0000337 ! TMT reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with TMT reagent 130" xsd:string
+
+[Term]
+id: PRIDE:0000290
+name: TMT reagent 131
+is_a: PRIDE:0000337 ! TMT reagent
+property_value: http://purl.obolibrary.org/obo/comment "The name of the sample labelled with TMT reagent 131" xsd:string
+
+[Term]
+id: PRIDE:0000291
+name: TMT intensity 126
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity value of the sample labelled with TMT reagent 126 [Curator:ACSORDAS]" xsd:string
+
+[Term]
+id: PRIDE:0000292
+name: TMT intensity 127
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity value of the sample labelled with TMT reagent 127 [Curator:ACSORDAS]" xsd:string
+
+[Term]
+id: PRIDE:0000293
+name: TMT intensity 128
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity value of the sample labelled with TMT reagent 128 [Curator:ACSORDAS]" xsd:string
+
+[Term]
+id: PRIDE:0000294
+name: TMT intensity 129
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity value of the sample labelled with TMT reagent 129 [Curator:ACSORDAS]" xsd:string
+
+[Term]
+id: PRIDE:0000295
+name: TMT intensity 130
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity value of the sample labelled with TMT reagent 130 [Curator:ACSORDAS]" xsd:string
+
+[Term]
+id: PRIDE:0000296
+name: TMT intensity 131
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The intensity value of the sample labelled with TMT reagent 131 [Curator:ACSORDAS]" xsd:string
+
+[Term]
+id: PRIDE:0000297
+name: Gene name
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Name of the gene that has been identified (if a nucleotide database was used to perform the search)" xsd:string
+
+[Term]
+id: PRIDE:0000298
+name: Modification Position in Protein Sequence
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Position of the modification in the protein sequence" xsd:string
+
+[Term]
+id: PRIDE:0000299
+name: Submitted Protein Accession
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "The original submitted protein accession for this identification. This might have been curated as part of the submission process." xsd:string
+
+[Term]
+id: PRIDE:0000300
+name: Gel spot identifier
+is_a: PRIDE:0000107 ! Gel spot parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-05-12T11:32:07Z xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"The gel spot's identifier. This identifier should resemble the one used in, for example, the associated publication.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000301
+name: Non-significant protein identification
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-05-12T11:39:59Z xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Identifies a protein identification that is not significant as defined by the search engine input parameters (for example the set threshold or the set required expect value).\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000302
+name: Non-significant peptide identification
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-05-12T11:50:00Z xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Identifies a peptide identification that is not significant as defined by the search engine input parameters (for example the set threshold or the set required expect value).\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000303
+name: Decoy hit
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-05-12T11:58:52Z xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Indicates that this protein identification comes from the used decoy database.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000304
+name: Gel identifier
+is_a: PRIDE:0000107 ! Gel spot parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-05-25T11:22:05Z xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"The gel's identifier. This identifier should resemble the one used in, for example, the associated publication.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000305
+name: Gel-based experiment
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-05-25T05:44:24Z xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Defines a gel-based proteomics experiment.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000306
+name: Imported from NCBI Peptidome
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/comment Experiment.[Curator:ACSORDAS] xsd:string
+
+[Term]
+id: PRIDE:0000307
+name: Quantification method
+is_a: PRIDE:0000391 ! Quantification parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:15:33Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Defines various quantification methods" xsd:string
+
+[Term]
+id: PRIDE:0000308
+name: Gel-based quantification method
+is_a: PRIDE:0000307 ! Quantification method
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:16:24Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes gel-based quantification methods" xsd:string
+
+[Term]
+id: PRIDE:0000309
+name: Gel-free quantification method
+is_a: PRIDE:0000307 ! Quantification method
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:17:03Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes gel-free quantification methods" xsd:string
+
+[Term]
+id: PRIDE:0000310
+name: Isotope labeling
+is_a: PRIDE:0000309 ! Gel-free quantification method
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:17:34Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes quantification techniques using isotope labeling" xsd:string
+
+[Term]
+id: PRIDE:0000311
+name: Selected Reaction Monitoring
+is_a: PRIDE:0000309 ! Gel-free quantification method
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:18:39Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes quantification techniques based on selected / multiple reaction monitoring" xsd:string
+
+[Term]
+id: PRIDE:0000312
+name: Label free
+is_a: PRIDE:0000309 ! Gel-free quantification method
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:19:54Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes label free quantification techniques." xsd:string
+
+[Term]
+id: PRIDE:0000313
+name: iTRAQ
+is_a: PRIDE:0000317 ! MS2 based isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:20:23Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Quantification technique developed by Applied Biosystems using various reporter ions that can be detected at MS2 level" xsd:string
+
+[Term]
+id: PRIDE:0000314
+name: TMT
+is_a: PRIDE:0000317 ! MS2 based isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:23:12Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Tandem Mass Tag is a MS2 based isotope labeling quantification technique" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Tandem Mass Tag" xsd:string
+
+[Term]
+id: PRIDE:0000315
+name: SILAC
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:25:50Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Stable isotope labeling with amino acids in cell culture" xsd:string
+
+[Term]
+id: PRIDE:0000316
+name: MS1 based isotope labeling
+is_a: PRIDE:0000310 ! Isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:28:05Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes isotope labeling quantification techniques detectable at MS1 level." xsd:string
+
+[Term]
+id: PRIDE:0000317
+name: MS2 based isotope labeling
+is_a: PRIDE:0000310 ! Isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:29:15Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes isotope labeling quantification techniques detectable at MS1 level." xsd:string
+
+[Term]
+id: PRIDE:0000318
+name: 18O
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:30:12Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The 18O quantification method relies on the differentiation of two samples using different stable isotopes of oxygen." xsd:string
+
+[Term]
+id: PRIDE:0000319
+name: ICAT
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:31:24Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Isotope-Coded Affinity Tags is an isotope labeling quantification technique and uses tags that consist of three elements." xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Isotope-Coded Affinity Tags" xsd:string
+
+[Term]
+id: PRIDE:0000320
+name: AQUA
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:32:46Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "AQUA is an isotope labeling based quantification technique that uses known peptides." xsd:string
+
+[Term]
+id: PRIDE:0000321
+name: ICPL
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:34:37Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses." xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Isotope-coded protein label" xsd:string
+
+[Term]
+id: PRIDE:0000322
+name: emPAI
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:36:57Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result." xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Exponentially Modified Protein Abundance Index" xsd:string
+
+[Term]
+id: PRIDE:0000323
+name: TIC
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:38:17Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The Total Ion Current (TIC) can be measured or calculated in order to target specific ions." xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Total Ion Current" xsd:string
+
+[Term]
+id: PRIDE:0000324
+name: Quantification reagent
+is_a: PRIDE:0000017 ! Sample description additional parameter
+is_a: PRIDE:0000391 ! Quantification parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:43:30Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "A reagent used for quantification." xsd:string
+
+[Term]
+id: PRIDE:0000325
+name: SILAC heavy
+is_a: PRIDE:0000328 ! SILAC reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:44:18Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The heavy label used in SILAC experiments." xsd:string
+
+[Term]
+id: PRIDE:0000326
+name: SILAC light
+is_a: PRIDE:0000328 ! SILAC reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:45:40Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The light reagent used in SILAC experiments." xsd:string
+
+[Term]
+id: PRIDE:0000327
+name: SILAC medium
+is_a: PRIDE:0000328 ! SILAC reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:47:09Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The medium weight reagent used in SILAC experiments." xsd:string
+
+[Term]
+id: PRIDE:0000328
+name: SILAC reagent
+is_a: PRIDE:0000433 ! Reagents used in Labeled Methods
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:48:42Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Reagent used in SILAC labeling." xsd:string
+
+[Term]
+id: PRIDE:0000329
+name: iTRAQ reagent
+is_a: PRIDE:0000433 ! Reagents used in Labeled Methods
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T09:49:46Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Reagent used in iTRAQ experiments." xsd:string
+
+[Term]
+id: PRIDE:0000330
+name: Arbitrary quantification unit
+is_a: PRIDE:0000392 ! Quantification unit
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2012-03-06T11:32:24Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "A unit describing values that can only be interpreted within the same spectrum but cannot be compared to values found in other spectra and or experiments." xsd:string
+
+[Term]
+id: PRIDE:0000331
+name: Counts
+is_a: PRIDE:0000330 ! Arbitrary quantification unit
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2012-03-06T11:33:13Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Quantification values reported as arbitrary counts (most often ion counts)." xsd:string
+
+[Term]
+id: PRIDE:0000337
+name: TMT reagent
+is_a: PRIDE:0000433 ! Reagents used in Labeled Methods
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:08:04Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Reagent used in TMT experiments." xsd:string
+
+[Term]
+id: PRIDE:0000344
+name: ICAT reagent
+is_a: PRIDE:0000433 ! Reagents used in Labeled Methods
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:19:04Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Reagent used in ICAT experiments." xsd:string
+
+[Term]
+id: PRIDE:0000345
+name: ICAT light reagent
+is_a: PRIDE:0000344 ! ICAT reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:19:38Z xsd:string
+
+[Term]
+id: PRIDE:0000346
+name: ICAT heavy reagent
+is_a: PRIDE:0000344 ! ICAT reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:19:38Z xsd:string
+
+[Term]
+id: PRIDE:0000347
+name: ICPL reagent
+is_a: PRIDE:0000433 ! Reagents used in Labeled Methods
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:22:42Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Reagent used in ICPL experiments." xsd:string
+
+[Term]
+id: PRIDE:0000348
+name: ICPL 0 reagent
+is_a: PRIDE:0000347 ! ICPL reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:24:42Z xsd:string
+
+[Term]
+id: PRIDE:0000349
+name: ICPL 4 reagent
+is_a: PRIDE:0000347 ! ICPL reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:24:42Z xsd:string
+
+[Term]
+id: PRIDE:0000350
+name: ICPL 6 reagent
+is_a: PRIDE:0000347 ! ICPL reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:24:42Z xsd:string
+
+[Term]
+id: PRIDE:0000351
+name: ICPL 10 reagent
+is_a: PRIDE:0000347 ! ICPL reagent
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:24:42Z xsd:string
+
+[Term]
+id: PRIDE:0000352
+name: Quantification value
+is_a: PRIDE:0000391 ! Quantification parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:26:08Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Parameters to report quantification values." xsd:string
+
+[Term]
+id: PRIDE:0000353
+name: Multiplexed quantification value
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+is_a: PRIDE:0000352 ! Quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:26:33Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Parameters describing quantification values for multiplexed samples." xsd:string
+
+[Term]
+id: PRIDE:0000354
+name: Intensity subsample 1
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000355
+name: Intensity subsample 2
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000356
+name: Intensity subsample 3
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000357
+name: Intensity subsample 4
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000358
+name: Intensity subsample 5
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000359
+name: Intensity subsample 6
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000360
+name: Intensity subsample 7
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000361
+name: Intensity subsample 8
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:27:30Z xsd:string
+
+[Term]
+id: PRIDE:0000362
+name: Other quantification value
+is_a: PRIDE:0000352 ! Quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:55:31Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Values from other quantification techniques." xsd:string
+
+[Term]
+id: PRIDE:0000363
+name: emPAI value
+is_a: PRIDE:0000004 ! Identification additional parameter
+is_a: PRIDE:0000362 ! Other quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:55:56Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The emPAI for the protein." xsd:string
+
+[Term]
+id: PRIDE:0000364
+name: TIC value
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+is_a: PRIDE:0000362 ! Other quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:57:36Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The Total Ion Count for the given entity." xsd:string
+
+[Term]
+id: PRIDE:0000365
+name: Multiplexed sample description
+is_a: PRIDE:0000017 ! Sample description additional parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T10:59:57Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Describes multiples subsamples." xsd:string
+
+[Term]
+id: PRIDE:0000366
+name: Contains multiple subsamples
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:00:32Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Identifies samples that are made up of multiplexed subsamples." xsd:string
+
+[Term]
+id: PRIDE:0000367
+name: Subsample 1 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000368
+name: Subsample 2 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000369
+name: Subsample 3 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000370
+name: Subsample 4 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000371
+name: Subsample 5 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000372
+name: Subsample 6 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000373
+name: Subsample 7 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000374
+name: Subsample 8 description
+is_a: PRIDE:0000365 ! Multiplexed sample description
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:02:56Z xsd:string
+
+[Term]
+id: PRIDE:0000375
+name: Standard deviation subsample 1
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000376
+name: Standard deviation subsample 2
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000377
+name: Standard deviation subsample 3
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000378
+name: Standard deviation subsample 4
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000379
+name: Standard deviation subsample 5
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000380
+name: Standard deviation subsample 6
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000381
+name: Standard deviation subsample 7
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000382
+name: Standard deviation subsample 8
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000383
+name: Standard error subsample 1
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000384
+name: Standard error subsample 2
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000385
+name: Standard error subsample 3
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000386
+name: Standard error subsample 4
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000387
+name: Standard error subsample 5
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000388
+name: Standard error subsample 6
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000389
+name: Standard error subsample 7
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000390
+name: Standard error subsample 8
+is_a: PRIDE:0000353 ! Multiplexed quantification value
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-22T11:04:09Z xsd:string
+
+[Term]
+id: PRIDE:0000391
+name: Quantification parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-26T03:59:31Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Quantification related parameter." xsd:string
+
+[Term]
+id: PRIDE:0000392
+name: Quantification unit
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+is_a: PRIDE:0000004 ! Identification additional parameter
+is_a: PRIDE:0000391 ! Quantification parameter
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-26T04:00:17Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Unit used to report quantification results." xsd:string
+
+[Term]
+id: PRIDE:0000393
+name: Relative quantification unit
+is_a: PRIDE:0000392 ! Quantification unit
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-26T04:01:53Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Unit to report relative quantification results." xsd:string
+
+[Term]
+id: PRIDE:0000394
+name: Absolute quantification unit
+is_a: PRIDE:0000392 ! Quantification unit
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-26T04:02:29Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Unit used to describe absolute quantification results." xsd:string
+
+[Term]
+id: PRIDE:0000395
+name: Ratio
+is_a: PRIDE:0000393 ! Relative quantification unit
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-26T04:12:44Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Quantification results represent ratios." xsd:string
+
+[Term]
+id: PRIDE:0000396
+name: Copies per cell
+is_a: PRIDE:0000394 ! Absolute quantification unit
+property_value: created:by "jg" xsd:string
+property_value: creation:date 2011-07-26T04:13:32Z xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Quantification results are reported as copies per cell." xsd:string
+
+[Term]
+id: PRIDE:0000397
+name: Data derived from previous dataset
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "One dataset is a reanalysis of previously published data" xsd:string
+
+[Term]
+id: PRIDE:0000398
+name: No PTMs are included in the dataset
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "No post-translational-modifications are been included in the identified peptides of one dataset" xsd:string
+
+[Term]
+id: PRIDE:0000399
+name: Accepted manuscript
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "A dataset has one associated manuscript, which has been accepted but no PubMedID is available yet." xsd:string
+
+[Term]
+id: PRIDE:0000400
+name: Reference
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Literature reference associated with one dataset (including the authors, title, year and journal details). The value field can be used for the PubMedID, or to specify if one manuscript is just submitted or accepted, but it does not have a PubMedID yet." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000401
+name: Experimental information has been refined since this experiment was originally made publicly available
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "This means that the experimental information available has been improved, for instance precursor charges were added." xsd:string
+
+[Term]
+id: PRIDE:0000402
+name: Original data
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "One dataset is not a reanalysis of previously published data" xsd:string
+
+[Term]
+id: PRIDE:0000403
+name: Associated file URI
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI of one external file associated to the PRIDE experiment (maybe through a PX submission)." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000404
+name: Associated raw file URI
+is_a: PRIDE:0000403 ! Associated file URI
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission)." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000405
+name: Submit PRIDE Experiment to IntAct
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "rc" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Indicates that this PRIDE experiment contains interaction data and should be submitted to IntAct (maybe through a PX submission)." xsd:string
+
+[Term]
+id: PRIDE:0000406
+name: ProteomeCentral dataset URI
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"URI associated to one PX submission in ProteomeCentral.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000407
+name: Result file URI
+is_a: PRIDE:0000403 ! Associated file URI
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"URI of one file labeled as 'Result', associated to one PX submission.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000408
+name: Search engine output file URI
+is_a: PRIDE:0000403 ! Associated file URI
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"URI of one search engine output file associated to one PX submission.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000409
+name: Peak list file URI
+is_a: PRIDE:0000403 ! Associated file URI
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"URI of one of one search engine output file associated to one PX submission.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000410
+name: 'Other' type file URI
+is_a: PRIDE:0000403 ! Associated file URI
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"URI of one file labeled as 'Other', associated to one PX submission.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000411
+name: Dataset FTP location
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"FTP location of one entire PX data set.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000412
+name: Dataset with no associated published manuscript
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"A dataset which does not have an associated published manuscript.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000413
+name: Instrument name
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"The value of this term (related to one PRIDE experiment) can be used to provide the name of instruments that are not included in any other CV yet.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000414
+name: Peer-reviewed dataset
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Dataset has been peer-reviewed somehow.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000415
+name: Non peer-reviewed dataset
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Dataset that has not been peer-reviewed by any means.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000416
+name: Supported dataset by repository
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"The PX dataset is supported by and is available through the submission repository.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000417
+name: Unsupported dataset by repository
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"The PX dataset is not fully supported by the submission repository.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000418
+name: Other member of protein ambiguity group
+is_a: PRIDE:0000004 ! Identification additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Accession of another protein that was assigned to the same protein ambiguity group. This term must be repeated to include all protein group members, except for itself.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000419
+name: b ion -H3PO4
+is_a: PRIDE:0000194 ! b ion
+property_value: http://purl.obolibrary.org/obo/def "\\"B ion type with a neutral loss of a phosphate molecule.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "b fragment ion -H3PO4" xsd:string
+
+[Term]
+id: PRIDE:0000420
+name: b ion -2H3PO4
+is_a: PRIDE:0000194 ! b ion
+property_value: http://purl.obolibrary.org/obo/def "\\"B ion type with a neutral loss of 2 phosphate molecules.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "b fragment ion -2H3PO4" xsd:string
+
+[Term]
+id: PRIDE:0000421
+name: b ion -3H3PO4
+is_a: PRIDE:0000194 ! b ion
+property_value: http://purl.obolibrary.org/obo/def "\\"B ion type with a neutral loss of 3 phosphate molecules.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "b fragment ion -3H3PO4" xsd:string
+
+[Term]
+id: PRIDE:0000422
+name: y ion -H3PO4
+is_a: PRIDE:0000193 ! y ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Y ion type with a neutral loss of a phosphate molecule.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "y fragment ion -H3PO4" xsd:string
+
+[Term]
+id: PRIDE:0000423
+name: y ion -2H3PO4
+is_a: PRIDE:0000193 ! y ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Y ion type with a neutral loss of 2 phosphate molecules.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "y fragment ion -2H3PO4" xsd:string
+
+[Term]
+id: PRIDE:0000424
+name: y ion -3H3PO4
+is_a: PRIDE:0000193 ! y ion
+property_value: http://purl.obolibrary.org/obo/def "\\"Y ion type with a neutral loss of 3 phosphate molecules.\\" [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "y fragment ion -3H3PO4" xsd:string
+
+[Term]
+id: PRIDE:0000425
+name: MS1 intensity based label-free quantification method
+is_a: PRIDE:0000309 ! Gel-free quantification method
+property_value: created:by "rw" xsd:string
+
+[Term]
+id: PRIDE:0000426
+name: Mass spectrometry proteomics experimental strategy
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The basic mass spectrometry strategy used in the experiment." xsd:string
+
+[Term]
+id: PRIDE:0000427
+name: Top-down proteomics
+is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Proteins enter directly the mass spectrometer." xsd:string
+
+[Term]
+id: PRIDE:0000428
+name: Bottom-up proteomics
+is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Proteins go through proteolytic digestion yielding peptides before entering the mass spectrometer." xsd:string
+
+[Term]
+id: PRIDE:0000429
+name: MS/MS shotgun proteomics
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Bottom-up MS/MS shotgun experiment with data-dependent acquisition, using nomenclature in PMID 20622845, the method of choice for the a priori identification of the protein components of complex samples." xsd:string
+
+[Term]
+id: PRIDE:0000430
+name: Chemical cross-linking coupled with mass spectrometry proteomics
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Chemical cross-linking of proteins coupled with mass spectrometry analysis (CXMS) to provide information about protein folding and protein-protein interaction." xsd:string
+
+[Term]
+id: PRIDE:0000431
+name: Affinity purification coupled with mass spectrometry proteomics
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Affinity purification combined with mass spectrometry (AP-MS) has been used to understand protein-complex composition and protein-protein interaction." xsd:string
+
+[Term]
+id: PRIDE:0000432
+name: Dataset with its publication pending
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "rw" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "A dataset which has an associated manuscript pending for publication." xsd:string
+
+[Term]
+id: PRIDE:0000433
+name: Reagents used in Labeled Methods
+is_a: PRIDE:0000324 ! Quantification reagent
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Labeled reagents used for quantification." xsd:string
+
+[Term]
+id: PRIDE:0000434
+name: Unlabeled sample
+is_a: PRIDE:0000324 ! Quantification reagent
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "An unlabeled sample used for quantification." xsd:string
+
+[Term]
+id: PRIDE:0000435
+name: Peptide counting
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Use of the number of peptides for an identified protein as a measure of abundance. Method reviewed in PMID 22772140." xsd:string
+
+[Term]
+id: PRIDE:0000436
+name: Spectrum counting
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Use of the number of PSMs for an identified protein as a measure of abundance. Method reviewed in PMID 22772140" xsd:string
+
+[Term]
+id: PRIDE:0000437
+name: Protein Abundance Index - PAI
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140" xsd:string
+
+[Term]
+id: PRIDE:0000438
+name: Spectrum count/molecular weight
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Spectrum count is divided by the molecular weight of a protein. Method reviewed in PMID 22772140" xsd:string
+
+[Term]
+id: PRIDE:0000439
+name: Spectral Abundance Factor - SAF
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "The spectrum count is normalized for protein length. Method reviewed in PMID 22772140" xsd:string
+
+[Term]
+id: PRIDE:0000440
+name: Normalized Spectral Abundance Factor - NSAF
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140" xsd:string
+
+[Term]
+id: PRIDE:0000441
+name: APEX - Absolute Protein Expression
+is_a: PRIDE:0000312 ! Label free
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Spectrum counting method using machine learning classification to derive peptide detection probabilities to predict detectable peptides for any protein. Method reviewed in PMID 22772140" xsd:string
+
+[Term]
+id: PRIDE:0000442
+name: Tissue not applicable to dataset
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "rw" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Tissue not applicable to dataset.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000443
+name: Original NCBI Peptidome submission files
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"The NCBI FTP location of the original Sample - Experiment level Peptidome submission data.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000444
+name: PRIDE experiment accession
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Accession number of a given PRIDE experiment (called assay in the PRIDE-3 system).\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000445
+name: PRIDE Cluster score
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"It is an integer that gives an indication about the quality of a peptide spectrum match in PRIDE-Q. It uses the PRIDE-Cluster algorithm (described in PMID: 23361086) and different criteria to assign it (number of spectra in a cluster, ratio of the predominant peptide identification in the cluster, etc).\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000446
+name: PRIDE peptide score
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Score used in PRIDE-Q to give an indication of the quality of a peptide spectrum match. It is described in PMID:16964243.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000447
+name: SWATH MS
+is_a: PRIDE:0000450 ! Data-independent acquisition
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"ABsciex Data Independent Acquisition method that consists of unfractionated samples acquisition by using duty cycles adapted to HPLC chromatography, acquiring sequential wide fragment ions spectra, typically covering the precursor mass space from 400 m/z to 1200 m/z on each duty cycle. Acquired data is interrogated by using libraries of peptide coordinates (normalised elution time, fragment ion masses and intensities). It is described in PMID:22261725.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000448
+name: Additional associated raw file URI
+is_a: PRIDE:0000403 ! Associated file URI
+property_value: created:by "jav" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Additional URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission). The URI is provided via an additional resource to PRIDE." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000449
+name: Gel image file URI
+is_a: PRIDE:0000403 ! Associated file URI
+property_value: created:by "tt" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI of one gel image file associated to one PX submission." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000450
+name: Data-independent acquisition
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Predefined m/z ranges are interrogated either by fragmenting all ions entering the mass spectrometer at every single point in chromatographic time; or by dividing the m/z range into smaller m/z ranges for isolation and fragmentation. See review in PMID:24281846.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000451
+name: MSE
+is_a: PRIDE:0000450 ! Data-independent acquisition
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Waters data independent acquisition method based on UPLC chromatography and MS acquisition of cycles of two spectra, in low and high energy respectively, in a QQ-TOF instrument. It is described in PMID: 16755610.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000452
+name: HDMSE
+is_a: PRIDE:0000450 ! Data-independent acquisition
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Waters data independent acquisition method, which consists of using an additional on-line separation dimension (Ion Mobility drift) and an MSE acquisition. It is described in PMID: 22811061.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000453
+name: PAcIFIC
+is_a: PRIDE:0000450 ! Data-independent acquisition
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"Precursor Acquisition Independent From Ion Count. A Data Independent Acquisition method performed in ion traps that consists of the acquisition of 2.5 m/z width sequential windows over several injections of the same material, until a precursor m/z range of about 400 to 1200 m/z is covered. It is described in PMID: 21341720.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000454
+name: All-ion fragmentation
+is_a: PRIDE:0000450 ! Data-independent acquisition
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "\\"MS Data Independent Acquisition performed in Thermo Orbitrap instruments. It consists of the acquisition of cycles of two spectra, a precursor mass MS1 spectrum, and a fragment ions MS2 spectrum where a wide mass filter (typically over 800 m/z) is applied to the precursors. It is described in PMID: 20610777.\\" [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000455
+name: Protein-protein cross-linking experiment
+is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Protein-protein cross-linking experiment to provide information about protein folding and protein-protein interaction." xsd:string
+
+[Term]
+id: PRIDE:0000456
+name: Protein-RNA cross-linking experiment
+is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Protein-RNA cross-linking experiment to provide information about Protein-RNA interaction." xsd:string
+
+[Term]
+id: PRIDE:0000457
+name: Experiment Type
+property_value: http://purl.obolibrary.org/obo/comment "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method. [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000458
+name: Metaproteomics
+is_a: PRIDE:0000457 ! Experiment Type
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "Studying all protein samples of diverse host environments like the human body, soil or sea water. [PRIDE:PRIDE]" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Community Proteomics" xsd:string
+property_value: http://purl.obolibrary.org/obo/synonym "Environmental Proteomics" xsd:string
+
+[Term]
+id: PRIDE:0000459
+name: Human Metaproteomics
+is_a: PRIDE:0000458 ! Metaproteomics
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "Investigating both human host proteins and associated microbial proteins at the same time from human samples. [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000460
+name: Proteogenomics
+is_a: PRIDE:0000457 ! Experiment Type
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies. [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000461
+name: Multi-omics study
+is_a: PRIDE:0000457 ! Experiment Type
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples. [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000462
+name: SONAR
+is_a: PRIDE:0000450 ! Data-independent acquisition
+property_value: created:by "acsordas" xsd:string
+property_value: http://purl.obolibrary.org/obo/def "Waters data independent acquisition method. [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000463
+name: Parallel Reaction Monitoring (PRM)
+is_a: PRIDE:0000311 ! Selected Reaction Monitoring
+property_value: http://purl.obolibrary.org/obo/def "Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis. [PRIDE:PRIDE]" xsd:string
+
+[Term]
+id: PRIDE:0000464
+name: Fasta file URI
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI of one external Fasta file associated to the PRIDE experiment (maybe through a PX submission)." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000465
+name: Spectral Library file URI
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI of one external Spectral Library file associated to the PRIDE experiment (maybe through a PX submission)." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000466
+name: Quantification result file URI
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI of one external Quantification file associated to the PRIDE experiment (maybe through a PX submission)." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000467
+name: MS Image file URI
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI of one external Mass spectrometry Image file associated to the PRIDE experiment (maybe through a PX submission)." xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000468
+name: Aspera Protocol
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI for an Aspera Download Protocol" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000469
+name: FTP Protocol
+is_a: PRIDE:0000006 ! Experiment additional parameter
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI for an FTP Download Protocol" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+
+[Term]
+id: PRIDE:0000470
+name: File Properties
+def: "PRIDE File Properties for all type of files." []
+created_by: ypriverol
+creation_date: 2018-08-29T14:26:28Z
+
+[Term]
+id: PRIDE:0000471
+name: MS File Properties
+def: "Properties for MS , Peaks files" []
+is_a: PRIDE:0000470 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:31:06Z
+
+[Term]
+id: PRIDE:0000472
+name: MS min charge
+def: "Minimum charge for all precursor in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:33:01Z
+
+[Term]
+id: PRIDE:0000473
+name: MS max charge
+def: "Maximum charge for all precursor in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:35:57Z
+
+[Term]
+id: PRIDE:0000474
+name: MS min RT
+def: "Minimum retention time in the File." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:36:50Z
+
+[Term]
+id: PRIDE:0000475
+name: MS max RT
+def: "Maximum retention time in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:37:30Z
+
+[Term]
+id: PRIDE:0000476
+name: MS min MZ
+def: "Minimum precursor mass to charge in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:38:19Z
+
+[Term]
+id: PRIDE:0000477
+name: MS max MZ
+def: "Maximum precursor mass to charge in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:39:06Z
+
+[Term]
+id: PRIDE:0000478
+name: Number of scans
+def: "Total number of scans in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:40:05Z
+
+[Term]
+id: PRIDE:0000479
+name: MS scan range
+def: "Range of scan number in the ms file." []
+is_a: PRIDE:0000471 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:41:09Z
+
+[Term]
+id: PRIDE:0000480
+name: Number of MS
+def: "Number of MS in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:43:09Z
+
+[Term]
+id: PRIDE:0000481
+name: Number of MS1 spectra
+def: "Number of MS1 spectra." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:45:21Z
+
+[Term]
+id: PRIDE:0000482
+name: Number of MS2 spectra
+def: "Number of MS2 spectra in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:46:01Z
+
+[Term]
+id: PRIDE:0000483
+name: Number of MS3 spectra
+def: "Total number of MS3 spectra in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:48:35Z
+
+[Term]
+id: PRIDE:0000484
+name: Number of MS4
+def: "Total number of MS4 in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:49:10Z
+
+[Term]
+id: NCIT:C69199
+name: Content Creation date
+def: "The date on which data creation began [NCI]" []
+is_a: PRIDE:0000470 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:52:49Z
+
+[Term]
+id: PRIDE:0000000
+name: Reference additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
+
+
+
+
+[Typedef]
+id: http://purl.obolibrary.org/obo/PRIDE_part_of
+name: part_of
+is_transitive: true
+

@@ -3006,9 +3006,147 @@ created_by: ypriverol
 [Term]
 id: PRIDE:0000469
 name: FTP Protocol
-comment: URI for an FTP Download Protocol
-xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
-created_by: ypriverol
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI for an FTP Download Protocol" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
 
+[Term]
+id: PRIDE:0000470
+name: File Properties
+def: "PRIDE File Properties for all type of files." []
+created_by: ypriverol
+creation_date: 2018-08-29T14:26:28Z
+
+[Term]
+id: PRIDE:0000471
+name: MS File Properties
+def: "Properties for MS , Peaks files" []
+is_a: PRIDE:0000470 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:31:06Z
+
+[Term]
+id: PRIDE:0000472
+name: MS min charge
+def: "Minimum charge for all precursor in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:33:01Z
+
+[Term]
+id: PRIDE:0000473
+name: MS max charge
+def: "Maximum charge for all precursor in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:35:57Z
+
+[Term]
+id: PRIDE:0000474
+name: MS min RT
+def: "Minimum retention time in the File." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:36:50Z
+
+[Term]
+id: PRIDE:0000475
+name: MS max RT
+def: "Maximum retention time in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:37:30Z
+
+[Term]
+id: PRIDE:0000476
+name: MS min MZ
+def: "Minimum precursor mass to charge in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:38:19Z
+
+[Term]
+id: PRIDE:0000477
+name: MS max MZ
+def: "Maximum precursor mass to charge in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:39:06Z
+
+[Term]
+id: PRIDE:0000478
+name: Number of scans
+def: "Total number of scans in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:40:05Z
+
+[Term]
+id: PRIDE:0000479
+name: MS scan range
+def: "Range of scan number in the ms file." []
+is_a: PRIDE:0000471 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:41:09Z
+
+[Term]
+id: PRIDE:0000480
+name: Number of MS
+def: "Number of MS in the file." []
+is_a: PRIDE:0000471 ! MS File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:43:09Z
+
+[Term]
+id: PRIDE:0000481
+name: Number of MS1 spectra
+def: "Number of MS1 spectra." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:45:21Z
+
+[Term]
+id: PRIDE:0000482
+name: Number of MS2 spectra
+def: "Number of MS2 spectra in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:46:01Z
+
+[Term]
+id: PRIDE:0000483
+name: Number of MS3 spectra
+def: "Total number of MS3 spectra in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:48:35Z
+
+[Term]
+id: PRIDE:0000484
+name: Number of MS4
+def: "Total number of MS4 in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:49:10Z
+
+[Term]
+id: NCIT:C69199
+name: Content Creation date
+def: "The date on which data creation began [NCI]" []
+is_a: PRIDE:0000470 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:52:49Z
+
+[Term]
+id: PRIDE:0000000
+name: Reference additional parameter
+property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
+
+
+
+[Typedef]
+id: http://purl.obolibrary.org/obo/PRIDE_part_of
+name: part_of
+is_transitive: true
 
