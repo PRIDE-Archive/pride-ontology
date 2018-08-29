@@ -3114,14 +3114,6 @@ created_by: ypriverol
 creation_date: 2018-08-29T14:48:35Z
 
 [Term]
-id: PRIDE:0000484
-name: Number of MS4
-def: "Total number of MS4 in the file." []
-is_a: PRIDE:0000480 ! Number of MS
-created_by: ypriverol
-creation_date: 2018-08-29T14:49:10Z
-
-[Term]
 id: NCIT:C69199
 name: Content Creation date
 def: "The date on which data creation began [NCI]" []
