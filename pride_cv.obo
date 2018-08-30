@@ -3131,6 +3131,22 @@ created_by: ypriverol
 creation_date: 2018-08-29T14:52:49Z
 
 [Term]
+id: PRIDE:0000484
+name: RT range
+def: "Retention time range in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:48:35Z
+
+[Term]
+id: PRIDE:0000485
+name: Mz range
+def: "Mz range in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:48:35Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
