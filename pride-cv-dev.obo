@@ -3063,11 +3063,12 @@ name: MS max MZ
 def: "Maximum precursor mass to charge in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
 created_by: ypriverol
+
 creation_date: 2018-08-29T14:39:06Z
 
 [Term]
 id: PRIDE:0000478
-name: Number of scans
+name: Number of scan
 def: "Total number of scans in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
 created_by: ypriverol
@@ -3122,11 +3123,383 @@ created_by: ypriverol
 creation_date: 2018-08-29T14:52:49Z
 
 [Term]
+id: PRIDE:0000484
+name: Result analysis parameters
+def: "The result analysis parameters is a term to group all the parameters for proteomics data analysis." []
+created_by: yperez
+creation_date: 2018-09-05T09:08:58Z
+
+[Term]
+id: PRIDE:0000485
+name: Global result parameters
+def: "Result analysis parameters share by multiple search engine and Quantiative tools." []
+is_a: PRIDE:0000484 ! Result analysis parameters
+created_by: yperez
+creation_date: 2018-09-05T09:11:41Z
+
+[Term]
+id: PRIDE:0000486
+name: Tool specific analysis parameters
+is_a: PRIDE:0000484 ! Result analysis parameters
+created_by: yperez
+creation_date: 2018-09-05T09:14:02Z
+
+[Term]
+id: PRIDE:0000487
+name: Min charge
+def: "Minimum charge of precursor to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:26:36Z
+
+[Term]
+id: PRIDE:0000488
+name: Max charge
+def: "Maximum charge of precursor to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:28:29Z
+
+[Term]
+id: PRIDE:0000489
+name: Min RT
+def: "Min Retention time for precursor to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:30:51Z
+
+[Term]
+id: PRIDE:0000490
+name: Max RT
+def: "Maximum precursor RT to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:31:35Z
+
+[Term]
+id: PRIDE:0000491
+name: Number of missed cleavages
+def: "Number of missed cleavages." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:37:09Z
+
+[Term]
+id: PRIDE:0000492
+name: Max peptide AA length
+def: "Max peptide amino acid length for search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:43:03Z
+
+[Term]
+id: PRIDE:0000493
+name: Min peptide AA length
+def: "Minimum peptide amino acid length for search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:43:54Z
+
+[Term]
+id: PRIDE:0000494
+name: Min precursor MZ
+def: "Min precursor MZ (mass) for precursor to search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:47:03Z
+
+[Term]
+id: PRIDE:0000495
+name: Max precursor MZ
+def: "Max precursor MZ (mass) for precursor to search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:48:08Z
+
+[Term]
+id: PRIDE:0000496
+name: Min peak length
+def: "Min number of peaks in the spectrum to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+[Term]
+id: PRIDE:0000497
+name: MaxQuant parameters
+def: "MaxQuant and Andromeda parameters." []
+is_a: PRIDE:0000486 ! Tool specific analysis parameters
+created_by: yperez
+creation_date: 2018-09-05T10:42:04Z
+
+[Term]
+id: PRIDE:0000498
+name: Use MS1 centroids
+def: "Use the MS1 centroids." []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:42:48Z
+
+[Term]
+id: PRIDE:0000499
+name: Use MS2 centroids
+def: "Use MS2 centroids." []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:44:38Z
+
+[Term]
+id: PRIDE:0000500
+name: Cut peaks
+def: "Cut peaks" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000501
+name: Gap Scans
+def: "Gap Scans" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000502
+name: Match Type (matchType)
+def: "Match Type" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000503
+name: Centroid Match Tolerance (centroidMatchTol)
+def: "Centroid Match Tolerance" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000504
+name: Centroid Match Tolerance in PPM (centroidMatchTolInPpm)
+def: "Centroid Match Tolerance in PPM" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000505
+name: Centroid Half Width (centroidHalfWidth)
+def: "Centroid Half Width" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000506
+name: Centroid Half Width in PPM (centroidHalfWidthInPpm)
+def: "Centroid Half Width in PPM" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000507
+name: Valley Factor (valleyFactor)
+def: "Valley Factor" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000508
+name: Advanced Peak Splitting (advancedPeakSplitting)
+def: "Advanced Peak Splitting" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000509
+name: Isotope Valley Factor (isotopeValleyFactor)
+def: "Isotope Valley Factor" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000510
+name: MS Instrument (msInstrument)
+def: "MS Instrument" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000511
+name: Intensity Determination (intensityDetermination)
+def: "Intensity Determination" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+
+[Term]
+id: PRIDE:0000511
+name: Re Quantify (reQuantify)
+def: "Re Quantify" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+
+[Term]
+id: PRIDE:0000512
+name: LFQ Skip Norm (lfqSkipNorm)
+def: "LFQ Skip Norm" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+
+[Term]
+id: PRIDE:0000512
+name: LFQ Skip Norm (lfqSkipNorm)
+def: "LFQ Skip Norm" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000513
+name: LFQ Min Edges Per Node  (lfqMinEdgesPerNode)
+def: "LFQ Min Edges Per Node" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000514
+name: LFQ Avg Edges Per Node  (lfqAvEdgesPerNode)
+def: "LFQ Avg Edges Per Node" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000515
+name: LFQ Max Features  (lfqMaxFeatures)
+def: "LFQ Max Features" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000516
+name: LFQ Max Features  (lfqMaxFeatures)
+def: "LFQ Max Features" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+
+[Term]
+id: PRIDE:0000517
+name: LFQ Fast (fastLfq)
+def: "LFQ Fast" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+
+[Term]
+id: PRIDE:0000517
+name: LFQ Restrict Features (lfqRestrictFeatures)
+def: "LFQ Restrict Features" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+
+[Term]
+id: PRIDE:0000518
+name: LFQ Min Ratio Count (lfqMinRatioCount)
+def: "LFQ Min Ratio Count" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000519
+name: Neucode Max PPM (neucodeMaxPpm)
+def: "Neucode Max PPM" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000520
+name: Neucode Resolution (neucodeResolution)
+def: "Neucode Resolution" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000521
+name: Neucode Resolution in MDA (neucodeResolutionInMda)
+def: "Neucode Resolution in MDA" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000522
+name: Neucode In Silico Low Res (neucodeInSilicoLowRes)
+def: "Neucode In Silico Low Res" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000523
+name: Use Norm Ratios For Hybrid LQF (useNormRatiosForHybridLfq)
+def: "Use Norm Ratios For Hybrid LQF" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000524
+name: Multiplicity (multiplicity)
+def: "Multiplicity" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000525
+name: Enzymes First Search (enzymesFirstSearch)
+def: "Enzymes First Search" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+[Term]
+id: PRIDE:0000526
+name: Use Enzyme First Search (useEnzymeFirstSearch)
+def: "Enzymes First Search" []
+is_a: PRIDE:0000497 ! MaxQuant parameters
+created_by: yperez
+creation_date: 2018-09-05T10:45:49Z
+
+
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
-
-
 
 
 [Typedef]

@@ -3131,6 +3131,175 @@ created_by: ypriverol
 creation_date: 2018-08-29T14:52:49Z
 
 [Term]
+id: PRIDE:0000484
+name: Result analysis parameters
+def: "The result analysis parameters is a term to group all the parameters for proteomics data analysis." []
+created_by: yperez
+creation_date: 2018-09-05T09:08:58Z
+
+[Term]
+id: PRIDE:0000485
+name: Global result parameters
+def: "Result analysis parameters share by multiple search engine and Quantiative tools." []
+is_a: PRIDE:0000484 ! Result analysis parameters
+created_by: yperez
+creation_date: 2018-09-05T09:11:41Z
+
+[Term]
+id: PRIDE:0000486
+name: Tool specific analysis parameters
+is_a: PRIDE:0000484 ! Result analysis parameters
+created_by: yperez
+creation_date: 2018-09-05T09:14:02Z
+
+[Term]
+id: PRIDE:0000487
+name: Min charge
+def: "Minimum charge of precursor to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:26:36Z
+
+[Term]
+id: PRIDE:0000488
+name: Max charge
+def: "Maximum charge of precursor to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:28:29Z
+
+[Term]
+id: PRIDE:0000489
+name: Min RT
+def: "Min Retention time for precursor to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:30:51Z
+
+[Term]
+id: PRIDE:0000490
+name: Max RT
+def: "Maximum precursor RT to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:31:35Z
+
+[Term]
+id: PRIDE:0000491
+name: Number of missed cleavages
+def: "Number of missed cleavages." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:37:09Z
+
+[Term]
+id: PRIDE:0000492
+name: Max peptide AA length
+def: "Max peptide amino acid length for search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:43:03Z
+
+[Term]
+id: PRIDE:0000493
+name: Min peptide AA length
+def: "Minimum peptide amino acid length for search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:43:54Z
+
+[Term]
+id: PRIDE:0000494
+name: Min precursor MZ
+def: "Min precursor MZ (mass) for precursor to search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:47:03Z
+
+[Term]
+id: PRIDE:0000495
+name: Max precursor MZ
+def: "Max precursor MZ (mass) for precursor to search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T09:48:08Z
+
+[Term]
+id: PRIDE:0000496
+name: Min peak length
+def: "Min number of peaks in the spectrum to be search." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+[Term]
+id: PRIDE:0000497
+name: Use Multi Modification
+def: "Use Multi Modification" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+[Term]
+id: PRIDE:0000498
+name: Use Additional Variable Modifications
+def: "Use Additional Variable Modifications" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+[Term]
+id: PRIDE:0000499
+name: Do Mass Filtering
+def: "Do Mass Filtering" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+id: PRIDE:0000500
+name: Intensity Threshold
+def: "Intensity Threshold" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+id: PRIDE:0000501
+name: Max Labeled AA
+def: "Max Labeled AA" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+id: PRIDE:0000501
+name: Max Labeled AA
+def: "Max Labeled AA" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+id: PRIDE:0000502
+name: Max Number of Modifications (PTMs)
+def: "Max Number of Modifications (PTMs)" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+id: PRIDE:0000503
+name: First Search Precursor Tolerance
+def: "First Search Precursor Tolerance" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+id: PRIDE:0000504
+name: Main Search Precursor Tolerance
+def: "Main Search Precursor Tolerance" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
