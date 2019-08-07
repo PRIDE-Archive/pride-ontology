@@ -3122,15 +3122,42 @@ created_by: ypriverol
 creation_date: 2018-08-29T14:52:49Z
 
 [Term]
+id: PRIDE:0000484
+name: RT range
+def: "Retention time range in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:48:35Z
+
+[Term]
+id: PRIDE:0000485
+name: Mz range
+def: "Mz range in the file." []
+is_a: PRIDE:0000480 ! Number of MS
+created_by: ypriverol
+creation_date: 2018-08-29T14:48:35Z
+
+[Term]
+id: PRIDE:0000486
+name: File size
+def: "The size of the file in MB." []
+relationship: has_units UO:0000235 ! megabyte
+is_a: PRIDE:0000470 ! File Properties
+created_by: mwalzer
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
-
-
 
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
 name: part_of
 is_transitive: true
+
+[Typedef]
+id: has_units
+name: has_units
 
