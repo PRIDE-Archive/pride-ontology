@@ -3256,6 +3256,7 @@ is_a: PRIDE:0000485 ! Global result parameters
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
 
+[Term]
 id: PRIDE:0000500
 name: Intensity Threshold
 def: "Intensity Threshold" []
@@ -3263,6 +3264,7 @@ is_a: PRIDE:0000485 ! Global result parameters
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
 
+[Term]
 id: PRIDE:0000501
 name: Max Labeled AA
 def: "Max Labeled AA" []
@@ -3270,6 +3272,7 @@ is_a: PRIDE:0000485 ! Global result parameters
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
 
+[Term]
 id: PRIDE:0000501
 name: Max Labeled AA
 def: "Max Labeled AA" []
@@ -3277,6 +3280,7 @@ is_a: PRIDE:0000485 ! Global result parameters
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
 
+[Term]
 id: PRIDE:0000502
 name: Max Number of Modifications (PTMs)
 def: "Max Number of Modifications (PTMs)" []
@@ -3284,6 +3288,7 @@ is_a: PRIDE:0000485 ! Global result parameters
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
 
+[Term]
 id: PRIDE:0000503
 name: First Search Precursor Tolerance
 def: "First Search Precursor Tolerance" []
@@ -3291,12 +3296,53 @@ is_a: PRIDE:0000485 ! Global result parameters
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
 
+[Term]
 id: PRIDE:0000504
 name: Main Search Precursor Tolerance
 def: "Main Search Precursor Tolerance" []
 is_a: PRIDE:0000485 ! Global result parameters
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
+
+[Term]
+id: PRIDE:0000505
+name: Individual Accession
+def: Accession or Code of the individual in the sample
+is_a: PRIDE:0000017 !  Sample description additional parameter
+created_by: yperez
+creation_date: 2018-09-05T10:38:29Z
+
+[Term]
+id: PRIDE:0000506
+name: Number identified proteins
+def: "Total number of reported proteins. This property can be used to report the number of proteins identified in an Assay or experiment." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2019-06-06T13:51:41Z
+
+[Term]
+id: PRIDE:0000507
+name: Number of identified peptides
+def: "Total number of identified peptides in an experiment or assay." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2019-06-06T13:53:23Z
+
+[Term]
+id: PRIDE:0000508
+name: Number of modified peptides
+def: "The total number of peptides identified with post-translational modifications." []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2019-06-06T13:54:46Z
+
+[Term]
+id: PRIDE:0000509
+name: Number of PSMs
+def: "Total number of reported identified Peptide Spectrum matches (PSMs)" []
+is_a: PRIDE:0000485 ! Global result parameters
+created_by: yperez
+creation_date: 2019-06-06T13:56:00Z
 
 
 [Term]
