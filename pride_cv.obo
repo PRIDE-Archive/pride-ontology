@@ -3345,6 +3345,16 @@ created_by: yperez
 creation_date: 2019-06-06T13:56:00Z
 
 [Term]
+id: PRIDE:0000510
+name: File size
+def: "The size of the file in MB." []
+relationship: has_units UO:0000235 ! megabyte
+is_a: PRIDE:0000470 ! File Properties
+created_by: mwalzer
+creation_date: 2019-08-07T15:21:19Z
+
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
