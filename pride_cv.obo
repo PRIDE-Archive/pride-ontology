@@ -3353,6 +3353,13 @@ is_a: PRIDE:0000470 ! File Properties
 created_by: mwalzer
 creation_date: 2019-08-07T15:21:19Z
 
+[Term]
+id: PRIDE:0000511
+name: Pass submitter threshold
+def: "Pass submitter threshold" []
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
 
 [Term]
 id: PRIDE:0000000
