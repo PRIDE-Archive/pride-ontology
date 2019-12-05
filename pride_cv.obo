@@ -3362,6 +3362,23 @@ created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
 
 [Term]
+id: PRIDE:0000512
+name: RNA mass spectrometry
+def: "RNA mass spectrometry  " []
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000513
+name: Dimethyl Labeling
+def: "Dimethyl Labeling (DML)  " []
+is_a: PRIDE:0000310 ! Isotope labeling
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
