@@ -3364,7 +3364,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000512
 name: RNA mass spectrometry
-def: "RNA mass spectrometry  " []
+def: "RNA mass spectrometry" []
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3372,11 +3372,138 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000513
 name: Dimethyl Labeling
-def: "Dimethyl Labeling (DML)  " []
+def: "Dimethyl Labeling (DML)" []
 is_a: PRIDE:0000310 ! Isotope labeling
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
 
+[Term]
+id: PRIDE:0000514
+name: Quantification channel label
+def: "Quantification channel label"
+is_a: PRIDE:0000017 ! Sample description additional parameter
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000515
+name: TMT
+def: "TMT"
+is_a: PRIDE:0000514 ! Quantification channel label
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000516
+name: TMT126
+def: "TMT126"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000517
+name: TMT127
+def: "TMT127"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000518
+name: TMT127C
+def: "TMT127C"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000519
+name: TMT127N
+def: "TMT127N"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000520
+name: TMT128
+def: "TMT128"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000521
+name: TMT128C
+def: "TMT128C"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000522
+name: TMT128N
+def: "TMT128N"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000523
+name: TMT129
+def: "TMT129"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000524
+name: TMT129C
+def: "TMT129C"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000525
+name: TMT129N
+def: "TMT129N"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000526
+name: TMT130
+def: "TMT130"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000527
+name: TMT130C
+def: "TMT130C"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000528
+name: TMT130N
+def: "TMT130N"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000529
+name: TMT131
+def: "TMT131"
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
 
 [Term]
 id: PRIDE:0000000
