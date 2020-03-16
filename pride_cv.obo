@@ -2031,6 +2031,7 @@ id: PRIDE:0000325
 name: SILAC heavy
 comment: The heavy label used in SILAC experiments.
 is_a: PRIDE:0000328 ! SILAC reagent
+is_a: PRIDE:0000539 ! SILAC channel label
 created_by: jg
 creation_date: 2011-07-22T09:44:18Z
 
@@ -2039,6 +2040,7 @@ id: PRIDE:0000326
 name: SILAC light
 comment: The light reagent used in SILAC experiments.
 is_a: PRIDE:0000328 ! SILAC reagent
+is_a: PRIDE:0000539 ! SILAC channel label
 created_by: jg
 creation_date: 2011-07-22T09:45:40Z
 
@@ -2047,6 +2049,7 @@ id: PRIDE:0000327
 name: SILAC medium
 comment: The medium weight reagent used in SILAC experiments.
 is_a: PRIDE:0000328 ! SILAC reagent
+is_a: PRIDE:0000539 ! SILAC channel label
 created_by: jg
 creation_date: 2011-07-22T09:47:09Z
 
@@ -3504,6 +3507,79 @@ def: "TMT131"
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000530
+name: ITRAQ
+def: "ITRAQ channel label" []
+is_a: PRIDE:0000514 ! Quantification channel label
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
+[Term]
+id: PRIDE:0000531
+name: ITRAQ113
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:02:43Z
+
+[Term]
+id: PRIDE:0000532
+name: ITRAQ114
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:03:15Z
+
+[Term]
+id: PRIDE:0000533
+name: ITRAQ115
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:03:31Z
+
+[Term]
+id: PRIDE:0000534
+name: ITRAQ116
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:03:49Z
+
+[Term]
+id: PRIDE:0000535
+name: ITRAQ117
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:04:10Z
+
+[Term]
+id: PRIDE:0000536
+name: ITRAQ118
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:04:30Z
+
+[Term]
+id: PRIDE:0000537
+name: ITRAQ119
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:04:49Z
+
+[Term]
+id: PRIDE:0000538
+name: ITRAQ121
+is_a: PRIDE:0000530 ! ITRAQ
+created_by: yperez
+creation_date: 2020-03-16T18:05:06Z
+
+[Term]
+id: PRIDE:0000539
+name: SILAC
+def: "SILAC channel label" []
+is_a: PRIDE:0000514 ! Quantification channel label
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
 
 [Term]
 id: PRIDE:0000000
