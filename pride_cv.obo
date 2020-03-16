@@ -3580,6 +3580,29 @@ is_a: PRIDE:0000514 ! Quantification channel label
 created_by: yperez
 creation_date: 2020-03-16T18:01:06Z
 
+[Term]
+id: PRIDE:0000540
+name: ICAT
+def: "ICAT channel label" []
+is_a: PRIDE:0000514 ! Quantification channel label
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
+[Term]
+id: PRIDE:0000541
+name: ICAT heavy
+def: "ICAT heavy" []
+is_a: PRIDE:0000540 ! ICAT channel label
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
+[Term]
+id: PRIDE:0000542
+name: ICAT light
+def: "ICAT light" []
+is_a: PRIDE:0000540 ! ICAT channel label
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
 
 [Term]
 id: PRIDE:0000000
