@@ -3382,7 +3382,7 @@ creation_date: 2019-08-07T15:21:19Z
 
 [Term]
 id: PRIDE:0000514
-name: Quantification channel label
+name: Label
 def: "Quantification channel label"
 is_a: PRIDE:0000017 ! Sample description additional parameter
 created_by: yperez
