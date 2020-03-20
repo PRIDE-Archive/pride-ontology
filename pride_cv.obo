@@ -2926,7 +2926,7 @@ comment: Domain-specific mass spectrometry experiment type focusing on the scien
 [Term]
 id: PRIDE:0000458
 name: Metaproteomics
-def: Studying all protein samples of diverse host environments like the human body, soil or sea water. [PRIDE:PRIDE]
+def: "Studying all protein samples of diverse host environments like the human body, soil or sea water." [PRIDE:PRIDE]
 is_a: PRIDE:0000457 ! Experiment Type
 synonym: "Community Proteomics" EXACT []
 synonym: "Environmental Proteomics" RELATED []
@@ -2935,35 +2935,35 @@ created_by: acsordas
 [Term]
 id: PRIDE:0000459
 name: Human Metaproteomics
-def: Investigating both human host proteins and associated microbial proteins at the same time from human samples. [PRIDE:PRIDE]
+def: "Investigating both human host proteins and associated microbial proteins at the same time from human samples." [PRIDE:PRIDE]
 is_a: PRIDE:0000458 ! Metaproteomics
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000460
 name: Proteogenomics
-comment: Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies. [PRIDE:PRIDE]
+comment: "Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies." [PRIDE:PRIDE]
 is_a: PRIDE:0000457 ! Experiment Type
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000461
 name: Multi-omics study
-def: Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples. [PRIDE:PRIDE]
+def: "Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples." [PRIDE:PRIDE]
 is_a: PRIDE:0000457 ! Experiment Type
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000462
 name: SONAR
-def: Waters data independent acquisition method. [PRIDE:PRIDE]
+def: "Waters data independent acquisition method." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000463
 name: Parallel Reaction Monitoring (PRM)
-def: Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis. [PRIDE:PRIDE]
+def: "Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis." [PRIDE:PRIDE]
 is_a: PRIDE:0000311 ! Selected Reaction Monitoring
 
 [Term]
@@ -3310,7 +3310,7 @@ creation_date: 2018-09-05T10:38:29Z
 [Term]
 id: PRIDE:0000505
 name: Individual Accession
-def: Accession or Code of the individual in the sample
+def: "Accession or Code of the individual in the sample." []
 is_a: PRIDE:0000017 !  Sample description additional parameter
 created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
@@ -3383,7 +3383,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000514
 name: Label
-def: "Quantification channel label"
+def: "Quantification channel label" []
 is_a: PRIDE:0000017 ! Sample description additional parameter
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3391,7 +3391,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000515
 name: TMT
-def: "TMT"
+def: "TMT" []
 is_a: PRIDE:0000514 ! Quantification channel label
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3399,7 +3399,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000516
 name: TMT126
-def: "TMT126"
+def: "TMT126" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3407,7 +3407,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000517
 name: TMT127
-def: "TMT127"
+def: "TMT127" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3415,7 +3415,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000518
 name: TMT127C
-def: "TMT127C"
+def: "TMT127C" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3423,7 +3423,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000519
 name: TMT127N
-def: "TMT127N"
+def: "TMT127N" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3431,7 +3431,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000520
 name: TMT128
-def: "TMT128"
+def: "TMT128" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3439,7 +3439,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000521
 name: TMT128C
-def: "TMT128C"
+def: "TMT128C" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3447,7 +3447,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000522
 name: TMT128N
-def: "TMT128N"
+def: "TMT128N" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3455,7 +3455,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000523
 name: TMT129
-def: "TMT129"
+def: "TMT129" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3463,7 +3463,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000524
 name: TMT129C
-def: "TMT129C"
+def: "TMT129C" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3471,7 +3471,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000525
 name: TMT129N
-def: "TMT129N"
+def: "TMT129N" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3479,7 +3479,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000526
 name: TMT130
-def: "TMT130"
+def: "TMT130" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3487,7 +3487,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000527
 name: TMT130C
-def: "TMT130C"
+def: "TMT130C" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3495,7 +3495,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000528
 name: TMT130N
-def: "TMT130N"
+def: "TMT130N" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
@@ -3503,7 +3503,7 @@ creation_date: 2019-08-07T15:21:19Z
 [Term]
 id: PRIDE:0000529
 name: TMT131
-def: "TMT131"
+def: "TMT131" []
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
