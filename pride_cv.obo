@@ -3607,6 +3607,33 @@ created_by: yperez
 creation_date: 2020-03-16T18:01:06Z
 
 [Term]
+id: PRIDE:0000543
+name: Quality Control
+def: "MS experiments conducted to control the quality of measurements. Includes the acquisition of samples for SST and longitudinal monitoring." [PRIDE:PRIDE]
+comment: Example description of such experiments in 10.1002/pmic.201000578
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
+id: PRIDE:0000544
+name: Quality Control Sample
+def: "Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings." [PRIDE:PRIDE]
+comment: Example description of such samples in 10.1002/pmic.201000578
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000545
+name: QC1 sample
+def: "QC1 sample as described in 10.1371/journal.pone.0189209." [PRIDE:PRIDE]
+is_a: PRIDE:0000544 ! Quality Control Sample
+
+[Term]
+id: PRIDE:0000546
+name: QC2 sample
+def: "QC2 sample as described in 10.1371/journal.pone.0189209." [PRIDE:PRIDE]
+is_a: PRIDE:0000544 ! Quality Control Sample
+
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
