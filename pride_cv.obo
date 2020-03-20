@@ -2707,6 +2707,7 @@ id: PRIDE:0000427
 name: Top-down proteomics
 comment: Proteins enter directly the mass spectrometer.
 is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+is_a: PRIDE:0000457 ! Experiment Type
 created_by: acsordas
 
 [Term]
@@ -2714,6 +2715,7 @@ id: PRIDE:0000428
 name: Bottom-up proteomics
 comment: Proteins go through proteolytic digestion yielding peptides before entering the mass spectrometer.
 is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+is_a: PRIDE:0000457 ! Experiment Type
 created_by: acsordas
 
 [Term]
