@@ -1,59 +1,13 @@
 format-version: 1.2
-date: 06:06:2019 13:57
-saved-by: yperez
+date: 29:08:2018 14:55
+saved-by: ypriverol
 auto-generated-by: OBO-Edit 2.3.1
-default-namespace: file:/private/var/folders/hm/w90zk0x90sv25st_pm8xdw940000gq/T/owl2obo3089484962894378686.obo
+default-namespace: file:/private/var/folders/hm/w90zk0x90sv25st_pm8xdw940000gq/T/owl2obo8066861450782991216.obo
 ontology: PRIDE_PRIDE
 property_value: http://purl.obolibrary.org/obo/auto-generated-by "OBO-Edit 2.3" xsd:string
 property_value: http://purl.obolibrary.org/obo/date "06:03:2012 11:34" xsd:string
 property_value: http://purl.obolibrary.org/obo/format-version "1.2" xsd:string
 property_value: http://purl.obolibrary.org/obo/saved-by "jg" xsd:string
-
-[Term]
-id: ID:0000000
-name: Number identified proteins
-def: "Total number of reported proteins. This property can be used to report the number of proteins identified in an Assay or experiment." []
-is_a: PRIDE:0000485 ! Global result parameters
-created_by: yperez
-creation_date: 2019-06-06T13:51:41Z
-
-[Term]
-id: ID:0000001
-name: Number of identified peptides
-def: "Total number of identified peptides in an experiment or assay." []
-is_a: PRIDE:0000485 ! Global result parameters
-created_by: yperez
-creation_date: 2019-06-06T13:53:23Z
-
-[Term]
-id: ID:0000002
-name: Number of modified peptides
-def: "The total number of peptides identified with post-translational modifications." []
-is_a: PRIDE:0000485 ! Global result parameters
-created_by: yperez
-creation_date: 2019-06-06T13:54:46Z
-
-[Term]
-id: ID:0000003
-name: Number of PSMs
-def: "Total number of reported idnetified Peptide Spectrum matches (PSMs)" []
-is_a: PRIDE:0000485 ! Global result parameters
-created_by: yperez
-creation_date: 2019-06-06T13:56:00Z
-
-[Term]
-id: NCIT:C69199
-name: Content Creation date
-is_a: PRIDE:0000470 ! File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:52:49Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"The date on which data creation began [NCI]\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000000
-name: Reference additional parameter
-property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
-property_value: property:value "http://purl.obolibrary.org/obo/comment \\"Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam\\" xsd:string" xsd:string
 
 [Term]
 id: PRIDE:0000001
@@ -3044,137 +2998,130 @@ property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \
 id: PRIDE:0000469
 name: FTP Protocol
 is_a: PRIDE:0000006 ! Experiment additional parameter
-property_value: property:value "created:by \\"ypriverol\\" xsd:string" xsd:string
-property_value: property:value "http://purl.obolibrary.org/obo/comment \\"URI for an FTP Download Protocol\\" xsd:string" xsd:string
-property_value: property:value "http://purl.obolibrary.org/obo/xref \\"value-type:xsd\\\\\\\\\\\\\\\\:string \\\\\\\\\\"The allowed value-type for this CV term.\\\\\\\\\\"\\" xsd:string" xsd:string
+property_value: created:by "ypriverol" xsd:string
+property_value: http://purl.obolibrary.org/obo/comment "URI for an FTP Download Protocol" xsd:string
+property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
 
 [Term]
 id: PRIDE:0000470
 name: File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:26:28Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"PRIDE File Properties for all type of files.\\" []" xsd:string
+def: "PRIDE File Properties for all type of files." []
+created_by: ypriverol
+creation_date: 2018-08-29T14:26:28Z
 
 [Term]
 id: PRIDE:0000471
 name: MS File Properties
+def: "Properties for MS , Peaks files" []
 is_a: PRIDE:0000470 ! File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:31:06Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Properties for MS , Peaks files\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:31:06Z
 
 [Term]
 id: PRIDE:0000472
 name: MS min charge
+def: "Minimum charge for all precursor in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:33:01Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Minimum charge for all precursor in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:33:01Z
 
 [Term]
 id: PRIDE:0000473
 name: MS max charge
+def: "Maximum charge for all precursor in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:35:57Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Maximum charge for all precursor in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:35:57Z
 
 [Term]
 id: PRIDE:0000474
 name: MS min RT
+def: "Minimum retention time in the File." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:36:50Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Minimum retention time in the File.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:36:50Z
 
 [Term]
 id: PRIDE:0000475
 name: MS max RT
+def: "Maximum retention time in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:37:30Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Maximum retention time in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:37:30Z
 
 [Term]
 id: PRIDE:0000476
 name: MS min MZ
+def: "Minimum precursor mass to charge in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:38:19Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Minimum precursor mass to charge in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:38:19Z
 
 [Term]
 id: PRIDE:0000477
 name: MS max MZ
+def: "Maximum precursor mass to charge in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:39:06Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Maximum precursor mass to charge in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:39:06Z
 
 [Term]
 id: PRIDE:0000478
 name: Number of scans
+def: "Total number of scans in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:40:05Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Total number of scans in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:40:05Z
 
 [Term]
 id: PRIDE:0000479
 name: MS scan range
-is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:41:09Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Range of scan number in the ms file.\\" []" xsd:string
+def: "Range of scan number in the ms file." []
+is_a: PRIDE:0000471 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:41:09Z
 
 [Term]
 id: PRIDE:0000480
 name: Number of MS
+def: "Number of MS in the file." []
 is_a: PRIDE:0000471 ! MS File Properties
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:43:09Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Number of MS in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:43:09Z
 
 [Term]
 id: PRIDE:0000481
 name: Number of MS1 spectra
+def: "Number of MS1 spectra." []
 is_a: PRIDE:0000480 ! Number of MS
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:45:21Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Number of MS1 spectra.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:45:21Z
 
 [Term]
 id: PRIDE:0000482
 name: Number of MS2 spectra
+def: "Number of MS2 spectra in the file." []
 is_a: PRIDE:0000480 ! Number of MS
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:46:01Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Number of MS2 spectra in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:46:01Z
 
 [Term]
 id: PRIDE:0000483
 name: Number of MS3 spectra
+def: "Total number of MS3 spectra in the file." []
 is_a: PRIDE:0000480 ! Number of MS
-property_value: created:by "ypriverol" xsd:string
-property_value: creation:date 2018-08-29T14:48:35Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Total number of MS3 spectra in the file.\\" []" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:48:35Z
 
 [Term]
-id: PRIDE:0000484
-name: Result analysis parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:08:58Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"The result analysis parameters is a term to group all the parameters for proteomics data analysis.\\" []" xsd:string
+id: NCIT:C69199
+name: Content Creation date
+def: "The date on which data creation began [NCI]" []
+is_a: PRIDE:0000470 ! File Properties
+created_by: ypriverol
+creation_date: 2018-08-29T14:52:49Z
 
 [Term]
-<<<<<<< HEAD
-id: PRIDE:0000485
-name: Global result parameters
-is_a: PRIDE:0000484 ! Result analysis parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:11:41Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Result analysis parameters share by multiple search engine and Quantiative tools.\\" []" xsd:string
-=======
 id: PRIDE:0000484
 name: RT range
 def: "Retention time range in the file." []
@@ -3203,175 +3150,8 @@ creation_date: 2019-08-07T15:21:19Z
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
->>>>>>> eb92bf743f655088e2eb533512f288a77f78ee22
 
-[Term]
-id: PRIDE:0000486
-name: Tool specific analysis parameters
-is_a: PRIDE:0000484 ! Result analysis parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:14:02Z xsd:string
 
-[Term]
-id: PRIDE:0000487
-name: Min charge
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:26:36Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Minimum charge of precursor to be search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000488
-name: Max charge
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:28:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Maximum charge of precursor to be search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000489
-name: Min RT
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:30:51Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Min Retention time for precursor to be search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000490
-name: Max RT
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:31:35Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Maximum precursor RT to be search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000491
-name: Number of missed cleavages
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:37:09Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Number of missed cleavages.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000492
-name: Max peptide AA length
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:43:03Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Max peptide amino acid length for search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000493
-name: Min peptide AA length
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:43:54Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Minimum peptide amino acid length for search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000494
-name: Min precursor MZ
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:47:03Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Min precursor MZ (mass) for precursor to search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000495
-name: Max precursor MZ
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T09:48:08Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Max precursor MZ (mass) for precursor to search.\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000496
-name: Min peak length
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Min number of peaks in the spectrum to be search.\\" []" xsd:string
-
-<<<<<<< HEAD
-[Term]
-id: PRIDE:0000497
-name: Use Multi Modification
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Use Multi Modification\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000498
-name: Use Additional Variable Modifications
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Use Additional Variable Modifications\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000499
-name: Do Mass Filtering
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Do Mass Filtering\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000500
-name: Intensity Threshold
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Intensity Threshold\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000501
-name: Max Labeled AA
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Max Labeled AA\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000502
-name: Max Number of Modifications (PTMs)
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Max Number of Modifications (PTMs)\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000503
-name: First Search Precursor Tolerance
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"First Search Precursor Tolerance\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000504
-name: Main Search Precursor Tolerance
-is_a: PRIDE:0000485 ! Global result parameters
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "\\"Main Search Precursor Tolerance\\" []" xsd:string
-
-[Term]
-id: PRIDE:0000505
-name: Individual Accession
-is_a: PRIDE:0000017 ! Sample description additional parameter
-property_value: created:by "yperez" xsd:string
-property_value: creation:date 2018-09-05T10:38:29Z xsd:string
-property_value: http://purl.obolibrary.org/obo/def "Accession or Code of the individual in the sample" xsd:string
-
-[Typedef]
-id: http://purl.obolibrary.org/obo/http_//purl.obolibrary.org/obo/PRIDE_part_of
-name: part_of
-is_transitive: true
-
-=======
->>>>>>> eb92bf743f655088e2eb533512f288a77f78ee22
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
 name: part_of

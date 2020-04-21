@@ -3634,6 +3634,37 @@ is_a: PRIDE:0000544 ! Quality Control Sample
 
 
 [Term]
+id: PRIDE:0000547
+name: Instrument properties
+def: "Instrument properties" []
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
+[Term]
+id: MS:1000451
+name: mass analyzer
+def: "mass analyzer"
+is_a: PRIDE:0000547 ! Instrument properties
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
+[Term]
+id: PRIDE:0000548
+name: MS1 mass analyzer
+def: "MS1 mass analyzer" []
+is_a: MS:1000451 ! mass analyzer
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
+[Term]
+id: PRIDE:0000549
+name: MS2 mass analyzer
+def: "MS2 mass analyzer" []
+is_a: MS:1000451 ! mass analyzer
+created_by: yperez
+creation_date: 2020-03-16T18:01:06Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
