@@ -126,13 +126,13 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000021
 name: Fractionation
-def: "The removal of some components of a complex mixture of proteins or peptides on the basis of some general property of those components to yeild a less complex mixture." [PRIDE:PRIDE]
+def: "Process of classification of an analyte or a group of analytes from a sample according to physical (e.g., size) or chemical (e.g., bonding, reactivity) properties. (from https://doi.org/10.1351/goldbook.FT06825)" [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000022
 name: Separation
-def: "To divide a complex mixture of proteins or peptides into the component individual proteins or peptides." [PRIDE:PRIDE]
+def: "To separate a complex mixture of proteins or peptides based on molecular characteristics and interaction type over a given amount of time." [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -723,6 +723,7 @@ id: PRIDE:0000124
 name: Sodium dodecyl sulfate polyacrylamide gel electrophoresis
 def: "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
+is_a: PRIDE:0000550 ! Fractionation method
 
 [Term]
 id: PRIDE:0000125
@@ -3663,6 +3664,64 @@ def: "MS2 mass analyzer" []
 is_a: MS:1000451 ! mass analyzer
 created_by: yperez
 creation_date: 2020-03-16T18:01:06Z
+
+[Term]
+id: PRIDE:0000550
+name: Fractionation method
+def: "Umbrella term for different types of fractionation methods." [PRIDE:PRIDE]
+is_a: PRIDE:0000021 ! Fractionation
+
+[Term]
+id: PRIDE:0000551
+name: Off-gel electrophoresis
+def: "Fractionate peptides into discrete liquid fractions based on isoelectric electrophoresis (10.1002/elps.200390030)."
+is_a: PRIDE:0000550 ! Fractionation method
+    
+CHMO:0001026
+isoelectric focusing
+An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient.
+
+???
+high-resolution isoelectric focusing (HiRIEF)
+
+CHMO:0002262
+Hydrophilic interaction chromatography (HILIC)
+Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity.
+
+CHMO:0002270
+Electrostatic repulsion hydrophilic interaction chromatography (ERLIC)
+Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic.
+
+CHMO:0001014
+Ion-exchange chromatography 
+A chromatography method where the separation is caused by differences in ion-exchange affinity.
+
+CHMO:0001013
+Size-exclusion chromatography (SEC)
+A chromatography method where the separation is caused by differences in molecular size.
+
+CHMO:0002258
+Strong anion-exchange chromatography (SAX)
+A chromatography method with the stationary phase being a strong anion exchanger.
+
+CHMO:0002259
+Weak anion-exchange chromatography (WAX)
+A chromatography method with the stationary phase being a weak anion exchanger.
+
+CHMO:0002261
+Weak cation-exchange chromatography (WCX)
+A chromatography method with the stationary phase being a weak cation exchanger.
+
+CHMO:0002260
+Strong cation-exchange chromatography (SCX)
+A chromatography method with the stationary phase being a strong cation exchanger.
+ 
+CHMO:0002302
+Reversed-phase chromatography (RP)
+Liquid chromatography where the mobile phase is significantly more polar than the stationary phase
+
+???
+high-pH Reversed-phase
 
 [Term]
 id: PRIDE:0000000
