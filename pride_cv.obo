@@ -3702,8 +3702,8 @@ is_a: PRIDE:0000550 ! Fractionation method
 
 [Term]
 id: PRIDE:0000555
-name: Electrostatic repulsion hydrophilic interaction chromatography (ERLIC)
-def: "Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic." []
+name: ERLIC
+def: "Electrostatic repulsion hydrophilic interaction chromatography (ERLIC). Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002270
 is_a: PRIDE:0000550 ! Fractionation method
 
