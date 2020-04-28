@@ -3771,7 +3771,7 @@ id: PRIDE:0000564
 name: High-pH reversed-phase chromatography (hpHRP)
 def: "Liquid chromatography where the mobile phase is of high pH and significantly more polar than the stationary phase." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002302
-is_a: PRIDE:0000556 ! Ion-exchange chromatography
+is_a: PRIDE:0000563 ! Reversed-phase chromatography (RP)
 
 [Term]
 id: PRIDE:0000565
