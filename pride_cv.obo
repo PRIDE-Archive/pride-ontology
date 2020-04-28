@@ -3757,14 +3757,14 @@ id: PRIDE:0000562
 name: Normal-phase liquid chromatography (NP)
 def: "Liquid chromatography where the stationary phase is more polar than the mobile phase. This is the default for liquid chromatography." []
 xref: http://purl.obolibrary.org/obo/CHMO_0001051
-is_a: PRIDE:0000556 ! Ion-exchange chromatography
+is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000563
 name: Reversed-phase chromatography (RP)
 def: "Liquid chromatography where the mobile phase is significantly more polar than the stationary phase." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002302
-is_a: PRIDE:0000556 ! Ion-exchange chromatography
+is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000564
