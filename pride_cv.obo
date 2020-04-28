@@ -714,6 +714,7 @@ id: PRIDE:0000122
 name: Two Dimensional Polyacrylamide Gel Electrophoresis
 def: "A type of gel electrophoresis in which proteins are first separated by charge and then by molecular weight, enabling the analysis of complex protein mixtures." [PRIDE:PRIDE]
 is_a: PRIDE:0000022 ! Separation
+is_a: PRIDE:0000550 ! Fractionation method
 
 [Term]
 id: PRIDE:0000123
@@ -3699,6 +3700,7 @@ name: Hydrophilic interaction chromatography (HILIC)
 def: "Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002262
 is_a: PRIDE:0000550 ! Fractionation method
+is_a: PRIDE:0000551 ! Separation method
 
 [Term]
 id: PRIDE:0000555
@@ -3720,56 +3722,49 @@ id: PRIDE:0000557
 name: Size-exclusion chromatography (SEC)
 def: "A chromatography method where the separation is caused by differences in molecular size." []
 xref: http://purl.obolibrary.org/obo/CHMO_0001013
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000558
 name: Strong anion-exchange chromatography (SAX)
 def: "A chromatography method with the stationary phase being a strong anion exchanger." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002258
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000559
 name: Weak anion-exchange chromatography (WAX)
 def: "A chromatography method with the stationary phase being a weak anion exchanger." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002259
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000560
 name: Weak cation-exchange chromatography (WCX)
 def: "A chromatography method with the stationary phase being a weak cation exchanger." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002261
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000561
 name: Strong cation-exchange chromatography (SCX)
 def: "A chromatography method with the stationary phase being a strong cation exchanger." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002260
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000562
-name: Normal-phase liquid chromatography (LC)
+name: Normal-phase liquid chromatography (NP)
 def: "Liquid chromatography where the stationary phase is more polar than the mobile phase. This is the default for liquid chromatography." []
 xref: http://purl.obolibrary.org/obo/CHMO_0001051
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000563
 name: Reversed-phase chromatography (RP)
 def: "Liquid chromatography where the mobile phase is significantly more polar than the stationary phase." []
 xref: http://purl.obolibrary.org/obo/CHMO_0002302
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000564
@@ -3783,6 +3778,9 @@ id: PRIDE:0000565
 name: High-performance liquid chromatography
 def: "Column chromatography where the mobile phase is a liquid, the stationary phase consists of very small particles and the inlet pressure is relatively high." []
 xref: http://purl.obolibrary.org/obo/CHMO_0001009
+is_a: PRIDE:0000550 ! Fractionation method
+is_a: PRIDE:0000551 ! Separation method
+
 
 [Term]
 id: PRIDE:0000566
