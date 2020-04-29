@@ -3683,20 +3683,20 @@ is_a: PRIDE:0000022 ! Separation
 [Term]
 id: PRIDE:0000552
 name: Off-gel electrophoresis
-def: "Fractionate peptides into discrete liquid fractions based on isoelectric electrophoresis (10.1002/elps.200390030)." []
+def: "Fractionate peptides into discrete liquid fractions based on isoelectric electrophoresis (10.1002/elps.200390030)."
 is_a: PRIDE:0000550 ! Fractionation method
-    
+
 [Term]
 id: PRIDE:0000553
 name: Isoelectric focusing
-def: "An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient." []
+def: "An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient."
 xref: http://purl.obolibrary.org/obo/CHMO_0001026
 is_a: PRIDE:0000550 ! Fractionation method
 
 [Term]
 id: PRIDE:0000554
 name: Hydrophilic interaction chromatography (HILIC)
-def: "Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity." []
+def: "Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity."
 xref: http://purl.obolibrary.org/obo/CHMO_0002262
 is_a: PRIDE:0000550 ! Fractionation method
 is_a: PRIDE:0000551 ! Separation method
@@ -3704,14 +3704,14 @@ is_a: PRIDE:0000551 ! Separation method
 [Term]
 id: PRIDE:0000555
 name: ERLIC
-def: "Electrostatic repulsion hydrophilic interaction chromatography (ERLIC). Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic." []
+def: "Electrostatic repulsion hydrophilic interaction chromatography (ERLIC). Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic."
 xref: http://purl.obolibrary.org/obo/CHMO_0002270
 is_a: PRIDE:0000550 ! Fractionation method
 
 [Term]
 id: PRIDE:0000556
 name: Ion-exchange chromatography 
-def: "A chromatography method where the separation is caused by differences in ion-exchange affinity." []
+def: "A chromatography method where the separation is caused by differences in ion-exchange affinity."
 xref: http://purl.obolibrary.org/obo/CHMO_0001014
 is_a: PRIDE:0000550 ! Fractionation method
 is_a: PRIDE:0000551 ! Separation method
@@ -3719,79 +3719,77 @@ is_a: PRIDE:0000551 ! Separation method
 [Term]
 id: PRIDE:0000557
 name: Size-exclusion chromatography (SEC)
-def: "A chromatography method where the separation is caused by differences in molecular size." []
+def: "A chromatography method where the separation is caused by differences in molecular size."
 xref: http://purl.obolibrary.org/obo/CHMO_0001013
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000558
 name: Strong anion-exchange chromatography (SAX)
-def: "A chromatography method with the stationary phase being a strong anion exchanger." []
+def: "A chromatography method with the stationary phase being a strong anion exchanger."
 xref: http://purl.obolibrary.org/obo/CHMO_0002258
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000559
 name: Weak anion-exchange chromatography (WAX)
-def: "A chromatography method with the stationary phase being a weak anion exchanger." []
+def: "A chromatography method with the stationary phase being a weak anion exchanger."
 xref: http://purl.obolibrary.org/obo/CHMO_0002259
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000560
 name: Weak cation-exchange chromatography (WCX)
-def: "A chromatography method with the stationary phase being a weak cation exchanger." []
+def: "A chromatography method with the stationary phase being a weak cation exchanger."
 xref: http://purl.obolibrary.org/obo/CHMO_0002261
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000561
 name: Strong cation-exchange chromatography (SCX)
-def: "A chromatography method with the stationary phase being a strong cation exchanger." []
+def: "A chromatography method with the stationary phase being a strong cation exchanger."
 xref: http://purl.obolibrary.org/obo/CHMO_0002260
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000562
 name: Normal-phase liquid chromatography (NP)
-def: "Liquid chromatography where the stationary phase is more polar than the mobile phase. This is the default for liquid chromatography." []
+def: "Liquid chromatography where the stationary phase is more polar than the mobile phase. This is the default for liquid chromatography."
 xref: http://purl.obolibrary.org/obo/CHMO_0001051
 is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000563
 name: Reversed-phase chromatography (RP)
-def: "Liquid chromatography where the mobile phase is significantly more polar than the stationary phase." []
+def: "Liquid chromatography where the mobile phase is significantly more polar than the stationary phase."
 xref: http://purl.obolibrary.org/obo/CHMO_0002302
 is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000564
 name: High-pH reversed-phase chromatography (hpHRP)
-def: "Liquid chromatography where the mobile phase is of high pH and significantly more polar than the stationary phase." []
+def: "Liquid chromatography where the mobile phase is of high pH and significantly more polar than the stationary phase."
 xref: http://purl.obolibrary.org/obo/CHMO_0002302
 is_a: PRIDE:0000563 ! Reversed-phase chromatography (RP)
 
 [Term]
 id: PRIDE:0000565
 name: High-performance liquid chromatography
-def: "Column chromatography where the mobile phase is a liquid, the stationary phase consists of very small particles and the inlet pressure is relatively high." []
+def: "Column chromatography where the mobile phase is a liquid, the stationary phase consists of very small particles and the inlet pressure is relatively high."
 xref: http://purl.obolibrary.org/obo/CHMO_0001009
 is_a: PRIDE:0000550 ! Fractionation method
 is_a: PRIDE:0000551 ! Separation method
 
-
 [Term]
 id: PRIDE:0000566
 name: High-resolution isoelectric focusing (HiRIEF)
-def: "An electrophoresis method with significantly higher resolution than common isoelectric focusing methods." []
+def: "An electrophoresis method with significantly higher resolution than common isoelectric focusing methods."
 is_a: PRIDE:0000553 ! Isoelectric focusing
 
 [Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
-
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
