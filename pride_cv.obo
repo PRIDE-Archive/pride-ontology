@@ -3017,9 +3017,8 @@ created_by: ypriverol
 id: PRIDE:0000469
 name: FTP Protocol
 is_a: PRIDE:0000006 ! Experiment additional parameter
-property_value: created:by "ypriverol" xsd:string
-property_value: http://purl.obolibrary.org/obo/comment "URI for an FTP Download Protocol" xsd:string
-property_value: http://purl.obolibrary.org/obo/xref "value-type:xsd\\\\:string \\"The allowed value-type for this CV term.\\"" xsd:string
+created_by: ypriverol
+creation_date: 2018-08-29T14:26:28Z
 
 [Term]
 id: PRIDE:0000470
