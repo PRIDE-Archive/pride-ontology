@@ -714,20 +714,22 @@ id: PRIDE:0000122
 name: Two Dimensional Polyacrylamide Gel Electrophoresis
 def: "A type of gel electrophoresis in which proteins are first separated by charge and then by molecular weight, enabling the analysis of complex protein mixtures." [PRIDE:PRIDE]
 is_a: PRIDE:0000022 ! Separation
-is_a: PRIDE:0000550 ! Fractionation method
+
 
 [Term]
 id: PRIDE:0000123
 name: Immobilized pH Gradient Electrophoresis
 def: "Electrophoresis using an gel  which has a  pH gradient along its length. ." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
+is_a: PRIDE:0000568 ! 2D PAGE
 
 [Term]
 id: PRIDE:0000124
 name: Sodium dodecyl sulfate polyacrylamide gel electrophoresis
 def: "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
-is_a: PRIDE:0000550 ! Fractionation method
+is_a: PRIDE:0000568 ! 2D PAGE
+
 
 [Term]
 id: PRIDE:0000125
@@ -3690,86 +3692,73 @@ is_a: PRIDE:0000550 ! Fractionation method
 id: PRIDE:0000553
 name: Isoelectric focusing
 def: "An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient."
-xref: http://purl.obolibrary.org/obo/CHMO_0001026
 is_a: PRIDE:0000550 ! Fractionation method
 
 [Term]
 id: PRIDE:0000554
 name: Hydrophilic interaction chromatography (HILIC)
 def: "Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity."
-xref: http://purl.obolibrary.org/obo/CHMO_0002262
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000562 ! Normal-phase liquid chromatography (NP)
+
 
 [Term]
 id: PRIDE:0000555
 name: ERLIC
 def: "Electrostatic repulsion hydrophilic interaction chromatography (ERLIC). Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic."
-xref: http://purl.obolibrary.org/obo/CHMO_0002270
-is_a: PRIDE:0000550 ! Fractionation method
+is_a: PRIDE:0000562 ! Normal-phase liquid chromatography (NP)
 
 [Term]
 id: PRIDE:0000556
 name: Ion-exchange chromatography 
 def: "A chromatography method where the separation is caused by differences in ion-exchange affinity."
-xref: http://purl.obolibrary.org/obo/CHMO_0001014
-is_a: PRIDE:0000550 ! Fractionation method
-is_a: PRIDE:0000551 ! Separation method
+is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000557
 name: Size-exclusion chromatography (SEC)
 def: "A chromatography method where the separation is caused by differences in molecular size."
-xref: http://purl.obolibrary.org/obo/CHMO_0001013
-is_a: PRIDE:0000556 ! Ion-exchange chromatography
+is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000558
 name: Strong anion-exchange chromatography (SAX)
 def: "A chromatography method with the stationary phase being a strong anion exchanger."
-xref: http://purl.obolibrary.org/obo/CHMO_0002258
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000559
 name: Weak anion-exchange chromatography (WAX)
 def: "A chromatography method with the stationary phase being a weak anion exchanger."
-xref: http://purl.obolibrary.org/obo/CHMO_0002259
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000560
 name: Weak cation-exchange chromatography (WCX)
 def: "A chromatography method with the stationary phase being a weak cation exchanger."
-xref: http://purl.obolibrary.org/obo/CHMO_0002261
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000561
 name: Strong cation-exchange chromatography (SCX)
 def: "A chromatography method with the stationary phase being a strong cation exchanger."
-xref: http://purl.obolibrary.org/obo/CHMO_0002260
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000562
 name: Normal-phase liquid chromatography (NP)
 def: "Liquid chromatography where the stationary phase is more polar than the mobile phase. This is the default for liquid chromatography."
-xref: http://purl.obolibrary.org/obo/CHMO_0001051
 is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000563
 name: Reversed-phase chromatography (RP)
 def: "Liquid chromatography where the mobile phase is significantly more polar than the stationary phase."
-xref: http://purl.obolibrary.org/obo/CHMO_0002302
 is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000564
 name: High-pH reversed-phase chromatography (hpHRP)
 def: "Liquid chromatography where the mobile phase is of high pH and significantly more polar than the stationary phase."
-xref: http://purl.obolibrary.org/obo/CHMO_0002302
 is_a: PRIDE:0000563 ! Reversed-phase chromatography (RP)
 
 [Term]
@@ -3785,6 +3774,25 @@ id: PRIDE:0000566
 name: High-resolution isoelectric focusing (HiRIEF)
 def: "An electrophoresis method with significantly higher resolution than common isoelectric focusing methods."
 is_a: PRIDE:0000553 ! Isoelectric focusing
+
+[Term]
+id: PRIDE:0000567
+name: Gel electrophoresis
+def: "Gel electrophoresis"
+is_a: PRIDE:0000550 ! Fractionation method
+is_a: PRIDE:0000551 ! Separation method
+
+[Term]
+id: PRIDE:0000568
+name: SDS PAGE
+def: "SDS-PAGE is an electrophoresis method that allows protein separation by mass. The medium/matrix is a polyacrylamide-based discontinuous gel"
+is_a: PRIDE:0000567 ! Gel electrophoresis
+
+[Term]
+id: PRIDE:0000568
+name: 2D PAGE
+def: "2D-PAGE is a form of gel electrophoresis in which separation and identification of proteins in a sample are done by displacement in 2 dimensions oriented at right angles to one another(orthogonal)"
+is_a: PRIDE:0000567 ! Gel electrophoresis
 
 [Term]
 id: PRIDE:0000000
