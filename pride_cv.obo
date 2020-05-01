@@ -3789,7 +3789,7 @@ def: "SDS-PAGE is an electrophoresis method that allows protein separation by ma
 is_a: PRIDE:0000567 ! Gel electrophoresis
 
 [Term]
-id: PRIDE:0000568
+id: PRIDE:0000569
 name: 2D PAGE
 def: "2D-PAGE is a form of gel electrophoresis in which separation and identification of proteins in a sample are done by displacement in 2 dimensions oriented at right angles to one another(orthogonal)"
 is_a: PRIDE:0000567 ! Gel electrophoresis
