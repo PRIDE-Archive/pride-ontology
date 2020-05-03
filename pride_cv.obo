@@ -266,17 +266,21 @@ name: Search algorithm
 id: PRIDE:0000045
 name: Sequest
 is_a: PRIDE:0000044 ! Search algorithm
+is_a: PRIDE:0000573 ! Identification software
 
 [Term]
 id: PRIDE:0000046
 name: Mascot
 is_a: PRIDE:0000044 ! Search algorithm
+is_a: PRIDE:0000571 ! Quantification Software
+is_a: PRIDE:0000573 ! Identification software
 
 [Term]
 id: PRIDE:0000047
-name: X|Tandem
+name: XTandem
 comment: Really X
 is_a: PRIDE:0000044 ! Search algorithm
+is_a: PRIDE:0000573 ! Identification software
 
 [Term]
 id: PRIDE:0000048
@@ -336,6 +340,7 @@ relationship: part_of PRIDE:0000045 ! Sequest
 id: PRIDE:0000056
 name: Bioworks
 is_a: PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000573 ! Identification software
 
 [Term]
 id: PRIDE:0000057
@@ -1284,6 +1289,7 @@ id: PRIDE:0000213
 name: Inspect
 def: "The Inspect search algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
+is_a: PRIDE:0000573 ! Identification software
 
 [Term]
 id: PRIDE:0000214
@@ -1859,6 +1865,7 @@ def: "Indicates that this protein identification comes from the used decoy datab
 is_a: PRIDE:0000004 ! Identification additional parameter
 created_by: jg
 creation_date: 2011-05-12T11:58:52Z
+is_obsolete: true
 
 [Term]
 id: PRIDE:0000304
@@ -3793,6 +3800,46 @@ id: PRIDE:0000569
 name: 2D PAGE
 def: "2D-PAGE is a form of gel electrophoresis in which separation and identification of proteins in a sample are done by displacement in 2 dimensions oriented at right angles to one another(orthogonal)"
 is_a: PRIDE:0000567 ! Gel electrophoresis
+
+[Term]
+id: PRIDE:0000570
+name: Decoy protein
+def: "Indicates that this protein identification comes from the used decoy database." [PRIDE:PRIDE]
+is_a: PRIDE:0000004 ! Identification additional parameter
+created_by: yperez
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
+id: PRIDE:0000571
+name: Quantification software
+def: "A software that perform protein quantification using mass spectrometry data." [PRIDE:PRIDE]
+created_by: yperez
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
+id: PRIDE:0000572
+name: OpenMS
+def: "OpenMS is an open-source software C++ library for LC-MS data management and analyses. It offers an infrastructure for rapid development of mass spectrometry related software." [PRIDE:PRIDE]
+is_a: PRIDE:0000571 ! Quantification software
+is_a: PRIDE:0000573 ! Identification software
+created_by: yperez
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
+id: PRIDE:0000573
+name: Identification software
+def: "A software that perform peptide/protein identification using mass spectrometry data." [PRIDE:PRIDE]
+created_by: yperez
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
+id: PRIDE:0000574
+name: MaxQuant
+def: "MaxQuant is a quantitative proteomics software package designed for analyzing large mass-spectrometric data sets. It is specifically aimed at high-resolution MS data." [PRIDE:PRIDE]
+is_a: PRIDE:0000571 ! Quantification software
+is_a: PRIDE:0000573 ! Identification software
+created_by: yperez
+creation_date: 2020-05-12T11:58:52Z
 
 [Term]
 id: PRIDE:0000000
