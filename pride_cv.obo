@@ -3842,6 +3842,22 @@ created_by: yperez
 creation_date: 2020-05-12T11:58:52Z
 
 [Term]
+id: PRIDE:0000575
+name: precursor mass tolerance
+def: "Threshold at precursor level to compare experimental mass with theoretical mass" [PRIDE:PRIDE]
+created_by: yperez
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
+id: PRIDE:0000576
+name: fragment mass tolerance
+def: "Threshold at fragment level to compare experimental mass with theoretical mass" [PRIDE:PRIDE]
+created_by: yperez
+is_a: PRIDE:0000003 ! Peptide item additional parameter
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
