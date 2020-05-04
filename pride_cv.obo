@@ -2554,6 +2554,7 @@ name: Associated raw file URI
 comment: URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission).
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000577 ! file uri
 created_by: jav
 
 [Term]
@@ -2577,6 +2578,7 @@ name: Result file URI
 def: "URI of one file labeled as 'Result', associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000577 ! file uri
 created_by: jav
 
 [Term]
@@ -2585,6 +2587,7 @@ name: Search engine output file URI
 def: "URI of one search engine output file associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000577 ! file uri
 created_by: jav
 
 [Term]
@@ -2593,6 +2596,7 @@ name: Peak list file URI
 def: "URI of one of one search engine output file associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000577 ! file uri
 created_by: jav
 
 [Term]
@@ -2601,6 +2605,7 @@ name: 'Other' type file URI
 def: "URI of one file labeled as 'Other', associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000577 ! file uri
 created_by: jav
 
 [Term]
@@ -2871,6 +2876,7 @@ name: Additional associated raw file URI
 comment: Additional URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission). The URI is provided via an additional resource to PRIDE.
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000577 ! file uri
 created_by: jav
 
 [Term]
@@ -2879,6 +2885,7 @@ name: Gel image file URI
 comment: URI of one gel image file associated to one PX submission.
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000577 ! file uri
 created_by: tt
 
 
@@ -3855,6 +3862,14 @@ name: fragment mass tolerance
 def: "Threshold at fragment level to compare experimental mass with theoretical mass" [PRIDE:PRIDE]
 created_by: yperez
 is_a: PRIDE:0000003 ! Peptide item additional parameter
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
+id: PRIDE:0000577
+name: file uri
+def: "URI of one external file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
+created_by: yperez
+is_a: PRIDE:0000006 ! Experiment additional parameter
 creation_date: 2020-05-12T11:58:52Z
 
 [Term]
