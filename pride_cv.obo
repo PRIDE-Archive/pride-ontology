@@ -3888,7 +3888,7 @@ created_by: lisavetasol
 is_a: PRIDE:0000020 ! Depletion
 
 [Term]
-id: PRIDE:0000588
+id: PRIDE:0000579
 name: Depleted fraction
 def: "The depleted fraction after a depletion process"
 created_by: lisavetasol
