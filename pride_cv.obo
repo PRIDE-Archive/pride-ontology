@@ -3903,6 +3903,38 @@ is_a: PRIDE:0000514 ! Quantification channel label
 creation_date: 2020-05-12T11:58:52Z
 
 [Term]
+id: PRIDE:0000580
+name: TMT131N
+def: "TMT131N" []
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000581
+name: TMT131C
+def: "TMT131C" []
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000582
+name: TMT132N
+def: "TMT132N" []
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000583
+name: TMT132C
+def: "TMT132C" []
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
