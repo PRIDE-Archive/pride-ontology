@@ -3944,6 +3944,30 @@ created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
 
 [Term]
+id: PRIDE:0000585
+name: Enrichment
+def: "Enrichment of specific post-translational modifications"
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+
+[Term]
+id: PRIDE:0000586
+name: Enrichment method
+def: "Enrichment method Enrichment of specific post-translational modifications"
+is_a: PRIDE:0000585 ! Enrichment
+
+[Term]
+id: PRIDE:0000587
+name: IMAC
+def: "The combination of immobilized metal affinity chromatography (IMAC) and mass spectrometry is a widely used technique for enrichment and sequencing of phosphopeptides"
+is_a: PRIDE:0000586 ! Enrichment method
+
+[Term]
+id: PRIDE:0000588
+name: TIO2
+def: "Titanium dioxide (TiO2) has very high affinity for phosphopeptides and in recent years it has become one of the most popular methods for phosphopeptide enrichment from complex biological samples"
+is_a: PRIDE:0000586 ! Enrichment method
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
