@@ -3968,6 +3968,37 @@ def: "Titanium dioxide (TiO2) has very high affinity for phosphopeptides and in 
 is_a: PRIDE:0000586 ! Enrichment method
 
 [Term]
+id: MS:1000044
+name: dissociation method
+def: "Fragmentation method used for dissociation or fragmentation"
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+
+[Term]
+id: PRIDE:0000589
+name: EThcD
+def: "A dissociation process combining electron-transfer and higher-energy collision dissociation (EThcD). It combines ETD (reaction time) followed by HCD (activation energy)."
+is_a: MS:1000044 ! dissociation method
+
+[Term]
+id: PRIDE:0000590
+name: HCD
+def: "beam-type collision-induced dissociation"
+is_a: MS:1000044 ! dissociation method
+
+[Term]
+id: PRIDE:0000591
+name: CID
+def: "collision-induced dissociation"
+is_a: MS:1000044 ! dissociation method
+
+[Term]
+id: PRIDE:0000592
+name: ETciD
+def: "ETD with supplemental activation"
+synonym: "ETcaD" EXACT []
+is_a: MS:1000044 ! dissociation method
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
