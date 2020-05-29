@@ -4034,7 +4034,7 @@ part_of: id: PRIDE:0000592 ! ETciD
 
 [Term]
 id: PRIDE:0000597
-name: Deuterium label sample
+name: Deuterium
 def: "deuterium oxide (2H2O) introduced in samples to label their entire proteomes"
 created_by: yperez
 is_a: PRIDE:0000514 ! Quantification channel label
