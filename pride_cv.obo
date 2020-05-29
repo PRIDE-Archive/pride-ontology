@@ -3999,6 +3999,48 @@ synonym: "ETcaD" EXACT []
 is_a: MS:1000044 ! dissociation method
 
 [Term]
+id: MS:1000045
+name: collision energy
+def: "Energy for an ion experiencing collision with a stationary gas particle resulting in dissociation of the ion."
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
+
+[Term]
+id: PRIDE:0000593
+name: CID collision energy
+def: "CID collision energy"
+is_a: MS:1000045 ! collision energy
+part_of: id: PRIDE:0000591 ! CID
+
+[Term]
+id: PRIDE:0000594
+name: HCD collision energy
+def: "HCD collision energy"
+is_a: MS:1000045 ! collision energy
+part_of: id: PRIDE:0000590 ! HCD
+
+[Term]
+id: PRIDE:0000595
+name: EThcD collision energy
+def: "EThcD collision energy"
+is_a: MS:1000045 ! collision energy
+part_of: id: PRIDE:0000589 ! EThcD
+
+[Term]
+id: PRIDE:0000596
+name: ETciD collision energy
+def: "ETciD collision energy"
+is_a: MS:1000045 ! collision energy
+part_of: id: PRIDE:0000592 ! ETciD
+
+[Term]
+id: PRIDE:0000597
+name: Deuterium label sample
+def: "deuterium oxide (2H2O) introduced in samples to label their entire proteomes"
+created_by: yperez
+is_a: PRIDE:0000514 ! Quantification channel label
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
