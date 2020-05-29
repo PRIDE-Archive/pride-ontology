@@ -4034,8 +4034,8 @@ part_of: id: PRIDE:0000592 ! ETciD
 
 [Term]
 id: PRIDE:0000597
-name: Deuterium
-def: "deuterium oxide (2H2O) introduced in samples to label their entire proteomes"
+name: metabolic label
+def: "metabolic label"
 created_by: yperez
 is_a: PRIDE:0000514 ! Quantification channel label
 creation_date: 2020-05-12T11:58:52Z
