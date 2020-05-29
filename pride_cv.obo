@@ -4033,6 +4033,14 @@ is_a: MS:1000045 ! collision energy
 part_of: id: PRIDE:0000592 ! ETciD
 
 [Term]
+id: PRIDE:0000597
+name: Deuterium label sample
+def: "deuterium oxide (2H2O) introduced in samples to label their entire proteomes"
+created_by: yperez
+is_a: PRIDE:0000514 ! Quantification channel label
+creation_date: 2020-05-12T11:58:52Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
