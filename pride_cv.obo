@@ -4041,6 +4041,102 @@ is_a: PRIDE:0000514 ! Quantification channel label
 creation_date: 2020-05-12T11:58:52Z
 
 [Term]
+id: PRIDE:0000598
+name: SILAC light R
+comment: The light reagent used in SILAC experiments SILAC light R: 12C(6)14N(4)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000599
+name: SILAC light L
+comment: The light reagent used in SILAC experiments SILAC light L: 12C(6)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000600
+name: SILAC light K
+comment: The light reagent used in SILAC experiments SILAC light K: 12C(6)14N(2)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000601
+name: SILAC light P
+comment: The light reagent used in SILAC experiments SILAC light P: 12C(5)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000602
+name: SILAC heavy R
+comment: The heavy reagent used in SILAC experiments SILAC heavy R: 13C(6)15N(4)
+is_a: PRIDE:0000325 !  SILAC heavy
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000603
+name: SILAC heavy L: 13C(6)
+comment: The heavy reagent used in SILAC experiments SILAC heavy L: 13C(6)
+is_a: PRIDE:0000325 !  SILAC heavy
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000604
+name: SILAC heavy K: 13C(6)15N(2)
+comment: The heavy reagent used in SILAC experiments SILAC heavy K: 13C(6)15N(2)
+is_a: PRIDE:0000325 !  SILAC heavy
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000605
+name: SILAC medium R
+comment: The medium weight reagent used in SILAC experiments SILAC medium R: 13C(6)14N(4).
+is_a: PRIDE:0000327 ! SILAC medium
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000606
+name: SILAC medium K
+comment: The medium weight reagent used in SILAC experiments SILAC medium K: 13C(6)14N(2).
+is_a: PRIDE:0000327 ! SILAC medium
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000607
+name: 15N
+comment: Metabolic label 15N
+is_a: PRIDE:0000597 ! metabolic label
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000608
+name: 13C
+comment: Metabolic label 13C
+is_a: PRIDE:0000597 ! metabolic label
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000609
+name: 18O
+comment: Metabolic label 18O
+is_a: PRIDE:0000597 ! metabolic label
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
