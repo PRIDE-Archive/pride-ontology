@@ -4133,72 +4133,72 @@ created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000611
-name: SILAC light R
-comment: The light reagent used in SILAC experiments SILAC light R: 12C(6)14N(4)
+name: SILAC light R:12C(6)14N(4)
+comment: The light amino acid arginine used in SILAC experiments, using the following isotope:12C(6)14N(4)
 is_a: PRIDE:0000326 ! SILAC light
 created_by: yperez
 creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000612
-name: SILAC light L
-comment: The light reagent used in SILAC experiments SILAC light L: 12C(6)
+name: SILAC light L:12C(6)
+comment: The light amino acid leucine used in SILAC experiments, using the following isotope:12C(6)
 is_a: PRIDE:0000326 ! SILAC light
 created_by: yperez
 creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000613
-name: SILAC light K
-comment: The light reagent used in SILAC experiments SILAC light K: 12C(6)14N(2)
+name: SILAC light K:12C(6)14N(2)
+comment: The light amino acid lysine used in SILAC experiments, using the following isotope:12C(6)14N(2)
 is_a: PRIDE:0000326 ! SILAC light
 created_by: yperez
 creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000614
-name: SILAC light P
-comment: The light reagent used in SILAC experiments SILAC light P: 12C(5)
+name: SILAC light P:12C(5)
+comment: The light amino acid proline used in SILAC experiments, using the following isotope:12C(5)
 is_a: PRIDE:0000326 ! SILAC light
 created_by: yperez
 creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000615
-name: SILAC heavy R
-comment: The heavy reagent used in SILAC experiments SILAC heavy R: 13C(6)15N(4)
+name: SILAC heavy R:13C(6)15N(4)
+comment: The heavy amino acid arginine used in SILAC experiments, using the following isotope:13C(6)15N(4)
 is_a: PRIDE:0000325 !  SILAC heavy
 created_by: yperez
 creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000616
-name: SILAC heavy L
-comment: The heavy reagent used in SILAC experiments SILAC heavy L: 13C(6)
+name: SILAC heavy L:13C(6)
+comment: The heavy amino acid leucine used in SILAC experiments, using the following isotope: 13C(6)
 is_a: PRIDE:0000325 !  SILAC heavy
 created_by: yperez
 creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000617
-name: SILAC heavy K
-comment: The heavy reagent used in SILAC experiments SILAC heavy K: 13C(6)15N(2)
+name: SILAC heavy K:13C(6)15N(2)
+comment: The heavy amino acid lysine used in SILAC experiments, using the following isotope:13C(6)15N(2)
 is_a: PRIDE:0000325 !  SILAC heavy
 created_by: yperez
 creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000618
-name: SILAC medium R
-comment: The medium weight reagent used in SILAC experiments SILAC medium R: 13C(6)14N(4).
+name: SILAC medium R:13C(6)14N(4)
+comment: The medium amino acid arginine used in SILAC experiments, using the following isotope: 13C(6)14N(4).
 is_a: PRIDE:0000327 ! SILAC medium
 created_by: yperez
 creation_date: 2011-07-22T09:47:09Z
 
 [Term]
 id: PRIDE:0000619
-name: SILAC medium K
-comment: The medium weight reagent used in SILAC experiments SILAC medium K: 13C(6)14N(2).
+name: SILAC medium K:13C(6)14N(2)
+comment: The medium amino acid lysine used in SILAC experiments, using the following isotope: 13C(6)14N(2).
 is_a: PRIDE:0000327 ! SILAC medium
 created_by: yperez
 creation_date: 2011-07-22T09:47:09Z
