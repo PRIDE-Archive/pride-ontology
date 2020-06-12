@@ -4131,7 +4131,6 @@ def: "The reduction agent 2-mercaptoethanol (2-sulfanylethan-1-ol) with cheminca
 is_a: PRIDE:0000607 ! Reduction reagent
 created_by: lisavetasol
 
-
 [Term]
 id: PRIDE:0000611
 name: SILAC light R
@@ -4174,7 +4173,7 @@ creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000616
-name: SILAC heavy L: 13C(6)
+name: SILAC heavy L
 comment: The heavy reagent used in SILAC experiments SILAC heavy L: 13C(6)
 is_a: PRIDE:0000325 !  SILAC heavy
 created_by: yperez
@@ -4182,7 +4181,7 @@ creation_date: 2011-07-22T09:45:40Z
 
 [Term]
 id: PRIDE:0000617
-name: SILAC heavy K: 13C(6)15N(2)
+name: SILAC heavy K
 comment: The heavy reagent used in SILAC experiments SILAC heavy K: 13C(6)15N(2)
 is_a: PRIDE:0000325 !  SILAC heavy
 created_by: yperez
