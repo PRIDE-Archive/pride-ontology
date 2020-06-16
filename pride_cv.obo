@@ -4108,29 +4108,124 @@ id: PRIDE:0000607
 name: Reduction reagent
 def: "The chemical reagent that is used to break disulfide bonds in proteins"
 is_a: PRIDE:0000025 ! Reduction
-created_by: lisavetasol 
+created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000608
 name: Dithiothreitol (DTT)
 def: "The commonly used small redox reagent dithiothreitol (also known as Cleland's reagent) with chemical formula C4H10O2S2"
 is_a: PRIDE:0000607 ! Reduction reagent
-created_by: lisavetasol 
+created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000609
 name: Tris(2-carboxyethyl)phosphine (TCEP)
 def: "The reduction agent with chemincal formuls C9H15O6P"
 is_a: PRIDE:0000607 ! Reduction reagent
-created_by: lisavetasol 
+created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000610
 name: Beta-mercaptoethanol (BME)
 def: "The reduction agent 2-mercaptoethanol (2-sulfanylethan-1-ol) with chemincal formuls C2H6OS"
 is_a: PRIDE:0000607 ! Reduction reagent
-created_by: lisavetasol 
+created_by: lisavetasol
 
+[Term]
+id: PRIDE:0000611
+name: SILAC light R:12C(6)14N(4)
+comment: The light amino acid arginine used in SILAC experiments, using the following isotopes:12C(6)14N(4)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000612
+name: SILAC light L:12C(6)
+comment: The light amino acid leucine used in SILAC experiments, using the following isotopes:12C(6)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000613
+name: SILAC light K:12C(6)14N(2)
+comment: The light amino acid lysine used in SILAC experiments, using the following isotopes:12C(6)14N(2)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000614
+name: SILAC light P:12C(5)
+comment: The light amino acid proline used in SILAC experiments, using the following isotopes:12C(5)
+is_a: PRIDE:0000326 ! SILAC light
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000615
+name: SILAC heavy R:13C(6)15N(4)
+comment: The heavy amino acid arginine used in SILAC experiments, using the following isotopes:13C(6)15N(4)
+is_a: PRIDE:0000325 !  SILAC heavy
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000616
+name: SILAC heavy L:13C(6)
+comment: The heavy amino acid leucine used in SILAC experiments, using the following isotopes: 13C(6)
+is_a: PRIDE:0000325 !  SILAC heavy
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000617
+name: SILAC heavy K:13C(6)15N(2)
+comment: The heavy amino acid lysine used in SILAC experiments, using the following isotopes:13C(6)15N(2)
+is_a: PRIDE:0000325 !  SILAC heavy
+created_by: yperez
+creation_date: 2011-07-22T09:45:40Z
+
+[Term]
+id: PRIDE:0000618
+name: SILAC medium R:13C(6)14N(4)
+comment: The medium amino acid arginine used in SILAC experiments, using the following isotopes: 13C(6)14N(4).
+is_a: PRIDE:0000327 ! SILAC medium
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000619
+name: SILAC medium K:13C(6)14N(2)
+comment: The medium amino acid lysine used in SILAC experiments, using the following isotopes: 13C(6)14N(2).
+is_a: PRIDE:0000327 ! SILAC medium
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000620
+name: 15N
+comment: Metabolic label 15N
+is_a: PRIDE:0000597 ! metabolic label
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000621
+name: 13C
+comment: Metabolic label 13C
+is_a: PRIDE:0000597 ! metabolic label
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000622
+name: 18O
+comment: Metabolic label 18O
+is_a: PRIDE:0000597 ! metabolic label
+created_by: yperez
+creation_date: 2011-07-22T09:47:09Z
 
 [Term]
 id: PRIDE:0000000
