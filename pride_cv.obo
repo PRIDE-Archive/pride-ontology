@@ -4228,6 +4228,14 @@ created_by: yperez
 creation_date: 2011-07-22T09:47:09Z
 
 [Term]
+id: PRIDE:0000623
+name: original source name
+comment: Reference to the Sample. This term is use for cross-reference samples in SDRF for proteomics
+is_a: PRIDE:0000006 ! Experiment additional parameter
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
