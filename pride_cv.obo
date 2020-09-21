@@ -4236,6 +4236,62 @@ created_by: yperez
 creation_date: 2020-23-22T09:47:09Z
 
 [Term]
+id: PRIDE:0000624
+name: SpectraCluster MaxRatio
+comment: Spectra Cluster Maximum Ratio for the cluster
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000625
+name: NIST ProbCorr
+comment: NIST Probability Correlation
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000626
+name: NIST Dotbest
+comment: NIST best dot product
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000627
+name: Data-dependent acquisition
+comment: Data-dependent acquisition
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000629
+name: Parallel reaction monitoring
+comment: Parallel Reaction Monitoring (PRM)
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000630
+name: Selected reaction monitoring
+comment: Selected reaction monitoring (SRM)
+is_a: PRIDE:0000428 ! Bottom-up proteomics
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
+id: PRIDE:0000631
+name: Mass spectrometry imaging
+comment: Mass spectrometry imaging
+is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+created_by: yperez
+creation_date: 2020-23-22T09:47:09Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
