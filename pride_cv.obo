@@ -4009,28 +4009,28 @@ id: PRIDE:0000593
 name: CID collision energy
 def: "CID collision energy"
 is_a: MS:1000045 ! collision energy
-part_of: id: PRIDE:0000591 ! CID
+relationship: part_of PRIDE:0000591 ! CID
 
 [Term]
 id: PRIDE:0000594
 name: HCD collision energy
 def: "HCD collision energy"
 is_a: MS:1000045 ! collision energy
-part_of: id: PRIDE:0000590 ! HCD
+relationship: part_of PRIDE:0000590 ! HCD
 
 [Term]
 id: PRIDE:0000595
 name: EThcD collision energy
 def: "EThcD collision energy"
 is_a: MS:1000045 ! collision energy
-part_of: id: PRIDE:0000589 ! EThcD
+relationship: part_of PRIDE:0000589 ! EThcD
 
 [Term]
 id: PRIDE:0000596
 name: ETciD collision energy
 def: "ETciD collision energy"
 is_a: MS:1000045 ! collision energy
-part_of: id: PRIDE:0000592 ! ETciD
+relationship: part_of PRIDE:0000592 ! ETciD
 
 [Term]
 id: PRIDE:0000597
