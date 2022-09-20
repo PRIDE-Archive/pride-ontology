@@ -108,14 +108,14 @@ PXD029545, benchmarking|machine learning|immunopeptidomics|deep learning
 PXD000269, benchmarking|machine learning|immunopeptidomics|deep learning
 PXD022950, benchmarking|machine learning|immunopeptidomics|deep learning
 PXD001468, benchmarking|machine learning|immunopeptidomics|deep learning
-PXD000561, benchmarking|machine learning|immunopeptidomics|deep learning
+PXD000561, benchmarking|machine learning|immunopeptidomics|deep learning|tissue proteome
 PXD001250, benchmarking|machine learning|immunopeptidomics|deep learning
 PXD000815, benchmarking|machine learning|immunopeptidomics|deep learning
 PXD012703, benchmarking|machine learning|immunopeptidomics|deep learning
 PXD000601, benchmarking|machine learning|deep learning
 PXD000612, benchmarking|machine learning|deep learning|retention time
 PXD011070, benchmarking|machine learning|deep learning
-PXD000865, benchmarking|machine learning|deep learning
+PXD000865, benchmarking|machine learning|deep learning|tissue proteome
 PXD006109, benchmarking|machine learning|deep learning
 PXD000953, benchmarking|machine learning|deep learning
 PXD006932, benchmarking|machine learning|deep learning|retention time
@@ -128,3 +128,8 @@ PXD023120, proteometools
 PXD023119, proteometools
 PXD006832, proteometools
 PXD028735, benchmarking|machine learning|deep learning|ion mobility
+PXD030983, tissue proteome
+PXD013868, tissue proteome
+PXD010216, tissue proteome
+PXD008183, tissue proteome
+PXD001928, tissue proteome
