@@ -1596,28 +1596,28 @@ is_a: PRIDE:0000239 ! immonium ion
 [Term]
 id: PRIDE:0000260
 name: precursor ion type
-def: "precursor ion type."
+def: "precursor ion type." [PRIDE:PRIDE]
 synonym: "parent ion type" EXACT []
 is_a: PRIDE:0000202 ! Parent Ion Annotation
 
 [Term]
 id: PRIDE:0000261
 name: precursor ion -H2O
-def: "Precursor ion type with the neutral loss of a molecule water."
+def: "Precursor ion type with the neutral loss of a molecule water." [PRIDE:PRIDE]
 synonym: "parent ion -H2O" EXACT []
 is_a: PRIDE:0000263 ! precursor ion
 
 [Term]
 id: PRIDE:0000262
 name: precursor ion -NH3
-def: "Precursor ion type with the neutral loss of an ammonia group."
+def: "Precursor ion type with the neutral loss of an ammonia group." [PRIDE:PRIDE]
 synonym: "parent ion -NH3" EXACT []
 is_a: PRIDE:0000263 ! precursor ion
 
 [Term]
 id: PRIDE:0000263
 name: precursor ion
-def: "Precursor ion."
+def: "Precursor ion." [PRIDE:PRIDE]
 synonym: "parent ion" EXACT []
 is_a: PRIDE:0000260 ! precursor ion type
 
@@ -1717,14 +1717,14 @@ is_a: PRIDE:0000278 ! Processing method additional parameter
 [Term]
 id: PRIDE:0000280
 name: zH ion
-def: "Z ion type with one extra proton"
+def: "Z ion type with one extra proton" [PRIDE:PRIDE]
 synonym: "zH fragment ion" EXACT []
 is_a: PRIDE:0000230 ! z ion
 
 [Term]
 id: PRIDE:0000281
 name: zHH ion
-def: "Z ion type with two extra protons"
+def: "Z ion type with two extra protons" [PRIDE:PRIDE]
 synonym: "zHH fragment ion" EXACT []
 is_a: PRIDE:0000230 ! z ion
 
@@ -2678,42 +2678,42 @@ created_by: jav
 [Term]
 id: PRIDE:0000419
 name: b ion -H3PO4
-def: "B ion type with a neutral loss of a phosphate molecule."
+def: "B ion type with a neutral loss of a phosphate molecule." [PRIDE:PRIDE]
 synonym: "b fragment ion -H3PO4" EXACT []
 is_a: PRIDE:0000194 ! b ion
 
 [Term]
 id: PRIDE:0000420
 name: b ion -2H3PO4
-def: "B ion type with a neutral loss of 2 phosphate molecules."
+def: "B ion type with a neutral loss of 2 phosphate molecules." [PRIDE:PRIDE]
 synonym: "b fragment ion -2H3PO4" EXACT []
 is_a: PRIDE:0000194 ! b ion
 
 [Term]
 id: PRIDE:0000421
 name: b ion -3H3PO4
-def: "B ion type with a neutral loss of 3 phosphate molecules."
+def: "B ion type with a neutral loss of 3 phosphate molecules." [PRIDE:PRIDE]
 synonym: "b fragment ion -3H3PO4" EXACT []
 is_a: PRIDE:0000194 ! b ion
 
 [Term]
 id: PRIDE:0000422
 name: y ion -H3PO4
-def: "Y ion type with a neutral loss of a phosphate molecule."
+def: "Y ion type with a neutral loss of a phosphate molecule." [PRIDE:PRIDE]
 synonym: "y fragment ion -H3PO4" EXACT []
 is_a: PRIDE:0000193 ! y ion
 
 [Term]
 id: PRIDE:0000423
 name: y ion -2H3PO4
-def: "Y ion type with a neutral loss of 2 phosphate molecules."
+def: "Y ion type with a neutral loss of 2 phosphate molecules." [PRIDE:PRIDE]
 synonym: "y fragment ion -2H3PO4" EXACT []
 is_a: PRIDE:0000193 ! y ion
 
 [Term]
 id: PRIDE:0000424
 name: y ion -3H3PO4
-def: "Y ion type with a neutral loss of 3 phosphate molecules."
+def: "Y ion type with a neutral loss of 3 phosphate molecules." [PRIDE:PRIDE]
 synonym: "y fragment ion -3H3PO4" EXACT []
 is_a: PRIDE:0000193 ! y ion
 
