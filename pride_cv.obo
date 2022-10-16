@@ -3307,14 +3307,6 @@ created_by: yperez
 creation_date: 2018-09-05T10:38:29Z
 
 [Term]
-id: PRIDE:0000501
-name: Max Labeled AA
-def: "Max Labeled AA" [PRIDE:PRIDE]
-is_a: PRIDE:0000485 ! Global result parameters
-created_by: yperez
-creation_date: 2018-09-05T10:38:29Z
-
-[Term]
 id: PRIDE:0000502
 name: Max Number of Modifications (PTMs)
 def: "Max Number of Modifications (PTMs)" [PRIDE:PRIDE]
@@ -4314,11 +4306,6 @@ def: "TMT134N" [PRIDE:PRIDE]
 is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2022-08-07T15:21:19Z
-
-[Term]
-id: PRIDE:0000000
-name: Reference additional parameter
-property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
