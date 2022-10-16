@@ -79,7 +79,7 @@ is_a: PRIDE:0000009 ! Ion mass tolerance
 [Term]
 id: PRIDE:0000012
 name: Delta Cn
-def: "1.0 - normalized correlation score."
+def: "1.0 - normalized correlation score." []
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
