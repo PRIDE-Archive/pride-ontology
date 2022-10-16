@@ -1,10 +1,12 @@
 format-version: 1.2
-date: 06:03:2012 11:34
-saved-by: jg
-auto-generated-by: OBO-Edit 2.3
+date: 23:09:2022 11:38
+data-version: 2.1.0
+saved-by: Yasset Perez-Riverol
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
 import: http://purl.obolibrary.org/obo/chmo.owl
+
 
 
 [Typedef]
