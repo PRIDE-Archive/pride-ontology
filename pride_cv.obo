@@ -4292,6 +4292,30 @@ created_by: yperez
 creation_date: 2020-23-22T09:47:09Z
 
 [Term]
+id: PRIDE:0000632
+name: TMT133N
+def: "TMT133N" []
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2022-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000633
+name: TMT133C
+def: "TMT133C" []
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2022-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000634
+name: TMT134N
+def: "TMT134N" []
+is_a: PRIDE:0000515 ! TMT
+created_by: yperez
+creation_date: 2022-08-07T15:21:19Z
+
+[Term]
 id: PRIDE:0000000
 name: Reference additional parameter
 property_value: http://purl.obolibrary.org/obo/comment "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" xsd:string
