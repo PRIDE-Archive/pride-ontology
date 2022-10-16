@@ -2576,7 +2576,7 @@ created_by: rc
 [Term]
 id: PRIDE:0000406
 name: ProteomeCentral dataset URI
-def: "URI associated to one PX submission in ProteomeCentral."
+def: "URI associated to one PX submission in ProteomeCentral." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
@@ -2584,7 +2584,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000407
 name: Result file URI
-def: "URI of one file labeled as 'Result', associated to one PX submission."
+def: "URI of one file labeled as 'Result', associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 is_a: PRIDE:0000577 ! file uri
@@ -2593,7 +2593,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000408
 name: Search engine output file URI
-def: "URI of one search engine output file associated to one PX submission."
+def: "URI of one search engine output file associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 is_a: PRIDE:0000577 ! file uri
@@ -2602,7 +2602,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000409
 name: Peak list file URI
-def: "URI of one of one search engine output file associated to one PX submission."
+def: "URI of one of one search engine output file associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 is_a: PRIDE:0000577 ! file uri
@@ -2611,7 +2611,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000410
 name: 'Other' type file URI
-def: "URI of one file labeled as 'Other', associated to one PX submission."
+def: "URI of one file labeled as 'Other', associated to one PX submission." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 is_a: PRIDE:0000577 ! file uri
@@ -2620,7 +2620,7 @@ created_by: jav
 [Term]
 id: PRIDE:0000411
 name: Dataset FTP location
-def: "FTP location of one entire PX data set."
+def: "FTP location of one entire PX data set." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
 created_by: jav
