@@ -119,37 +119,37 @@ is_a: PRIDE:0000017 ! Sample description additional parameter
 [Term]
 id: PRIDE:0000019
 name: Solubilization
-def: "To make something soluble or more soluble, especially in water, by the action of a detergent or other agent."
+def: "To make something soluble or more soluble, especially in water, by the action of a detergent or other agent." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000020
 name: Depletion
-def: "The removal of specific components of a complex mixture of proteins or peptides on the basis of some specific property of those components."
+def: "The removal of specific components of a complex mixture of proteins or peptides on the basis of some specific property of those components." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000021
 name: Fractionation
-def: "Process of classification of an analyte or a group of analytes from a sample according to physical (e.g., size) or chemical (e.g., bonding, reactivity) properties. (from https://doi.org/10.1351/goldbook.FT06825)"
+def: "Process of classification of an analyte or a group of analytes from a sample according to physical (e.g., size) or chemical (e.g., bonding, reactivity) properties. (from https://doi.org/10.1351/goldbook.FT06825)" []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000022
 name: Separation
-def: "To separate a complex mixture of proteins or peptides based on molecular characteristics and interaction type over a given amount of time."
+def: "To separate a complex mixture of proteins or peptides based on molecular characteristics and interaction type over a given amount of time." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000023
 name: Band excision
-def: "The removal of a region of a gel which contains protein(s) of interest."
+def: "The removal of a region of a gel which contains protein(s) of interest." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000024
 name: Enzyme digestion
-def: "The fragmentation of proteins into peptides through the use of an enzyme such as trypsin."
+def: "The fragmentation of proteins into peptides through the use of an enzyme such as trypsin." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -160,13 +160,13 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000026
 name: Alkylation
-def: "The transfer of an alkyl group from one molecule to another."
+def: "The transfer of an alkyl group from one molecule to another." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000027
 name: Mass spectrometry
-def: "This is a measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically."
+def: "This is a measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -236,7 +236,7 @@ is_a: PRIDE:0000028 ! Cv Label
 [Term]
 id: PRIDE:0000039
 name: Organelle isolation
-def: "Any technique which separates differentiated structures from the cell."
+def: "Any technique which separates differentiated structures from the cell." []
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -297,7 +297,7 @@ is_a: PRIDE:0000003 ! Peptide item additional parameter
 [Term]
 id: PRIDE:0000050
 name: Rank/Sp
-def: "Final correlation score rank and preliminary score rank."
+def: "Final correlation score rank and preliminary score rank." []
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
@@ -311,14 +311,14 @@ relationship: part_of PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000052
 name: Cn
-def: "normalized correlation score."
+def: "normalized correlation score." []
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000053
 name: Sequest score
-def: "raw correlation score (Sequest)."
+def: "raw correlation score (Sequest)." []
 synonym: "C*10^4" RELATED []
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
@@ -327,14 +327,14 @@ relationship: part_of PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000054
 name: Sp
-def: "preliminary score."
+def: "preliminary score." []
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000055
 name: Ions
-def: "the number of frament ions matched (in the preliminary scoring process) out of the total number of fragment masses for the peptide."
+def: "the number of frament ions matched (in the preliminary scoring process) out of the total number of fragment masses for the peptide." []
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
@@ -347,7 +347,7 @@ is_a: PRIDE:0000573 ! Identification software
 [Term]
 id: PRIDE:0000057
 name: Molecular weight
-def: "Molecular weight of a protein."
+def: "Molecular weight of a protein." []
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
 
@@ -392,13 +392,13 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000065
 name: Upstream flanking sequence
-def: "Any sequence reported before the start of the peptide."
+def: "Any sequence reported before the start of the peptide." []
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000066
 name: Downstream flanking seqeuence
-def: "Any sequence reported after the end of the peptide sequence."
+def: "Any sequence reported after the end of the peptide sequence." []
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
@@ -414,14 +414,14 @@ is_a: PRIDE:0000000 ! Reference additional parameter
 [Term]
 id: PRIDE:0000069
 name: Mascot score
-def: "Score as defined for the Mascot search algorithm."
+def: "Score as defined for the Mascot search algorithm." []
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000046 ! Mascot
 
 [Term]
 id: PRIDE:0000070
 name: Peptide cleavage
-def: "Cleavage of the peptide bond."
+def: "Cleavage of the peptide bond." []
 is_a: PRIDE:0000024 ! Enzyme digestion
 
 [Term]
@@ -558,100 +558,100 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000097
 name: Project
-def: "Allows experiments to be grouped or organised under projects.  Experiments may be grouped under more than one project."
+def: "Allows experiments to be grouped or organised under projects.  Experiments may be grouped under more than one project." []
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000098
 name: Indistinguishable alternative protein accession
-def: "A qualifier is mandatory when using this term.  The qualifier is an alternative protein accession that is indistinguishable from the primary protein accession based upon observed peptide sequences only."
+def: "A qualifier is mandatory when using this term.  The qualifier is an alternative protein accession that is indistinguishable from the primary protein accession based upon observed peptide sequences only." []
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000099
 name: PeptideProphet probability score
-def: "The probability score for this peptide assignment to be correct, as calculated by PeptideProphet." [PRIDE:PRIDE "PRIDE"]
+def: "The probability score for this peptide assignment to be correct, as calculated by PeptideProphet." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000101 ! PeptideProphet
 
 [Term]
 id: PRIDE:0000100
 name: ProteinProphet probability score
-def: "The probability score for this protein identification to be correct, as calculated by ProteinProphet." [PRIDE:PRIDE "PRIDE"]
+def: "The probability score for this protein identification to be correct, as calculated by ProteinProphet." [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 relationship: part_of PRIDE:0000102 ! ProteinProphet
 
 [Term]
 id: PRIDE:0000101
 name: PeptideProphet
-def: "The PeptideProphet algorithm."
+def: "The PeptideProphet algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000102
 name: ProteinProphet
-def: "The ProteinProphet algorithm."
+def: "The ProteinProphet algorithm." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000103
 name: Gel run date
-def: "The date upon which the gel was run.  A value is mandatory - must be formatted as xsd:dateTime."
+def: "The date upon which the gel was run.  A value is mandatory - must be formatted as xsd:dateTime." [PRIDE:PRIDE]
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
 id: PRIDE:0000104
 name: Sample volume loaded
-def: "The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double."
+def: "The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double." [PRIDE:PRIDE]
 xref: PRIDE:PRIDE
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
 id: PRIDE:0000105
 name: Width in pixels
-def: "The width of the referenced gel image in pixels.  Mandatory value of type xsd:int."
+def: "The width of the referenced gel image in pixels.  Mandatory value of type xsd:int." [PRIDE:PRIDE]
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
 id: PRIDE:0000106
 name: Height in pixels
-def: "The height of the referenced gel image in pixels.  Mandatory value of type xsd:int."
+def: "The height of the referenced gel image in pixels.  Mandatory value of type xsd:int." [PRIDE:PRIDE]
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
 id: PRIDE:0000107
 name: Gel spot parameter
-def: "Parameters describing the spot on a gel that has been analysed resulting in the annotated protein identification."
+def: "Parameters describing the spot on a gel that has been analysed resulting in the annotated protein identification." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000108
 name: Gel spot intensity
-def: "The intensity of the spot on the gel.   Mandatory value of type xsd:double."
+def: "The intensity of the spot on the gel.   Mandatory value of type xsd:double." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000109
-name: Gel spot area
-def: "The area of the spot on the gel measured in millimetres squared.   Mandatory value of type xsd:double."
+name: Gel spot area 
+def: "The area of the spot on the gel measured in millimetres squared.   Mandatory value of type xsd:double." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000110
 name: Gel spot volume
-def: "The volume of the spot on the gel measured in millimetres cubed.  Mandatory value of type xsd:double."
+def: "The volume of the spot on the gel measured in millimetres cubed.  Mandatory value of type xsd:double." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000131 ! Spot normalized volume
 
 [Term]
 id: PRIDE:0000111
 name: Reference describing data analysis
-def: "A reference annotated with this term describes analysis of the data presented in the enclosing PRIDE experiment."
+def: "A reference annotated with this term describes analysis of the data presented in the enclosing PRIDE experiment." [PRIDE:PRIDE]
 is_a: PRIDE:0000000 ! Reference additional parameter
 
 [Term]
 id: PRIDE:0000112
 name: Identified by peptide mass fingerprint
-def: "The annotated protein identification arises from peptide mass fingerprinting.  Peptide identifications may or may not be included."
+def: "The annotated protein identification arises from peptide mass fingerprinting.  Peptide identifications may or may not be included." [PRIDE:PRIDE]
 synonym: "PMF" EXACT []
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
@@ -659,7 +659,7 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000113
 name: Identified by peptide fragmentation
-def: "The protein identification annotated with this term has been identified by peptide fragmentation and subsequent database searching."
+def: "The protein identification annotated with this term has been identified by peptide fragmentation and subsequent database searching." [PRIDE:PRIDE]
 synonym: "PFF" EXACT []
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
@@ -719,21 +719,21 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000122
 name: Two Dimensional Polyacrylamide Gel Electrophoresis
-def: "A type of gel electrophoresis in which proteins are first separated by charge and then by molecular weight, enabling the analysis of complex protein mixtures."
+def: "A type of gel electrophoresis in which proteins are first separated by charge and then by molecular weight, enabling the analysis of complex protein mixtures." [PRIDE:PRIDE]
 is_a: PRIDE:0000022 ! Separation
 
 
 [Term]
 id: PRIDE:0000123
 name: Immobilized pH Gradient Electrophoresis
-def: "Electrophoresis using an gel  which has a  pH gradient along its length. ."
+def: "Electrophoresis using an gel  which has a  pH gradient along its length." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
 is_a: PRIDE:0000568 ! 2D PAGE
 
 [Term]
 id: PRIDE:0000124
 name: Sodium dodecyl sulfate polyacrylamide gel electrophoresis
-def: "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE."
+def: "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
 is_a: PRIDE:0000568 ! 2D PAGE
 
@@ -741,33 +741,33 @@ is_a: PRIDE:0000568 ! 2D PAGE
 [Term]
 id: PRIDE:0000125
 name: pH low value
-def: "The lowest pH of an immobilised pH gradient gel."
+def: "The lowest pH of an immobilised pH gradient gel." [PRIDE:PRIDE]
 is_a: PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
 [Term]
 id: PRIDE:0000126
 name: pH high value
-def: "The highest pH of an immobilised pH gradient gel."
+def: "The highest pH of an immobilised pH gradient gel." [PRIDE:PRIDE]
 is_a: PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
 [Term]
 id: PRIDE:0000127
 name: IPG strip length cm
-def: "The length in centimeters of an immobilised pH gradient gel."
+def: "The length in centimeters of an immobilised pH gradient gel." [PRIDE:PRIDE]
 comment: This value associated with this CV term should always be in centimeters.
 is_a: PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
 [Term]
 id: PRIDE:0000128
 name: First dimension details
-def: "Details of immobilised pH gradient gel electrophoresis which exclude the pH range of the gel and strip length parameters."
+def: "Details of immobilised pH gradient gel electrophoresis which exclude the pH range of the gel and strip length parameters." [PRIDE:PRIDE]
 comment: This CV term should be used in association with a value that is a free-text description of the first dimension details
 relationship: part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
 [Term]
 id: PRIDE:0000129
 name: Second dimension details
-def: "Details of sodium dodecyl sulfate polyacrylamide gel electrophoresis."
+def: "Details of sodium dodecyl sulfate polyacrylamide gel electrophoresis." [PRIDE:PRIDE]
 comment: This CV term should be used in association with a value that is a free-text description of the second dimension details
 is_a: PRIDE:0000124 ! Sodium dodecyl sulfate polyacrylamide gel electrophoresis
 
@@ -780,37 +780,37 @@ is_obsolete: true
 [Term]
 id: PRIDE:0000131
 name: Spot normalized volume
-def: "A value for spot volume which is standardized across gels and is derived from the individual gel spot volume values."
+def: "A value for spot volume which is standardized across gels and is derived from the individual gel spot volume values." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000132
 name: Spot normalized volume method
-def: "The method by which the normalized value for spot volume is derived from the individual gel spot volume values."
+def: "The method by which the normalized value for spot volume is derived from the individual gel spot volume values." [PRIDE:PRIDE]
 is_a: PRIDE:0000107 ! Gel spot parameter
 
 [Term]
 id: PRIDE:0000133
 name: Isobaric residue K/Q
-def: "The amino acids glutamine (Q) (mol wt = 146) cannot be distinguished from lysine (K) (mol wt = 146)."
+def: "The amino acids glutamine (Q) (mol wt = 146) cannot be distinguished from lysine (K) (mol wt = 146)." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000134
 name: Anticoagulant
-def: "A substance that prevents coagulation; that is, it stops blood from clotting."
+def: "A substance that prevents coagulation; that is, it stops blood from clotting." [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000135
 name: Mapping date
-def: "Date of last mapping of given identifier to current UniProt accession number."
+def: "Date of last mapping of given identifier to current UniProt accession number." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000136
 name: Mapping status
-def: "Status of last mapping of given identifier to current UniProt accession number. Valid values are 'mappingAllOK', 'not mapped peptide mismatch', 'not mapped accession not found' and 'not mapped taxon not found' ."
+def: "Status of last mapping of given identifier to current UniProt accession number. Valid values are 'mappingAllOK', 'not mapped peptide mismatch', 'not mapped accession not found' and 'not mapped taxon not found' ." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
