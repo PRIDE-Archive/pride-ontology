@@ -304,7 +304,7 @@ relationship: part_of PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000051
 name: (M+H)+
-def: "m/z of the singly-charged precursor (precursor mass + mass of hydrogen atom)."
+def: "m/z of the singly-charged precursor (precursor mass + mass of hydrogen atom)." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000045 ! Sequest
 
@@ -4101,35 +4101,35 @@ created_by: lisavetasol
 [Term]
 id: PRIDE:0000606
 name: N-ethylmaleimide (NEM)
-def: "The derivative of maleic acid, chemical formula - C6H7NO2. The corresponding mass shift at the cysteine residue (UNIMODE Accession # 108) - 125.048 Da"
+def: "The derivative of maleic acid, chemical formula - C6H7NO2. The corresponding mass shift at the cysteine residue (UNIMODE Accession # 108) - 125.048 Da" [PRIDE:PRIDE]
 is_a: PRIDE:0000598 ! Alkylation reagent
 created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000607
 name: Reduction reagent
-def: "The chemical reagent that is used to break disulfide bonds in proteins"
+def: "The chemical reagent that is used to break disulfide bonds in proteins" [PRIDE:PRIDE]
 is_a: PRIDE:0000025 ! Reduction
 created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000608
 name: Dithiothreitol (DTT)
-def: "The commonly used small redox reagent dithiothreitol (also known as Cleland's reagent) with chemical formula C4H10O2S2"
+def: "The commonly used small redox reagent dithiothreitol (also known as Cleland's reagent) with chemical formula C4H10O2S2" [PRIDE:PRIDE]
 is_a: PRIDE:0000607 ! Reduction reagent
 created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000609
 name: Tris(2-carboxyethyl)phosphine (TCEP)
-def: "The reduction agent with chemincal formuls C9H15O6P"
+def: "The reduction agent with chemincal formuls C9H15O6P" [PRIDE:PRIDE]
 is_a: PRIDE:0000607 ! Reduction reagent
 created_by: lisavetasol
 
 [Term]
 id: PRIDE:0000610
 name: Beta-mercaptoethanol (BME)
-def: "The reduction agent 2-mercaptoethanol (2-sulfanylethan-1-ol) with chemincal formuls C2H6OS"
+def: "The reduction agent 2-mercaptoethanol (2-sulfanylethan-1-ol) with chemincal formuls C2H6OS" [PRIDE:PRIDE]
 is_a: PRIDE:0000607 ! Reduction reagent
 created_by: lisavetasol
 
