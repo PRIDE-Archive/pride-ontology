@@ -4307,6 +4307,30 @@ is_a: PRIDE:0000515 ! TMT
 created_by: yperez
 creation_date: 2022-08-07T15:21:19Z
 
+[Term]
+id: PRIDE:0000635
+name: Affinity proteomics
+comment: The field of proteome analysis based on the use of antibodies and other binding reagents as protein-specific detection probes.
+is_a: PRIDE:0000457 ! Experiment Type
+created_by: yperez
+creation_date: 2023-08-05T15:21:19Z
+
+[Term]
+id: PRIDE:0000636
+name: SomaScan affinity proteomics
+comment: Refer to technologies like SomaScan that employ aptamers as the binding agents for protein detection. SomaScan utilizes Slow Off-rate Modified Aptamers (SOMAmers) for protein targeting and measurement.
+is_a: PRIDE:0000635 ! Affinity proteomics
+created_by: yperez
+creation_date: 2023-08-05T15:21:19Z
+
+[Term]
+id: PRIDE:0000637
+name: Olink affinity proteomics
+comment: Refer to technologies like Olink that utilize antibodies as the primary binding agents for protein detection. Olink's Proximity Extension Assay (PEA) technology relies on using antibody pairs to generate protein-specific signals.
+is_a: PRIDE:0000635 ! Affinity proteomics
+created_by: yperez
+creation_date: 2023-08-05T15:21:19Z
+
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
 name: part_of
