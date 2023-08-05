@@ -4331,6 +4331,37 @@ is_a: PRIDE:0000635 ! Affinity proteomics
 created_by: yperez
 creation_date: 2023-08-05T15:21:19Z
 
+[Term]
+id: PRIDE:0000638
+name: Instrument model
+def: "Instrument model" [PRIDE:PRIDE]
+created_by: yperez
+creation_date: 2023-08-05T15:21:19Z
+
+[Term]
+id: PRIDE:0000639
+name: Somalogic instrument model
+def: "Somalogic instrument model" [PRIDE:PRIDE]
+is_a: PRIDE:0000638 ! Instrument model
+created_by: yperez
+creation_date: 2023-08-05T15:21:19Z
+
+[Term]
+id: PRIDE:0000640
+name: SomaScan assay v4.0
+def: "SomaScan assay v4.0" [PRIDE:PRIDE]
+is_a: PRIDE:0000639 ! Somalogic instrument model
+created_by: yperez
+creation_date: 2023-08-05T15:21:19Z
+
+[Term]
+id: PRIDE:0000641
+name: SomaScan assay v4.1
+def: "SomaScan assay v4.1" [PRIDE:PRIDE]
+is_a: PRIDE:0000639 ! Somalogic instrument model
+created_by: yperez
+creation_date: 2023-08-05T15:21:19Z
+
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
 name: part_of
