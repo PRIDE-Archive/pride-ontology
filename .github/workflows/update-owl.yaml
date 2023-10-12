@@ -27,7 +27,7 @@ jobs:
           cp unimod.obo tmp_unimod.obo
           sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_pride.obo
           sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_unimod.obo
-          head -n 50 tmp.obo
+          head -n 50 tmp_pride.obo
           export JAVA_TOOL_OPTIONS=-Xmx6G
           docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.8.1 robot convert -vvv -i /work/tmp_pride.obo -o /work/pride_cv.owl --format owl
           docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.8.1 robot convert -vvv -i /work/tmp_unimod.obo -o /work/unimod.owl --format owl
