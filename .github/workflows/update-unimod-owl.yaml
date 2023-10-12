@@ -1,4 +1,4 @@
-name: "Update OWL"
+name: "Update Unimod OWL"
 
 on:
   push:
