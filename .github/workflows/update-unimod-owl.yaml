@@ -16,30 +16,30 @@ jobs:
         uses: actions/checkout@v3
       - name: Extract version from OBO
         run: |
-          CV_VERSION=`grep data-version pride_cv.obo | grep -oP "(\d+.\d+.\d+)"`
+          CV_VERSION=`grep data-version unimod.obo | grep -oP "(\d+.\d+.\d+)"`
           echo CV_VERSION=${CV_VERSION}
           echo "CV_VERSION=${CV_VERSION}" >> $GITHUB_ENV
-      - name: Generate OWL
+      - name: Generate Unimod OWL
         run: |
           docker pull obolibrary/robot:v1.8.1
           # Replace the imports of the UO and PATO ontology .obo files with the equivalent .owl files
-          cp pride_cv.obo tmp.obo
+          cp unimod.obo tmp.obo
           sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp.obo
           head -n 50 tmp.obo
           export JAVA_TOOL_OPTIONS=-Xmx6G
-          docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.8.1 robot convert -vvv -i /work/tmp.obo -o /work/pride_cv.owl --format owl
+          docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.8.1 robot convert -vvv -i /work/tmp.obo -o /work/unimod.owl --format owl
           rm tmp.obo
       - name: Create pull request
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
-          commit-message: Update OWL file
+          commit-message: Update Unimod OWL file
           committer: GitHub <noreply@github.com>
           author: GitHub <noreply@github.com>
           branch: update-owl-file
           delete-branch: true
-          title: Update OWL file
+          title: Update Unimod OWL file
           body: This automated PR updates the OWL file corresponding to the OBO file
       - name: Approve pull request
         if: (steps.cpr.outputs.pull-request-operation == 'created' ||	steps.cpr.outputs.pull-request-operation == 'updated')
