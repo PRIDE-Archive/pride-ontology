@@ -3970,18 +3970,24 @@ id: PRIDE:0000589
 name: EThcD
 def: "A dissociation process combining electron-transfer and higher-energy collision dissociation (EThcD). It combines ETD (reaction time) followed by HCD (activation energy)." [PRIDE:PRIDE]
 is_a: MS:1000044 ! dissociation method
+is_a: PRIDE:0000644 ! MS2 dissociation method
+is_a: PRIDE:0000645 ! MS3 dissociation method
 
 [Term]
 id: PRIDE:0000590
 name: HCD
 def: "beam-type collision-induced dissociation" [PRIDE:PRIDE]
 is_a: MS:1000044 ! dissociation method
+is_a: PRIDE:0000644 ! MS2 dissociation method
+is_a: PRIDE:0000645 ! MS3 dissociation method
 
 [Term]
 id: PRIDE:0000591
 name: CID
 def: "collision-induced dissociation" [PRIDE:PRIDE]
 is_a: MS:1000044 ! dissociation method
+is_a: PRIDE:0000644 ! MS2 dissociation method
+is_a: PRIDE:0000645 ! MS3 dissociation method
 
 [Term]
 id: PRIDE:0000592
@@ -3989,6 +3995,8 @@ name: ETciD
 def: "ETD with supplemental activation" [PRIDE:PRIDE]
 synonym: "ETcaD" EXACT []
 is_a: MS:1000044 ! dissociation method
+is_a: PRIDE:0000644 ! MS2 dissociation method
+is_a: PRIDE:0000645 ! MS3 dissociation method
 
 [Term]
 id: MS:1000045
@@ -4377,6 +4385,32 @@ def: "TMT135N" [PRIDE:PRIDE]
 is_a: PRIDE:0000515 ! TMT
 created_by: Roman-Si 
 creation_date: 2023-10-05T11:44:19Z
+
+[Term]
+id: PRIDE:0000644
+name: MS2 dissociation method
+def: "Fragmentation method used for dissociation or fragmentation for MS2" [PRIDE:PRIDE]
+is_a: MS:1000044 ! dissociation method
+created_by: yperez
+creation_date: 2023-10-12T11:44:19Z
+
+[Term]
+id: PRIDE:0000645
+name: MS3 dissociation method
+def: "Fragmentation method used for dissociation or fragmentation for MS3" [PRIDE:PRIDE]
+is_a: MS:1000044 ! dissociation method
+created_by: yperez
+creation_date: 2023-10-12T11:44:19Z
+
+[Term]
+id: PRIDE:0000646
+name: MS3 mass analyzer
+def: "MS3 mass analyzer" [PRIDE:PRIDE]
+is_a: MS:1000451 ! mass analyzer
+created_by: yperez
+creation_date: 2023-10-12T18:01:06Z
+
+
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
