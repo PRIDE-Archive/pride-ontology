@@ -4402,6 +4402,16 @@ is_a: MS:1000044 ! dissociation method
 created_by: yperez
 creation_date: 2023-10-12T11:44:19Z
 
+[Term]
+id: PRIDE:0000646
+name: MS3 mass analyzer
+def: "MS3 mass analyzer" [PRIDE:PRIDE]
+is_a: MS:1000451 ! mass analyzer
+created_by: yperez
+creation_date: 2023-10-12T18:01:06Z
+
+
+
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
 name: part_of
