@@ -1,4 +1,4 @@
-name: "Update PRIDE OWL"
+name: "Update OWL"
 
 on:
   push:
@@ -19,16 +19,20 @@ jobs:
           CV_VERSION=`grep data-version pride_cv.obo | grep -oP "(\d+.\d+.\d+)"`
           echo CV_VERSION=${CV_VERSION}
           echo "CV_VERSION=${CV_VERSION}" >> $GITHUB_ENV
-      - name: Generate PRIDE OWL
+      - name: Generate OWL
         run: |
           docker pull obolibrary/robot:v1.8.1
           # Replace the imports of the UO and PATO ontology .obo files with the equivalent .owl files
-          cp pride_cv.obo tmp.obo
-          sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp.obo
+          cp pride_cv.obo tmp_pride.obo
+          cp unimod.obo tmp_unimod.obo
+          sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_pride.obo
+          sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_unimod.obo
           head -n 50 tmp.obo
           export JAVA_TOOL_OPTIONS=-Xmx6G
-          docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.8.1 robot convert -vvv -i /work/tmp.obo -o /work/pride_cv.owl --format owl
-          rm tmp.obo
+          docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.8.1 robot convert -vvv -i /work/tmp_pride.obo -o /work/pride_cv.owl --format owl
+          docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.8.1 robot convert -vvv -i /work/tmp_unimod.obo -o /work/unimod.owl --format owl
+          rm tmp_pride.obo
+          rm tmp_unimod.obo
       - name: Create pull request
         id: cpr
         uses: peter-evans/create-pull-request@v4
@@ -39,7 +43,7 @@ jobs:
           author: GitHub <noreply@github.com>
           branch: update-owl-file
           delete-branch: true
-          title: Update PRIDE OWL file
+          title: Update OWL file
           body: This automated PR updates the OWL file corresponding to the OBO file
       - name: Approve pull request
         if: (steps.cpr.outputs.pull-request-operation == 'created' ||	steps.cpr.outputs.pull-request-operation == 'updated')
