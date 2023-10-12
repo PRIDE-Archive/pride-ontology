@@ -33,7 +33,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.PSI_MS_CV_GITHUB_TOKEN }}
+          token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           commit-message: Update OWL file
           committer: GitHub <noreply@github.com>
           author: GitHub <noreply@github.com>
@@ -45,19 +45,19 @@ jobs:
         if: (steps.cpr.outputs.pull-request-operation == 'created' ||	steps.cpr.outputs.pull-request-operation == 'updated')
         uses: juliangruber/approve-pull-request-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           number: ${{ steps.cpr.outputs.pull-request-number }}
       - name: Merge pull request
         if: (steps.cpr.outputs.pull-request-operation == 'created' ||	steps.cpr.outputs.pull-request-operation == 'updated')
         uses: peter-evans/enable-pull-request-automerge@v2
         with:
-          token: ${{ secrets.PSI_MS_CV_GITHUB_TOKEN }}
+          token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: squash
       - name: GitHub Tag
         id: new_tag
         uses: mathieudutour/github-tag-action@v5.6
         with:
-          github_token: ${{ secrets.PSI_MS_CV_GITHUB_TOKEN }}
+          github_token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           pre_release_branches: test-tag
           custom_tag: ${{ env.CV_VERSION }}
