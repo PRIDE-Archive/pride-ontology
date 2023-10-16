@@ -4434,7 +4434,7 @@ is_a: PRIDE:0000457 ! Experiment Type
 created_by: yperez
 
 [Term]
-id: PRIDE:0000649
+id: PRIDE:0000650
 name: diaPASEF
 def: "Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825" [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
