@@ -1,12 +1,11 @@
-format-version: 1.2
-date: 23:09:2022 11:38
-data-version: 2.1.0
+format-version: 1.3
+date: 16:10:2023 11:38
+data-version: 2.1.1
 saved-by: Yasset Perez-Riverol
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
 import: http://purl.obolibrary.org/obo/chmo.owl
-
 
 
 [Typedef]
@@ -4410,7 +4409,36 @@ is_a: MS:1000451 ! mass analyzer
 created_by: yperez
 creation_date: 2023-10-12T18:01:06Z
 
+[Term]
+id: PRIDE:0000647
+name: Proteogenomics
+comment: Proteogenomics uses an integrated approach by combining genomics, proteomics, and transcriptomics.
+is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+is_a: PRIDE:0000457 ! Experiment Type
+created_by: yperez
 
+[Term]
+id: PRIDE:0000648
+name: Metaproteomics
+comment: Metaproteomics is the study all proteins in microbial communities and microbiomes from environmental sources.
+is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+is_a: PRIDE:0000457 ! Experiment Type
+created_by: yperez
+
+[Term]
+id: PRIDE:0000649
+name: Immunopeptidomics
+comment: Immunopeptidomics is a large-scale method capable of identifying and quantifying the presented HLA immunopeptidome.
+is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+is_a: PRIDE:0000457 ! Experiment Type
+created_by: yperez
+
+[Term]
+id: PRIDE:0000650
+name: diaPASEF
+def: "Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825" [PRIDE:PRIDE]
+is_a: PRIDE:0000450 ! Data-independent acquisition
+created_by: yperez
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
