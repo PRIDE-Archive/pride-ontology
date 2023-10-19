@@ -4410,22 +4410,6 @@ created_by: yperez
 creation_date: 2023-10-12T18:01:06Z
 
 [Term]
-id: PRIDE:0000647
-name: Proteogenomics
-comment: Proteogenomics uses an integrated approach by combining genomics, proteomics, and transcriptomics.
-is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
-is_a: PRIDE:0000457 ! Experiment Type
-created_by: yperez
-
-[Term]
-id: PRIDE:0000648
-name: Metaproteomics
-comment: Metaproteomics is the study all proteins in microbial communities and microbiomes from environmental sources.
-is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
-is_a: PRIDE:0000457 ! Experiment Type
-created_by: yperez
-
-[Term]
 id: PRIDE:0000649
 name: Immunopeptidomics
 comment: Immunopeptidomics is a large-scale method capable of identifying and quantifying the presented HLA immunopeptidome.
