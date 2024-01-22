@@ -4424,6 +4424,14 @@ def: "Data-independent acquisition parallel accumulation-serial fragmentation, P
 is_a: PRIDE:0000450 ! Data-independent acquisition
 created_by: yperez
 
+[Term]
+id: PRIDE:0000651
+name: Absolute quantification
+def: "Absolute quantification methods involve accurately determining the exact concentration or amount of a specific analyte in a sample through the use of known standards or reference materials, enabling precise measurement of absolute quantities" [PRIDE:PRIDE]
+is_a: PRIDE:0000307 ! Quantification method
+created_by: deepti
+creation_date: 2024-01-22T14:42:08Z
+
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
 name: part_of
