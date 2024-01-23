@@ -4438,7 +4438,15 @@ name: Relative quantification
 def: "Relative quantification compares the concentrations of analytes (e.g., a proteins) across different samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000307 ! Quantification method
 created_by: deepti
-creation_date: 2024-01-23T16:09:20Z
+creation_date: 2024-01-23T16:25:25Z
+
+[Term]
+id: PRIDE:0000653
+name: NPX
+def: "Normalized Protein eXpression" [PRIDE:PRIDE]
+is_a: PRIDE:0000652 ! Relative quantification
+created_by: deepti
+creation_date: 2024-01-23T16:25:25Z
 
 
 [Typedef]
