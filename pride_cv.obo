@@ -2803,7 +2803,7 @@ created_by: acsordas
 
 [Term]
 id: PRIDE:0000437
-name: Protein Abundance Index - PAI
+name: PAI
 comment: Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140
 is_a: PRIDE:0000312 ! Label free
 created_by: acsordas
@@ -2817,14 +2817,14 @@ created_by: acsordas
 
 [Term]
 id: PRIDE:0000439
-name: Spectral Abundance Factor - SAF
+name: SAF
 comment: The spectrum count is normalized for protein length. Method reviewed in PMID 22772140
 is_a: PRIDE:0000312 ! Label free
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000440
-name: Normalized Spectral Abundance Factor - NSAF
+name: NSAF
 comment: Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140
 is_a: PRIDE:0000312 ! Label free
 created_by: acsordas
@@ -2993,7 +2993,7 @@ created_by: acsordas
 
 [Term]
 id: PRIDE:0000463
-name: Parallel Reaction Monitoring (PRM)
+name: PRM
 def: "Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis." [PRIDE:PRIDE]
 is_a: PRIDE:0000311 ! Selected Reaction Monitoring
 
