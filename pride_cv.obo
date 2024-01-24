@@ -2023,7 +2023,7 @@ creation_date: 2011-07-22T09:34:37Z
 
 [Term]
 id: PRIDE:0000322
-name: emPAI - Exponentially Modified Protein Abundance Index
+name: emPAI
 comment: The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result.
 synonym: "Exponentially Modified Protein Abundance Index" EXACT []
 is_a: PRIDE:0000312 ! Label free
@@ -2032,7 +2032,7 @@ creation_date: 2011-07-22T09:36:57Z
 
 [Term]
 id: PRIDE:0000323
-name: TIC - Total Ion Current
+name: TIC
 comment: The Total Ion Current (TIC) can be measured or calculated in order to target specific ions.
 synonym: "Total Ion Current" EXACT []
 is_a: PRIDE:0000312 ! Label free
@@ -2803,7 +2803,7 @@ created_by: acsordas
 
 [Term]
 id: PRIDE:0000437
-name: PAI - Protein Abundance Index
+name: PAI
 comment: Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140
 is_a: PRIDE:0000312 ! Label free
 created_by: acsordas
@@ -2817,14 +2817,14 @@ created_by: acsordas
 
 [Term]
 id: PRIDE:0000439
-name: SAF - Spectral Abundance Factor
+name: SAF
 comment: The spectrum count is normalized for protein length. Method reviewed in PMID 22772140
 is_a: PRIDE:0000312 ! Label free
 created_by: acsordas
 
 [Term]
 id: PRIDE:0000440
-name: NSAF - Normalized Spectral Abundance Factor
+name: NSAF
 comment: Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140
 is_a: PRIDE:0000312 ! Label free
 created_by: acsordas
@@ -2993,7 +2993,7 @@ created_by: acsordas
 
 [Term]
 id: PRIDE:0000463
-name: PRM - Parallel Reaction Monitoring
+name: PRM
 def: "Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis." [PRIDE:PRIDE]
 is_a: PRIDE:0000311 ! Selected Reaction Monitoring
 
