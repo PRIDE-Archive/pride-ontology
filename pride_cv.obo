@@ -4448,6 +4448,45 @@ is_a: PRIDE:0000652 ! Relative quantification
 created_by: deepti
 creation_date: 2024-01-23T16:25:25Z
 
+[Term]
+id: PRIDE:0000654
+name: Olink instrument model
+def: "Olink instrument model" [PRIDE:PRIDE]
+is_a: PRIDE:0000638 ! Instrument model
+created_by: deepti
+creation_date: 2024-01-30T15:45:45Z
+
+[Term]
+id: PRIDE:0000655
+name: Olink Target 96
+def: "Olink Target 96" [PRIDE:PRIDE]
+is_a: PRIDE:0000654 ! Olink instrument model
+created_by: deepti
+creation_date: 2024-01-30T15:55:50Z
+
+[Term]
+id: PRIDE:0000656
+name: Olink Explore 1536
+def: "Olink Explore 1536" [PRIDE:PRIDE]
+is_a: PRIDE:0000654 ! Olink instrument model
+created_by: deepti
+creation_date: 2024-01-30T15:55:50Z
+
+[Term]
+id: PRIDE:0000657
+name: Olink Explore 3072
+def: "Olink Explore 3072" [PRIDE:PRIDE]
+is_a: PRIDE:0000654 ! Olink instrument model
+created_by: deepti
+creation_date: 2024-01-30T15:55:50Z
+
+[Term]
+id: PRIDE:0000658
+name: Olink Explore 384
+def: "Olink Explore 384" [PRIDE:PRIDE]
+is_a: PRIDE:0000654 ! Olink instrument model
+created_by: deepti
+creation_date: 2024-01-30T15:55:50Z
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
