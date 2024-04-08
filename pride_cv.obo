@@ -1,7 +1,7 @@
 format-version: 1.3
 date: 16:10:2023 11:38
-data-version: 2.1.1
-saved-by: Yasset Perez-Riverol
+data-version: 2.1.2
+saved-by: Deepti Jaiswal Kundu
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
@@ -4487,6 +4487,32 @@ def: "Olink Explore 384" [PRIDE:PRIDE]
 is_a: PRIDE:0000654 ! Olink instrument model
 created_by: deepti
 creation_date: 2024-01-30T15:55:50Z
+
+[Term]
+id: PRIDE:0000659
+name: Ion Mobility Spectrometry 
+def: "Ion Mobility Spectrometry " [PRIDE:PRIDE]
+is_a: PRIDE:0000551 ! Separation method
+created_by: deepti
+creation_date: 2024-04-08T21:55:20Z
+
+[Term]
+id: PRIDE:0000660
+name: Differential mobility spectrometry 
+def: "Differential mobility spectrometry " [PRIDE:PRIDE]
+is_a: PRIDE:0000551 ! Separation method
+created_by: deepti
+creation_date: 2024-04-08T21:55:20Z
+
+[Term]
+id: PRIDE:0000661
+name: SelexION differential mobility separation device 
+def: "SelexION differential mobility separation device " [PRIDE:PRIDE]
+is_a: PRIDE:0000659 ! Ion Mobility Spectrometry
+is_a: PRIDE:0000660 ! Differential mobility spectrometry
+created_by: deepti
+creation_date: 2024-04-08T21:55:20Z
+
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
