@@ -4490,23 +4490,23 @@ creation_date: 2024-01-30T15:55:50Z
 
 [Term]
 id: PRIDE:0000659
-name: Ion Mobility Spectrometry 
-def: "Ion Mobility Spectrometry " [PRIDE:PRIDE]
+name: Ion Mobility Seperation 
+def: "Ion Mobility Seperation " [PRIDE:PRIDE]
 is_a: PRIDE:0000551 ! Separation method
 created_by: deepti
 creation_date: 2024-04-08T21:55:20Z
 
 [Term]
 id: PRIDE:0000660
-name: Differential mobility spectrometry 
-def: "Differential mobility spectrometry " [PRIDE:PRIDE]
+name: Differential mobility Seperation 
+def: "Differential mobility Seperation " [PRIDE:PRIDE]
 is_a: PRIDE:0000551 ! Separation method
 created_by: deepti
 creation_date: 2024-04-08T21:55:20Z
 
 [Term]
 id: PRIDE:0000661
-name: SelexION differential mobility separation device 
+name: SelexION 
 def: "SelexION differential mobility separation device " [PRIDE:PRIDE]
 is_a: PRIDE:0000659 ! Ion Mobility Spectrometry
 is_a: PRIDE:0000660 ! Differential mobility spectrometry
