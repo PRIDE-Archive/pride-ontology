@@ -4506,7 +4506,7 @@ creation_date: 2024-04-08T21:55:20Z
 
 [Term]
 id: PRIDE:0000661
-name: SelexION 
+name: SelexION Seperation Method
 def: "SelexION differential mobility separation device " [PRIDE:PRIDE]
 is_a: PRIDE:0000659 ! Ion Mobility Spectrometry
 is_a: PRIDE:0000660 ! Differential mobility spectrometry
