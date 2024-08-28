@@ -3968,7 +3968,7 @@ is_a: PRIDE:0000654 ! Olink instrument model
 id: PRIDE:0000659
 name: Proteomics data acquisition method
 def: "proteomics data acquisition method" [PRIDE:PRIDE]
-is_a: is_a: PRIDE:0000428 ! Bottom-up proteomics
+is_a: PRIDE:0000428 ! Bottom-up proteomics
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
