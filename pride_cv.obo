@@ -3970,6 +3970,26 @@ name: Proteomics data acquisition method
 def: "proteomics data acquisition method" [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 
+[Term]
+id: PRIDE:0000660
+name: Ion Mobility Seperation 
+def: "Ion Mobility Seperation " [PRIDE:PRIDE]
+is_a: PRIDE:0000551 ! Separation method
+
+[Term]
+id: PRIDE:0000661
+name: Differential mobility Seperation 
+def: "Differential mobility Seperation " [PRIDE:PRIDE]
+is_a: PRIDE:0000551 ! Separation method
+
+[Term]
+id: PRIDE:0000662
+name: SelexION Seperation Method
+def: "SelexION differential mobility separation device " [PRIDE:PRIDE]
+is_a: PRIDE:0000660 ! Ion Mobility Spectrometry
+is_a: PRIDE:0000661 ! Differential mobility spectrometry
+
+
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
 name: part_of
