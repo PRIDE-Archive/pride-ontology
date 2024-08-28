@@ -2685,6 +2685,7 @@ id: PRIDE:0000450
 name: Data-independent acquisition
 def: "Predefined m/z ranges are interrogated either by fragmenting all ions entering the mass spectrometer at every single point in chromatographic time; or by dividing the m/z range into smaller m/z ranges for isolation and fragmentation. See review in PMID:24281846." [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
+is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
 [Term]
 id: PRIDE:0000451
@@ -3791,20 +3792,21 @@ id: PRIDE:0000627
 name: Data-dependent acquisition
 comment: Data-dependent acquisition
 is_a: PRIDE:0000428 ! Bottom-up proteomics
+is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
 [Term]
 id: PRIDE:0000629
 name: Parallel reaction monitoring
 comment: Parallel Reaction Monitoring (PRM)
 is_a: PRIDE:0000428 ! Bottom-up proteomics
+is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
 [Term]
 id: PRIDE:0000630
 name: Selected reaction monitoring
 comment: Selected reaction monitoring (SRM)
 is_a: PRIDE:0000428 ! Bottom-up proteomics
-
-creation_date: 2020-23-22T09:47:09Z
+is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
 [Term]
 id: PRIDE:0000631
@@ -3961,6 +3963,12 @@ id: PRIDE:0000658
 name: Olink Explore 384
 def: "Olink Explore 384" [PRIDE:PRIDE]
 is_a: PRIDE:0000654 ! Olink instrument model
+
+[Term]
+id: PRIDE:0000659
+name: Proteomics data acquisition method
+def: "proteomics data acquisition method" [PRIDE:PRIDE]
+is_a: is_a: PRIDE:0000428 ! Bottom-up proteomics
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
