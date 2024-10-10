@@ -47,8 +47,8 @@ jobs:
            wget https://raw.githubusercontent.com/PRIDE-Archive/pride-ontology/dev/validate-owl/fail_owl.json
            java -jar rdf2json-1.0-SNAPSHOT.jar --config foundry.json --output foundry_out.json
            if diff foundry_out.json fail_owl.json > /dev/null; then
-              echo "The PSI-MS ontology has an error in the owl file and do not allow to import in OLS"
+              echo "The PRIDE ontology has an error in the owl file and do not allow to import in OLS"
               exit 1
            else
-              echo "PSI-MS is valid"
+              echo "PRIDE Ontology is valid"
            fi
