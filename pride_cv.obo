@@ -603,7 +603,6 @@ is_a: PRIDE:0000005 ! Gel additional parameter
 id: PRIDE:0000104
 name: Sample volume loaded
 def: "The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double." [PRIDE:PRIDE]
-xref: PRIDE:PRIDE
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
@@ -3993,14 +3992,14 @@ is_a: PRIDE:0000661 ! Differential mobility spectrometry
 [Term]
 id: PRIDE:0000663
 name: technology type
-def: "The technology type or platform used to perform the study"
+def: "The technology type or platform used to perform the study" [PRIDE:PRIDE]
 xref: http://purl.obolibrary.org/obo/EFO_0005521
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000663
 name: proteomic profiling by mass spectrometer
-def: "An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry"
+def: "An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry" [PRIDE:PRIDE]
 xref: http://purl.obolibrary.org/obo/EFO_0002766
 is_a: PRIDE:0000663 ! technology type
 
