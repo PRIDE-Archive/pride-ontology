@@ -3993,7 +3993,7 @@ is_a: PRIDE:0000661 ! Differential mobility spectrometry
 [Term]
 id: PRIDE:0000663
 name: technology type
-def: "The technology type or platform of the reporters on the array."
+def: "The technology type or platform used to perform the study"
 xref: http://purl.obolibrary.org/obo/EFO_0005521
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
