@@ -3992,13 +3992,13 @@ is_a: PRIDE:0000661 ! Differential mobility spectrometry
 [Term]
 id: PRIDE:0000663
 name: technology type
-def: "The technology type or platform used to perform the study." {http://purl.obolibrary.org/obo/EFO_0005521="EFO"}
+def: "The technology type or platform used to perform the study." [EFO:EFO_0005521]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
-id: PRIDE:0000663
+id: PRIDE:0000664
 name: proteomic profiling by mass spectrometer
-def: "An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry" {http://purl.obolibrary.org/obo/EFO_0002766="EFO"}
+def: "An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry" [EFO:EFO_0002766]
 is_a: PRIDE:0000663 ! technology type
 
 [Typedef]
