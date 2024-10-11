@@ -6,7 +6,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
 import: http://purl.obolibrary.org/obo/chmo.owl
-import: http://purl.obolibrary.org/obo/efo.owl
+import: http://www.ebi.ac.uk/efo/efo.owl
 ontology: pride
 
 [Typedef]
