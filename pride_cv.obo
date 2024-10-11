@@ -1,11 +1,12 @@
-format-version: 1.3
-date: 16:07:2024 11:38
-data-version: 2.1.2
+format-version: 1.4
+date: 10:10:2024 11:38
+data-version: 2.1.3
 saved-by: Yasset Perez-Riverol
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
 import: http://purl.obolibrary.org/obo/chmo.owl
+import: http://purl.obolibrary.org/obo/efo.owl
 ontology: pride
 
 [Typedef]
@@ -602,7 +603,6 @@ is_a: PRIDE:0000005 ! Gel additional parameter
 id: PRIDE:0000104
 name: Sample volume loaded
 def: "The volume of sample loaded on to the gel measured in micro litres.  Mandatory value must be formatted as xsd:Double." [PRIDE:PRIDE]
-xref: PRIDE:PRIDE
 is_a: PRIDE:0000005 ! Gel additional parameter
 
 [Term]
@@ -3988,6 +3988,18 @@ name: SelexION Separation Method
 def: "SelexION differential mobility separation device" [PRIDE:PRIDE]
 is_a: PRIDE:0000660 ! Ion Mobility Spectrometry
 is_a: PRIDE:0000661 ! Differential mobility spectrometry
+
+[Term]
+id: PRIDE:0000663
+name: technology type
+def: "The technology type or platform used to perform the study." [EFO:EFO_0005521]
+is_a: PRIDE:0000006 ! Experiment additional parameter
+
+[Term]
+id: PRIDE:0000664
+name: proteomic profiling by mass spectrometer
+def: "An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry" [EFO:EFO_0002766]
+is_a: PRIDE:0000663 ! technology type
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
