@@ -3997,7 +3997,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000664
-name: proteomic profiling by mass spectrometer
+name: proteomic profiling by mass spectrometry
 def: "An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry" [EFO:EFO_0002766]
 is_a: PRIDE:0000663 ! technology type
 
