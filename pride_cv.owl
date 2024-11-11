@@ -19,23 +19,23 @@
      xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:vocab="https://w3id.org/semapv/vocab/"
      xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#"
      xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#2"
      xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:chebi6="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:patterns="http://www.co-ode.org/patterns#"
-     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:mondo-base="http://purl.obolibrary.org/obo/mondo/mondo-base#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.4/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.5/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:10:2024 11:38</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:11:2024 13:18</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yasset Perez-Riverol</oboInOwl:saved-by>
+        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nithu Sara John</oboInOwl:saved-by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd:string, ...)</rdfs:comment>
     </owl:Ontology>
     
@@ -10696,6 +10696,24 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:EFO_0002766</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000457"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000665</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glycoproteomics</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
