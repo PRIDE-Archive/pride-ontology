@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 11:10:2024 11:38
-data-version: 2.1.4
-saved-by: Yasset Perez-Riverol
+date: 11:11:2024 13:18
+data-version: 2.1.5
+saved-by: Nithu Sara John
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
@@ -4000,6 +4000,13 @@ id: PRIDE:0000664
 name: proteomic profiling by mass spectrometry
 def: "An assay where proteins in a sample are detected, quantified or otherwise analysed using mass spectrometry" [EFO:EFO_0002766]
 is_a: PRIDE:0000663 ! technology type
+
+[Term]
+id: PRIDE:0000665
+name: Glycoproteomics
+def: "Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications." [PRIDE:PRIDE]
+is_a: PRIDE:0000457! Experiment Type
+
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
