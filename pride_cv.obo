@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 11:11:2024 13:18
-data-version: 2.1.5
-saved-by: Nithu Sara John
+date: 11:11:2024 23:00
+data-version: 2.1.6
+saved-by: Deepti Jaiswal Kundu
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
@@ -3089,85 +3089,105 @@ is_a: PRIDE:0000514 ! Quantification channel label
 id: PRIDE:0000516
 name: TMT126
 def: "TMT126" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000666 ! TMT 6-plex labeling kit has 6 channels
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000517
 name: TMT127
 def: "TMT127" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000666 ! TMT 6-plex labeling kit has 6 channels
 
 [Term]
 id: PRIDE:0000518
 name: TMT127C
 def: "TMT127C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000519
 name: TMT127N
 def: "TMT127N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000520
 name: TMT128
 def: "TMT128" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000666 ! TMT 6-plex labeling kit has 6 channels
 
 [Term]
 id: PRIDE:0000521
 name: TMT128C
 def: "TMT128C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000522
 name: TMT128N
 def: "TMT128N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000523
 name: TMT129
 def: "TMT129" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000666 ! TMT 6-plex labeling kit has 6 channels
 
 [Term]
 id: PRIDE:0000524
 name: TMT129C
 def: "TMT129C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000525
 name: TMT129N
 def: "TMT129N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000526
 name: TMT130
 def: "TMT130" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000666 ! TMT 6-plex labeling kit has 6 channels
 
 [Term]
 id: PRIDE:0000527
 name: TMT130C
 def: "TMT130C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000528
 name: TMT130N
 def: "TMT130N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000529
 name: TMT131
 def: "TMT131" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000666 ! TMT 6-plex labeling kit has 6 channels
+is_a: PRIDE:0000667 ! TMT 10-plex labeling kit has 10 channels
 
 [Term]
 id: PRIDE:0000530
@@ -3483,25 +3503,29 @@ is_a: PRIDE:0000514 ! Quantification channel label
 id: PRIDE:0000580
 name: TMT131N
 def: "TMT131N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000581
 name: TMT131C
 def: "TMT131C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000582
 name: TMT132N
 def: "TMT132N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000583
 name: TMT132C
 def: "TMT132C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000584
@@ -3818,19 +3842,21 @@ is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
 id: PRIDE:0000632
 name: TMT133N
 def: "TMT133N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000633
 name: TMT133C
 def: "TMT133C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000634
-name: TMT134N
-def: "TMT134N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+name: TMT134
+def: "TMT134" [PRIDE:PRIDE]
+is_a: PRIDE:0000668 ! TMT 16-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000635
@@ -3877,13 +3903,13 @@ is_a: PRIDE:0000639 ! Somalogic instrument model
 id: PRIDE:0000642
 name: TMT134C
 def: "TMT134C" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000643
-name: TMT135N
-def: "TMT135N" [PRIDE:PRIDE]
-is_a: PRIDE:0000515 ! TMT
+name: TMT134N
+def: "TMT134N" [PRIDE:PRIDE]
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 [Term]
 id: PRIDE:0000644
@@ -4006,6 +4032,36 @@ id: PRIDE:0000665
 name: Glycoproteomics
 def: "Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications." [PRIDE:PRIDE]
 is_a: PRIDE:0000457! Experiment Type
+
+[Term]
+id: PRIDE:0000666
+name: TMT6PLEX
+def: "TMT 6-plex labeling kit has 6 channels" [PRIDE:PRIDE]
+is_a: PRIDE:0000515 ! TMT
+
+[Term]
+id: PRIDE:0000667
+name: TMT10PLEX
+def: "TMT 10-plex labeling kit has 10 channels" [PRIDE:PRIDE]
+is_a: PRIDE:0000515 ! TMT
+
+[Term]
+id: PRIDE:0000668
+name: TMT16PLEX
+def: "TMT 16-plex labeling kit has 16 channels" [PRIDE:PRIDE]
+is_a: PRIDE:0000515 ! TMT
+
+[Term]
+id: PRIDE:0000669
+name: TMT16PLEX
+def: "TMT 18-plex labeling kit has 16 channels" [PRIDE:PRIDE]
+is_a: PRIDE:0000515 ! TMT
+
+[Term]
+id: PRIDE:0000670
+name: TMT135
+def: "TMT135" [PRIDE:PRIDE]
+is_a: PRIDE:0000669 ! TMT 18-plex labeling kit has 16 channels
 
 
 [Typedef]
