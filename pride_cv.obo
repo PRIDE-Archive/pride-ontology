@@ -4004,7 +4004,7 @@ is_a: PRIDE:0000663 ! technology type
 [Term]
 id: PRIDE:0000665
 name: Glycoproteomics
-def: "Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications."
+def: "Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications." [PRIDE:PRIDE]
 is_a: PRIDE:0000457! Experiment Type
 
 
