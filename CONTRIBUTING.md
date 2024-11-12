@@ -73,7 +73,7 @@ Once you’ve made your changes, you can submit a pull request (PR) for review:
 
 ### 7. License
 
-By contributing, you agree that your contributions will be licensed under the same license as the repository. See the [LICENSE](LICENSE.md) file for more information.
+By contributing, you agree that your contributions will be licensed under the same license as the repository. See the [LICENSE](LICENSE) file for more information.
 
 ---
 
