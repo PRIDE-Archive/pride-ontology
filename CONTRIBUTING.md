@@ -15,7 +15,7 @@ Thank you for your interest in contributing to this ontology repository! We welc
 
 ### 1. Overview
 
-This ontology repository is designed to provide a structured vocabulary for [your specific domain here]. Contributors are encouraged to add new terms, improve definitions, or report issues to help the ontology remain relevant and accurate.
+The PRIDE ontology repository is designed to provide a structured vocabulary for [PRIDE database]. Contributors are encouraged to add new terms, improve definitions, or report issues to help the ontology remain relevant and accurate.
 
 ### 2. Getting Started
 
