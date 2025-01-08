@@ -17,63 +17,68 @@ is_transitive: true
 [Term]
 id: PRIDE:0000000
 name: Reference additional parameter
-comment: Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam
+def: "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000001
 name: Protocol step description additional parameter
-comment: Root node for terms relating to the description of a protocol as ordered steps, in relation to the PRIDE.xml element ExperimentCollection/Experiment/Protocol/ProtocolSteps/StepDescription
+def: "Root node for terms relating to the description of a protocol as ordered steps, in relation to the PRIDE.xml element ExperimentCollection/Experiment/Protocol/ProtocolSteps/StepDescription" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000002
 name: ModificationItem additional parameter
-comment: Root node for terms relating to the description of a ModificationItem (post translational modification or artifactual modification) in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/ModificationItem/additional/cvParam
+def: "Root node for terms relating to the description of a ModificationItem (post translational modification or artifactual modification) in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/ModificationItem/additional/cvParam" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000003
 name: Peptide item additional parameter
-comment: Root node for terms relating to the description of a PeptideItem in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/additional/cvParam
+def: "Root node for terms relating to the description of a PeptideItem in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/additional/cvParam" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000004
 name: Identification additional parameter
-comment: Root node for terms relating to the description of an Identification in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/additional/cvParam
+def: "Root node for terms relating to the description of an Identification in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/additional/cvParam" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000005
 name: Gel additional parameter
-comment: Root node for terms relating to the description of a Gel in relation to the PRIDE.xml element ExperimentCollection/Experiment/TwoDimensionalIdentification/Gel/additional/cvParam
+def: "Root node for terms relating to the description of a Gel in relation to the PRIDE.xml element ExperimentCollection/Experiment/TwoDimensionalIdentification/Gel/additional/cvParam" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000006
 name: Experiment additional parameter
-comment: Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam
+def: "Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam" [PRIDE:PRIDE]
+synonym: "Experiment additional parameter" []
 
 [Term]
 id: PRIDE:0000007
 name: SearchEngineVersion
-comment: Version number / identifier for search engine.
+def: "Version number / identifier for search engine."[PRIDE:PRIDE]
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000008
 name: Protein search engine output parameter
+def: "Protein search engine output parameters are critical for analyzing and validating the results of peptide and protein identification." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000009
 name: Ion mass tolerance
+def: "Ion mass tolerence refers to the permissible deviation between the measured mass of an ion and its theoretical mass" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000010
-name: PrecursorIon mass tolerance
+name: Precursor ion mass tolerance
+def: "Precursor ion mass tolerance efines the acceptable range of deviation between the experimental mass-to-charge ratio (𝑚/𝑧)of a precursor ion and its theoretical (m/z) value during database searches" [PRIDE:PRIDE]
 is_a: PRIDE:0000009 ! Ion mass tolerance
 
 [Term]
 id: PRIDE:0000011
 name: MS2 ion mass tolerance
+def: "MS2 ion mass tolerance refers to the acceptable deviation range between the experimentally measured fragment ion masses and their theoretical values during the identification of peptides and proteins in tandem mass spectrometry (MS/MS)" [PRIDE:PRIDE]
 is_a: PRIDE:0000009 ! Ion mass tolerance
 
 [Term]
@@ -87,33 +92,37 @@ relationship: part_of PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000013
 name: X correlation
+def: "A statistical measure used in proteomics to evaluate the quality of peptide-spectrum matches (PSMs) in tandem mass spectrometry (MS/MS) data" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000014
 name: X correlation (+1)
+def: "XCorrelation (+1) refers to the cross-correlation score adjustment applied during peptide-spectrum matching (PSM) in search engines like SEQUEST" [PRIDE:PRIDE]
 is_a: PRIDE:0000013 ! X correlation
 
 [Term]
 id: PRIDE:0000015
 name: X correlation (+2)
+def: "XCorrelation (+2) refers to the cross-correlation (XCorr) scores for peptide-spectrum matches (PSMs) associated with doubly charged precursor ions (𝑧=2) in proteomics" [PRIDE:PRIDE]
 is_a: PRIDE:0000013 ! X correlation
 
 [Term]
 id: PRIDE:0000016
 name: X correlation (+3)
+def: "XCorrelation (+3) refers to the cross-correlation (XCorr) scores associated with triply charged precursor ions (z=3) in proteomics data analysis" [PRIDE:PRIDE]
 is_a: PRIDE:0000013 ! X correlation
 
 [Term]
 id: PRIDE:0000017
 name: Sample description additional parameter
-comment: Root term for parameters in the context of ExperimentCollection/Experiment/mzData/description/admin/sampleDescription/cvParam
+def: "Root term for parameters in the context of ExperimentCollection/Experiment/mzData/description/admin/sampleDescription/cvParam" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000018
 name: Disease free
-comment: Term to describe the fact that the sample derives from an organism which has been positively shown to be free of disease, e.g. as the consequence of a broad-spectrum screen.  NOTE: A request has been made to have this concept added to MeSH.  Once this has been achieved, this term will be dropped from the PRIDE CV and all uses of the this term will be updated to the appropriate MeSH concept.
+def: "Term to describe the fact that the sample derives from an organism which has been positively shown to be free of disease, e.g. as the consequence of a broad-spectrum screen.  NOTE: A request has been made to have this concept added to MeSH.  Once this has been achieved, this term will be dropped from the PRIDE CV and all uses of the this term will be updated to the appropriate MeSH concept." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
@@ -155,6 +164,7 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000025
 name: Reduction
+def: "reduction generally refers to the chemical process used to break disulfide bonds between cysteine residues in proteins" [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -172,65 +182,66 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000028
 name: Cv Label
-comment: Valid values for cvLabel entries referencing external database / CV / ontology.
+def: "Valid values for cvLabel entries referencing external database / CV / ontology." [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000029
 name: PubMed
-comment: Valid value for the cvLabel entry referencing PubMed.
+def: "PubMed is a free resource developed by the National Center for Biotechnology Information (NCBI) at the U.S. National Library of Medicine (NLM)" [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000030
 name: PRIDE
-comment: Valid value for the cvLabel entry referencing PRIDE
+def: "Valid value for the cvLabel entry referencing PRIDE" [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000031
 name: GO
-comment: Valid value for the cvLabel entry referencing GO.
+def: "Valid value for the cvLabel entry referencing GO." [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000032
 name: MeSH
-comment: Valid value for the cvLabel entry referencing Medical Subject Headings (MeSH)
+def: "Valid value for the cvLabel entry referencing Medical Subject Headings (MeSH)" [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000033
 name: NEWT
-comment: Valid value for the cvLabel entry referencing NEWT or the NCBI taxonomy.
+def: "Valid value for the cvLabel entry referencing NEWT or the NCBI taxonomy." [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000034
 name: PSI
-comment: Valid value for the cvLabel entry referencing the PSI ontology
+def: "Valid value for the cvLabel entry referencing the PSI ontology" [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000035
 name: UNIMOD
-comment: Valid value for the cvLabel entry referencing UNIMOD
+def: "Valid value for the cvLabel entry referencing UNIMOD" [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000036
 name: RESID
-comment: Valid value for the cvLabel entry referencing RESID.
+def: "Valid value for the cvLabel entry referencing RESID." [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
 id: PRIDE:0000037
 name: Staining
+def: "A technique used in biology, histology, and microscopy to enhance contrast in samples, making structures or components visible under a microscope" [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000038
 name: ISBN
-comment: Valid value for the cvLabel entry referencing ISBN
+def: "Valid value for the cvLabel entry referencing ISBN" [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
@@ -242,17 +253,19 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000040
 name: Experiment description
-comment: This CV term should be used in association with a value that is a free-text description of the experiment.
+def: "This CV term should be used in association with a value that is a free-text description of the experiment." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000041
 name: Search database protein sequence
+def: "Database used to search the protein sequence" [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000042
 name: DOI
+def: "The DOI system provides a persistent link to the journal's location on the internet, even if the URL changes." [PRIDE:PRIDE]
 is_a: PRIDE:0000028 ! Cv Label
 
 [Term]
@@ -263,16 +276,19 @@ is_a: PRIDE:0000028 ! Cv Label
 [Term]
 id: PRIDE:0000044
 name: Search algorithm
+def: "A method used to retrieve specific data from a collection of data, based on a given criterion" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000045
 name: Sequest
+def: "Sequest is one of the earliest and most widely used search engines for protein identification in mass spectrometry-based proteomics" [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 is_a: PRIDE:0000573 ! Identification software
 
 [Term]
 id: PRIDE:0000046
 name: Mascot
+def: "Mascot is a widely used search engine for protein identification in mass spectrometry-based proteomics" [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 is_a: PRIDE:0000571 ! Quantification Software
 is_a: PRIDE:0000573 ! Identification software
@@ -280,18 +296,21 @@ is_a: PRIDE:0000573 ! Identification software
 [Term]
 id: PRIDE:0000047
 name: XTandem
+def: "X!Tandem is an open-source search engine for protein identification in mass spectrometry-based proteomics" [PRIDE:PRIDE]
 comment: Really X
 is_a: PRIDE:0000044 ! Search algorithm
 is_a: PRIDE:0000573 ! Identification software
 
 [Term]
 id: PRIDE:0000048
-name: OutputParameter
+name: Output parameter
+def: "Output parameters in mass spectrometry search engines refer to the results and metrics provided after analyzing the experimental MS/MS spectra and comparing them to theoretical spectra from a protein database" [PRIDE:PRIDE]
 is_obsolete: true
 
 [Term]
 id: PRIDE:0000049
 name: Peptide search engine output parameter
+def: "The output parameters of a peptide search engine refer to the key metrics, scores, and information that describe the results of matching experimental mass spectra (MS/MS) to theoretical spectra from a protein sequence database" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
@@ -341,6 +360,7 @@ relationship: part_of PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000056
 name: Bioworks
+def: "A companion tool often used for processing and analyzing mass spectrometry data" [PRIDE:PRIDE]
 is_a: PRIDE:0000045 ! Sequest
 is_a: PRIDE:0000573 ! Identification software
 
@@ -360,33 +380,39 @@ relationship: part_of PRIDE:0000056 ! Bioworks
 [Term]
 id: PRIDE:0000059
 name: File
+def: "File is a digital container used to store information on a computer or other electronic device" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000060
 name: Scan
+def: "The scan refers to a unique identifier for a specific mass spectrum acquired during the experiment. Each scan corresponds to a particular fragmentation event in the mass spectrometer." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000061
 name: Coverage
+def: "coverage refers to the proportion of a protein sequence that is represented by identified peptides in a given experiment" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000062
 name: rsp
+def: "It is used as a measure to assess the confidence of peptide identifications based on the output of peptide search engines such as Mascot, SEQUEST, X! Tandem, and others." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000063
 name: Protein description line
+def: "A protein description line typically refers to a concise textual entry or annotation that provides information about a specific protein, such as its function, molecular characteristics, or role in biological processes" [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000064
 name: Secondary accession
+def: "A secondary accession refers to an additional identifier assigned to a protein entry in databases like UniProt" [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
@@ -404,11 +430,13 @@ is_a: PRIDE:0000003 ! Peptide item additional parameter
 [Term]
 id: PRIDE:0000067
 name: Reference reporting this experiment
+def: "referencing an experiment in scientific contexts, it's important to cite the original publication that reports the methods, results, or analysis involved in the experiment. Typically, this will involve citing the DOI (Digital Object Identifier), journal title, and other relevant details." [PRIDE:PRIDE]
 is_a: PRIDE:0000000 ! Reference additional parameter
 
 [Term]
 id: PRIDE:0000068
 name: Reference describing sample preparation
+def: "referencing sample preparation for mass spectrometry or proteomics, the specific protocols and methods can vary depending on the type of analysis being conducted (e.g., quantitative proteomics, post-translational modification analysis, etc.)." [PRIDE:PRIDE]
 is_a: PRIDE:0000000 ! Reference additional parameter
 
 [Term]
@@ -427,92 +455,110 @@ is_a: PRIDE:0000024 ! Enzyme digestion
 [Term]
 id: PRIDE:0000071
 name: Search engine setting
+def: "Search engine settings refer to the specific parameters and configurations that are used to optimize how a peptide or protein search engine identifies and matches experimental data (e.g., MS/MS spectra) to theoretical peptide sequences in a database. " [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000072
 name: Fixed modification setting
+def: "fixed modifications refer to chemical modifications that are consistently present in all peptides of a given experiment, typically due to a sample preparation step or reagent used." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000073
 name: Variable modification setting
+def: "variable modifications refer to post-translational modifications (PTMs) or other chemical changes that can occur at specific amino acid residues but do not necessarily occur in every peptide or protein" [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000074
 name: Maximum Missed Cleavages Setting
+def: "The maximum missed cleavages setting refers to the number of missed enzyme cleavages allowed during peptide digestion" [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000075
 name: Mass value type setting
+def: "It refers to how the mass of peptides, ions, or proteins is represented during a search or analysis" [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000076
 name: Mass value type setting monoisotopic
+def: "The monoisotopic mass setting refers to the mass of a molecule based on the lightest isotope of each element, typically the most abundant isotope, like carbon-12 (12C) for carbon, hydrogen-1 (1H) for hydrogen, and oxygen-16 (16O) for oxygen." [PRIDE:PRIDE]
 is_a: PRIDE:0000075 ! Mass value type setting
 
 [Term]
 id: PRIDE:0000077
 name: Mass value type setting average
+def: "The average mass setting refers to the weighted average mass of all isotopes of each element present in a molecule." [PRIDE:PRIDE]
 is_a: PRIDE:0000075 ! Mass value type setting
 
 [Term]
 id: PRIDE:0000078
 name: Peptide mass tolerance setting
+def: "The peptide mass tolerance setting is a critical parameter used to define how much variation is acceptable between the observed mass of a peptide in the mass spectrum and the theoretical mass calculated from a database search. " [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000079
 name: Accurate mass mode setting
+def: "The Accurate Mass Mode setting refers to a mode of operation where the mass spectrometer is configured to measure the mass of ions with a higher degree of precision than in standard scanning modes." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000080
 name: Accurate mass mode setting true
+def: "Accurate mass mode setting typically refers to configuring the instrument to measure ion masses with high precision" [PRIDE:PRIDE]
 is_a: PRIDE:0000079 ! Accurate mass mode setting
 
 [Term]
 id: PRIDE:0000081
 name: Accurate mass mode setting false
+def: "Accurate mass mode setting is set to false in mass spectrometry, it means that the instrument will not prioritize high-resolution mass measurements." [PRIDE:PRIDE]
 is_a: PRIDE:0000079 ! Accurate mass mode setting
 
 [Term]
 id: PRIDE:0000082
 name: Mass error type setting
+def: "The mass error type setting refers to how mass errors are reported and interpreted during data acquisition and analysis." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000083
 name: mass error type setting ppm
+def: "the mass error type is set to ppm (parts per million), it specifies that the acceptable mass error is calculated relative to the theoretical mass of the ion, and it is expressed as parts per million (ppm). " [PRIDE:PRIDE]
 is_a: PRIDE:0000082 ! Mass error type setting
 
 [Term]
 id: PRIDE:0000084
 name: mass error type setting mmu
+def: "mass errors refer to discrepancies in the measured mass of ions compared to their theoretical or expected mass values." [PRIDE:PRIDE]
 is_a: PRIDE:0000082 ! Mass error type setting
 
 [Term]
 id: PRIDE:0000085
 name: mass error type setting percent
+def: "mass error type setting percent refers to the percentage of mass error in the measured mass-to-charge ratio (m/z) compared to the expected or theoretical value." [PRIDE:PRIDE]
 is_a: PRIDE:0000082 ! Mass error type setting
 
 [Term]
 id: PRIDE:0000086
 name: mass error type setting Daltons
+def: "mass error type daltons, how the discrepancy between the measured and expected mass is expressed in absolute units of mass (daltons), rather than as a percentage." [PRIDE:PRIDE]
 is_a: PRIDE:0000082 ! Mass error type setting
 
 [Term]
 id: PRIDE:0000087
 name: Protonated setting
+def: "protonated setting refers to the protonation of a molecule or ion during the ionization process, particularly in positive ion mode." [PRIDE:PRIDE]
 is_a: PRIDE:0000071 ! Search engine setting
 
 [Term]
 id: PRIDE:0000088
 name: Protonated setting MH+
+def: "protonated setting MH⁺ refers to the protonated molecular ion of a compound, where M represents the neutral molecule, and the H⁺ signifies the added proton." [PRIDE;PRIDE]
 is_a: PRIDE:0000087 ! Protonated setting
 
 [Term]
@@ -523,36 +569,43 @@ is_a: PRIDE:0000087 ! Protonated setting
 [Term]
 id: PRIDE:0000090
 name: Protonated setting M-H-
+def: "protonated setting M-H⁻ refers to the deprotonated molecular ion (also known as the negative ion form), where M represents the neutral molecule, and H⁻ signifies the loss of a proton (H⁺), resulting in a negatively charged ion." [PRIDE:PRIDE]
 is_a: PRIDE:0000087 ! Protonated setting
 
 [Term]
 id: PRIDE:0000091
 name: Rank
+def: "rank represents the quality or confidence of the peptide-spectrum match (PSM), with the rank value showing the best match and progressively lower-ranked results indicating less confident identifications." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000092
 name: All peptides matched
+def: "the output of a peptide search engine where every peptide in a sample has been identified and matched against a database." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000093
 name: All peptides matched true
+def: "All peptides matched true is in a peptide search engine output (like Mascot, SEQUEST, X! Tandem, or Andromeda), it generally means that all detected peptide spectra were successfully matched to corresponding peptides in the protein database." [PRIDE:PRIDE]
 is_a: PRIDE:0000092 ! All peptides matched
 
 [Term]
 id: PRIDE:0000094
 name: All peptides matched false
+def: "some mass spectra from the experiment could not be linked to a known peptide sequence from the protein database." [PRIDE:PRIDE]
 is_a: PRIDE:0000092 ! All peptides matched
 
 [Term]
 id: PRIDE:0000095
 name: Masses matched
+def: "Masses matched refers to the number (or percentage) of experimental mass-to-charge ratios (m/z) from a mass spectrum that were successfully matched to theoretical peptide masses in a protein database" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000096
 name: Reported Chromosome
+def: "Reported chromosome is the chromosomal location of the protein or peptide that has been identified." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
@@ -666,52 +719,52 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000114
 name: iTRAQ reagent 114
-comment: The name of the sample labelled with iTRAQ reagent 114.
+def: "The name of the sample labelled with iTRAQ reagent 114." [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000115
 name: iTRAQ reagent 115
-comment: The name of the sample labelled with iTRAQ reagent 115.
+def: "The name of the sample labelled with iTRAQ reagent 115." [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000116
 name: iTRAQ reagent 116
-comment: The name of the sample labelled with iTRAQ reagent 116.
+def: "The name of the sample labelled with iTRAQ reagent 116." [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000117
 name: iTRAQ reagent 117
-comment: The name of the sample labelled with iTRAQ reagent 117.
+def: "The name of the sample labelled with iTRAQ reagent 117." [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000118
 name: iTRAQ intensity 114
-comment: The intensity of the sample labelled with iTRAQ reagent 114.
+def: "The intensity of the sample labelled with iTRAQ reagent 114." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000119
 name: iTRAQ intensity 115
-comment: The intensity of the sample labelled with iTRAQ reagent 115.
+def: "The intensity of the sample labelled with iTRAQ reagent 115." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000120
 name: iTRAQ intensity 116
-comment: The intensity of the sample labelled with iTRAQ reagent 116.
+def: "The intensity of the sample labelled with iTRAQ reagent 116." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000121
 name: iTRAQ intensity 117
-comment: The intensity of the sample labelled with iTRAQ reagent 117.
+def: "The intensity of the sample labelled with iTRAQ reagent 117." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
@@ -871,12 +924,14 @@ is_a: PRIDE:0000573 ! Identification software
 [Term]
 id: PRIDE:0000146
 name: PepSplice precision
+def: "PepSplice precision refers to the accuracy of peptide-spectrum matches (PSMs) produced by the PepSplice search engine, a specialized tool used for the identification of peptides, particularly for novel or unexpected peptide sequences. Precision is a key metric used to assess the quality and reliability of search results in proteomics." [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000147
-name: PepSplice False Discovery Rate
+name: PepSplice false discovery rate
+def:"PepSlice false discovery rate is a critical metric used to control the number of false positives (incorrect peptide-spectrum matches or PSMs) in the search results" [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
@@ -950,11 +1005,13 @@ is_a: PRIDE:0000071 ! Search engine setting
 [Term]
 id: PRIDE:0000158
 name: MS search
+def: "It refers to the process of identifying and characterizing molecules, especially proteins, peptides, metabolites, and small molecules, using mass spectrometry (MS) data" [PRIDE:PRIDE]
 is_a: PRIDE:0000157 ! Search type
 
 [Term]
 id: PRIDE:0000159
 name: MS/MS search
+def: "MS/MS Search refers to the process of identifying molecules (typically proteins, peptides, metabolites, or small molecules) using tandem mass spectrometry (MS/MS) data. Unlike simple mass spectrometry (MS1), MS/MS involves fragmenting precursor ions into smaller product ions, generating a detailed fragmentation pattern or "spectra" that can be used to identify the structure or sequence of the molecule." [PRIDE:PRIDE]
 is_a: PRIDE:0000157 ! Search type
 
 [Term]
@@ -1008,24 +1065,28 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000168
 name: Nucleic acid sequence
+def: "A nucleic acid sequence refers to the linear arrangement of nucleotides (the basic building blocks of DNA and RNA) in a specific order." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000169
 name: Start position of the nucleic acid sequence on the chromosome
+def: "The start position of a nucleic acid sequence on a chromosome refers to the location or coordinate where the sequence begins within the linear structure of a chromosome. " [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000170
 name: Stop position of the nucleic acid sequence on the chromosome
+def: "The stop position of a nucleic acid sequence on a chromosome refers to the ending coordinate where the sequence finishes on the chromosome." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000171
 name: funding reference
+def: "A funding reference is a formal acknowledgment of financial support provided by an organization, institution, or agency for a research project, study, or publication. " [PRIDE:PRIDE]
 is_a: PRIDE:0000000 ! Reference additional parameter
 
 [Term]
@@ -1623,52 +1684,52 @@ is_a: PRIDE:0000260 ! precursor ion type
 [Term]
 id: PRIDE:0000264
 name: iTRAQ reagent 113
-comment: The name of the sample labelled with iTRAQ reagent 113
+def: "The name of the sample labelled with iTRAQ reagent 113" [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000265
 name: iTRAQ reagent 118
-comment: The name of the sample labelled with iTRAQ reagent 118
+def: "The name of the sample labelled with iTRAQ reagent 118" [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000266
 name: iTRAQ reagent 119
-comment: The name of the sample labelled with iTRAQ reagent 119
+def: "The name of the sample labelled with iTRAQ reagent 119" [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000267
 name: iTRAQ reagent 121
-comment: The name of the sample labelled with iTRAQ reagent 121
+def: "The name of the sample labelled with iTRAQ reagent 121" [PRIDE:PRIDE]
 is_a: PRIDE:0000329 ! iTRAQ reagent
 
 [Term]
 id: PRIDE:0000268
 name: iTRAQ intensity 113
-comment: The intensity of the sample labelled with iTRAQ reagent 113
+def: "The intensity of the sample labelled with iTRAQ reagent 113" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000269
 name: iTRAQ intensity 118
-comment: The intensity of the sample labelled with iTRAQ reagent 118
+def: "The intensity of the sample labelled with iTRAQ reagent 118" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000270
 name: iTRAQ intensity 119
-comment: The intensity of the sample labelled with iTRAQ reagent 119
+def: "The intensity of the sample labelled with iTRAQ reagent 119" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000271
 name: iTRAQ intensity 121
-comment: The intensity of the sample labelled with iTRAQ reagent 121
+def: "The intensity of the sample labelled with iTRAQ reagent 121" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
@@ -1681,31 +1742,37 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 [Term]
 id: PRIDE:0000273
 name: SloMo score threshold for valid modification location
+def: "The SloMo score threshold for a valid modification location is a statistical cutoff used in mass spectrometry (MS/MS) to determine the confidence that a specific position within a peptide or protein is modified." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000274
 name: MaxQuant percentage threshold for valid modification location
+def: "In MaxQuant, the percentage threshold for a valid modification location is typically based on the site probability for post-translational modification (PTM) localization. This probability indicates the confidence that a particular amino acid (residue) within a peptide is modified." [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000275
 name: SloMo score
+def: "The SloMo score is a quantitative measure used in mass spectrometry (MS/MS) for the localization of modification sites within a peptide or protein sequence. " [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000276
 name: MaxQuant percentage
+def: "It refers to typically relates to the localization probability of a post-translational modification (PTM) on a peptide. " [PRIDE:PRIDE]
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
 id: PRIDE:0000277
 name: Valid location
+def: "a valid location refers to a site on a peptide or protein sequence that has been confidently identified as being modified." [PRIDE:PRIDE]
 is_a: PRIDE:0000002 ! ModificationItem additional parameter
 
 [Term]
 id: PRIDE:0000278
 name: Processing method additional parameter
+def: "a processing method refers to the specific steps or algorithms used to analyze raw MS data, identify peptides, and assign modifications. These processing methods often come with additional parameters that allow users to customize the analysis based on their experimental needs." [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000279
@@ -1749,97 +1816,97 @@ relationship: part_of PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000285
 name: TMT reagent 126
-comment: The name of the sample labelled with TMT reagent 126
+def: "The name of the sample labelled with TMT reagent 126" [PRIDE:PRIDE]
 is_a: PRIDE:0000337 ! TMT reagent
 
 [Term]
 id: PRIDE:0000286
 name: TMT reagent 127
-comment: The name of the sample labelled with TMT reagent 127
+def: "The name of the sample labelled with TMT reagent 127" [PRIDE:PRIDE]
 is_a: PRIDE:0000337 ! TMT reagent
 
 [Term]
 id: PRIDE:0000287
 name: TMT reagent 128
-comment: The name of the sample labelled with TMT reagent 128
+def: "The name of the sample labelled with TMT reagent 128" [PRIDE:PRIDE]
 is_a: PRIDE:0000337 ! TMT reagent
 
 [Term]
 id: PRIDE:0000288
 name: TMT reagent 129
-comment: The name of the sample labelled with TMT reagent 129
+def: "The name of the sample labelled with TMT reagent 129" [PRIDE:PRIDE]
 is_a: PRIDE:0000337 ! TMT reagent
 
 [Term]
 id: PRIDE:0000289
 name: TMT reagent 130
-comment: The name of the sample labelled with TMT reagent 130
+def: "The name of the sample labelled with TMT reagent 130" [PRIDE:PRIDE]
 is_a: PRIDE:0000337 ! TMT reagent
 
 [Term]
 id: PRIDE:0000290
 name: TMT reagent 131
-comment: The name of the sample labelled with TMT reagent 131
+def: "The name of the sample labelled with TMT reagent 131" [PRIDE:PRIDE]
 is_a: PRIDE:0000337 ! TMT reagent
 
 [Term]
 id: PRIDE:0000291
 name: TMT intensity 126
-comment: The intensity value of the sample labelled with TMT reagent 126 [Curator:ACSORDAS]
+def: "The intensity value of the sample labelled with TMT reagent 126 [Curator:ACSORDAS]" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000292
 name: TMT intensity 127
-comment: The intensity value of the sample labelled with TMT reagent 127 [Curator:ACSORDAS]
+def: "The intensity value of the sample labelled with TMT reagent 127 [Curator:ACSORDAS]" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000293
 name: TMT intensity 128
-comment: The intensity value of the sample labelled with TMT reagent 128 [Curator:ACSORDAS]
+def: "The intensity value of the sample labelled with TMT reagent 128 [Curator:ACSORDAS]" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000294
 name: TMT intensity 129
-comment: The intensity value of the sample labelled with TMT reagent 129 [Curator:ACSORDAS]
+def: "The intensity value of the sample labelled with TMT reagent 129 [Curator:ACSORDAS]" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000295
 name: TMT intensity 130
-comment: The intensity value of the sample labelled with TMT reagent 130 [Curator:ACSORDAS]
+def: "The intensity value of the sample labelled with TMT reagent 130 [Curator:ACSORDAS]" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000296
 name: TMT intensity 131
-comment: The intensity value of the sample labelled with TMT reagent 131 [Curator:ACSORDAS]
+def: "The intensity value of the sample labelled with TMT reagent 131 [Curator:ACSORDAS]" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000297
 name: Gene name
-comment: Name of the gene that has been identified (if a nucleotide database was used to perform the search)
+def: "Name of the gene that has been identified (if a nucleotide database was used to perform the search)" [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000298
 name: Modification Position in Protein Sequence
-comment: Position of the modification in the protein sequence
+def: "Position of the modification in the protein sequence" [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000299
 name: Submitted Protein Accession
-comment: The original submitted protein accession for this identification. This might have been curated as part of the submission process.
+def: "The original submitted protein accession for this identification. This might have been curated as part of the submission process." [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
@@ -1882,121 +1949,122 @@ is_a: PRIDE:0000428 ! Bottom-up proteomics
 [Term]
 id: PRIDE:0000306
 name: Imported from NCBI Peptidome
+def: "It refers to the process of retrieving peptide data from the NCBI Peptidome database for use in various proteomics analyses. " [PRIDE:PRIDE]
 comment: Experiment.[Curator:ACSORDAS]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000307
 name: Quantification method
-comment: Defines various quantification methods
+def: "Defines various quantification methods" [PRIDE:PRIDE]
 is_a: PRIDE:0000391 ! Quantification parameter
 
 [Term]
 id: PRIDE:0000308
 name: Gel-based quantification method
-comment: Describes gel-based quantification methods
+def: "Describes gel-based quantification methods" [PRIDE:PRIDE]
 is_a: PRIDE:0000307 ! Quantification method
 
 [Term]
 id: PRIDE:0000309
 name: Gel-free quantification method
-comment: Describes gel-free quantification methods
+def: "Describes gel-free quantification methods" [PRIDE:PRIDE]
 is_a: PRIDE:0000307 ! Quantification method
 
 [Term]
 id: PRIDE:0000310
 name: Isotope labeling
-comment: Describes quantification techniques using isotope labeling
+def: "Describes quantification techniques using isotope labeling" [PRIDE:PRIDE]
 is_a: PRIDE:0000309 ! Gel-free quantification method
 
 [Term]
 id: PRIDE:0000311
 name: Selected Reaction Monitoring
-comment: Describes quantification techniques based on selected / multiple reaction monitoring
+def: "Describes quantification techniques based on selected / multiple reaction monitoring" [PRIDE:PRIDE]
 is_a: PRIDE:0000309 ! Gel-free quantification method
 
 [Term]
 id: PRIDE:0000312
 name: Label free
-comment: Describes label free quantification techniques.
+def: "Describes label free quantification techniques." [PRIDE:PRIDE]
 is_a: PRIDE:0000309 ! Gel-free quantification method
 
 [Term]
 id: PRIDE:0000313
 name: iTRAQ
-comment: Quantification technique developed by Applied Biosystems using various reporter ions that can be detected at MS2 level
+def: "Quantification technique developed by Applied Biosystems using various reporter ions that can be detected at MS2 level" [PRIDE:PRIDE]
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 
 [Term]
 id: PRIDE:0000314
 name: TMT
-comment: Tandem Mass Tag is a MS2 based isotope labeling quantification technique
-synonym: "Tandem Mass Tag" EXACT []
+def: "Tandem Mass Tag is a MS2 based isotope labeling quantification technique
+synonym: "Tandem Mass Tag" EXACT []" [PRIDE:PRIDE]
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 
 [Term]
 id: PRIDE:0000315
 name: SILAC
-comment: Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification
+def: "Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification" [PRIDE:PRIDE]
 synonym: "Stable isotope labeling with amino acids in cell culture" EXACT []
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
 
 [Term]
 id: PRIDE:0000316
 name: MS1 based isotope labeling
-comment: Describes isotope labeling quantification techniques detectable at MS1 level.
+def: "Describes isotope labeling quantification techniques detectable at MS1 level." [PRIDE:PRIDE]
 is_a: PRIDE:0000310 ! Isotope labeling
 
 [Term]
 id: PRIDE:0000317
 name: MS2 based isotope labeling
-comment: Describes isotope labeling quantification techniques detectable at MS1 level.
+def: "Describes isotope labeling quantification techniques detectable at MS1 level." [PRIDE:PRIDE]
 is_a: PRIDE:0000310 ! Isotope labeling
 
 [Term]
 id: PRIDE:0000318
 name: 18O
-comment: The 18O quantification method relies on the differentiation of two samples using different stable isotopes of oxygen.
+def: "The 18O quantification method relies on the differentiation of two samples using different stable isotopes of oxygen." [PRIDE:PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
 
 [Term]
 id: PRIDE:0000319
 name: ICAT
-comment: Isotope-Coded Affinity Tags is an isotope labeling quantification technique and uses tags that consist of three elements.
+def: "Isotope-Coded Affinity Tags is an isotope labeling quantification technique and uses tags that consist of three elements." [PRIDE:PRIDE]
 synonym: "Isotope-Coded Affinity Tags" EXACT []
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
 
 [Term]
 id: PRIDE:0000320
 name: AQUA
-comment: AQUA is an isotope labeling based quantification technique that uses known peptides.
+def: "AQUA is an isotope labeling based quantification technique that uses known peptides." [PRIDE:PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
 
 [Term]
 id: PRIDE:0000321
 name: ICPL
-comment: Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses.
+def: "Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses." [PRIDE:PRIDE]
 synonym: "Isotope-coded protein label" EXACT []
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
 
 [Term]
 id: PRIDE:0000322
 name: emPAI
-comment: The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result.
+def: "The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result." [PRIDE:PRIDE]
 synonym: "Exponentially Modified Protein Abundance Index" EXACT []
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000323
 name: TIC
-comment: The Total Ion Current (TIC) can be measured or calculated in order to target specific ions.
-synonym: "Total Ion Current" EXACT []
+def: "The Total Ion Current (TIC) can be measured or calculated in order to target specific ions.
+synonym: "Total Ion Current" EXACT []" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000324
 name: Quantification reagent
-comment: A reagent used for quantification.
+def: "A reagent used for quantification." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 is_a: PRIDE:0000391 ! Quantification parameter
 
