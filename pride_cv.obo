@@ -1010,7 +1010,7 @@ is_a: PRIDE:0000157 ! Search type
 [Term]
 id: PRIDE:0000159
 name: MS/MS search
-def: "MS/MS Search refers to the process of identifying molecules (typically proteins, peptides, metabolites, or small molecules) using tandem mass spectrometry (MS/MS) data. Unlike simple mass spectrometry (MS1), MS/MS involves fragmenting precursor ions into smaller product ions, generating a detailed fragmentation pattern or "spectra" that can be used to identify the structure or sequence of the molecule." [PRIDE:PRIDE]
+def: "MS/MS Search refers to the process of identifying molecules (typically proteins, peptides, metabolites, or small molecules) using tandem mass spectrometry (MS/MS) data. Unlike simple mass spectrometry (MS1), MS/MS involves fragmenting precursor ions into smaller product ions, generating a detailed fragmentation pattern or spectra that can be used to identify the structure or sequence of the molecule." [PRIDE:PRIDE]
 is_a: PRIDE:0000157 ! Search type
 
 [Term]
