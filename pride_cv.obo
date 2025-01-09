@@ -1997,8 +1997,8 @@ is_a: PRIDE:0000317 ! MS2 based isotope labeling
 [Term]
 id: PRIDE:0000314
 name: TMT
-def: "Tandem Mass Tag is a MS2 based isotope labeling quantification technique
-synonym: "Tandem Mass Tag" EXACT []" [PRIDE:PRIDE]
+def: "Tandem Mass Tag is a MS2 based isotope labeling quantification technique" [PRIDE:PRIDE]
+synonym: "Tandem Mass Tag" EXACT []
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 
 [Term]
