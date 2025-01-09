@@ -2056,8 +2056,8 @@ is_a: PRIDE:0000312 ! Label free
 [Term]
 id: PRIDE:0000323
 name: TIC
-def: "The Total Ion Current (TIC) can be measured or calculated in order to target specific ions.
-synonym: "Total Ion Current" EXACT []" [PRIDE:PRIDE]
+def: "The Total Ion Current (TIC) can be measured or calculated in order to target specific ions." [PRIDE:PRIDE]
+synonym: "Total Ion Current" EXACT []
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
