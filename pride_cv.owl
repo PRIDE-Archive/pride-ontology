@@ -19,23 +19,23 @@
      xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/semapv/vocab/"
      xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#"
      xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#2"
      xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:chebi6="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:patterns="http://www.co-ode.org/patterns#"
-     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
-     xmlns:mondo-base="http://purl.obolibrary.org/obo/mondo/mondo-base#">
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.5/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.7/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:11:2024 13:18</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:11:2024 11:31</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nithu Sara John</oboInOwl:saved-by>
+        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deepti Jaiswal Kundu</oboInOwl:saved-by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd:string, ...)</rdfs:comment>
     </owl:Ontology>
     
@@ -8232,7 +8232,10 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000516 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000516">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000666"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT126</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000516</oboInOwl:id>
@@ -8250,7 +8253,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000517 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000517">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000666"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT127</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000517</oboInOwl:id>
@@ -8268,7 +8271,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000518 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000518">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT127C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000518</oboInOwl:id>
@@ -8286,7 +8291,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000519">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT127N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000519</oboInOwl:id>
@@ -8304,7 +8311,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000520 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000520">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000666"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT128</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000520</oboInOwl:id>
@@ -8322,7 +8329,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000521 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000521">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT128C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000521</oboInOwl:id>
@@ -8340,7 +8349,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000522 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000522">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT128N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000522</oboInOwl:id>
@@ -8358,7 +8369,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000523 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000523">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000666"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT129</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000523</oboInOwl:id>
@@ -8376,7 +8387,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000524 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000524">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT129C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000524</oboInOwl:id>
@@ -8394,7 +8407,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000525 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000525">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT129N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000525</oboInOwl:id>
@@ -8412,7 +8427,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000526 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000526">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000666"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT130</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000526</oboInOwl:id>
@@ -8430,7 +8445,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000527">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT130C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000527</oboInOwl:id>
@@ -8448,7 +8465,9 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000528 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT130N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000528</oboInOwl:id>
@@ -8466,7 +8485,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000529 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000529">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000666"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT131</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000529</oboInOwl:id>
@@ -9333,7 +9353,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000580 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000580">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT131N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000580</oboInOwl:id>
@@ -9351,7 +9372,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000581 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000581">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT131C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000581</oboInOwl:id>
@@ -9369,7 +9391,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000582 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000582">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT132N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000582</oboInOwl:id>
@@ -9387,7 +9410,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000583 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000583">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT132C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000583</oboInOwl:id>
@@ -10168,7 +10192,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000632 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000632">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT133N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000632</oboInOwl:id>
@@ -10186,7 +10211,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000633 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000633">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT133C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000633</oboInOwl:id>
@@ -10204,16 +10230,16 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000634 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000634">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134N</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000634</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134N</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000634"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134N</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -10329,7 +10355,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000642 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000642">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134C</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000642</oboInOwl:id>
@@ -10347,16 +10373,16 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000643 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000643">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT135N</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134N</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000643</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT135N</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134N</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000643"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT135N</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT134N</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -10713,6 +10739,96 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000665"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 6-plex labeling kit has 6 channels</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000666</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT6PLEX</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000666"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 6-plex labeling kit has 6 channels</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 10-plex labeling kit has 10 channels</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000667</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT10PLEX</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000667"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 10-plex labeling kit has 10 channels</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000668 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000668">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 16-plex labeling kit has 16 channels</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000668</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT16PLEX</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000668"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 16-plex labeling kit has 16 channels</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000515"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 18-plex labeling kit has 18 channels</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000669</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT18PLEX</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT 18-plex labeling kit has 18 channels</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000669"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT135</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000670</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT135</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000670"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT135</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
