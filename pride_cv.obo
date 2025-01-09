@@ -48,7 +48,6 @@ def: "Root node for terms relating to the description of a Gel in relation to th
 id: PRIDE:0000006
 name: Experiment additional parameter
 def: "Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam" [PRIDE:PRIDE]
-synonym: "Experiment additional parameter" []
 
 [Term]
 id: PRIDE:0000007
