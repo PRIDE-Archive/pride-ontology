@@ -28,11 +28,11 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.7/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.8/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:11:2024 11:31</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16:01:2025 14:06</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deepti Jaiswal Kundu</oboInOwl:saved-by>
@@ -10548,8 +10548,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000655 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000655">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000654"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target 96</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000672"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target 96 is a proteomics platform offering targeted analysis of 92 specific protein biomarkers per panel using proximity extension assay (PEA) technology.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000655</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target 96</rdfs:label>
@@ -10557,7 +10557,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000655"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target 96</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target 96 is a proteomics platform offering targeted analysis of 92 specific protein biomarkers per panel using proximity extension assay (PEA) technology.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -10566,7 +10566,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000656 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000656">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000654"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000671"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 1536</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000656</oboInOwl:id>
@@ -10584,16 +10584,16 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000657 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000657">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000654"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 3072</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000671"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 3072 includes eight 384-plex panels for efficient, large-scale, disease- and process-focused studies.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000657</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 3072</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 3072/384</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000657"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 3072</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 3072 includes eight 384-plex panels for efficient, large-scale, disease- and process-focused studies.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -10602,7 +10602,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000658 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000658">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000654"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000671"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore 384</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000658</oboInOwl:id>
@@ -10829,6 +10829,42 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000670"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMT135</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000671 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000671">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000654"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore is a high-throughput proteomics platform that quantifies protein biomarkers across multiple samples using proximity extension assay (PEA) technology.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000671</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000671"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore is a high-throughput proteomics platform that quantifies protein biomarkers across multiple samples using proximity extension assay (PEA) technology.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000672 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000672">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000654"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target is a proteomics platform designed for focused, customizable analysis of specific protein biomarker panels using proximity extension assay (PEA) technology.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000672</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000672"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target is a proteomics platform designed for focused, customizable analysis of specific protein biomarker panels using proximity extension assay (PEA) technology.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
