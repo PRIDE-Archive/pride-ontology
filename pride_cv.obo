@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 12:11:2024 11:31
-data-version: 2.1.7
+date: 16:01:2025 14:06
+data-version: 2.1.8
 saved-by: Deepti Jaiswal Kundu
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
@@ -3969,26 +3969,26 @@ is_a: PRIDE:0000638 ! Instrument model
 [Term]
 id: PRIDE:0000655
 name: Olink Target 96
-def: "Olink Target 96" [PRIDE:PRIDE]
-is_a: PRIDE:0000654 ! Olink instrument model
+def: "Olink Target 96 is a proteomics platform offering targeted analysis of 92 specific protein biomarkers per panel using proximity extension assay (PEA) technology." [PRIDE:PRIDE]
+is_a: PRIDE:0000672 ! Olink Target
 
 [Term]
 id: PRIDE:0000656
 name: Olink Explore 1536
 def: "Olink Explore 1536" [PRIDE:PRIDE]
-is_a: PRIDE:0000654 ! Olink instrument model
+is_a: PRIDE:0000671 ! Olink Explore
 
 [Term]
 id: PRIDE:0000657
-name: Olink Explore 3072
-def: "Olink Explore 3072" [PRIDE:PRIDE]
-is_a: PRIDE:0000654 ! Olink instrument model
+name: Olink Explore 3072/384
+def: "Olink Explore 3072 includes eight 384-plex panels for efficient, large-scale, disease- and process-focused studies." [PRIDE:PRIDE]
+is_a: PRIDE:0000671 ! Olink Explore
 
 [Term]
 id: PRIDE:0000658
 name: Olink Explore 384
 def: "Olink Explore 384" [PRIDE:PRIDE]
-is_a: PRIDE:0000654 ! Olink instrument model
+is_a: PRIDE:0000671 ! Olink Explore
 
 [Term]
 id: PRIDE:0000659
@@ -4062,6 +4062,18 @@ id: PRIDE:0000670
 name: TMT135
 def: "TMT135" [PRIDE:PRIDE]
 is_a: PRIDE:0000669 ! TMT18PLEX
+
+[Term]
+id: PRIDE:0000671
+name: Olink Explore
+def: "Olink Explore is a high-throughput proteomics platform that quantifies protein biomarkers across multiple samples using proximity extension assay (PEA) technology." [PRIDE:PRIDE]
+is_a: PRIDE:0000654 ! Olink instrument model
+
+[Term]
+id: PRIDE:0000672
+name: Olink Target
+def: "Olink Target is a proteomics platform designed for focused, customizable analysis of specific protein biomarker panels using proximity extension assay (PEA) technology." [PRIDE:PRIDE]
+is_a: PRIDE:0000654 ! Olink instrument model
 
 
 [Typedef]
