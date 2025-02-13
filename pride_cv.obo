@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 12:11:2024 11:31
-data-version: 2.1.7
-saved-by: Deepti Jaiswal Kundu
+date: 13:02:2025 10:31
+data-version: 2.1.8
+saved-by: Nithu Sara John
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
@@ -2446,7 +2446,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 [Term]
 id: PRIDE:0000401
 name: Experimental information has been refined since this experiment was originally made publicly available
-def: "This means that the experimental information available has been improved, for instance precursor charges were added."
+def: "This means that the experimental information available has been improved, for instance precursor charges were added." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
