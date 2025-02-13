@@ -366,14 +366,14 @@ is_a: PRIDE:0000573 ! Identification software
 [Term]
 id: PRIDE:0000057
 name: Molecular weight
-def: "Molecular weight of a protein." [PRIDE:PRIDE]
+def: "Molecular weight of a protein" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000058
 name: z score
-def: Bioworks z score
+def: "Bioworks z score" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
 
