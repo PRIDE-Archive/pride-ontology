@@ -1,7 +1,7 @@
 format-version: 1.4
 date: 13:02:2025 10:31
-data-version: 2.1.8
-saved-by: Nithu Sara John
+data-version: 2.1.9
+saved-by: Yasset Perez-Riverol
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
@@ -372,7 +372,8 @@ relationship: part_of PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000058
-name: z
+name: z score
+def: Bioworks z score
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 relationship: part_of PRIDE:0000056 ! Bioworks
 
@@ -558,11 +559,6 @@ is_a: PRIDE:0000071 ! Search engine setting
 id: PRIDE:0000088
 name: Protonated setting MH+
 def: "protonated setting MH⁺ refers to the protonated molecular ion of a compound, where M represents the neutral molecule, and the H⁺ signifies the added proton." [PRIDE;PRIDE]
-is_a: PRIDE:0000087 ! Protonated setting
-
-[Term]
-id: PRIDE:0000089
-name: Protonated setting Mr
 is_a: PRIDE:0000087 ! Protonated setting
 
 [Term]
@@ -2260,126 +2256,6 @@ id: PRIDE:0000366
 name: Contains multiple subsamples
 def: "Identifies samples that are made up of multiplexed subsamples" [PRIDE:PRIDE]
 is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000367
-name: Subsample 1 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000368
-name: Subsample 2 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000369
-name: Subsample 3 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000370
-name: Subsample 4 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000371
-name: Subsample 5 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000372
-name: Subsample 6 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000373
-name: Subsample 7 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000374
-name: Subsample 8 description
-is_a: PRIDE:0000365 ! Multiplexed sample description
-
-[Term]
-id: PRIDE:0000375
-name: Standard deviation subsample 1
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000376
-name: Standard deviation subsample 2
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000377
-name: Standard deviation subsample 3
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000378
-name: Standard deviation subsample 4
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000379
-name: Standard deviation subsample 5
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000380
-name: Standard deviation subsample 6
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000381
-name: Standard deviation subsample 7
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000382
-name: Standard deviation subsample 8
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000383
-name: Standard error subsample 1
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000384
-name: Standard error subsample 2
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000385
-name: Standard error subsample 3
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000386
-name: Standard error subsample 4
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000387
-name: Standard error subsample 5
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000388
-name: Standard error subsample 6
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000389
-name: Standard error subsample 7
-is_a: PRIDE:0000353 ! Multiplexed quantification value
-
-[Term]
-id: PRIDE:0000390
-name: Standard error subsample 8
-is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000391
