@@ -2654,7 +2654,7 @@ is_a: PRIDE:0000428 ! Bottom-up proteomics
 [Term]
 id: PRIDE:0000432
 name: Dataset with its publication pending
-def: : "A dataset which has an associated manuscript pending for publication." [PRIDE:PRIDE]
+def: "A dataset which has an associated manuscript pending for publication." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
