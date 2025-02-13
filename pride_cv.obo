@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 16:01:2025 14:06
+date: 13:02:2025 10:31
 data-version: 2.1.8
-saved-by: Deepti Jaiswal Kundu
+saved-by: Nithu Sara John
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 remark: I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd\:string, ...)
@@ -992,7 +992,7 @@ is_a: PRIDE:0000136 ! Mapping status
 id: PRIDE:0000156
 name: Project identifier
 def: "unique identifier of project." [PRIDE:PRIDE]
-synonym: "Project ID" EXACT []
+synonym: "Project ID" EXACT [NCIT:C165055]
 relationship: part_of PRIDE:0000097 ! Project
 
 [Term]
@@ -2070,106 +2070,112 @@ is_a: PRIDE:0000391 ! Quantification parameter
 [Term]
 id: PRIDE:0000325
 name: SILAC heavy
-comment: The heavy label used in SILAC experiments.
+def: "The heavy label used in SILAC experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000328 ! SILAC reagent
 is_a: PRIDE:0000539 ! SILAC channel label
 
 [Term]
 id: PRIDE:0000326
 name: SILAC light
-comment: The light reagent used in SILAC experiments.
+def: "The light reagent used in SILAC experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000328 ! SILAC reagent
 is_a: PRIDE:0000539 ! SILAC channel label
 
 [Term]
 id: PRIDE:0000327
 name: SILAC medium
-comment: The medium weight reagent used in SILAC experiments.
+def: "The medium weight reagent used in SILAC experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000328 ! SILAC reagent
 is_a: PRIDE:0000539 ! SILAC channel label
 
 [Term]
 id: PRIDE:0000328
 name: SILAC reagent
-comment: Reagent used in SILAC labeling.
+def: "Reagent used in SILAC labeling" [PRIDE:PRIDE]
 is_a: PRIDE:0000433 ! Reagents used in Labeled Method
 
 [Term]
 id: PRIDE:0000329
 name: iTRAQ reagent
-comment: Reagent used in iTRAQ experiments.
+def: "Reagent used in iTRAQ experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000433 ! Reagents used in Labeled Method
 
 [Term]
 id: PRIDE:0000330
 name: Arbitrary quantification unit
-comment: A unit describing values that can only be interpreted within the same spectrum but cannot be compared to values found in other spectra and or experiments.
+def: "A unit describing values that can only be interpreted within the same spectrum but cannot be compared to values found in other spectra and or experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000392 ! Quantification unit
 
 [Term]
 id: PRIDE:0000331
 name: Counts
-comment: Quantification values reported as arbitrary counts (most often ion counts).
+def: "Quantification values reported as arbitrary counts (most often ion counts)" [PRIDE:PRIDE]
 is_a: PRIDE:0000330 ! Arbitrary quantification unit
 
 [Term]
 id: PRIDE:0000337
 name: TMT reagent
-comment: Reagent used in TMT experiments.
+def: "Reagent used in TMT experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000433 ! Reagents used in Labeled Method
 
 [Term]
 id: PRIDE:0000344
 name: ICAT reagent
-comment: Reagent used in ICAT experiments.
+def: "Reagent used in ICAT experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000433 ! Reagents used in Labeled Method
 
 [Term]
 id: PRIDE:0000345
 name: ICAT light reagent
+def:"The ICAT light reagent is a chemical reagent that labels proteins for comparison with heavy reagents." [PRIDE:PRIDE]
 is_a: PRIDE:0000344 ! ICAT reagent
 
 [Term]
 id: PRIDE:0000346
 name: ICAT heavy reagent
+def: "The ICAT heavy reagent is a chemical reagent used to label proteins for protein profiling." [PRIDE:PRIDE]
 is_a: PRIDE:0000344 ! ICAT reagent
 
 [Term]
 id: PRIDE:0000347
 name: ICPL reagent
-comment: Reagent used in ICPL experiments.
+def: "Reagent used in ICPL experiments" [PRIDE:PRIDE]
 is_a: PRIDE:0000433 ! Reagents used in Labeled Method
 
 [Term]
 id: PRIDE:0000348
 name: ICPL 0 reagent
+def: "ICPL_0 reagent is a crucial component in the ICPL methodology, serving as the light isotopic label that provides a reference point for quantitative proteomic analyses" [PRIDE:PRIDE]
 is_a: PRIDE:0000347 ! ICPL reagent
 
 [Term]
 id: PRIDE:0000349
 name: ICPL 4 reagent
+def: "ICPLn4 reagent is a specific labeling compound that incorporates four deuterium (^2H) atoms, resulting in a mass shift of approximately 4.0251 Da per labeled amino acid compared to the light ICPL_0 reagent." [PRIDE:PRIDE]
 is_a: PRIDE:0000347 ! ICPL reagent
 
 [Term]
 id: PRIDE:0000350
 name: ICPL 6 reagent
+def: "The ICPL 6 reagent is a labeling compounds, designed to introduce a mass shift of approximately 6.0204 Da per labeled amino group" [PRIDE:PRIDE]
 is_a: PRIDE:0000347 ! ICPL reagent
 
 [Term]
 id: PRIDE:0000351
 name: ICPL 10 reagent
+def: "The ICPL 10 reagent is a labeling compounds, designed to introduce a mass shift of approximately 10 Da per labeled amino group" [PRIDE:PRIDE]
 is_a: PRIDE:0000347 ! ICPL reagent
 
 [Term]
 id: PRIDE:0000352
 name: Quantification value
-comment: Parameters to report quantification values.
+def: "Parameters to report quantification values"[PRIDE:PRIDE]
 is_a: PRIDE:0000391 ! Quantification parameter
 
 [Term]
 id: PRIDE:0000353
 name: Multiplexed quantification value
-comment: Parameters describing quantification values for multiplexed samples.
+def: "Parameters describing quantification values for multiplexed samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_a: PRIDE:0000352 ! Quantification value
@@ -2177,59 +2183,68 @@ is_a: PRIDE:0000352 ! Quantification value
 [Term]
 id: PRIDE:0000354
 name: Intensity subsample 1
+def: "Intensity subsampling 1 typically refers to selecting first subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000355
 name: Intensity subsample 2
+def: "Intensity subsampling 2 typically refers to selecting second subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000356
 name: Intensity subsample 3
+def: "Intensity subsampling 3 typically refers to selecting third subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000357
 name: Intensity subsample 4
+def: "Intensity subsampling 4 typically refers to selecting fourth subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000358
 name: Intensity subsample 5
+def: "Intensity subsampling 5 typically refers to selecting fifth subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
+
 [Term]
 id: PRIDE:0000359
 name: Intensity subsample 6
+def: "Intensity subsampling 6 typically refers to selecting sixth subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000360
 name: Intensity subsample 7
+def: "Intensity subsampling 7 typically refers to selecting seventh subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000361
 name: Intensity subsample 8
+def: "Intensity subsampling 8 typically refers to selecting eighth subset of intensity values from a spectrum to analyze specific peaks or regions of interest" [PRIDE:PRIDE]
 is_a: PRIDE:0000353 ! Multiplexed quantification value
 
 [Term]
 id: PRIDE:0000362
 name: Other quantification value
-comment: Values from other quantification techniques.
+def: "Values from other quantification techniques" [PRIDE:PRIDE]
 is_a: PRIDE:0000352 ! Quantification value
 
 [Term]
 id: PRIDE:0000363
 name: emPAI value
-comment: The emPAI for the protein.
+def: "The emPAI for the protein" [PRIDE:PRIDE]
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_a: PRIDE:0000362 ! Other quantification value
 
 [Term]
 id: PRIDE:0000364
 name: TIC value
-comment: The Total Ion Count for the given entity.
+def: "The Total Ion Count for the given entity" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_a: PRIDE:0000362 ! Other quantification value
@@ -2237,13 +2252,13 @@ is_a: PRIDE:0000362 ! Other quantification value
 [Term]
 id: PRIDE:0000365
 name: Multiplexed sample description
-comment: Describes multiples subsamples.
+def: "Describes multiples subsamples" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
 id: PRIDE:0000366
 name: Contains multiple subsamples
-comment: Identifies samples that are made up of multiplexed subsamples.
+def: "Identifies samples that are made up of multiplexed subsamples" [PRIDE:PRIDE]
 is_a: PRIDE:0000365 ! Multiplexed sample description
 
 [Term]
@@ -2369,12 +2384,12 @@ is_a: PRIDE:0000353 ! Multiplexed quantification value
 [Term]
 id: PRIDE:0000391
 name: Quantification parameter
-comment: Quantification related parameter.
+def: "Quantification related parameter" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000392
 name: Quantification unit
-comment: Unit used to report quantification results.
+def: "Unit used to report quantification results" [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_a: PRIDE:0000391 ! Quantification parameter
@@ -2382,75 +2397,75 @@ is_a: PRIDE:0000391 ! Quantification parameter
 [Term]
 id: PRIDE:0000393
 name: Relative quantification unit
-comment: Unit to report relative quantification results.
+def: "Unit to report relative quantification results" [PRIDE:PRIDE]
 is_a: PRIDE:0000392 ! Quantification unit
 
 [Term]
 id: PRIDE:0000394
 name: Absolute quantification unit
-comment: Unit used to describe absolute quantification results.
+def: "Unit used to describe absolute quantification results" [PRIDE:PRIDE]
 is_a: PRIDE:0000392 ! Quantification unit
 
 [Term]
 id: PRIDE:0000395
 name: Ratio
-comment: Quantification results represent ratios.
+def: "Quantification results represent ratios" [PRIDE:PRIDE]
 is_a: PRIDE:0000393 ! Relative quantification unit
 
 [Term]
 id: PRIDE:0000396
 name: Copies per cell
-comment: Quantification results are reported as copies per cell.
+def: "Quantification results are reported as copies per cell" [PRIDE:PRIDE]
 is_a: PRIDE:0000394 ! Absolute quantification unit
 
 [Term]
 id: PRIDE:0000397
 name: Data derived from previous dataset
-comment: One dataset is a reanalysis of previously published data
+def: "One dataset is a reanalysis of previously published data" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000398
 name: No PTMs are included in the dataset
-comment: No post-translational-modifications are been included in the identified peptides of one dataset
+def: "No post-translational-modifications are been included in the identified peptides of one dataset" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000399
 name: Accepted manuscript
-comment: A dataset has one associated manuscript, which has been accepted but no PubMedID is available yet.
+def: "A dataset has one associated manuscript, which has been accepted but no PubMedID is available yet" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000400
 name: Reference
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
-comment: Literature reference associated with one dataset (including the authors, title, year and journal details). The value field can be used for the PubMedID, or to specify if one manuscript is just submitted or accepted, but it does not have a PubMedID yet.
+def: "Literature reference associated with one dataset (including the authors, title, year and journal details). The value field can be used for the PubMedID, or to specify if one manuscript is just submitted or accepted, but it does not have a PubMedID yet." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000401
 name: Experimental information has been refined since this experiment was originally made publicly available
-comment: This means that the experimental information available has been improved, for instance precursor charges were added.
+def: "This means that the experimental information available has been improved, for instance precursor charges were added." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000402
 name: Original data
-comment: One dataset is not a reanalysis of previously published data
+def: "A dataset is not a reanalysis of previously published data" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000403
 name: Associated file URI
-comment: URI of one external file associated to the PRIDE experiment (maybe through a PX submission).
+def: "URI of one external file associated to the PRIDE experiment (maybe through a PX submission)." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000404
 name: Associated raw file URI
-comment: URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission).
+def: "URI of a raw data file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 is_a: PRIDE:0000577 ! file uri
@@ -2458,7 +2473,7 @@ is_a: PRIDE:0000577 ! file uri
 [Term]
 id: PRIDE:0000405
 name: Submit PRIDE Experiment to IntAct 
-comment: Indicates that this PRIDE experiment contains interaction data and should be submitted to IntAct (maybe through a PX submission).
+def: "Indicates that this PRIDE experiment contains interaction data and should be submitted to IntAct (maybe through a PX submission)" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
@@ -2595,104 +2610,105 @@ is_a: PRIDE:0000193 ! y ion
 [Term]
 id: PRIDE:0000425
 name: MS1 intensity based label-free quantification method
+def: "A a widely used approach in mass spectrometry-based proteomics for quantifying protein abundances across different samples." [PRIDE:PRIDE]
 is_a: PRIDE:0000309 ! Gel-free quantification method
 
 [Term]
 id: PRIDE:0000426
 name: Mass spectrometry proteomics experimental strategy
-comment: The basic mass spectrometry strategy used in the experiment.
+def: "The basic mass spectrometry strategy used in the experiment" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000427
 name: Top-down proteomics
-comment: Proteins enter directly the mass spectrometer.
+def: "a mass spectrometry-based approach that analyzes intact proteins rather than digesting them into peptides (as in bottom-up proteomics)" [PRIDE:PRIDE]
 is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
 is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
 id: PRIDE:0000428
 name: Bottom-up proteomics
-comment: Proteins go through proteolytic digestion yielding peptides before entering the mass spectrometer.
+def: "Proteins go through proteolytic digestion yielding peptides before entering the mass spectrometer" [PRIDE:PRIDE]
 is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
 is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
 id: PRIDE:0000429
 name: MS/MS shotgun proteomics
-comment: Bottom-up MS/MS shotgun experiment with data-dependent acquisition, using nomenclature in PMID 20622845, the method of choice for the a priori identification of the protein components of complex samples.
+def: "Bottom-up MS/MS shotgun experiment with data-dependent acquisition, using nomenclature in PMID 20622845, the method of choice for the a priori identification of the protein components of complex samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 
 [Term]
 id: PRIDE:0000430
 name: Chemical cross-linking coupled with mass spectrometry proteomics
-comment: Chemical cross-linking of proteins coupled with mass spectrometry analysis (CXMS) to provide information about protein folding and protein-protein interaction.
+def: "Chemical cross-linking of proteins coupled with mass spectrometry analysis (CXMS) to provide information about protein folding and protein-protein interaction" [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 
 [Term]
 id: PRIDE:0000431
 name: Affinity purification coupled with mass spectrometry proteomics
-comment: Affinity purification combined with mass spectrometry (AP-MS) has been used to understand protein-complex composition and protein-protein interaction.
+def: "Affinity purification combined with mass spectrometry (AP-MS) has been used to understand protein-complex composition and protein-protein interaction" [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 
 [Term]
 id: PRIDE:0000432
 name: Dataset with its publication pending
-comment: A dataset which has an associated manuscript pending for publication.
+def: "A dataset which has an associated manuscript pending for publication." [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000433
 name: Reagents used in Labeled Methods
-comment: Labeled reagents used for quantification.
+def: "Labeled reagents used for quantification" [PRIDE:PRIDE]
 is_a: PRIDE:0000324 ! Quantification reagent
 
 [Term]
 id: PRIDE:0000434
 name: Unlabeled sample
-comment: An unlabeled sample used for quantification.
+def: "An unlabeled sample used for quantification" [PRIDE:PRIDE]
 is_a: PRIDE:0000324 ! Quantification reagent
 
 [Term]
 id: PRIDE:0000435
 name: Peptide counting
-comment: Use of the number of peptides for an identified protein as a measure of abundance. Method reviewed in PMID 22772140.
+def: "Use of the number of peptides for an identified protein as a measure of abundance. Method reviewed in PMID 22772140" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000436
 name: Spectrum counting
-comment: Use of the number of PSMs for an identified protein as a measure of abundance. Method reviewed in PMID 22772140
+def: "Use of the number of PSMs for an identified protein as a measure of abundance. Method reviewed in PMID 22772140" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000437
 name: PAI
-comment: Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140
+def: "Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000438
 name: Spectrum count/molecular weight
-comment: Spectrum count is divided by the molecular weight of a protein. Method reviewed in PMID 22772140
+def: "Spectrum count is divided by the molecular weight of a protein. Method reviewed in PMID 22772140" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000439
 name: SAF
-comment: The spectrum count is normalized for protein length. Method reviewed in PMID 22772140
+def: "The spectrum count is normalized for protein length. Method reviewed in PMID 22772140" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000440
 name: NSAF
-comment: Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140
+def: "Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
 id: PRIDE:0000441
 name: APEX - Absolute Protein Expression
-comment: Spectrum counting method using machine learning classification to derive peptide detection probabilities to predict detectable peptides for any protein. Method reviewed in PMID 22772140
+def: "Spectrum counting method using machine learning classification to derive peptide detection probabilities to predict detectable peptides for any protein. Method reviewed in PMID 22772140" [PRIDE:PRIDE]
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
@@ -2734,7 +2750,7 @@ is_a: PRIDE:0000450 ! Data-independent acquisition
 [Term]
 id: PRIDE:0000448
 name: Additional associated raw file URI
-comment: Additional URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission). The URI is provided via an additional resource to PRIDE.
+def: "Additional URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission). The URI is provided via an additional resource to PRIDE" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 is_a: PRIDE:0000577 ! file uri
@@ -2742,7 +2758,7 @@ is_a: PRIDE:0000577 ! file uri
 [Term]
 id: PRIDE:0000449
 name: Gel image file URI
-comment: URI of one gel image file associated to one PX submission.
+def: "URI of one gel image file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: PRIDE:0000403 ! Associated file URI
 is_a: PRIDE:0000577 ! file uri
@@ -2781,19 +2797,19 @@ is_a: PRIDE:0000450 ! Data-independent acquisition
 [Term]
 id: PRIDE:0000455
 name: Protein-protein cross-linking experiment
-comment: Protein-protein cross-linking experiment to provide information about protein folding and protein-protein interaction.
+def: "Protein-protein cross-linking experiment to provide information about protein folding and protein-protein interaction" [PRIDE:PRIDE]
 is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
 
 [Term]
 id: PRIDE:0000456
 name: Protein-RNA cross-linking experiment
-comment: Protein-RNA cross-linking experiment to provide information about Protein-RNA interaction.
+def: "Protein-RNA cross-linking experiment to provide information about Protein-RNA interaction" [PRIDE:PRIDE]
 is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry proteomics
 
 [Term]
 id: PRIDE:0000457
 name: Experiment Type
-comment: Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method.
+def: "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000458
