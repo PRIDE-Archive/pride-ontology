@@ -2809,7 +2809,7 @@ is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry prot
 [Term]
 id: PRIDE:0000457
 name: Experiment Type
-def: "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method" 
+def: "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000458
