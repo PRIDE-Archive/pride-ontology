@@ -4076,7 +4076,7 @@ name: Olink Target
 def: "Olink Target is a proteomics platform designed for focused, customizable analysis of specific protein biomarker panels using proximity extension assay (PEA) technology." [PRIDE:PRIDE]
 is_a: PRIDE:0000654 ! Olink instrument model
 
-Term]
+[Term]
 id: PRIDE:0000673
 name: Olink Explore HT
 def: "The Olink Explore HT is a high-throughput proteomics platform for large-scale biomarker discovery, enabling simultaneous measurement of thousands of proteins from minimal sample volumes." [PRIDE:PRIDE]
