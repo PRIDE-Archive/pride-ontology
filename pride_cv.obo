@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 13:02:2025 10:31
-data-version: 2.1.10
+date: 14:02:2025 10:31
+data-version: 2.1.11
 saved-by: Yasset Perez-Riverol
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
@@ -3842,6 +3842,7 @@ name: Instrument model
 def: "Instrument model" [PRIDE:PRIDE]
 
 [Term]
+
 id: PRIDE:0000639
 name: Somalogic instrument model
 def: "Somalogic instrument model" [PRIDE:PRIDE]
@@ -4035,6 +4036,11 @@ name: Olink Target
 def: "Olink Target is a proteomics platform designed for focused, customizable analysis of specific protein biomarker panels using proximity extension assay (PEA) technology" [PRIDE:PRIDE]
 is_a: PRIDE:0000654 ! Olink instrument model
 
+[Term]
+id: PRIDE:0000673
+name: Olink Explore HT
+def: "The Olink Explore HT is a high-throughput proteomics platform for large-scale biomarker discovery, enabling simultaneous measurement of thousands of proteins from minimal sample volumes" [PRIDE:PRIDE]
+is_a: PRIDE:0000671 ! Olink Explore
 
 [Typedef]
 id: http://purl.obolibrary.org/obo/PRIDE_part_of
