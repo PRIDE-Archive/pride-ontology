@@ -116,7 +116,7 @@ is_a: PRIDE:0000013 ! X correlation
 [Term]
 id: PRIDE:0000017
 name: Sample description additional parameter
-def: "Root term for parameters in the context of ExperimentCollection/Experiment/mzData/description/admin/sampleDescription/cvParam" [PRIDE:PRIDE]
+def: "Root term for parameters in the context of ExperimentCollection" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000018
@@ -157,7 +157,7 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000024
 name: Enzyme digestion
-def: "The fragmentation of proteins into peptides through the use of an enzyme such as trypsin" [PRIDE:PRIDE]
+def: "The fragmentation of proteins into peptides through the use of an enzyme such as Trypsin" [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -181,7 +181,7 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 [Term]
 id: PRIDE:0000028
 name: Cv Label
-def: "Valid values for cvLabel entries referencing external database / CV / ontology" [PRIDE:PRIDE]
+def: "Valid values for cvLabel entries referencing external database or ontology" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000029
