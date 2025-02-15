@@ -29,15 +29,14 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.10/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/2.1.12/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13:02:2025 10:31</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15:02:2025 10:31</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yasset Perez-Riverol</oboInOwl:saved-by>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I would set treat-xrefs-as-equivalent but there are some weird xrefs that would break that behaviour (PRIDE:PRIDE, value-type:xsd:string, ...)</rdfs:comment>
     </owl:Ontology>
     
 
@@ -302,7 +301,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000000">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to Reference additional parameters</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000000</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference additional parameter</rdfs:label>
@@ -310,7 +309,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to Reference additional parameters</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -319,7 +318,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000001">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a protocol as ordered steps, in relation to the PRIDE.xml element ExperimentCollection/Experiment/Protocol/ProtocolSteps/StepDescription</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a protocol as ordered steps</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000001</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protocol step description additional parameter</rdfs:label>
@@ -327,7 +326,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a protocol as ordered steps, in relation to the PRIDE.xml element ExperimentCollection/Experiment/Protocol/ProtocolSteps/StepDescription</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a protocol as ordered steps</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -336,7 +335,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000002">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a ModificationItem (post translational modification or artifactual modification) in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/ModificationItem/additional/cvParam</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a ModificationItem</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000002</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModificationItem additional parameter</rdfs:label>
@@ -344,7 +343,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a ModificationItem (post translational modification or artifactual modification) in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/ModificationItem/additional/cvParam</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a ModificationItem</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -353,7 +352,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000003">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a PeptideItem in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/additional/cvParam</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a PeptideItem</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000003</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peptide item additional parameter</rdfs:label>
@@ -361,7 +360,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a PeptideItem in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/additional/cvParam</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a PeptideItem</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -370,7 +369,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000004">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Identification in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/additional/cvParam</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Identification</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000004</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification additional parameter</rdfs:label>
@@ -378,7 +377,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Identification in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/additional/cvParam</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Identification</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -387,7 +386,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000005">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a Gel in relation to the PRIDE.xml element ExperimentCollection/Experiment/TwoDimensionalIdentification/Gel/additional/cvParam</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a Gel parameter</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000005</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel additional parameter</rdfs:label>
@@ -395,7 +394,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a Gel in relation to the PRIDE.xml element ExperimentCollection/Experiment/TwoDimensionalIdentification/Gel/additional/cvParam</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of a Gel parameter</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -404,7 +403,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000006">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Experiment</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000006</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment additional parameter</rdfs:label>
@@ -412,7 +411,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root node for terms relating to the description of an Experiment</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -421,7 +420,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000007">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version number / identifier for search engine</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version number or identifier for search engine</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000007</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SearchEngineVersion</rdfs:label>
@@ -430,7 +429,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version number / identifier for search engine</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version number or identifier for search engine</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -477,7 +476,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precursor ion mass tolerance efines the acceptable range of deviation between the experimental mass-to-charge ratio (𝑚/𝑧)of a precursor ion and its theoretical (m/z) value during database searches</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precursor ion mass tolerance defines the acceptable range of deviation between the experimental mass-to-charge ratio (𝑚/𝑧)of a precursor ion and its theoretical (m/z) value during database searches</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000010</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precursor ion mass tolerance</rdfs:label>
@@ -485,7 +484,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000010"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precursor ion mass tolerance efines the acceptable range of deviation between the experimental mass-to-charge ratio (𝑚/𝑧)of a precursor ion and its theoretical (m/z) value during database searches</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precursor ion mass tolerance defines the acceptable range of deviation between the experimental mass-to-charge ratio (𝑚/𝑧)of a precursor ion and its theoretical (m/z) value during database searches</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -610,7 +609,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000017">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root term for parameters in the context of ExperimentCollection/Experiment/mzData/description/admin/sampleDescription/cvParam</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root term for parameters in the context of ExperimentCollection</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000017</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample description additional parameter</rdfs:label>
@@ -618,7 +617,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root term for parameters in the context of ExperimentCollection/Experiment/mzData/description/admin/sampleDescription/cvParam</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root term for parameters in the context of ExperimentCollection</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -736,7 +735,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The fragmentation of proteins into peptides through the use of an enzyme such as trypsin</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The fragmentation of proteins into peptides through the use of an enzyme such as Trypsin</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000024</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enzyme digestion</rdfs:label>
@@ -744,7 +743,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000024"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The fragmentation of proteins into peptides through the use of an enzyme such as trypsin</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The fragmentation of proteins into peptides through the use of an enzyme such as Trypsin</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -807,7 +806,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000028">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valid values for cvLabel entries referencing external database / CV / ontology</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valid values for cvLabel entries referencing external database or ontology</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000028</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cv Label</rdfs:label>
@@ -815,7 +814,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000028"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valid values for cvLabel entries referencing external database / CV / ontology</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valid values for cvLabel entries referencing external database or ontology</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -11923,6 +11922,24 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000672"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Target is a proteomics platform designed for focused, customizable analysis of specific protein biomarker panels using proximity extension assay (PEA) technology</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000673 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000673">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000671"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Olink Explore HT is a high-throughput proteomics platform for large-scale biomarker discovery, enabling simultaneous measurement of thousands of proteins from minimal sample volumes</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:0000673</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olink Explore HT</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000673"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Olink Explore HT is a high-throughput proteomics platform for large-scale biomarker discovery, enabling simultaneous measurement of thousands of proteins from minimal sample volumes</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
