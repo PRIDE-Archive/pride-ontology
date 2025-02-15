@@ -927,7 +927,7 @@ is_a: PRIDE:0000145 ! PepSplice
 [Term]
 id: PRIDE:0000147
 name: PepSplice false discovery rate
-def:"PepSlice false discovery rate is a critical metric used to control the number of false positives (incorrect peptide-spectrum matches or PSMs) in the search results" [PRIDE:PRIDE]
+def: "PepSlice false discovery rate is a critical metric used to control the number of false positives (incorrect peptide-spectrum matches or PSMs) in the search results" [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
@@ -2124,7 +2124,7 @@ is_a: PRIDE:0000433 ! Reagents used in Labeled Method
 [Term]
 id: PRIDE:0000345
 name: ICAT light reagent
-def:"The ICAT light reagent is a chemical reagent that labels proteins for comparison with heavy reagents" [PRIDE:PRIDE]
+def: "The ICAT light reagent is a chemical reagent that labels proteins for comparison with heavy reagents" [PRIDE:PRIDE]
 is_a: PRIDE:0000344 ! ICAT reagent
 
 [Term]
