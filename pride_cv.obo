@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 14:02:2025 10:31
-data-version: 2.1.11
+date: 15:02:2025 10:31
+data-version: 2.1.12
 saved-by: Yasset Perez-Riverol
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
@@ -17,42 +17,42 @@ is_transitive: true
 [Term]
 id: PRIDE:0000000
 name: Reference additional parameter
-def: "Root node for terms relating to Reference additional parameters, in the context of ExperimentCollection/Experiment/Reference/additional/CvParam" [PRIDE:PRIDE]
+def: "Root node for terms relating to Reference additional parameters" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000001
 name: Protocol step description additional parameter
-def: "Root node for terms relating to the description of a protocol as ordered steps, in relation to the PRIDE.xml element ExperimentCollection/Experiment/Protocol/ProtocolSteps/StepDescription" [PRIDE:PRIDE]
+def: "Root node for terms relating to the description of a protocol as ordered steps" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000002
 name: ModificationItem additional parameter
-def: "Root node for terms relating to the description of a ModificationItem (post translational modification or artifactual modification) in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/ModificationItem/additional/cvParam" [PRIDE:PRIDE]
+def: "Root node for terms relating to the description of a ModificationItem" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000003
 name: Peptide item additional parameter
-def: "Root node for terms relating to the description of a PeptideItem in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/PeptideItem/additional/cvParam" [PRIDE:PRIDE]
+def: "Root node for terms relating to the description of a PeptideItem" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000004
 name: Identification additional parameter
-def: "Root node for terms relating to the description of an Identification in relation to the PRIDE.xml element ExperimentCollection/Experiment/Identification/additional/cvParam" [PRIDE:PRIDE]
+def: "Root node for terms relating to the description of an Identification" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000005
 name: Gel additional parameter
-def: "Root node for terms relating to the description of a Gel in relation to the PRIDE.xml element ExperimentCollection/Experiment/TwoDimensionalIdentification/Gel/additional/cvParam" [PRIDE:PRIDE]
+def: "Root node for terms relating to the description of a Gel parameter" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000006
 name: Experiment additional parameter
-def: "Root node for terms relating to the description of an Experiment in relation to the PRIDE.xml element ExperimentCollection/Experiment/additional/cvParam" [PRIDE:PRIDE]
+def: "Root node for terms relating to the description of an Experiment" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000007
 name: SearchEngineVersion
-def: "Version number / identifier for search engine"[PRIDE:PRIDE]
+def: "Version number or identifier for search engine"[PRIDE:PRIDE]
 is_obsolete: true
 
 [Term]
@@ -71,7 +71,7 @@ is_a: PRIDE:0000049 ! Peptide search engine output parameter
 [Term]
 id: PRIDE:0000010
 name: Precursor ion mass tolerance
-def: "Precursor ion mass tolerance efines the acceptable range of deviation between the experimental mass-to-charge ratio (𝑚/𝑧)of a precursor ion and its theoretical (m/z) value during database searches" [PRIDE:PRIDE]
+def: "Precursor ion mass tolerance defines the acceptable range of deviation between the experimental mass-to-charge ratio (𝑚/𝑧)of a precursor ion and its theoretical (m/z) value during database searches" [PRIDE:PRIDE]
 is_a: PRIDE:0000009 ! Ion mass tolerance
 
 [Term]
