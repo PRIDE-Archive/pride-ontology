@@ -6,8 +6,6 @@ default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
 import: http://www.ebi.ac.uk/efo/efo.owl
-import: http://purl.obolibrary.org/obo/ro.owl
-import: http://purl.obolibrary.org/obo/bfo.owl
 remark: creator: Deepti Jaiswal Kundu
 remark: creator: Nithu Sara John
 remark: creator: Yasset Perez-Riverol
