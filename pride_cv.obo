@@ -1,20 +1,47 @@
 format-version: 1.4
 date: 15:02:2025 10:31
-data-version: 2025-02-17
+data-version: releases/2025-02-17
 saved-by: Yasset Perez-Riverol
-auto-generated-by: OBO-Edit 2.3.1
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
+
+# Ontology IRIs
+ontology: pride
+
+# Imports
 import: http://purl.obolibrary.org/obo/chmo.owl
 import: http://www.ebi.ac.uk/efo/efo.owl
+import: http://purl.obolibrary.org/obo/ro.owl
+import: http://purl.obolibrary.org/obo/bfo.owl
+
+# ID Spaces
+idspace: PRIDE http://purl.obolibrary.org/obo/PRIDE_ "Proteomics Identification Database Ontology"
+idspace: CHMO http://purl.obolibrary.org/obo/CHMO_ "Chemical Methods Ontology"
+idspace: EFO http://www.ebi.ac.uk/efo/EFO_ "Experimental Factor Ontology"
+idspace: BFO http://purl.obolibrary.org/obo/BFO_ "Basic Formal Ontology"
+idspace: RO http://purl.obolibrary.org/obo/RO_ "Relation Ontology"
+
+# Definition Property
+property_value: http://purl.org/dc/elements/1.1/title "Proteomics Identification Database Ontology"
+property_value: http://purl.org/dc/elements/1.1/description "An ontology for describing proteomics data and experiments"
+property_value: http://purl.org/dc/elements/1.1/language "en"
+
+# Creator Information
 remark: creator: Deepti Jaiswal Kundu <jaiswal <-at-> ac.uk>
 remark: creator: Nithu Sara John <nithu <-at-> ebi.ac.uk>
 remark: creator: Yasset Perez-Riverol <yperez <-at-> ebi.ac.uk>
-remark: coverage: Proteomics Identification Database Ontology, terms describing proteomics data
+
+# Coverage and License Information
+remark: coverage: Proteomics Identification Database Ontology, terms describing proteomics data and experimental metadata
 remark: This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
-remark: To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+remark: To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
 remark: URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo
-ontology: pride
+
+# Ontology Metadata
+property_value: http://purl.org/dc/elements/1.1/license https://creativecommons.org/licenses/by/4.0/
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
+property_value: https://github.com/PRIDE-Archive/pride-ontology
+property_value: documentation https://github.com/PRIDE-Ontology/pride-ontology/wiki
 
 [Typedef]
 id: part_of
