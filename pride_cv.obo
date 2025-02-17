@@ -131,6 +131,7 @@ is_a: PRIDE:0000013 ! X correlation
 id: PRIDE:0000017
 name: Sample description additional parameter
 def: "Root term for parameters in the context of ExperimentCollection" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000018
@@ -196,6 +197,7 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 id: PRIDE:0000028
 name: Cv Label
 def: "Valid values for cvLabel entries referencing external database or ontology" [PRIDE:PRIDE]
+is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
 id: PRIDE:0000029
@@ -291,6 +293,7 @@ is_a: PRIDE:0000028 ! Cv Label
 id: PRIDE:0000044
 name: Search algorithm
 def: "A method used to retrieve specific data from a collection of data, based on a given criterion" [PRIDE:PRIDE]
+is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000045
@@ -318,6 +321,7 @@ is_a: PRIDE:0000573 ! Identification software
 id: PRIDE:0000048
 name: Output parameter
 def: "Output parameters in mass spectrometry search engines refer to the results and metrics provided after analyzing the experimental MS/MS spectra and comparing them to theoretical spectra from a protein database" [PRIDE:PRIDE]
+is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000049
@@ -1307,21 +1311,25 @@ is_a: PRIDE:0000187 ! Fragment Ion Annotation
 id: PRIDE:0000205
 name: Heavy stable isotope label
 def: "A general term for any stable isotope method" [PRIDE:PRIDE]
+is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000206
 name: Heavy stable isotope label residue
 def: "Heavy stable isotope label residue" [PRIDE:PRIDE]
+is_a: PRIDE:0000205 ! Heavy stable isotope label
 
 [Term]
 id: PRIDE:0000207
 name: Light stable isotope label
 def: "Light stable isotope label" [PRIDE:PRIDE]
+is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
 id: PRIDE:0000208
 name: Light stable isotope label residue
 def: "The precise amino acid that has been modified" [PRIDE:PRIDE]
+is_a: PRIDE:0000207 ! Light stable isotope label
 
 [Term]
 id: PRIDE:0000209
@@ -1732,6 +1740,7 @@ is_a: PRIDE:0000002 ! ModificationItem additional parameter
 id: PRIDE:0000278
 name: Processing method additional parameter
 def: "A processing method refers to the specific steps or algorithms used to analyze raw MS data, identify peptides, and assign modifications. These processing methods often come with additional parameters that allow users to customize the analysis based on their experimental needs" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000279
@@ -2227,6 +2236,7 @@ is_a: PRIDE:0000365 ! Multiplexed sample description
 id: PRIDE:0000391
 name: Quantification parameter
 def: "Quantification related parameter" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000392
@@ -2652,6 +2662,7 @@ is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry prot
 id: PRIDE:0000457
 name: Experiment Type
 def: "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method" [PRIDE:PRIDE]
+is_a: BF:0000001 ! entity
 
 [Term]
 id: PRIDE:0000458
@@ -2736,6 +2747,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 id: PRIDE:0000470
 name: File Properties
 def: "PRIDE File Properties for all type of files" [PRIDE:PRIDE]
+is_a: BF:0000001 ! entity
 
 [Term]
 id: PRIDE:0000471
@@ -2825,6 +2837,7 @@ is_a: PRIDE:0000470 ! File Properties
 id: PRIDE:0000484
 name: Result analysis parameters
 def: "The result analysis parameters is a term to group all the parameters for proteomics data analysis" [PRIDE:PRIDE]
+is_a: BF:0000001 ! entity
 
 [Term]
 id: PRIDE:0000485
@@ -3205,6 +3218,7 @@ is_a: PRIDE:0000544 ! Quality Control Sample
 id: PRIDE:0000547
 name: Instrument properties
 def: "Instrument properties" [PRIDE:PRIDE]
+is_a: BF:0000001 ! entity
 
 [Term]
 id: MS:1000451
@@ -3351,6 +3365,7 @@ is_a: PRIDE:0000567 ! Gel electrophoresis
 id: PRIDE:0000571
 name: Quantification software
 def: "A software that perform protein quantification using mass spectrometry data" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000572
@@ -3363,8 +3378,7 @@ is_a: PRIDE:0000573 ! Identification software
 id: PRIDE:0000573
 name: Identification software
 def: "A software that perform peptide/protein identification using mass spectrometry data" [PRIDE:PRIDE]
-
-creation_date: 2020-05-12T11:58:52Z
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000574
@@ -3784,6 +3798,7 @@ is_a: PRIDE:0000635 ! Affinity proteomics
 id: PRIDE:0000638
 name: Instrument model
 def: "Instrument model" [PRIDE:PRIDE]
+is_a: PRIDE:0000547 ! Instrument properties
 
 [Term]
 id: PRIDE:0000639
