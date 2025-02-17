@@ -2686,42 +2686,42 @@ is_a: PRIDE:0000311 ! Selected Reaction Monitoring
 [Term]
 id: PRIDE:0000464
 name: Fasta file URI
-def: "URI of one external Fasta file associated to the PRIDE experiment (maybe through a PX submission)"
+def: "URI of one external Fasta file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000465
 name: Spectral Library file URI
-def: "URI of one external Spectral Library file associated to the PRIDE experiment (maybe through a PX submission)"
+def: "URI of one external Spectral Library file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000466
 name: Quantification result file URI
-def: "URI of one external Quantification file associated to the PRIDE experiment (maybe through a PX submission)"
+def: "URI of one external Quantification file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000467
 name: MS Image file URI
-def: "URI of one external Mass spectrometry Image file associated to the PRIDE experiment (maybe through a PX submission)"
+def: "URI of one external Mass spectrometry Image file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000468
 name: Aspera Protocol
-def: "URI for an Aspera Download Protocol"
+def: "URI for an Aspera Download Protocol" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000469
 name: FTP Protocol
-def: "URI for an FTP Download Protocol"
+def: "URI for an FTP Download Protocol" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
