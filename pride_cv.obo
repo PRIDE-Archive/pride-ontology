@@ -3620,7 +3620,7 @@ is_a: PRIDE:0000607 ! Reduction reagent
 [Term]
 id: PRIDE:0000611
 name: SILAC light R:12C(6)14N(4)
-def: "The light amino acid arginine used in SILAC experiments, using the following isotopes:12C(6)14N(4) [PRIDE:PRIDE]
+def: "The light amino acid arginine used in SILAC experiments, using the following isotopes:12C(6)14N(4)" [PRIDE:PRIDE]
 is_a: PRIDE:0000326 ! SILAC light
 
 [Term]
