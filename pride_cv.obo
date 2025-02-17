@@ -23,13 +23,10 @@ remark: coverage: Proteomics Identification Database Ontology, terms describing 
 remark: This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 remark: To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
 remark: URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo
-ontology: pride
-
-# Ontology Metadata
 property_value: http://purl.org/dc/elements/1.1/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: https://github.com/PRIDE-Archive/pride-ontology
-property_value: documentation https://github.com/PRIDE-Ontology/pride-ontology/wiki
+property_value: homepage https://github.com/PRIDE-Archive/pride-ontology
+ontology: pride
 
 [Typedef]
 id: part_of
