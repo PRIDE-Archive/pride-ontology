@@ -2662,7 +2662,7 @@ is_a: PRIDE:0000458 ! Metaproteomics
 [Term]
 id: PRIDE:0000460
 name: Proteogenomics
-def: "Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies"
+def: "Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies" [PRIDE:PRIDE]
 is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
