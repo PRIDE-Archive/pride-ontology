@@ -27,3 +27,26 @@ jobs:
     # Runs a single command using the runners shell
     - name: Validate OBO file
       run: fastobo-validator --all pride_cv.obo
+
+    - name: Generate OWL and validate it
+      run: |
+        docker pull obolibrary/robot:v1.9.7
+        # Replace the imports of the UO and PATO ontology .obo files with the equivalent .owl files
+        cp pride_cv.obo tmp_pride.obo
+        cp unimod.obo tmp_unimod.obo
+        sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_pride.obo
+        sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_unimod.obo
+        head -n 50 tmp_pride.obo
+        export JAVA_TOOL_OPTIONS=-Xmx6G
+        docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.9.7 robot convert -vvv -i /work/tmp_pride.obo -o /work/pride_cv.owl --format owl
+        docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.9.7 robot convert -vvv -i /work/tmp_unimod.obo -o /work/unimod.owl --format owl
+        rm tmp_pride.obo
+        rm tmp_unimod.obo
+        
+        # Validate the OWL file
+        docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.9.7 robot report --input /work/pride_cv.owl --output /work/report.tsv
+
+    - name: Upload report artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: report.tsv
