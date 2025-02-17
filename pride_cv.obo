@@ -25,41 +25,49 @@ ontology: pride
 id: PRIDE:0000000
 name: Reference additional parameter
 def: "Root node for terms relating to Reference additional parameters" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000001
 name: Protocol step description additional parameter
 def: "Root node for terms relating to the description of a protocol as ordered steps" [PRIDE:PRIDE]
+is_a: BF:0000001 ! entity
 
 [Term]
 id: PRIDE:0000002
 name: ModificationItem additional parameter
 def: "Root node for terms relating to the description of a ModificationItem" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000003
 name: Peptide item additional parameter
 def: "Root node for terms relating to the description of a PeptideItem" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000004
 name: Identification additional parameter
 def: "Root node for terms relating to the description of an Identification" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000005
 name: Gel additional parameter
 def: "Root node for terms relating to the description of a Gel parameter" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000006
 name: Experiment additional parameter
 def: "Root node for terms relating to the description of an Experiment" [PRIDE:PRIDE]
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000007
 name: SearchEngineVersion
 def: "Version number or identifier for search engine"[PRIDE:PRIDE]
+is_a: BF:0000001 ! entity
 
 [Term]
 id: PRIDE:0000008
