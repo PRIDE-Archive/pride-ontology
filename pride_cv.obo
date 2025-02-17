@@ -8,11 +8,6 @@ import: http://purl.obolibrary.org/obo/chmo.owl
 import: http://www.ebi.ac.uk/efo/efo.owl
 import: http://purl.obolibrary.org/obo/ro.owl
 import: http://purl.obolibrary.org/obo/bfo.owl
-idspace: PRIDE http://purl.obolibrary.org/obo/PRIDE_ "Proteomics Identification Database Ontology"
-idspace: CHMO http://purl.obolibrary.org/obo/CHMO_ "Chemical Methods Ontology"
-idspace: EFO http://www.ebi.ac.uk/efo/EFO_ "Experimental Factor Ontology"
-idspace: BFO http://purl.obolibrary.org/obo/BFO_ "Basic Formal Ontology"
-idspace: RO http://purl.obolibrary.org/obo/RO_ "Relation Ontology"
 property_value: http://purl.org/dc/elements/1.1/title "Proteomics Identification Database Ontology"
 property_value: http://purl.org/dc/elements/1.1/description "An ontology for describing proteomics data and experiments"
 property_value: http://purl.org/dc/elements/1.1/language "en"
