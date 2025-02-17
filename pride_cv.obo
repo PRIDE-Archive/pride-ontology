@@ -11,6 +11,7 @@ remark: To view a copy of this license, visit https://creativecommons.org/licens
 remark: URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo
 idspace: dce http://purl.org/dc/elements/1.1/
 idspace: dcterms http://purl.org/dc/terms/
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl#
 property_value: dce:description "Proteomics Identification Database Ontology, terms describing proteomics data and experimental metadata" xsd:string
 property_value: dce:title "Proteomics Identification Database Ontology" xsd:string
 property_value: dce:license https://creativecommons.org/licenses/by/4.0/
