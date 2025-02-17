@@ -4,7 +4,7 @@ The PRIDE Ontology (PRIDE CV) provides controlled vocabulary terms for proteomic
 
 ## License
 
-PRIDE ontology is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
+PRIDE ontology is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Getting Help
 
