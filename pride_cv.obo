@@ -95,7 +95,7 @@ name: Delta Cn
 def: "1.0 - normalized correlation score" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000013
@@ -327,21 +327,21 @@ id: PRIDE:0000050
 name: Rank/Sp
 def: "Final correlation score rank and preliminary score rank" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000051
 name: (M+H)+
 def: "m/z of the singly-charged precursor (precursor mass + mass of hydrogen atom)" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000052
 name: Cn
 def: "Normalized correlation score" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000053
@@ -350,21 +350,21 @@ def: "Raw correlation score (Sequest)" [PRIDE:PRIDE]
 synonym: "C*10^4" RELATED []
 is_a: PRIDE:0000008 ! Protein search engine output parameter
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000054
 name: Sp
 def: "Preliminary score" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000055
 name: Ions
 def: "The number of frament ions matched (in the preliminary scoring process) out of the total number of fragment masses for the peptide" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000056
@@ -378,14 +378,14 @@ id: PRIDE:0000057
 name: Molecular weight
 def: "Molecular weight of a protein" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
-relationship: part_of PRIDE:0000056 ! Bioworks
+is_a: PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000058
 name: z score
 def: "Bioworks z score" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000056 ! Bioworks
+is_a: PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000059
@@ -404,14 +404,14 @@ id: PRIDE:0000061
 name: Coverage
 def: "Coverage refers to the proportion of a protein sequence that is represented by identified peptides in a given experiment" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
-relationship: part_of PRIDE:0000056 ! Bioworks
+is_a: PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000062
 name: rsp
 def: "It is used as a measure to assess the confidence of peptide identifications based on the output of peptide search engines such as Mascot, SEQUEST, X! Tandem, and others" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000056 ! Bioworks
+is_a: PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000063
@@ -454,7 +454,7 @@ id: PRIDE:0000069
 name: Mascot score
 def: "Score as defined for the Mascot search algorithm" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000046 ! Mascot
+is_a: PRIDE:0000046 ! Mascot
 
 [Term]
 id: PRIDE:0000070
@@ -630,14 +630,14 @@ id: PRIDE:0000099
 name: PeptideProphet probability score
 def: "The probability score for this peptide assignment to be correct, as calculated by PeptideProphet" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000101 ! PeptideProphet
+is_a: PRIDE:0000101 ! PeptideProphet
 
 [Term]
 id: PRIDE:0000100
 name: ProteinProphet probability score
 def: "The probability score for this protein identification to be correct, as calculated by ProteinProphet" [PRIDE:PRIDE]
 is_a: PRIDE:0000008 ! Protein search engine output parameter
-relationship: part_of PRIDE:0000102 ! ProteinProphet
+is_a: PRIDE:0000102 ! ProteinProphet
 
 [Term]
 id: PRIDE:0000101
@@ -697,7 +697,7 @@ is_a: PRIDE:0000107 ! Gel spot parameter
 id: PRIDE:0000110
 name: Gel spot volume
 def: "The volume of the spot on the gel measured in millimetres cubed.  Mandatory value of type xsd:double" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000131 ! Spot normalized volume
+is_a: PRIDE:0000131 ! Spot normalized volume
 
 [Term]
 id: PRIDE:0000111
@@ -784,14 +784,14 @@ is_a: PRIDE:0000022 ! Separation
 id: PRIDE:0000123
 name: Immobilized pH Gradient Electrophoresis
 def: "Electrophoresis using an gel  which has a  pH gradient along its length" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
+is_a: PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
 is_a: PRIDE:0000568 ! 2D PAGE
 
 [Term]
 id: PRIDE:0000124
 name: Sodium dodecyl sulfate polyacrylamide gel electrophoresis
 def: "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
+is_a: PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
 is_a: PRIDE:0000568 ! 2D PAGE
 
 
@@ -819,7 +819,7 @@ id: PRIDE:0000128
 name: First dimension details
 def: "Details of immobilised pH gradient gel electrophoresis which exclude the pH range of the gel and strip length parameters" [PRIDE:PRIDE]
 comment: This CV term should be used in association with a value that is a free-text description of the first dimension details
-relationship: part_of PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
+is_a: PRIDE:0000123 ! Immobilized pH Gradient Electrophoresis
 
 [Term]
 id: PRIDE:0000129
@@ -881,7 +881,7 @@ id: PRIDE:0000138
 name: Discriminant score
 def: "PeptideProphet discriminant score fval" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000101 ! PeptideProphet
+is_a: PRIDE:0000101 ! PeptideProphet
 
 [Term]
 id: PRIDE:0000139
@@ -930,49 +930,49 @@ is_a: PRIDE:0000573 ! Identification software
 id: PRIDE:0000146
 name: PepSplice precision
 def: "PepSplice precision refers to the accuracy of peptide-spectrum matches (PSMs) produced by the PepSplice search engine, a specialized tool used for the identification of peptides, particularly for novel or unexpected peptide sequences. Precision is a key metric used to assess the quality and reliability of search results in proteomics" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000145 ! PepSplice
+is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000147
 name: PepSplice false discovery rate
 def: "PepSlice false discovery rate is a critical metric used to control the number of false positives (incorrect peptide-spectrum matches or PSMs) in the search results" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000145 ! PepSplice
+is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000148
 name: PepSplice P-value
 def: "A Score based on the hypergeometric model" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000145 ! PepSplice
+is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000149
 name: PepSplice Deltascore
 def: "The Difference between the pvalues of the 1st and the 2nd best peptide; if two peptides have the same pvalue, they are taken together" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000145 ! PepSplice
+is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000150
 name: PepSplice Score Count
 def: "The score count" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000145 ! PepSplice
+is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000151
 name: PepSplice Penalty
 def: "The Sum of all penalties for the peptide assignment" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000145 ! PepSplice
+is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
 id: PRIDE:0000152
 name: PepSplice Read Direction
 def: "The reading direction on the DNA" [PRIDE:PRIDE]
-relationship: part_of PRIDE:0000145 ! PepSplice
+is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
 [Term]
@@ -999,7 +999,7 @@ id: PRIDE:0000156
 name: Project identifier
 def: "unique identifier of project" [PRIDE:PRIDE]
 synonym: "Project ID" EXACT [NCIT:C165055]
-relationship: part_of PRIDE:0000097 ! Project
+is_a: PRIDE:0000097 ! Project
 
 [Term]
 id: PRIDE:0000157
@@ -1112,7 +1112,7 @@ name: Isoelectric point
 def: "Isoelectric point of a protein" [PRIDE:PRIDE]
 synonym: "pI" EXACT []
 is_a: PRIDE:0000008 ! Protein search engine output parameter
-relationship: part_of PRIDE:0000056 ! Bioworks
+is_a: PRIDE:0000056 ! Bioworks
 
 [Term]
 id: PRIDE:0000175
@@ -1816,7 +1816,7 @@ id: PRIDE:0000284
 name: Sf
 def: "The Sf score for each peptide is calculated by a neural network algorithm that incorporates teh Xcorr, DeltaCn, Sp, RSp, peptide mass, charge state, and the number of matched peptides for the search. The protein Sf score is the sum of peptide Sf scores for all the peptides associated with that protein" [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
-relationship: part_of PRIDE:0000045 ! Sequest
+is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000285
@@ -3577,28 +3577,28 @@ id: PRIDE:0000593
 name: CID collision energy
 def: "CID collision energy" [PRIDE:PRIDE]
 is_a: MS:1000045 ! collision energy
-relationship: part_of PRIDE:0000591 ! CID
+is_a: PRIDE:0000591 ! CID
 
 [Term]
 id: PRIDE:0000594
 name: HCD collision energy
 def: "HCD collision energy" [PRIDE:PRIDE]
 is_a: MS:1000045 ! collision energy
-relationship: part_of PRIDE:0000590 ! HCD
+is_a: PRIDE:0000590 ! HCD
 
 [Term]
 id: PRIDE:0000595
 name: EThcD collision energy
 def: "EThcD collision energy" [PRIDE:PRIDE]
 is_a: MS:1000045 ! collision energy
-relationship: part_of PRIDE:0000589 ! EThcD
+is_a: PRIDE:0000589 ! EThcD
 
 [Term]
 id: PRIDE:0000596
 name: ETciD collision energy
 def: "ETciD collision energy" [PRIDE:PRIDE]
 is_a: MS:1000045 ! collision energy
-relationship: part_of PRIDE:0000592 ! ETciD
+is_a: PRIDE:0000592 ! ETciD
 
 [Term]
 id: PRIDE:0000597
