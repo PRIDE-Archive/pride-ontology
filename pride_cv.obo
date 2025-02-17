@@ -2004,14 +2004,14 @@ is_a: PRIDE:0000317 ! MS2 based isotope labeling
 id: PRIDE:0000314
 name: TMT
 def: "Tandem Mass Tag is a MS2 based isotope labeling quantification technique" [PRIDE:PRIDE]
-synonym: "Tandem Mass Tag" EXACT []
+synonym: "Tandem Mass Tag" EXACT [PRIDE:PRIDE]
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 
 [Term]
 id: PRIDE:0000315
 name: SILAC
 def: "Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification" [PRIDE:PRIDE]
-synonym: "Stable isotope labeling with amino acids in cell culture"
+synonym: "Stable isotope labeling with amino acids in cell culture" EXACT [PRIDE:PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
 
 [Term]
