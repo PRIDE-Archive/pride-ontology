@@ -16,9 +16,9 @@ idspace: RO http://purl.obolibrary.org/obo/RO_ "Relation Ontology"
 property_value: http://purl.org/dc/elements/1.1/title "Proteomics Identification Database Ontology"
 property_value: http://purl.org/dc/elements/1.1/description "An ontology for describing proteomics data and experiments"
 property_value: http://purl.org/dc/elements/1.1/language "en"
-remark: creator: Deepti Jaiswal Kundu <jaiswal <-at-> ac.uk>
-remark: creator: Nithu Sara John <nithu <-at-> ebi.ac.uk>
-remark: creator: Yasset Perez-Riverol <yperez <-at-> ebi.ac.uk>
+remark: creator: Deepti Jaiswal Kundu
+remark: creator: Nithu Sara John
+remark: creator: Yasset Perez-Riverol
 remark: coverage: Proteomics Identification Database Ontology, terms describing proteomics data and experimental metadata
 remark: This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 remark: To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
