@@ -1,29 +1,53 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master, dev ]
   pull_request:
     branches: [ master, dev ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  # First job runs inside the ODKFull container
+  validate_obo:
     runs-on: ubuntu-latest
     container:
       image: obolibrary/odkfull
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-    # Runs a single command using the runners shell
-    - name: Validate OBO file
-      run: fastobo-validator --all pride_cv.obo
+      - name: Validate OBO file
+        run: fastobo-validator --all pride_cv.obo
+
+  # Second job runs inside the Robot container
+  convert_and_validate_owl:
+    runs-on: ubuntu-latest
+    needs: validate_obo  # Ensures this runs after the previous job
+    container:
+      image: obolibrary/robot
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate OWL and validate it
+        run: |
+          # Replace the imports of the UO and PATO ontology .obo files with the equivalent .owl files
+          cp pride_cv.obo tmp_pride.obo
+          cp unimod.obo tmp_unimod.obo
+          sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_pride.obo
+          sed -e "s/pato.obo/pato.owl/g" -e "s/uo.obo/uo.owl/g" -i tmp_unimod.obo
+          head -n 50 tmp_pride.obo
+          export JAVA_TOOL_OPTIONS=-Xmx6G
+
+          robot convert -vvv -i tmp_pride.obo -o pride_cv.owl --format owl
+          robot convert -vvv -i tmp_unimod.obo -o unimod.owl --format owl
+          
+          rm tmp_pride.obo
+          rm tmp_unimod.obo
+
+      - name: Validate the OWL file
+        run: robot report -vvv --input pride_cv.owl --output report.tsv
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: report.tsv
+          path: report.tsv
