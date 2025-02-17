@@ -47,6 +47,7 @@ jobs:
         docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.9.7 robot report --input /work/pride_cv.owl --output /work/report.tsv
 
     - name: Upload report artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: report.tsv
+        path: report.tsv
