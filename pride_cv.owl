@@ -174,12 +174,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BF_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BF_0000001"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MS_1000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000044">
@@ -291,7 +285,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BF_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>Root node for terms relating to the description of a protocol as ordered steps</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000001</oboInOwl:id>
@@ -399,7 +393,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BF_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>Version number or identifier for search engine</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000007</oboInOwl:id>
@@ -8253,7 +8247,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000457 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000457">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BF_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000457</oboInOwl:id>
@@ -8536,7 +8530,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000470 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000470">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BF_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>PRIDE File Properties for all type of files</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000470</oboInOwl:id>
@@ -8788,7 +8782,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000484 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000484">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BF_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>The result analysis parameters is a term to group all the parameters for proteomics data analysis</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000484</oboInOwl:id>
@@ -9888,7 +9882,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000547 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000547">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BF_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>Instrument properties</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000547</oboInOwl:id>
