@@ -4000,8 +4000,8 @@ id: PRIDE:0000673
 name: Olink Explore HT
 def: "The Olink Explore HT is a high-throughput proteomics platform for large-scale biomarker discovery, enabling simultaneous measurement of thousands of proteins from minimal sample volumes" [PRIDE:PRIDE]
 is_a: PRIDE:0000671 ! Olink Explore
-[Term]
 
+[Term]
 id: PRIDE:0000674
 name: Human gut
 def: "A collection of terms appropriate when collecting samples and sequencing samples obtained from a person to examine their gut-associated microbiome." [PRIDE:PRIDE]
@@ -4155,10 +4155,6 @@ def: "Temperature of the sample at the time of sampling. MIXS:0000113" [PRIDE:PR
 id: PRIDE:0000704
 name: organism count
 def: "Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr). MIXS:0000103" [PRIDE:PRIDE]
-[Term]
-id: PRIDE:0000830
-name: turbidity
-def: "Measure of the amount of cloudiness or haziness in water caused by individual particles MIXS:0000191" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000705
@@ -4512,288 +4508,283 @@ def: "Ratio of amount or concentrations of carbon to nitrogen MIXS:0000310" [PRI
 
 [Term]
 id: PRIDE:0000775
-name: carbon nitrogen ratio
-def: "Ratio of amount or concentrations of carbon to nitrogen MIXS:0000310" [PRIDE:PRIDE]
-
-[Term]
-id: PRIDE:0000776
 name: chemical administration
 def: "List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. For chemical entities of biological interest ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi MIXS:0000751" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000777
+id: PRIDE:0000776
 name: chloride
 def: "Concentration of chloride in the sample MIXS:0000429" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000778
+id: PRIDE:0000777
 name: chlorophyll
 def: "Concentration of chlorophyll MIXS:0000177" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000779
+id: PRIDE:0000778
 name: conductivity
 def: "Electrical conductivity of water MIXS:0000692" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000780
+id: PRIDE:0000779
 name: density
 def: "Density of the sample, which is its mass per unit volume (aka volumetric mass density) MIXS:0000435" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000781
+id: PRIDE:0000780
 name: diether lipids
 def: "Concentration of diether lipids; can include multiple types of diether lipids MIXS:0000178" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000782
+id: PRIDE:0000781
 name: dissolved carbon dioxide
 def: "Concentration of dissolved carbon dioxide in the sample or liquid portion of the sample MIXS:0000436" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000783
+id: PRIDE:0000782
 name: dissolved hydrogen
 def: "Concentration of dissolved hydrogen MIXS:0000179" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000784
+id: PRIDE:0000783
 name: dissolved inorganic carbon
 def: "Dissolved inorganic carbon concentration in the sample, typically measured after filtering the sample using a 0.45 micrometer filter MIXS:0000434" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000785
+id: PRIDE:0000784
 name: dissolved inorganic nitrogen
 def: "Concentration of dissolved inorganic nitrogen MIXS:0000698" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000786
+id: PRIDE:0000785
 name: dissolved inorganic phosphorus
 def: "Concentration of dissolved inorganic phosphorus in the sample MIXS:0000106" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000787
+id: PRIDE:0000786
 name: dissolved organic carbon
 def: "Concentration of dissolved organic carbon in the sample, liquid portion of the sample, or aqueous phase of the fluid MIXS:0000433" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000788
+id: PRIDE:0000787
 name: dissolved organic nitrogen
 def: "Dissolved organic nitrogen concentration measured as; total dissolved nitrogen - NH4 - NO3 - NO2 MIXS:0000162" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000789
+id: PRIDE:0000788
 name: dissolved oxygen
 def: "Concentration of dissolved oxygen MIXS:0000119" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000790
+id: PRIDE:0000789
 name: downward PAR
 def: "Visible waveband radiance and irradiance measurements in the water column MIXS:0000703" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000791
+id: PRIDE:0000790
 name: fluorescence
 def: "Raw or converted fluorescence of water MIXS:0000704" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000792
+id: PRIDE:0000791
 name: glucosidase activity
 def: "Measurement of glucosidase activity MIXS:0000137" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000793
+id: PRIDE:0000792
 name: light intensity
 def: "Measurement of light intensity MIXS:0000706" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000794
+id: PRIDE:0000793
 name: magnesium
 def: "Concentration of magnesium in the sample MIXS:0000431" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000795
+id: PRIDE:0000794
 name: mean friction velocity
 def: "Measurement of mean friction velocity MIXS:0000498" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000796
+id: PRIDE:0000795
 name: mean peak friction velocity
 def: "Measurement of mean peak friction velocity MIXS:0000502" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000797
+id: PRIDE:0000796
 name: nitrate
 def: "Concentration of nitrate in the sample MIXS:0000425" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000798
+id: PRIDE:0000797
 name: nitrite
 def: "Concentration of nitrite in the sample MIXS:0000426" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000799
+id: PRIDE:0000798
 name: nitrogen
 def: "Concentration of nitrogen (total) MIXS:0000504" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000800
+id: PRIDE:0000799
 name: organic carbon
 def: "Concentration of organic carbon MIXS:0000508" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000801
+id: PRIDE:0000800
 name: organic matter
 def: "Concentration of organic matter MIXS:0000204" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000802
+id: PRIDE:0000801
 name: organic nitrogen
 def: "Concentration of organic nitrogen MIXS:0000205" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000803
+id: PRIDE:0000802
 name: oxygenation status of sample
 def: "Oxygenation status of sample MIXS:0000753" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000804
+id: PRIDE:0000803
 name: particulate organic carbon
 def: "Concentration of particulate organic carbon MIXS:0000515" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000805
+id: PRIDE:0000804
 name: particulate organic nitrogen
 def: "Concentration of particulate organic nitrogen MIXS:0000719" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000806
+id: PRIDE:0000805
 name: petroleum hydrocarbon
 def: "Concentration of petroleum hydrocarbon MIXS:0000516" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000807
+id: PRIDE:0000806
 name: phaeopigments
 def: "Concentration of phaeopigments; can include multiple phaeopigments MIXS:0000180" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000808
+id: PRIDE:0000807
 name: phosphate
 def: "Concentration of phosphate MIXS:0000505" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000809
+id: PRIDE:0000808
 name: phospholipid fatty acid
 def: "Concentration of phospholipid fatty acids; can include multiple values MIXS:0000181" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000810
+id: PRIDE:0000809
 name: photon flux
 def: "Measurement of photon flux MIXS:0000725" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000811
+id: PRIDE:0000810
 name: potassium
 def: "Concentration of potassium in the sample MIXS:0000430" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000812
+id: PRIDE:0000811
 name: pressure
 def: "Pressure to which the sample is subject to, in atmospheres MIXS:0000412" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000813
+id: PRIDE:0000812
 name: primary production
 def: "Measurement of primary production, generally measured as isotope uptake MIXS:0000728" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000814
+id: PRIDE:0000813
 name: redox potential
 def: "Redox potential, measured relative to a hydrogen cell, indicating oxidation or reduction potential MIXS:0000182" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000815
+id: PRIDE:0000814
 name: silicate
 def: "Concentration of silicate MIXS:0000184" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000816
+id: PRIDE:0000815
 name: size-fraction lower threshold
 def: "Refers to the mesh/pore size used to pre-filter/pre-sort the sample. Materials smaller than the size threshold are excluded from the sample MIXS:0000735" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000817
+id: PRIDE:0000816
 name: size-fraction upper threshold
 def: "Mesh or pore size of the device used to retain the sample. Materials larger than the size threshold are excluded from the sample MIXS:0000736" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000818
+id: PRIDE:0000817
 name: sodium
 def: "Sodium concentration in the sample MIXS:0000428" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000819
+id: PRIDE:0000818
 name: soluble reactive phosphorus
 def: "Concentration of soluble reactive phosphorus MIXS:0000738" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000820
+id: PRIDE:0000819
 name: sulfate
 def: "Concentration of sulfate in the sample MIXS:0000423" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000821
+id: PRIDE:0000820
 name: sulfide
 def: "Concentration of sulfide in the sample MIXS:0000424" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000822
+id: PRIDE:0000821
 name: suspended particulate matter
 def: "Concentration of suspended particulate matter MIXS:0000741" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000823
+id: PRIDE:0000822
 name: tidal stage
 def: "Stage of tide MIXS:0000750" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000824
+id: PRIDE:0000823
 name: total depth of water column
 def: "Measurement of total depth of water column MIXS:0000634" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000825
+id: PRIDE:0000824
 name: total dissolved nitrogen
 def: "Total dissolved nitrogen concentration, reported as nitrogen, measured by: total dissolved nitrogen = NH4 + NO3NO2 + dissolved organic nitrogen MIXS:0000744" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000826
+id: PRIDE:0000825
 name: total inorganic nitrogen
 def: "Total inorganic nitrogen content MIXS:0000745" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000827
+id: PRIDE:0000826
 name: total nitrogen concentration
 def: "Total nitrogen concentration of water samples, calculated by: total nitrogen = total dissolved nitrogen + particulate nitrogen. Can also be measured without filtering, reported as nitrogen MIXS:0000102" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000828
+id: PRIDE:0000827
 name: total particulate carbon
 def: "Total particulate carbon content MIXS:0000747" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000829
+id: PRIDE:0000828
 name: total phosphorus
 def: "Total phosphorus concentration in the sample, calculated by: total phosphorus = total dissolved phosphorus + particulate phosphorus MIXS:0000117" [PRIDE:PRIDE]
 
 [Term]
-id: PRIDE:0000830
+id: PRIDE:0000829
 name: turbidity
 def: "Measure of the amount of cloudiness or haziness in water caused by individual particles MIXS:0000191" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000830
 name: water content
-def: "Measure of the amount of cloudiness or haziness in water caused by individual particles MIXS:0000203" [PRIDE:PRIDE] 
+def: "Measurement of magnitude and direction of flow within a fluid MIXS:0000203" [PRIDE:PRIDE] 
 
 
 
