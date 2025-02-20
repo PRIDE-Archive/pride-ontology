@@ -32,7 +32,7 @@ is_a: BFO:0000001 ! entity
 id: PRIDE:0000001
 name: Protocol step description additional parameter
 def: "Root node for terms relating to the description of a protocol as ordered steps" [PRIDE:PRIDE]
-is_a: BF:0000001 ! entity
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000002
@@ -68,7 +68,7 @@ is_a: BFO:0000001 ! entity
 id: PRIDE:0000007
 name: SearchEngineVersion
 def: "Version number or identifier for search engine"[PRIDE:PRIDE]
-is_a: BF:0000001 ! entity
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000008
@@ -2663,7 +2663,7 @@ is_a: PRIDE:0000430 ! Chemical cross-linking coupled with mass spectrometry prot
 id: PRIDE:0000457
 name: Experiment Type
 def: "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method" [PRIDE:PRIDE]
-is_a: BF:0000001 ! entity
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000458
@@ -2748,7 +2748,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 id: PRIDE:0000470
 name: File Properties
 def: "PRIDE File Properties for all type of files" [PRIDE:PRIDE]
-is_a: BF:0000001 ! entity
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000471
@@ -2838,7 +2838,7 @@ is_a: PRIDE:0000470 ! File Properties
 id: PRIDE:0000484
 name: Result analysis parameters
 def: "The result analysis parameters is a term to group all the parameters for proteomics data analysis" [PRIDE:PRIDE]
-is_a: BF:0000001 ! entity
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: PRIDE:0000485
@@ -3219,7 +3219,7 @@ is_a: PRIDE:0000544 ! Quality Control Sample
 id: PRIDE:0000547
 name: Instrument properties
 def: "Instrument properties" [PRIDE:PRIDE]
-is_a: BF:0000001 ! entity
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: MS:1000451
