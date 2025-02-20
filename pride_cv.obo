@@ -4000,8 +4000,8 @@ id: PRIDE:0000673
 name: Olink Explore HT
 def: "The Olink Explore HT is a high-throughput proteomics platform for large-scale biomarker discovery, enabling simultaneous measurement of thousands of proteins from minimal sample volumes" [PRIDE:PRIDE]
 is_a: PRIDE:0000671 ! Olink Explore
-[Term]
 
+[Term]
 id: PRIDE:0000674
 name: Human gut
 def: "A collection of terms appropriate when collecting samples and sequencing samples obtained from a person to examine their gut-associated microbiome." [PRIDE:PRIDE]
