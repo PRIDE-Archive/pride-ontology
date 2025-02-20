@@ -4155,10 +4155,6 @@ def: "Temperature of the sample at the time of sampling. MIXS:0000113" [PRIDE:PR
 id: PRIDE:0000704
 name: organism count
 def: "Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr). MIXS:0000103" [PRIDE:PRIDE]
-[Term]
-id: PRIDE:0000830
-name: turbidity
-def: "Measure of the amount of cloudiness or haziness in water caused by individual particles MIXS:0000191" [PRIDE:PRIDE]
 
 [Term]
 id: PRIDE:0000705
