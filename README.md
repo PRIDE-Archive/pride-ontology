@@ -38,8 +38,8 @@ Use the `robot` tool to generate the OWL file and validate it:
 docker pull obolibrary/robot
 
 # Convert OBO to OWL
-docker run --rm -v "$PWD:/work" -w /work obolibrary/robot \
-    robot convert -vvv -i pride_cv.obo -o pride_cv.owl --format owl
+docker run -v "$PWD":/work/ obolibrary/robot \
+ robot convert -vvv -i /work/pride_cv.obo -o /work/pride_tmp.owl --format owl
 
 # Validate the OWL file
 docker run --rm -v "$PWD:/work" -w /work obolibrary/robot \
