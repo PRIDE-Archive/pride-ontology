@@ -4649,8 +4649,8 @@ is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000772
-name: calcuim
-def: "Concentration of calcuim in the sample MIXS:0000432" [PRIDE:PRIDE]
+name: calcium
+def: "Concentration of calcium in the sample MIXS:0000432" [PRIDE:PRIDE]
 is_a: PRIDE:0000828 ! Soil
 
 [Term]
