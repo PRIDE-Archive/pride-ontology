@@ -4013,9 +4013,9 @@ name: sample name
 def: "A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. MIXS:0001107" [PRIDE:PRIDE]
 synonym: "sample name" EXACT []
 is_a: NCIT:C25507 ! Data Field
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000676
@@ -4023,9 +4023,9 @@ name: project name
 def: "Name of the project within which the sequencing was organized. MIXS:0000092" [PRIDE:PRIDE]
 synonym: "project name" EXACT []
 is_a: NCIT:C25507 ! Data Field
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000677
@@ -4039,21 +4039,21 @@ id: PRIDE:0000678
 name: liver disorder
 def: "History of liver disorders; can include multiple disorders. MIXS:0000282" [PRIDE:PRIDE]
 is_a: MONDO:0000001 ! Disease
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000679
 name: special diet
 def: "Specification of special diet; can include multiple special diets. MIXS:0000905" [PRIDE:PRIDE]
 is_a: EFO:0002755 ! Diet
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000680
 name: host subject id
 def: "A unique identifier by which each subject can be referred to, de-identified. MIXS:0000861" [PRIDE:PRIDE]
 is_a: NCIT:C25507 ! Data Field
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000681
@@ -4061,7 +4061,7 @@ name: host age
 def: "Age of host at the time of sampling; relevant scale depends on species and study, e.g. Could be seconds for amoebae or centuries for trees. MIXS:0000255" [PRIDE:PRIDE]
 synonym: "host age slot" EXACT []
 is_a: NCIT:C25507 ! Data Field
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000682
@@ -4069,43 +4069,43 @@ name: host disease status
 def: "List of diseases with which the host has been diagnosed; can include multiple diagnoses. MIXS:0000031" [PRIDE:PRIDE]
 synonym: "host disease slot" EXACT []
 is_a: NCIT:C25507 ! Data Field
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000683
 name: IHMC medication code
 def: "Can include multiple medication codes. MIXS:0000884" [PRIDE:PRIDE]
 is_a: NCIT:C25162 ! Code
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000684
 name: chemical administration
 def: "List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. MIXS:0000751" [PRIDE:PRIDE]
 is_a: PECO:0007086 ! chemical fertilizer exposure
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000685
 name: host body site
 def: "Name of body site where the sample was obtained from, such as a specific organ or tissue (tongue, lung etc.).  MIXS:0000867" [PRIDE:PRIDE]
 is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000686
 name: host body product
 def: "Substance produced by the body, e.g. Stool, mucus, where the sample was obtained from.  MIXS:0000888" [PRIDE:PRIDE]
 is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000687
 name: host total mass
 def: "Total mass of the host at collection, the unit depends on host. MIXS:0000263" [PRIDE:PRIDE]
 is_a: OBA:2045413 ! anatomical entity mass
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000688
@@ -4113,21 +4113,21 @@ name: host height
 def: "The height of subject. MIXS:0000264" [PRIDE:PRIDE]
 synonym: "body height" EXACT []
 is_a: NCIT:C25347 ! Height
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000689
 name: host diet
 def: "Type of diet depending on the host, for animals omnivore, herbivore etc., for humans high-fat, meditteranean etc.; can include multiple diet types. MIXS:0000869" [PRIDE:PRIDE]
 is_a: EFO:0002755 ! Diet
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000690
 name: host last meal
 def: "Content of last meal and time since feeding; can include multiple values. MIXS:0000870" [PRIDE:PRIDE]
 is_a: NCIT:C80248 ! Meal
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000691
@@ -4135,83 +4135,83 @@ name: host family relationship
 def: "Relationships to other hosts in the same study; can include multiple relationships. MIXS:0000872" [PRIDE:PRIDE]
 synonym: "family relationship" EXACT []
 is_a: BFO:0000016 ! disposition
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000692
 name: host genotype
 def: "Observed genotype MIXS:0000365" [PRIDE:PRIDE]
 is_a: EFO:0004554 ! genomic measurement
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000693
 name: host phenotype
 def: "Phenotype of human or other host. Use terms from the phenotypic quality ontology (pato) or the Human Phenotype Ontology (HP). MIXS:0000274" [PRIDE:PRIDE]
 is_a: BFO:0000019 ! quality
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000694
 name: host body temperature
 def: "Core body temperature of the host when sample was collected. MIXS:0000874" [PRIDE:PRIDE]
 is_a: NCIT:C25206 ! Temperature
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000695
 name: host body-mass index
 def: "Body mass index, calculated as weight/(height)squared. MIXS:0000317" [PRIDE:PRIDE]
 is_a: EFO:0004324 ! body weights and measurements
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000696
 name: ethnicity
 def: "A category of people who identify with each other, usually on the basis of presumed similarities such as a common language, ancestry, history, society, culture, nation or social treatment within their residing area. MIXS:0000895" [PRIDE:PRIDE]
 is_a: BFO:0000019 ! quality
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000697
 name: host occupation
 def: "Most frequent job performed by subject. MIXS:0000896" [PRIDE:PRIDE]
 is_a: NCIT:C19160 ! Occupation or Discipline
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000698
 name: medical history performed
 def: "Whether full medical history was collected. MIXS:0000897" [PRIDE:PRIDE]
 is_a: NCIT:C16205 ! Healthcare activity
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000699
 name: host pulse
 def: "Resting pulse, measured as beats per minutes. MIXS:0000333" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000700
 name: perturbation
 def: "Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types. MIXS:0000754" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000701
 name: salinity
 def: "The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater. MIXS:0000183" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000702
 name: oxygenation status of sample
 def: "Oxygenation status of the sample. MIXS:0000753" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000703
@@ -4227,430 +4227,430 @@ id: PRIDE:0000704
 name: organism count
 def: "Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr). MIXS:0000103" [PRIDE:PRIDE]
 is_a: MMO:0000222 ! isolated cell method
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000705
 name: sample storage temperature
 def: "Temperature at which sample was stored, e.g. -80 degree Celsius. MIXS:0000110" [PRIDE:PRIDE]
 is_a: NCIT:C45279 ! Log
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000706
 name: sample volume or weight for DNA extraction
 def: "Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001). MIXS:0000111" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000707
 name: sample storage duration
 def: "Duration for which the sample was stored. Indicate the duration for which the sample was stored written in ISO 8601 format. MIXS:0000116" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000708
 name: observed host symbionts
 def: "The taxonomic name of the organism(s) found living in mutualistic, commensalistic, or parasitic symbiosis with the specific host. The sampled symbiont can have its own symbionts. For example, parasites may have hyperparasites (=parasites of the parasite). MIXS:0001298" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000709
 name: sample storage location
 def: "Location at which sample was stored, usually name of a specific freezer/room. MIXS:0000755" [PRIDE:PRIDE]
 is_a: GENEPIO:0100586 ! data field
-is_a: PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000710
 name: miscellaneous parameter
 def: "Any other measurement performed or parameter collected, that is not listed here. MIXS:0000752" [PRIDE:PRIDE]
-is_a: PRIDE:0000674 ! Human gut
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000674 ! Human gut
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000711
 name: depth
 def: "The vertical distance below local surface. For sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples MIXS:0000018" [PRIDE:PRIDE]
 is_a: NCIT:C25447 ! Characteristic
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000712
 name: elevation
 def: "Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit MIXS:0000093" [PRIDE:PRIDE]
 is_a: PATO:0000140 ! Position
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000713
 name: current land use
 def: "Present state of sample site MIXS:0001080" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000714
 name: current vegetation
 def: "Vegetation classification from one or more standard classification systems, or agricultural crop MIXS:0000312" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000715
 name: current vegetation method
 def: "Reference or method used in vegetation classification MIXS:0000314" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000716
 name: history of previous land use
 def: "Previous land use and dates MIXS:0000315" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000717
 name: history of previous land use method
 def: "Reference or method used in determining previous land use and dates MIXS:0000316" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000718
 name: history of crop rotation
 def: "Whether or not crop is rotated, and if yes, rotation schedule MIXS:0000318" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000719
 name: history of agrochemical additions
 def: "Addition of fertilizers, pesticides, etc. - amount and time of applications MIXS:0000639" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000720
 name: history of tillage
 def: "Note method(s) used for tilling MIXS:0001081" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000721
 name: history of fire
 def: "Historical and/or physical evidence of fire MIXS:0001086" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000722
 name: history of flooding
 def: "Historical and/or physical evidence of flooding MIXS:0000319" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000723
 name: history of extreme event
 def: "Unusual physical events that may have affected microbial populations MIXS:0000320" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000724
 name: soil horizon
 def: "Specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath MIXS:0001082" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000725
 name: horizon method
 def: "Reference or method used in determining the horizon MIXS:0000321" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000726
 name: sieving
 def: "Collection design of pooled samples and/or sieve size and amount of sample sieved MIXS:0000322" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000727
 name: water content
 def: "Water content measurement MIXS:0000185" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000728
 name: water content method
 def: "Reference or method used in determining the water content of soil MIXS:0000323" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000729
 name: pooling of DNA extracts
 def: "Indicate whether multiple DNA extractions were mixed. If the answer yes, the number of extracts that were pooled should be given MIXS:0000325" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000730
 name: storage conditions
 def: "Explain how and for how long the soil sample was stored before DNA extraction (fresh/frozen/other) MIXS:0000327" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000731
 name: link to climate information
 def: "Link to climate resource MIXS:0000328" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000732
 name: mean annual temperature
 def: "Mean annual temperature MIXS:0000642" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000733
 name: mean seasonal temperature
 def: "Mean seasonal temperature MIXS:0000643" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000734
 name: mean annual precipitation
 def: "The average of all annual precipitation values known, or an estimated equivalent value derived by such methods as regional indexes or Isohyetal maps MIXS:0000644" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000735
 name: mean seasonal precipitation
 def: "The average of all seasonal precipitation values known, or an estimated equivalent value derived by such methods as regional indexes or Isohyetal maps MIXS:0000645" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000736
 name: link to classification information
 def: "Link to digitized soil maps or other soil classification information MIXS:0000329" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000737
 name: soil taxonomic of FAO classification
 def: "Soil classification from the FAO World soil distribution from International Soil Reference and Information Centre (ISRIC). The list of available soil classifications can be found at https://www.isric.org/explore/world-soil-distribution MIXS:0001083" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000738
 name: soil taxonomic of local classification
 def: "Soil classification based on local soil classification system MIXS:0000330" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000739
 name: soil taxonomic of local classification method
 def: "Reference or method used in determining the local soil classification MIXS:0000331" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000740
 name: slope gradient
 def: "Commonly called 'slope'. The angle between ground surface and a horizontal line (in percent). This is the direction that overland water would flow. This measure is usually taken with a hand level meter or clinometer MIXS:0000646" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000741
 name: slope aspect
 def: "The direction a slope faces. While looking down a slope use a compass to record the direction you are facing (direction or degrees); e.g., nw or 315 degrees. This measure provides an indication of sun and wind exposure that will influence soil temperature and evapotranspiration MIXS:0000647" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000742
 name: profile position
 def: "Cross-sectional position in the hillslope where sample was collected.sample area position in relation to surrounding areas MIXS:0001084" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000743
 name: drainage classification
 def: "Drainage classification from a standard system such as the USDA system MIXS:0001085" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000744
 name: soil texture
 def: "The relative proportion of different grain sizes of mineral particles in a soil, as described using a standard system; express as % sand (50 um to 2 mm), silt (2 um to 50 um), and clay (<2 um) with textural name (e.g., silty clay loam) optional MIXS:0000335" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000745
 name: soil texture method
 def: "Reference or method used in determining soil texture MIXS:0000336" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000746
 name: pH
 def: "Ph measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid MIXS:0001001" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000747
 name: pH method
 def: "Reference or method used in determining pH MIXS:0001106" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000748
 name: organic matter
 def: "Concentration of organic matter MIXS:0000204" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000749
 name: total organic carbon
 def: "Total organic carbon content MIXS:0000533" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000750
 name: total organic carbon method
 def: "Reference or method used in determining total organic carbon MIXS:0000337" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000751
 name: total nitrogen content
 def: "Total nitrogen content of the sample MIXS:0000530" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000752
 name: total nitrogen content method
 def: "Reference or method used in determining the total nitrogen MIXS:0000338" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000753
 name: microbial biomass
 def: "The part of the organic matter in the soil that constitutes living microorganisms smaller than 5-10 micrometer. If you keep this, you would need to have correction factors used for conversion to the final units MIXS:0000650" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000754
 name: microbial biomass method
 def: "Reference or method used in determining microbial biomass MIXS:0000339" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000755
 name: links to additional analysis
 def: "Link to additional analysis results performed on the sample MIXS:0000340" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000756
 name: extreme unusual properties of heavy metals
 def: "Heavy metals present in the sequenced sample and their concentrations. For multiple heavy metals and concentrations, add multiple copies of this field MIXS:0000652" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000757
 name: extreme unusual properties of heavy metals method
 def: "Reference or method used in determining heavy metals MIXS:0000343" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000758
 name: extreme unusual properties of AI saturation
 def: "Aluminum saturation (esp. For tropical soils) MIXS:0000607" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000759
 name: extreme unusual properties of AI saturation method
 def: "Reference or method used in determining Al saturation MIXS:0000324" [PRIDE:PRIDE]
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000760
 name: alkalinity
 def: "Alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate MIXS:0000421" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000761
 name: alkalinity method
 def: "Method used for alkalinity measurement MIXS:0000298" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000762
 name: alkyl diethers
 def: "Concentration of alkyl diethers MIXS:0000490" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000763
 name: aminopeptidase activity
 def: "Measurement of aminopeptidase activity MIXS:0000172" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000764
 name: ammonium
 def: "Concentration of ammonium in the sample MIXS:0000427" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000765
 name: atmospheric data
 def: "Measurement of atmospheric data; can include multiple data MIXS:0001097" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000766
 name: bacterial carbon production
 def: "Measurement of bacterial carbon production MIXS:0000173" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000767
 name: bacterial production
 def: "Bacterial production in the water column measured by isotope uptake MIXS:0000683" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000768
 name: bacterial respiration
 def: "Measurement of bacterial respiration in the water column MIXS:0000684" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000769
 name: biomass
 def: "Amount of biomass; should include the name for the part of biomass measured, e.g. Microbial, total. Can include multiple measurements MIXS:0000174" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000770
 name: bishomohopanol
 def: "Concentration of bishomohopanol MIXS:0000175" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000771
 name: bromide
 def: "Concentration of bromide MIXS:0000176" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000772
 name: calcium
 def: "Concentration of calcium in the sample MIXS:0000432" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000773
@@ -4661,31 +4661,31 @@ def: "Ratio of amount or concentrations of carbon to nitrogen MIXS:0000310" [PRI
 id: PRIDE:0000774
 name: chloride
 def: "Concentration of chloride in the sample MIXS:0000429" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000775
 name: chlorophyll
 def: "Concentration of chlorophyll MIXS:0000177" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000776
 name: conductivity
 def: "Electrical conductivity of water MIXS:0000692" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000777
 name: density
 def: "Density of the sample, which is its mass per unit volume (aka volumetric mass density) MIXS:0000435" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000778
 name: diether lipids
 def: "Concentration of diether lipids; can include multiple types of diether lipids MIXS:0000178" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000779
@@ -4696,278 +4696,278 @@ def: "Concentration of dissolved carbon dioxide in the sample or liquid portion 
 id: PRIDE:0000780
 name: dissolved hydrogen
 def: "Concentration of dissolved hydrogen MIXS:0000179" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000781
 name: dissolved inorganic carbon
 def: "Dissolved inorganic carbon concentration in the sample, typically measured after filtering the sample using a 0.45 micrometer filter MIXS:0000434" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000784
 name: dissolved inorganic nitrogen
 def: "Concentration of dissolved inorganic nitrogen MIXS:0000698" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000785
 name: dissolved inorganic phosphorus
 def: "Concentration of dissolved inorganic phosphorus in the sample MIXS:0000106" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000786
 name: dissolved organic carbon
 def: "Concentration of dissolved organic carbon in the sample, liquid portion of the sample, or aqueous phase of the fluid MIXS:0000433" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000787
 name: dissolved organic nitrogen
 def: "Dissolved organic nitrogen concentration measured as; total dissolved nitrogen - NH4 - NO3 - NO2 MIXS:0000162" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000788
 name: dissolved oxygen
 def: "Concentration of dissolved oxygen MIXS:0000119" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000789
 name: downward PAR
 def: "Visible waveband radiance and irradiance measurements in the water column MIXS:0000703" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000790
 name: fluorescence
 def: "Raw or converted fluorescence of water MIXS:0000704" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000791
 name: glucosidase activity
 def: "Measurement of glucosidase activity MIXS:0000137" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000792
 name: light intensity
 def: "Measurement of light intensity MIXS:0000706" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000793
 name: magnesium
 def: "Concentration of magnesium in the sample MIXS:0000431" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000794
 name: mean friction velocity
 def: "Measurement of mean friction velocity MIXS:0000498" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000795
 name: mean peak friction velocity
 def: "Measurement of mean peak friction velocity MIXS:0000502" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000796
 name: nitrate
 def: "Concentration of nitrate in the sample MIXS:0000425" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000797
 name: nitrite
 def: "Concentration of nitrite in the sample MIXS:0000426" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000798
 name: nitrogen
 def: "Concentration of nitrogen (total) MIXS:0000504" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000799
 name: organic carbon
 def: "Concentration of organic carbon MIXS:0000508" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000800
 name: organic nitrogen
 def: "Concentration of organic nitrogen MIXS:0000205" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
-is_a: PRIDE:0000829 ! Water
+relationship: part_of PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000801
 name: particulate organic carbon
 def: "Concentration of particulate organic carbon MIXS:0000515" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000802
 name: particulate organic nitrogen
 def: "Concentration of particulate organic nitrogen MIXS:0000719" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000803
 name: petroleum hydrocarbon
 def: "Concentration of petroleum hydrocarbon MIXS:0000516" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000804
 name: phaeopigments
 def: "Concentration of phaeopigments; can include multiple phaeopigments MIXS:0000180" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000805
 name: phosphate
 def: "Concentration of phosphate MIXS:0000505" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000806
 name: phospholipid fatty acid
 def: "Concentration of phospholipid fatty acids; can include multiple values MIXS:0000181" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000807
 name: photon flux
 def: "Measurement of photon flux MIXS:0000725" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000808
 name: potassium
 def: "Concentration of potassium in the sample MIXS:0000430" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000809
 name: pressure
 def: "Pressure to which the sample is subject to, in atmospheres MIXS:0000412" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000810
 name: primary production
 def: "Measurement of primary production, generally measured as isotope uptake MIXS:0000728" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000811
 name: redox potential
 def: "Redox potential, measured relative to a hydrogen cell, indicating oxidation or reduction potential MIXS:0000182" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000812
 name: silicate
 def: "Concentration of silicate MIXS:0000184" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000813
 name: size-fraction lower threshold
 def: "Refers to the mesh/pore size used to pre-filter/pre-sort the sample. Materials smaller than the size threshold are excluded from the sample MIXS:0000735" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000814
 name: size-fraction upper threshold
 def: "Mesh or pore size of the device used to retain the sample. Materials larger than the size threshold are excluded from the sample MIXS:0000736" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000815
 name: sodium
 def: "Sodium concentration in the sample MIXS:0000428" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000816
 name: soluble reactive phosphorus
 def: "Concentration of soluble reactive phosphorus MIXS:0000738" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000817
 name: sulfate
 def: "Concentration of sulfate in the sample MIXS:0000423" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000818
 name: sulfide
 def: "Concentration of sulfide in the sample MIXS:0000424" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000819
 name: suspended particulate matter
 def: "Concentration of suspended particulate matter MIXS:0000741" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000820
 name: tidal stage
 def: "Stage of tide MIXS:0000750" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000821
 name: total depth of water column
 def: "Measurement of total depth of water column MIXS:0000634" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000822
 name: total dissolved nitrogen
 def: "Total dissolved nitrogen concentration, reported as nitrogen, measured by: total dissolved nitrogen = NH4 + NO3NO2 + dissolved organic nitrogen MIXS:0000744" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000823
 name: total inorganic nitrogen
 def: "Total inorganic nitrogen content MIXS:0000745" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000824
 name: total nitrogen concentration
 def: "Total nitrogen concentration of water samples, calculated by: total nitrogen = total dissolved nitrogen + particulate nitrogen. Can also be measured without filtering, reported as nitrogen MIXS:0000102" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000825
 name: total particulate carbon
 def: "Total particulate carbon content MIXS:0000747" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000826
 name: total phosphorus
 def: "Total phosphorus concentration in the sample, calculated by: total phosphorus = total dissolved phosphorus + particulate phosphorus MIXS:0000117" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000827
 name: turbidity
 def: "Measure of the amount of cloudiness or haziness in water caused by individual particles MIXS:0000191" [PRIDE:PRIDE]
-is_a: PRIDE:0000828 ! Soil
+relationship: part_of PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000828
