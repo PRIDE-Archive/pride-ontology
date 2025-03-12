@@ -4032,8 +4032,7 @@ id: PRIDE:0000677
 name: gastrointestinal tract disorder
 def: "History of gastrointestinal tract disorders; can include multiple disorders. MIXS:0000280" [PRIDE:PRIDE]
 is_a: MONDO:0000001 ! Disease
-part_of: PRIDE:0000674 ! Human gut
-
+relationship: part_of PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000678
