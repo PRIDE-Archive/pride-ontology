@@ -20,9 +20,6 @@ property_value: dce:creator "Deepti Jaiswal Kundu" xsd:string
 property_value: dce:creator "Nithu Sara John" xsd:string
 property_value: dce:creator "Yasset Perez-Riverol" xsd:string
 property_value: dce:homepage https://github.com/PRIDE-Archive/pride-ontology
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000674
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000828
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000829
 ontology: pride
 
 [Term]
