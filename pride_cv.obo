@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 28:03:2025 14:13
+date: 09:06:2025 14:50
 data-version: releases/2025-02-17
-saved-by: Nithu Sara John
+saved-by: Deepti Jaiswal Kundu
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
@@ -4984,5 +4984,9 @@ name: water
 def: "A collection of terms appropriate when collecting samples and sequencing water samples obtained from any aquatic environment" [PRIDE:PRIDE]
 is_a: ENVO:00002006 ! liquid water
 
-
+[Term]
+id: PRIDE:0000830
+name: Olink Reveal
+def: "Olink Reveal is an NGS-based proteomics platform that measures approximately 1,000 proteins with high sensitivity from just 4 µL of sample, using standard lab equipment, with a focus on immune and inflammation markers" [PRIDE:PRIDE]
+is_a: PRIDE:0000654 ! Olink instrument model
 
