@@ -2498,7 +2498,7 @@ is_a: PRIDE:0000428 ! Bottom-up proteomics
 [Term]
 id: PRIDE:0000430
 name: Chemical cross-linking coupled with mass spectrometry proteomics
-def: "Chemical cross-linking of proteins coupled with mass spectrometry analysis (CXMS) to provide information about protein folding and protein-protein interaction" [PRIDE:PRIDE]
+def: "Chemical cross-linking of proteins coupled with mass spectrometry analysis to provide information about protein folding and protein-protein interaction" [PRIDE:PRIDE]
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 
 [Term]
