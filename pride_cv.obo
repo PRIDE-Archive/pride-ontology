@@ -25,11 +25,6 @@ property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrar
 property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000829
 ontology: pride
 
-! ============================================
-! External Ontology Terms
-! ============================================
-
-! EFO Terms
 [Term]
 id: EFO:0002755
 name: diet
@@ -45,7 +40,6 @@ id: EFO:0004324
 name: body weights and measures
 def: "Measurements of the height, weight, length, area, etc., of the human and animal body or its parts." [EFO:EFO]
 
-! NCIT Terms
 [Term]
 id: NCIT:C20189
 name: Property or Attribute
@@ -101,10 +95,6 @@ def: "The actions of prevention, treatment, and management of illness and the pr
 id: NCIT:C45279
 name: Log
 def: "A written record of events." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
-
-! ============================================
-! PRIDE Terms
-! ============================================
 
 [Term]
 id: PRIDE:0000000
