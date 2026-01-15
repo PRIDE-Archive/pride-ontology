@@ -3,3 +3,5 @@
 .idea/
 /pride_tmp.owl
 /report.tsv
+.cursor/
+.DS_Store

@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 09:06:2025 14:50
-data-version: releases/2025-02-17
-saved-by: Deepti Jaiswal Kundu
+date: 14:01:2026 10:00
+data-version: releases/2026-01-14
+saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
@@ -24,6 +24,77 @@ property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrar
 property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000828
 property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000829
 ontology: pride
+
+[Term]
+id: EFO:0002755
+name: diet
+def: "The regular course of eating and drinking adopted by a person or animal." [EFO:EFO]
+
+[Term]
+id: EFO:0004554
+name: genomic measurement
+def: "A quantification of some aspect of the genome, e.g. copy number variation at some locus." [EFO:EFO]
+
+[Term]
+id: EFO:0004324
+name: body weights and measures
+def: "Measurements of the height, weight, length, area, etc., of the human and animal body or its parts." [EFO:EFO]
+
+[Term]
+id: NCIT:C20189
+name: Property or Attribute
+def: "A distinguishing quality or prominent aspect of a person, object, action, process, or substance." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C25447
+name: Characteristic
+def: "The distinguishing qualities or prominent aspect of a person, object, action, process, or substance." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+is_a: NCIT:C20189 ! Property or Attribute
+
+[Term]
+id: NCIT:C25507
+name: Data Field
+def: "An area of database record, or graphical user interface form, into which a particular item of data is entered." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C25162
+name: Code
+def: "A symbol or combination of symbols which is assigned to the members of a collection." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C12219
+name: Anatomic Structure, System, or Substance
+def: "A human biological structure, fluid or other substance; excludes single molecular entities." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C25347
+name: Height
+def: "The vertical measurement or distance from the base to the top of an object; the vertical dimension of extension." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C80248
+name: Meal
+def: "Any of the occasions for eating food that occur by custom or habit at more or less fixed times." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C25206
+name: Temperature
+def: "A measure of the average kinetic energy of a system of particles." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C19160
+name: Occupation or Discipline
+def: "A grouping of occupations and fields of study." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C16205
+name: Healthcare Activity
+def: "The actions of prevention, treatment, and management of illness and the preservation of mental and physical well-being through the services offered by the medical and allied health professions." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: NCIT:C45279
+name: Log
+def: "A written record of events." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
 
 [Term]
 id: PRIDE:0000000
