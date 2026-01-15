@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2025-02-17/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-01-14/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000674"/>
@@ -52,10 +52,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>09:06:2025 14:50</oboInOwl:date>
+        <oboInOwl:date>14:01:2026 10:00</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Deepti Jaiswal Kundu</oboInOwl:saved-by>
+        <oboInOwl:saved-by>Yasset Perez-Riverol</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -79,6 +79,12 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
     
 
 
@@ -181,19 +187,52 @@
 
     <!-- http://purl.obolibrary.org/obo/EFO_0002755 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0002755"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0002755">
+        <obo:IAO_0000115>The regular course of eating and drinking adopted by a person or animal.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0002755</oboInOwl:id>
+        <rdfs:label>diet</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0002755"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The regular course of eating and drinking adopted by a person or animal.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>EFO:EFO</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/EFO_0004324 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004324"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004324">
+        <obo:IAO_0000115>Measurements of the height, weight, length, area, etc., of the human and animal body or its parts.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0004324</oboInOwl:id>
+        <rdfs:label>body weights and measures</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0004324"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Measurements of the height, weight, length, area, etc., of the human and animal body or its parts.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>EFO:EFO</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/EFO_0004554 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004554"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004554">
+        <obo:IAO_0000115>A quantification of some aspect of the genome, e.g. copy number variation at some locus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0004554</oboInOwl:id>
+        <rdfs:label>genomic measurement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EFO_0004554"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quantification of some aspect of the genome, e.g. copy number variation at some locus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>EFO:EFO</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -301,55 +340,172 @@
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C12219 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12219"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12219">
+        <obo:IAO_0000115>A human biological structure, fluid or other substance; excludes single molecular entities.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C12219</oboInOwl:id>
+        <rdfs:label>Anatomic Structure, System, or Substance</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12219"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A human biological structure, fluid or other substance; excludes single molecular entities.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C16205 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16205"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16205">
+        <obo:IAO_0000115>The actions of prevention, treatment, and management of illness and the preservation of mental and physical well-being through the services offered by the medical and allied health professions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C16205</oboInOwl:id>
+        <rdfs:label>Healthcare Activity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16205"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The actions of prevention, treatment, and management of illness and the preservation of mental and physical well-being through the services offered by the medical and allied health professions.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C19160 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19160"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19160">
+        <obo:IAO_0000115>A grouping of occupations and fields of study.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C19160</oboInOwl:id>
+        <rdfs:label>Occupation or Discipline</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19160"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A grouping of occupations and fields of study.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20189">
+        <obo:IAO_0000115>A distinguishing quality or prominent aspect of a person, object, action, process, or substance.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C20189</oboInOwl:id>
+        <rdfs:label>Property or Attribute</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A distinguishing quality or prominent aspect of a person, object, action, process, or substance.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C25162 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25162"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25162">
+        <obo:IAO_0000115>A symbol or combination of symbols which is assigned to the members of a collection.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C25162</oboInOwl:id>
+        <rdfs:label>Code</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25162"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A symbol or combination of symbols which is assigned to the members of a collection.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C25206 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25206"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25206">
+        <obo:IAO_0000115>A measure of the average kinetic energy of a system of particles.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C25206</oboInOwl:id>
+        <rdfs:label>Temperature</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25206"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A measure of the average kinetic energy of a system of particles.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C25347 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25347"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25347">
+        <obo:IAO_0000115>The vertical measurement or distance from the base to the top of an object; the vertical dimension of extension.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C25347</oboInOwl:id>
+        <rdfs:label>Height</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25347"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The vertical measurement or distance from the base to the top of an object; the vertical dimension of extension.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C25447 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25447"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <obo:IAO_0000115>The distinguishing qualities or prominent aspect of a person, object, action, process, or substance.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C25447</oboInOwl:id>
+        <rdfs:label>Characteristic</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25447"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The distinguishing qualities or prominent aspect of a person, object, action, process, or substance.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C25507 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25507"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25507">
+        <obo:IAO_0000115>An area of database record, or graphical user interface form, into which a particular item of data is entered.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C25507</oboInOwl:id>
+        <rdfs:label>Data Field</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25507"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An area of database record, or graphical user interface form, into which a particular item of data is entered.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C45279 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C45279"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C45279">
+        <obo:IAO_0000115>A written record of events.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C45279</oboInOwl:id>
+        <rdfs:label>Log</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45279"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A written record of events.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
@@ -373,7 +529,18 @@
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C80248 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C80248"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C80248">
+        <obo:IAO_0000115>Any of the occasions for eating food that occur by custom or habit at more or less fixed times.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C80248</oboInOwl:id>
+        <rdfs:label>Meal</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80248"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any of the occasions for eating food that occur by custom or habit at more or less fixed times.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
