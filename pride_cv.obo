@@ -3782,7 +3782,7 @@ is_a: PRIDE:0000597 ! metabolic label
 
 [Term]
 id: PRIDE:0000623
-name: original source name
+name: source name
 def: "Reference to the Sample. This term is use for cross-reference samples in SDRF for proteomics" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
@@ -5061,3 +5061,39 @@ name: Olink Reveal
 def: "Olink Reveal is an NGS-based proteomics platform that measures approximately 1,000 proteins with high sensitivity from just 4 µL of sample, using standard lab equipment, with a focus on immune and inflammation markers" [PRIDE:PRIDE]
 is_a: PRIDE:0000654 ! Olink instrument model
 
+[Term]
+id: PRIDE:0000831
+name: file_format
+def: "A defined organization or layout representing and structuring data in a file. The file format specifies how information is encoded, stored, and interpreted within the file." [PRIDE:PRIDE]
+xref: NCIT:C171252
+is_a: PRIDE:0000470 ! File Properties
+
+[Term]
+id: PRIDE:0000832
+name: template
+def: "A checklist of columns and properties that will be applied during a validation process to an SDRF or other PSI standard" [PRIDE:PRIDE]
+is_a: PRIDE:0000470 ! File Properties
+
+[Term]
+id: PRIDE:0000833
+name: template_version
+def: "The specific version of a template" [PRIDE:PRIDE]
+is_a: PRIDE:0000470 ! File Properties
+
+[Term]
+id: PRIDE:0000834
+name: validation_hash
+def: "A hash generated after validating an SDRF dataset; this is helpful to understand if one file has been validated or not"
+is_a: PRIDE:0000470 ! File Properties
+
+[Term]
+id: PRIDE:0000835
+name: cellosaurus accession
+def: "An accession to a cellosaurus cell line that could be use to annotate SDRF samples"
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000836
+name: cellosaurus name
+def: "An name to a cellosaurus cell line that could be use to annotate SDRF samples"
+is_a: PRIDE:0000017 ! Sample description additional parameter
