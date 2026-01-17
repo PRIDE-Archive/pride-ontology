@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-01-14/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-01-17/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000674"/>
@@ -11545,7 +11545,7 @@
         <obo:IAO_0000115>Reference to the Sample. This term is use for cross-reference samples in SDRF for proteomics</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000623</oboInOwl:id>
-        <rdfs:label>original source name</rdfs:label>
+        <rdfs:label>source name</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000623"/>
@@ -16105,6 +16105,115 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000830"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Olink Reveal is an NGS-based proteomics platform that measures approximately 1,000 proteins with high sensitivity from just 4 µL of sample, using standard lab equipment, with a focus on immune and inflammation markers</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000831 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000470"/>
+        <obo:IAO_0000115>A defined organization or layout representing and structuring data in a file. The file format specifies how information is encoded, stored, and interpreted within the file.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C171252</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000831</oboInOwl:id>
+        <rdfs:label>file_format</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000831"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A defined organization or layout representing and structuring data in a file. The file format specifies how information is encoded, stored, and interpreted within the file.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000832 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000832">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000470"/>
+        <obo:IAO_0000115>A checklist of columns and properties that will be applied during a validation process to an SDRF or other PSI standard</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000832</oboInOwl:id>
+        <rdfs:label>template</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000832"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A checklist of columns and properties that will be applied during a validation process to an SDRF or other PSI standard</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000833 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000833">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000470"/>
+        <obo:IAO_0000115>The specific version of a template</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000833</oboInOwl:id>
+        <rdfs:label>template_version</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000833"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The specific version of a template</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000834 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000834">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000470"/>
+        <obo:IAO_0000115>A hash generated after validating an SDRF dataset; this is helpful to understand if one file has been validated or not</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000834</oboInOwl:id>
+        <rdfs:label>validation_hash</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000834"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A hash generated after validating an SDRF dataset; this is helpful to understand if one file has been validated or not</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000835 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000835">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
+        <obo:IAO_0000115>An accession to a cellosaurus cell line that could be use to annotate SDRF samples</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000835</oboInOwl:id>
+        <rdfs:label>cellosaurus accession</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000835"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An accession to a cellosaurus cell line that could be use to annotate SDRF samples</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000836 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000836">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
+        <obo:IAO_0000115>A name to a cellosaurus cell line that could be use to annotate SDRF samples</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000836</oboInOwl:id>
+        <rdfs:label>cellosaurus name</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000836"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A name to a cellosaurus cell line that could be use to annotate SDRF samples</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
