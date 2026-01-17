@@ -1,6 +1,6 @@
 format-version: 1.4
 date: 14:01:2026 10:00
-data-version: releases/2026-01-14
+data-version: releases/2026-01-17
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -5083,17 +5083,17 @@ is_a: PRIDE:0000470 ! File Properties
 [Term]
 id: PRIDE:0000834
 name: validation_hash
-def: "A hash generated after validating an SDRF dataset; this is helpful to understand if one file has been validated or not"
+def: "A hash generated after validating an SDRF dataset; this is helpful to understand if one file has been validated or not" [PRIDE:PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
 id: PRIDE:0000835
 name: cellosaurus accession
-def: "An accession to a cellosaurus cell line that could be use to annotate SDRF samples"
+def: "An accession to a cellosaurus cell line that could be use to annotate SDRF samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
 id: PRIDE:0000836
 name: cellosaurus name
-def: "An name to a cellosaurus cell line that could be use to annotate SDRF samples"
+def: "An name to a cellosaurus cell line that could be use to annotate SDRF samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
