@@ -5095,5 +5095,6 @@ is_a: PRIDE:0000017 ! Sample description additional parameter
 [Term]
 id: PRIDE:0000836
 name: cellosaurus name
-def: "An name to a cellosaurus cell line that could be use to annotate SDRF samples" [PRIDE:PRIDE]
+def: "A name to a cellosaurus cell line that could be use to annotate SDRF samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
+
