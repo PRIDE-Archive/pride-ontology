@@ -5098,3 +5098,9 @@ name: cellosaurus name
 def: "A name to a cellosaurus cell line that could be use to annotate SDRF samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
+[Term]
+id: PRIDE:0000837
+name: material type
+def: "Material type describes the type of biological material" [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
