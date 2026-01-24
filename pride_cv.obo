@@ -5104,3 +5104,21 @@ name: material type
 def: "Material type describes the type of biological material" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
+[Term]
+id: EFO:0009090
+name: enrichment process
+def: "A process by which a cell or organism is exposed to specific substances or conditions to selectively enrich for specific molecules or modifications." [EFO:EFO]
+is_a: PRIDE:0000585 ! Enrichment
+
+[Term]
+id: EFO:0010806
+name: enrichment of phosphorylated protein
+def: "A sample enrichment process where phosphorylated proteins or peptides are selectively enriched prior to analysis." [EFO:EFO]
+is_a: EFO:0009090 ! enrichment process
+
+[Term]
+id: PRIDE:0000838
+name: enrichment of cross-linked peptides
+def: "A sample enrichment process where peptides containing chemical cross-links are selectively enriched prior to mass spectrometry analysis. Cross-linked peptides are typically enriched using size exclusion chromatography, strong cation exchange chromatography, or other separation techniques that exploit the larger size and higher charge of cross-linked species." [PRIDE:PRIDE]
+is_a: EFO:0009090 ! enrichment process
+
