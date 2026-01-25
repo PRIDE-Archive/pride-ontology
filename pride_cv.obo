@@ -5075,12 +5075,6 @@ def: "A checklist of columns and properties that will be applied during a valida
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
-id: PRIDE:0000833
-name: template_version
-def: "The specific version of a template" [PRIDE:PRIDE]
-is_a: PRIDE:0000470 ! File Properties
-
-[Term]
 id: PRIDE:0000834
 name: validation_hash
 def: "A hash generated after validating an SDRF dataset; this is helpful to understand if one file has been validated or not" [PRIDE:PRIDE]
