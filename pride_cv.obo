@@ -1,6 +1,6 @@
 format-version: 1.4
 date: 14:01:2026 10:00
-data-version: releases/2026-01-17
+data-version: releases/2026-01-25
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -5063,21 +5063,21 @@ is_a: PRIDE:0000654 ! Olink instrument model
 
 [Term]
 id: PRIDE:0000831
-name: file_format
+name: file format
 def: "A defined organization or layout representing and structuring data in a file. The file format specifies how information is encoded, stored, and interpreted within the file." [PRIDE:PRIDE]
 xref: NCIT:C171252
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
 id: PRIDE:0000832
-name: template
-def: "A checklist of columns and properties that will be applied during a validation process to an SDRF or other PSI standard" [PRIDE:PRIDE]
+name: sdrf template
+def: "The template name and version used to annotate an SDRF file, specified as 'template_name,version=vX.Y.Z' format. Multiple templates can be combined (e.g., human + ms-proteomics)" [PRIDE:PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
 id: PRIDE:0000834
-name: validation_hash
-def: "A hash generated after validating an SDRF dataset; this is helpful to understand if one file has been validated or not" [PRIDE:PRIDE]
+name: sdrf validation hash
+def: "A cryptographic hash (e.g., SHA-256) generated after successful validation of an SDRF file against a specific template, used to verify file integrity and validation status" [PRIDE:PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
@@ -5115,4 +5115,16 @@ id: PRIDE:0000838
 name: enrichment of cross-linked peptides
 def: "A sample enrichment process where peptides containing chemical cross-links are selectively enriched prior to mass spectrometry analysis. Cross-linked peptides are typically enriched using size exclusion chromatography, strong cation exchange chromatography, or other separation techniques that exploit the larger size and higher charge of cross-linked species." [PRIDE:PRIDE]
 is_a: EFO:0009090 ! enrichment process
+
+[Term]
+id: PRIDE:0000839
+name: sdrf version
+def: "The version of the SDRF-Proteomics specification used to annotate the file, following semantic versioning format (e.g., v1.1.0)" [PRIDE:PRIDE]
+is_a: PRIDE:0000470 ! File Properties
+
+[Term]
+id: PRIDE:0000840
+name: sdrf annotation tool
+def: "The software tool, script, or manual curation method used to generate or annotate SDRF metadata and column values" [PRIDE:PRIDE]
+is_a: PRIDE:0000470 ! File Properties
 
