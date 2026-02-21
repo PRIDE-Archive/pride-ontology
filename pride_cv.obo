@@ -3606,6 +3606,7 @@ id: PRIDE:0000585
 name: Enrichment
 def: "Enrichment of specific post-translational modifications" [PRIDE:PRIDE]
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
+is_a: EFO:0009090 ! enrichment process
 
 [Term]
 id: PRIDE:0000586
@@ -5183,7 +5184,6 @@ is_a: PRIDE:0000017 ! Sample description additional parameter
 id: EFO:0009090
 name: enrichment process
 def: "A process by which a cell or organism is exposed to specific substances or conditions to selectively enrich for specific molecules or modifications." [EFO:EFO]
-is_a: PRIDE:0000585 ! Enrichment
 
 [Term]
 id: EFO:0010806
@@ -5243,7 +5243,8 @@ is_a: PRIDE:0000513 ! Dimethyl Labeling
 id: PRIDE:0000846
 name: mTRAQ
 def: "mTRAQ is a non-isobaric mass difference labeling technique for multiplexed quantification" [PRIDE:PRIDE]
-is_a: PRIDE:0000310 ! Isotope labeling
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+is_a: PRIDE:0000514 ! Quantification channel label
 
 [Term]
 id: PRIDE:0000847
