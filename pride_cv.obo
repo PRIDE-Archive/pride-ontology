@@ -3100,7 +3100,8 @@ is_a: PRIDE:0000428 ! Bottom-up proteomics
 id: PRIDE:0000513
 name: Dimethyl Labeling
 def: "Dimethyl Labeling (DML)" [PRIDE:PRIDE]
-is_a: PRIDE:0000310 ! Isotope labeling
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+is_a: PRIDE:0000514 ! Quantification channel label
 
 [Term]
 id: PRIDE:0000514
