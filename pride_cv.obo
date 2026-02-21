@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 14:01:2026 10:00
-data-version: releases/2026-01-25
+date: 21:02:2026 10:00
+data-version: releases/2026-02-21
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -805,54 +805,58 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 [Term]
 id: PRIDE:0000114
 name: iTRAQ reagent 114
-def: "The name of the sample labelled with iTRAQ reagent 114" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ114 (PRIDE:0000532) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000532
 
 [Term]
 id: PRIDE:0000115
 name: iTRAQ reagent 115
-def: "The name of the sample labelled with iTRAQ reagent 115" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ115 (PRIDE:0000533) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000533
 
 [Term]
 id: PRIDE:0000116
 name: iTRAQ reagent 116
-def: "The name of the sample labelled with iTRAQ reagent 116" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ116 (PRIDE:0000534) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000534
 
 [Term]
 id: PRIDE:0000117
 name: iTRAQ reagent 117
-def: "The name of the sample labelled with iTRAQ reagent 117" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ117 (PRIDE:0000535) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000535
 
 [Term]
 id: PRIDE:0000118
 name: iTRAQ intensity 114
-def: "The intensity of the sample labelled with iTRAQ reagent 114" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ114 (PRIDE:0000532) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000532
 
 [Term]
 id: PRIDE:0000119
 name: iTRAQ intensity 115
-def: "The intensity of the sample labelled with iTRAQ reagent 115" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ115 (PRIDE:0000533) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000533
 
 [Term]
 id: PRIDE:0000120
 name: iTRAQ intensity 116
-def: "The intensity of the sample labelled with iTRAQ reagent 116" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ116 (PRIDE:0000534) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000534
 
 [Term]
 id: PRIDE:0000121
 name: iTRAQ intensity 117
-def: "The intensity of the sample labelled with iTRAQ reagent 117" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ117 (PRIDE:0000535) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000535
 
 [Term]
 id: PRIDE:0000122
@@ -1726,54 +1730,58 @@ is_a: PRIDE:0000260 ! precursor ion type
 [Term]
 id: PRIDE:0000264
 name: iTRAQ reagent 113
-def: "The name of the sample labelled with iTRAQ reagent 113" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ113 (PRIDE:0000531) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000531
 
 [Term]
 id: PRIDE:0000265
 name: iTRAQ reagent 118
-def: "The name of the sample labelled with iTRAQ reagent 118" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ118 (PRIDE:0000536) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000536
 
 [Term]
 id: PRIDE:0000266
 name: iTRAQ reagent 119
-def: "The name of the sample labelled with iTRAQ reagent 119" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ119 (PRIDE:0000537) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000537
 
 [Term]
 id: PRIDE:0000267
 name: iTRAQ reagent 121
-def: "The name of the sample labelled with iTRAQ reagent 121" [PRIDE:PRIDE]
-is_a: PRIDE:0000329 ! iTRAQ reagent
+def: "OBSOLETE. Use ITRAQ121 (PRIDE:0000538) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000538
 
 [Term]
 id: PRIDE:0000268
 name: iTRAQ intensity 113
-def: "The intensity of the sample labelled with iTRAQ reagent 113" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ113 (PRIDE:0000531) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000531
 
 [Term]
 id: PRIDE:0000269
 name: iTRAQ intensity 118
-def: "The intensity of the sample labelled with iTRAQ reagent 118" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ118 (PRIDE:0000536) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000536
 
 [Term]
 id: PRIDE:0000270
 name: iTRAQ intensity 119
-def: "The intensity of the sample labelled with iTRAQ reagent 119" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ119 (PRIDE:0000537) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000537
 
 [Term]
 id: PRIDE:0000271
 name: iTRAQ intensity 121
-def: "The intensity of the sample labelled with iTRAQ reagent 121" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use ITRAQ121 (PRIDE:0000538) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000538
 
 [Term]
 id: PRIDE:0000272
@@ -1859,80 +1867,86 @@ is_a: PRIDE:0000045 ! Sequest
 [Term]
 id: PRIDE:0000285
 name: TMT reagent 126
-def: "The name of the sample labelled with TMT reagent 126" [PRIDE:PRIDE]
-is_a: PRIDE:0000337 ! TMT reagent
+def: "OBSOLETE. Use TMT126 (PRIDE:0000516) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000516
 
 [Term]
 id: PRIDE:0000286
 name: TMT reagent 127
-def: "The name of the sample labelled with TMT reagent 127" [PRIDE:PRIDE]
-is_a: PRIDE:0000337 ! TMT reagent
+def: "OBSOLETE. Use TMT127 (PRIDE:0000517) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000517
 
 [Term]
 id: PRIDE:0000287
 name: TMT reagent 128
-def: "The name of the sample labelled with TMT reagent 128" [PRIDE:PRIDE]
-is_a: PRIDE:0000337 ! TMT reagent
+def: "OBSOLETE. Use TMT128 (PRIDE:0000520) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000520
 
 [Term]
 id: PRIDE:0000288
 name: TMT reagent 129
-def: "The name of the sample labelled with TMT reagent 129" [PRIDE:PRIDE]
-is_a: PRIDE:0000337 ! TMT reagent
+def: "OBSOLETE. Use TMT129 (PRIDE:0000523) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000523
 
 [Term]
 id: PRIDE:0000289
 name: TMT reagent 130
-def: "The name of the sample labelled with TMT reagent 130" [PRIDE:PRIDE]
-is_a: PRIDE:0000337 ! TMT reagent
+def: "OBSOLETE. Use TMT130 (PRIDE:0000526) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000526
 
 [Term]
 id: PRIDE:0000290
 name: TMT reagent 131
-def: "The name of the sample labelled with TMT reagent 131" [PRIDE:PRIDE]
-is_a: PRIDE:0000337 ! TMT reagent
+def: "OBSOLETE. Use TMT131 (PRIDE:0000529) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000529
 
 [Term]
 id: PRIDE:0000291
 name: TMT intensity 126
-def: "The intensity value of the sample labelled with TMT reagent 126 [Curator:ACSORDAS]" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use TMT126 (PRIDE:0000516) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000516
 
 [Term]
 id: PRIDE:0000292
 name: TMT intensity 127
-def: "The intensity value of the sample labelled with TMT reagent 127 [Curator:ACSORDAS]" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use TMT127 (PRIDE:0000517) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000517
 
 [Term]
 id: PRIDE:0000293
 name: TMT intensity 128
-def: "The intensity value of the sample labelled with TMT reagent 128 [Curator:ACSORDAS]" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use TMT128 (PRIDE:0000520) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000520
 
 [Term]
 id: PRIDE:0000294
 name: TMT intensity 129
-def: "The intensity value of the sample labelled with TMT reagent 129 [Curator:ACSORDAS]" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use TMT129 (PRIDE:0000523) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000523
 
 [Term]
 id: PRIDE:0000295
 name: TMT intensity 130
-def: "The intensity value of the sample labelled with TMT reagent 130 [Curator:ACSORDAS]" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use TMT130 (PRIDE:0000526) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000526
 
 [Term]
 id: PRIDE:0000296
 name: TMT intensity 131
-def: "The intensity value of the sample labelled with TMT reagent 131 [Curator:ACSORDAS]" [PRIDE:PRIDE]
-is_a: PRIDE:0000003 ! Peptide item additional parameter
-is_a: PRIDE:0000004 ! Identification additional parameter
+def: "OBSOLETE. Use TMT131 (PRIDE:0000529) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000529
 
 [Term]
 id: PRIDE:0000297
@@ -3101,7 +3115,10 @@ name: TMT126
 def: "TMT126" [PRIDE:PRIDE]
 is_a: PRIDE:0000666 ! TMT6PLEX
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
 
 [Term]
@@ -3115,16 +3132,22 @@ id: PRIDE:0000518
 name: TMT127C
 def: "TMT127C" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000519
 name: TMT127N
 def: "TMT127N" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000520
@@ -3137,16 +3160,22 @@ id: PRIDE:0000521
 name: TMT128C
 def: "TMT128C" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000522
 name: TMT128N
 def: "TMT128N" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000523
@@ -3159,16 +3188,22 @@ id: PRIDE:0000524
 name: TMT129C
 def: "TMT129C" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000525
 name: TMT129N
 def: "TMT129N" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000526
@@ -3181,16 +3216,22 @@ id: PRIDE:0000527
 name: TMT130C
 def: "TMT130C" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000528
 name: TMT130N
 def: "TMT130N" [PRIDE:PRIDE]
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000529
@@ -3198,6 +3239,7 @@ name: TMT131
 def: "TMT131" [PRIDE:PRIDE]
 is_a: PRIDE:0000666 ! TMT6PLEX
 is_a: PRIDE:0000667 ! TMT10PLEX
+is_a: PRIDE:0000858 ! TMT11PLEX
 
 [Term]
 id: PRIDE:0000530
@@ -3209,49 +3251,53 @@ is_a: PRIDE:0000514 ! Quantification channel label
 id: PRIDE:0000531
 name: ITRAQ113
 def: "ITRAQ113 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000532
 name: ITRAQ114
 def: "ITRAQ114 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000856 ! ITRAQ4PLEX
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000533
 name: ITRAQ115
 def: "ITRAQ115 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000856 ! ITRAQ4PLEX
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000534
 name: ITRAQ116
 def: "ITRAQ116 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000856 ! ITRAQ4PLEX
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000535
 name: ITRAQ117
 def: "ITRAQ117 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000856 ! ITRAQ4PLEX
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000536
 name: ITRAQ118
 def: "ITRAQ118 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000537
 name: ITRAQ119
 def: "ITRAQ119 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000538
 name: ITRAQ121
 def: "ITRAQ121 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000530 ! ITRAQ
+is_a: PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000541
@@ -3504,13 +3550,18 @@ name: TMT131N
 def: "TMT131N" [PRIDE:PRIDE]
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000581
 name: TMT131C
 def: "TMT131C" [PRIDE:PRIDE]
+is_a: PRIDE:0000858 ! TMT11PLEX
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000582
@@ -3518,6 +3569,8 @@ name: TMT132N
 def: "TMT132N" [PRIDE:PRIDE]
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000583
@@ -3525,6 +3578,8 @@ name: TMT132C
 def: "TMT132C" [PRIDE:PRIDE]
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000584
@@ -3837,6 +3892,8 @@ name: TMT133N
 def: "TMT133N" [PRIDE:PRIDE]
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000633
@@ -3844,6 +3901,8 @@ name: TMT133C
 def: "TMT133C" [PRIDE:PRIDE]
 is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000634
@@ -3898,12 +3957,16 @@ id: PRIDE:0000642
 name: TMT134C
 def: "TMT134C" [PRIDE:PRIDE]
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000643
 name: TMT134N
 def: "TMT134N" [PRIDE:PRIDE]
+is_a: PRIDE:0000668 ! TMT16PLEX
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000644
@@ -4053,9 +4116,10 @@ is_a: PRIDE:0000314 ! TMT
 
 [Term]
 id: PRIDE:0000670
-name: TMT135
-def: "TMT135" [PRIDE:PRIDE]
+name: TMT135N
+def: "TMT135N" [PRIDE:PRIDE]
 is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000671
@@ -5139,4 +5203,235 @@ id: PRIDE:0000842
 name: MS max IM
 def: "Maximum ion mobility value in the file" [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0000843
+name: DIMETHYL2PLEX
+def: "Dimethyl 2-plex labeling kit has 2 channels" [PRIDE:PRIDE]
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+
+[Term]
+id: PRIDE:0000844
+name: DIMETHYL3PLEX
+def: "Dimethyl 3-plex labeling kit has 3 channels" [PRIDE:PRIDE]
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+
+[Term]
+id: PRIDE:0000845
+name: DIMETHYL5PLEX
+def: "Dimethyl 5-plex labeling kit has 5 channels" [PRIDE:PRIDE]
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+
+[Term]
+id: PRIDE:0000846
+name: mTRAQ
+def: "mTRAQ is a non-isobaric mass difference labeling technique for multiplexed quantification" [PRIDE:PRIDE]
+is_a: PRIDE:0000310 ! Isotope labeling
+
+[Term]
+id: PRIDE:0000847
+name: MTRAQ3PLEX
+def: "mTRAQ 3-plex labeling kit has 3 channels (0, 4, 8)" [PRIDE:PRIDE]
+is_a: PRIDE:0000846 ! mTRAQ
+
+[Term]
+id: PRIDE:0000848
+name: DIMETHYL0
+def: "Dimethyl channel 0, base mass 28.0313 Da, delta 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000843 ! DIMETHYL2PLEX
+is_a: PRIDE:0000844 ! DIMETHYL3PLEX
+is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+
+[Term]
+id: PRIDE:0000849
+name: DIMETHYL2
+def: "Dimethyl channel 2, delta +2.0126 Da from channel 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000843 ! DIMETHYL2PLEX
+is_a: PRIDE:0000844 ! DIMETHYL3PLEX
+is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+
+[Term]
+id: PRIDE:0000850
+name: DIMETHYL4
+def: "Dimethyl channel 4, delta +4.0251 Da from channel 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000844 ! DIMETHYL3PLEX
+is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+
+[Term]
+id: PRIDE:0000851
+name: DIMETHYL6
+def: "Dimethyl channel 6, delta +6.0377 Da from channel 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+
+[Term]
+id: PRIDE:0000852
+name: DIMETHYL8
+def: "Dimethyl channel 8, delta +8.0444 Da from channel 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+
+[Term]
+id: PRIDE:0000853
+name: MTRAQ0
+def: "mTRAQ reagent channel 0, base mass 140.0950 Da, delta 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000847 ! MTRAQ3PLEX
+
+[Term]
+id: PRIDE:0000854
+name: MTRAQ4
+def: "mTRAQ reagent channel 4, delta +4.0071 Da from channel 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000847 ! MTRAQ3PLEX
+
+[Term]
+id: PRIDE:0000855
+name: MTRAQ8
+def: "mTRAQ reagent channel 8, delta +8.0142 Da from channel 0" [PRIDE:PRIDE]
+is_a: PRIDE:0000847 ! MTRAQ3PLEX
+
+[Term]
+id: PRIDE:0000856
+name: ITRAQ4PLEX
+def: "iTRAQ 4-plex labeling kit has 4 channels (114, 115, 116, 117)" [PRIDE:PRIDE]
+is_a: PRIDE:0000530 ! ITRAQ
+
+[Term]
+id: PRIDE:0000857
+name: ITRAQ8PLEX
+def: "iTRAQ 8-plex labeling kit has 8 channels (113, 114, 115, 116, 117, 118, 119, 121)" [PRIDE:PRIDE]
+is_a: PRIDE:0000530 ! ITRAQ
+
+[Term]
+id: PRIDE:0000858
+name: TMT11PLEX
+def: "TMT 11-plex labeling kit has 11 channels (126, 127N, 127C, 128N, 128C, 129N, 129C, 130N, 130C, 131, 131C)" [PRIDE:PRIDE]
+is_a: PRIDE:0000314 ! TMT
+
+[Term]
+id: PRIDE:0000859
+name: TMT32PLEX
+def: "TMTpro 32-plex labeling kit has 32 channels: 16 non-deuterated (126-134N) and 16 deuterated (127D-135ND)" [PRIDE:PRIDE]
+is_a: PRIDE:0000314 ! TMT
+
+[Term]
+id: PRIDE:0000860
+name: TMT35PLEX
+def: "TMTpro 35-plex labeling kit has 35 channels: 18 non-deuterated (126-135N) and 16 deuterated (127D-135ND) plus 135CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000314 ! TMT
+
+[Term]
+id: PRIDE:0000861
+name: TMT127D
+def: "TMTpro deuterated channel 127D" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000862
+name: TMT128ND
+def: "TMTpro deuterated channel 128ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000863
+name: TMT128CD
+def: "TMTpro deuterated channel 128CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000864
+name: TMT129ND
+def: "TMTpro deuterated channel 129ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000865
+name: TMT129CD
+def: "TMTpro deuterated channel 129CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000866
+name: TMT130ND
+def: "TMTpro deuterated channel 130ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000867
+name: TMT130CD
+def: "TMTpro deuterated channel 130CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000868
+name: TMT131ND
+def: "TMTpro deuterated channel 131ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000869
+name: TMT131CD
+def: "TMTpro deuterated channel 131CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000870
+name: TMT132ND
+def: "TMTpro deuterated channel 132ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000871
+name: TMT132CD
+def: "TMTpro deuterated channel 132CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000872
+name: TMT133ND
+def: "TMTpro deuterated channel 133ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000873
+name: TMT133CD
+def: "TMTpro deuterated channel 133CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000874
+name: TMT134ND
+def: "TMTpro deuterated channel 134ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000875
+name: TMT134CD
+def: "TMTpro deuterated channel 134CD" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000876
+name: TMT135ND
+def: "TMTpro deuterated channel 135ND" [PRIDE:PRIDE]
+is_a: PRIDE:0000859 ! TMT32PLEX
+is_a: PRIDE:0000860 ! TMT35PLEX
+
+[Term]
+id: PRIDE:0000877
+name: TMT135CD
+def: "TMTpro deuterated channel 135CD, control channel unique to 35-plex" [PRIDE:PRIDE]
+is_a: PRIDE:0000860 ! TMT35PLEX
 
