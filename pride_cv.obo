@@ -5128,3 +5128,15 @@ name: sdrf annotation tool
 def: "The software tool, script, or manual curation method used to generate or annotate SDRF metadata and column values" [PRIDE:PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
+[Term]
+id: PRIDE:0000841
+name: MS min IM
+def: "Minimum ion mobility value in the file" [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0000842
+name: MS max IM
+def: "Maximum ion mobility value in the file" [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
