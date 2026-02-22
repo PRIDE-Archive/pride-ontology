@@ -5328,19 +5328,19 @@ is_a: PRIDE:0000314 ! TMT
 [Term]
 id: PRIDE:0000859
 name: TMT32PLEX
-def: "TMTpro 32-plex labeling kit has 32 channels: 16 non-deuterated (126-134N) and 16 deuterated (127D-135ND)" [PRIDE:PRIDE]
+def: "TMTpro 32-plex labeling kit has 32 channels" [PRIDE:PRIDE]
 is_a: PRIDE:0000314 ! TMT
 
 [Term]
 id: PRIDE:0000860
 name: TMT35PLEX
-def: "TMTpro 35-plex labeling kit has 35 channels: 18 non-deuterated (126-135N) and 16 deuterated (127D-135ND) plus 135CD" [PRIDE:PRIDE]
+def: "TMTpro 35-plex labeling kit has 35 channels" [PRIDE:PRIDE]
 is_a: PRIDE:0000314 ! TMT
 
 [Term]
 id: PRIDE:0000878
 name: TMT34PLEX
-def: "TMTpro 34-plex labeling kit has 34 channels: 32-plex (16 non-deuterated + 16 deuterated) plus 134C and 135CD" [PRIDE:PRIDE]
+def: "TMTpro 34-plex labeling kit has 34 channels" [PRIDE:PRIDE]
 is_a: PRIDE:0000314 ! TMT
 
 [Term]
