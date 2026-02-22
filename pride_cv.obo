@@ -5149,6 +5149,7 @@ is_a: PRIDE:0000654 ! Olink instrument model
 id: PRIDE:0000831
 name: file format
 def: "A defined organization or layout representing and structuring data in a file. The file format specifies how information is encoded, stored, and interpreted within the file." [PRIDE:PRIDE]
+synonym: "file_format" EXACT [PRIDE]
 xref: NCIT:C171252
 is_a: PRIDE:0000470 ! File Properties
 
@@ -5156,12 +5157,14 @@ is_a: PRIDE:0000470 ! File Properties
 id: PRIDE:0000832
 name: sdrf template
 def: "The template name and version used to annotate an SDRF file, specified as 'template_name,version=vX.Y.Z' format. Multiple templates can be combined (e.g., human + ms-proteomics)" [PRIDE:PRIDE]
+synonym: "template" EXACT [PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
 id: PRIDE:0000834
 name: sdrf validation hash
 def: "A cryptographic hash (e.g., SHA-256) generated after successful validation of an SDRF file against a specific template, used to verify file integrity and validation status" [PRIDE:PRIDE]
+synonym: "validation_hash" EXACT [PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
