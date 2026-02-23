@@ -4287,7 +4287,7 @@ id: PRIDE:0000670
 name: TMT135N
 def: "TMT135N" [PRIDE:PRIDE]
 is_a: PRIDE:0000314 ! TMT
-synonym: "TMT135" EXACT []
+synonym: "TMT135" EXACT [PRIDE:PRIDE]
 relationship: part_of PRIDE:0000669 ! TMT18PLEX
 relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
