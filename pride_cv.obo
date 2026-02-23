@@ -3151,10 +3151,10 @@ relationship: part_of PRIDE:0000666 ! TMT6PLEX
 relationship: part_of PRIDE:0000667 ! TMT10PLEX
 relationship: part_of PRIDE:0000858 ! TMT11PLEX
 relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
 relationship: part_of PRIDE:0000859 ! TMT32PLEX
 relationship: part_of PRIDE:0000878 ! TMT34PLEX
 relationship: part_of PRIDE:0000860 ! TMT35PLEX
-relationship: part_of PRIDE:0000669 ! TMT18PLEX
 
 [Term]
 id: PRIDE:0000517
