@@ -810,56 +810,56 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 
 [Term]
 id: PRIDE:0000114
-name: iTRAQ reagent 114
+name: obsolete iTRAQ reagent 114
 def: "OBSOLETE. Use ITRAQ114 (PRIDE:0000532) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000532
 
 [Term]
 id: PRIDE:0000115
-name: iTRAQ reagent 115
+name: obsolete iTRAQ reagent 115
 def: "OBSOLETE. Use ITRAQ115 (PRIDE:0000533) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000533
 
 [Term]
 id: PRIDE:0000116
-name: iTRAQ reagent 116
+name: obsolete iTRAQ reagent 116
 def: "OBSOLETE. Use ITRAQ116 (PRIDE:0000534) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000534
 
 [Term]
 id: PRIDE:0000117
-name: iTRAQ reagent 117
+name: obsolete iTRAQ reagent 117
 def: "OBSOLETE. Use ITRAQ117 (PRIDE:0000535) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000535
 
 [Term]
 id: PRIDE:0000118
-name: iTRAQ intensity 114
+name: obsolete iTRAQ intensity 114
 def: "OBSOLETE. Use ITRAQ114 (PRIDE:0000532) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000532
 
 [Term]
 id: PRIDE:0000119
-name: iTRAQ intensity 115
+name: obsolete iTRAQ intensity 115
 def: "OBSOLETE. Use ITRAQ115 (PRIDE:0000533) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000533
 
 [Term]
 id: PRIDE:0000120
-name: iTRAQ intensity 116
+name: obsolete iTRAQ intensity 116
 def: "OBSOLETE. Use ITRAQ116 (PRIDE:0000534) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000534
 
 [Term]
 id: PRIDE:0000121
-name: iTRAQ intensity 117
+name: obsolete iTRAQ intensity 117
 def: "OBSOLETE. Use ITRAQ117 (PRIDE:0000535) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000535
@@ -1735,56 +1735,56 @@ is_a: PRIDE:0000260 ! precursor ion type
 
 [Term]
 id: PRIDE:0000264
-name: iTRAQ reagent 113
+name: obsolete iTRAQ reagent 113
 def: "OBSOLETE. Use ITRAQ113 (PRIDE:0000531) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000531
 
 [Term]
 id: PRIDE:0000265
-name: iTRAQ reagent 118
+name: obsolete iTRAQ reagent 118
 def: "OBSOLETE. Use ITRAQ118 (PRIDE:0000536) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000536
 
 [Term]
 id: PRIDE:0000266
-name: iTRAQ reagent 119
+name: obsolete iTRAQ reagent 119
 def: "OBSOLETE. Use ITRAQ119 (PRIDE:0000537) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000537
 
 [Term]
 id: PRIDE:0000267
-name: iTRAQ reagent 121
+name: obsolete iTRAQ reagent 121
 def: "OBSOLETE. Use ITRAQ121 (PRIDE:0000538) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000538
 
 [Term]
 id: PRIDE:0000268
-name: iTRAQ intensity 113
+name: obsolete iTRAQ intensity 113
 def: "OBSOLETE. Use ITRAQ113 (PRIDE:0000531) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000531
 
 [Term]
 id: PRIDE:0000269
-name: iTRAQ intensity 118
+name: obsolete iTRAQ intensity 118
 def: "OBSOLETE. Use ITRAQ118 (PRIDE:0000536) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000536
 
 [Term]
 id: PRIDE:0000270
-name: iTRAQ intensity 119
+name: obsolete iTRAQ intensity 119
 def: "OBSOLETE. Use ITRAQ119 (PRIDE:0000537) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000537
 
 [Term]
 id: PRIDE:0000271
-name: iTRAQ intensity 121
+name: obsolete iTRAQ intensity 121
 def: "OBSOLETE. Use ITRAQ121 (PRIDE:0000538) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000538
@@ -1872,84 +1872,84 @@ is_a: PRIDE:0000045 ! Sequest
 
 [Term]
 id: PRIDE:0000285
-name: TMT reagent 126
+name: obsolete TMT reagent 126
 def: "OBSOLETE. Use TMT126 (PRIDE:0000516) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000516
 
 [Term]
 id: PRIDE:0000286
-name: TMT reagent 127
+name: obsolete TMT reagent 127
 def: "OBSOLETE. Use TMT127 (PRIDE:0000517) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000517
 
 [Term]
 id: PRIDE:0000287
-name: TMT reagent 128
+name: obsolete TMT reagent 128
 def: "OBSOLETE. Use TMT128 (PRIDE:0000520) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000520
 
 [Term]
 id: PRIDE:0000288
-name: TMT reagent 129
+name: obsolete TMT reagent 129
 def: "OBSOLETE. Use TMT129 (PRIDE:0000523) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000523
 
 [Term]
 id: PRIDE:0000289
-name: TMT reagent 130
+name: obsolete TMT reagent 130
 def: "OBSOLETE. Use TMT130 (PRIDE:0000526) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000526
 
 [Term]
 id: PRIDE:0000290
-name: TMT reagent 131
+name: obsolete TMT reagent 131
 def: "OBSOLETE. Use TMT131 (PRIDE:0000529) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000529
 
 [Term]
 id: PRIDE:0000291
-name: TMT intensity 126
+name: obsolete TMT intensity 126
 def: "OBSOLETE. Use TMT126 (PRIDE:0000516) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000516
 
 [Term]
 id: PRIDE:0000292
-name: TMT intensity 127
+name: obsolete TMT intensity 127
 def: "OBSOLETE. Use TMT127 (PRIDE:0000517) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000517
 
 [Term]
 id: PRIDE:0000293
-name: TMT intensity 128
+name: obsolete TMT intensity 128
 def: "OBSOLETE. Use TMT128 (PRIDE:0000520) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000520
 
 [Term]
 id: PRIDE:0000294
-name: TMT intensity 129
+name: obsolete TMT intensity 129
 def: "OBSOLETE. Use TMT129 (PRIDE:0000523) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000523
 
 [Term]
 id: PRIDE:0000295
-name: TMT intensity 130
+name: obsolete TMT intensity 130
 def: "OBSOLETE. Use TMT130 (PRIDE:0000526) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000526
 
 [Term]
 id: PRIDE:0000296
-name: TMT intensity 131
+name: obsolete TMT intensity 131
 def: "OBSOLETE. Use TMT131 (PRIDE:0000529) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000529
@@ -2052,7 +2052,7 @@ is_a: PRIDE:0000309 ! Gel-free quantification method
 
 [Term]
 id: PRIDE:0000313
-name: iTRAQ
+name: obsolete iTRAQ
 def: "OBSOLETE. Use ITRAQ (PRIDE:0000530) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000530
@@ -2155,14 +2155,14 @@ is_a: PRIDE:0000315 ! SILAC
 
 [Term]
 id: PRIDE:0000328
-name: SILAC reagent
+name: obsolete SILAC reagent
 def: "OBSOLETE. Use SILAC (PRIDE:0000315) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000315
 
 [Term]
 id: PRIDE:0000329
-name: iTRAQ reagent
+name: obsolete iTRAQ reagent
 def: "OBSOLETE. Use ITRAQ (PRIDE:0000530) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000530
@@ -2181,35 +2181,35 @@ is_a: PRIDE:0000330 ! Arbitrary quantification unit
 
 [Term]
 id: PRIDE:0000337
-name: TMT reagent
+name: obsolete TMT reagent
 def: "OBSOLETE. Use TMT (PRIDE:0000314) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000314
 
 [Term]
 id: PRIDE:0000344
-name: ICAT reagent
+name: obsolete ICAT reagent
 def: "OBSOLETE. Use ICAT (PRIDE:0000319) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000319
 
 [Term]
 id: PRIDE:0000345
-name: ICAT light reagent
+name: obsolete ICAT light reagent
 def: "OBSOLETE. Use ICAT light (PRIDE:0000542) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000542
 
 [Term]
 id: PRIDE:0000346
-name: ICAT heavy reagent
+name: obsolete ICAT heavy reagent
 def: "OBSOLETE. Use ICAT heavy (PRIDE:0000541) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000541
 
 [Term]
 id: PRIDE:0000347
-name: ICPL reagent
+name: obsolete ICPL reagent
 def: "OBSOLETE. Use ICPL (PRIDE:0000321) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000321
@@ -3675,7 +3675,7 @@ is_a: EFO:0009090 ! enrichment process
 [Term]
 id: PRIDE:0000586
 name: Enrichment method
-def: "Enrichment of specific post-translational modifications" [PRIDE:PRIDE]
+def: "The specific method or technique used for enrichment of post-translational modifications" [PRIDE:PRIDE]
 is_a: PRIDE:0000585 ! Enrichment
 
 [Term]
@@ -4068,7 +4068,7 @@ relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000634
-name: TMT134
+name: obsolete TMT134
 def: "OBSOLETE. Use TMT134N (PRIDE:0000643) instead." [PRIDE:PRIDE]
 is_obsolete: true
 replaced_by: PRIDE:0000643
@@ -4319,7 +4319,6 @@ is_a: UBERON:0005409 ! gastrointestinal system
 id: PRIDE:0000675
 name: sample name
 def: "A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. MIXS:0001107" [PRIDE:PRIDE]
-synonym: "sample name" EXACT []
 is_a: NCIT:C25507 ! Data Field
 relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
 relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
@@ -4329,7 +4328,6 @@ relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
 id: PRIDE:0000676
 name: project name
 def: "Name of the project within which the sequencing was organized. MIXS:0000092" [PRIDE:PRIDE]
-synonym: "project name" EXACT []
 is_a: NCIT:C25507 ! Data Field
 relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
 relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
