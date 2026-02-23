@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 21:02:2026 10:00
-data-version: releases/2026-02-21
+date: 23:02:2026 10:00
+data-version: releases/2026-02-23
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -2063,7 +2063,7 @@ name: TMT
 def: "Tandem Mass Tag is a MS2 based isotope labeling quantification technique" [PRIDE:PRIDE]
 synonym: "Tandem Mass Tag" EXACT [PRIDE]
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000315
@@ -2071,7 +2071,7 @@ name: SILAC
 def: "Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification" [PRIDE:PRIDE]
 synonym: "Stable isotope labeling with amino acids in cell culture" EXACT [PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000316
@@ -2098,7 +2098,7 @@ name: ICAT
 def: "Isotope-Coded Affinity Tags is an isotope labeling quantification technique and uses tags that consist of three elements" [PRIDE:PRIDE]
 synonym: "Isotope-Coded Affinity Tags" EXACT [PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000320
@@ -2112,7 +2112,7 @@ name: ICPL
 def: "Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses" [PRIDE:PRIDE]
 synonym: "Isotope-coded protein label" EXACT [PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000322
@@ -3133,7 +3133,7 @@ id: PRIDE:0000513
 name: Dimethyl Labeling
 def: "Dimethyl Labeling (DML)" [PRIDE:PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000514
@@ -3304,7 +3304,7 @@ def: "Isobaric Tags for Relative and Absolute Quantitation, an MS2 based isotope
 synonym: "iTRAQ" EXACT [PRIDE]
 synonym: "Isobaric Tags for Relative and Absolute Quantitation" EXACT [PRIDE]
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000531
@@ -3611,7 +3611,7 @@ is_a: PRIDE:0000020 ! Depletion
 id: MS:1002038
 name: label free sample
 def: "A sample that has not been labelled or modified" [PRIDE:PRIDE]
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000580
@@ -3767,7 +3767,7 @@ is_a: PRIDE:0000592 ! ETciD
 id: PRIDE:0000597
 name: metabolic label
 def: "Metabolic label" [PRIDE:PRIDE]
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000598
@@ -5399,7 +5399,7 @@ id: PRIDE:0000846
 name: mTRAQ
 def: "mTRAQ is a non-isobaric mass difference labeling technique for multiplexed quantification" [PRIDE:PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
-is_a: PRIDE:0000514 ! Quantification channel label
+is_a: PRIDE:0000514 ! Label
 
 [Term]
 id: PRIDE:0000847
