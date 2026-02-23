@@ -4,5 +4,6 @@
 /pride_tmp.owl
 /report.tsv
 .cursor/
+.claude/
 .DS_Store
 site/

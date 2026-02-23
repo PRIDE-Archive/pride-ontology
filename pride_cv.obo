@@ -2220,6 +2220,7 @@ name: ICPL0
 def: "ICPL channel 0, the light isotopic label providing a reference point for quantitative proteomic analyses" [PRIDE:PRIDE]
 synonym: "ICPL 0 reagent" EXACT [PRIDE]
 is_a: PRIDE:0000321 ! ICPL
+relationship: part_of PRIDE:0000883 ! ICPL4PLEX
 
 [Term]
 id: PRIDE:0000349
@@ -2227,6 +2228,7 @@ name: ICPL4
 def: "ICPL channel 4, mass shift of approximately 4.0251 Da per labeled amino acid compared to ICPL0" [PRIDE:PRIDE]
 synonym: "ICPL 4 reagent" EXACT [PRIDE]
 is_a: PRIDE:0000321 ! ICPL
+relationship: part_of PRIDE:0000883 ! ICPL4PLEX
 
 [Term]
 id: PRIDE:0000350
@@ -2234,12 +2236,26 @@ name: ICPL6
 def: "ICPL channel 6, mass shift of approximately 6.0204 Da per labeled amino group" [PRIDE:PRIDE]
 synonym: "ICPL 6 reagent" EXACT [PRIDE]
 is_a: PRIDE:0000321 ! ICPL
+relationship: part_of PRIDE:0000883 ! ICPL4PLEX
 
 [Term]
 id: PRIDE:0000351
 name: ICPL10
 def: "ICPL channel 10, mass shift of approximately 10 Da per labeled amino group" [PRIDE:PRIDE]
 synonym: "ICPL 10 reagent" EXACT [PRIDE]
+is_a: PRIDE:0000321 ! ICPL
+relationship: part_of PRIDE:0000883 ! ICPL4PLEX
+
+[Term]
+id: PRIDE:0000882
+name: ICAT2PLEX
+def: "ICAT 2-plex labeling kit has 2 channels (heavy, light)" [PRIDE:PRIDE]
+is_a: PRIDE:0000319 ! ICAT
+
+[Term]
+id: PRIDE:0000883
+name: ICPL4PLEX
+def: "ICPL 4-plex labeling kit has 4 channels (ICPL0, ICPL4, ICPL6, ICPL10)" [PRIDE:PRIDE]
 is_a: PRIDE:0000321 ! ICPL
 
 [Term]
@@ -2384,7 +2400,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 [Term]
 id: PRIDE:0000398
 name: No PTMs are included in the dataset
-def: "No post-translational-modifications are been included in the identified peptides of one dataset" [PRIDE:PRIDE]
+def: "No post-translational-modifications have been included in the identified peptides of one dataset" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
@@ -2857,25 +2873,25 @@ is_a: BFO:0000001 ! entity
 [Term]
 id: PRIDE:0000471
 name: MS File Properties
-def: "Properties for MS , Peaks files" [PRIDE:PRIDE]
+def: "Properties for MS and Peaks files" [PRIDE:PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
 id: PRIDE:0000472
 name: MS min charge
-def: "Minimum charge for all precursor in the file" [PRIDE:PRIDE]
+def: "Minimum charge for all precursors in the file" [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
 id: PRIDE:0000473
 name: MS max charge
-def: "Maximum charge for all precursor in the file" [PRIDE:PRIDE]
+def: "Maximum charge for all precursors in the file" [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
 id: PRIDE:0000474
 name: MS min RT
-def: "Minimum retention time in the File" [PRIDE:PRIDE]
+def: "Minimum retention time in the file" [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
@@ -3068,7 +3084,7 @@ is_a: PRIDE:0000485 ! Global result parameters
 id: PRIDE:0000505
 name: Individual Accession
 def: "Accession or Code of the individual in the sample" [PRIDE:PRIDE]
-is_a: PRIDE:0000017 !  Sample description additional parameter
+is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
 id: PRIDE:0000506
@@ -3355,12 +3371,14 @@ id: PRIDE:0000541
 name: ICAT heavy
 def: "ICAT heavy" [PRIDE:PRIDE]
 is_a: PRIDE:0000319 ! ICAT
+relationship: part_of PRIDE:0000882 ! ICAT2PLEX
 
 [Term]
 id: PRIDE:0000542
 name: ICAT light
 def: "ICAT light" [PRIDE:PRIDE]
 is_a: PRIDE:0000319 ! ICAT
+relationship: part_of PRIDE:0000882 ! ICAT2PLEX
 
 [Term]
 id: PRIDE:0000543
@@ -3657,7 +3675,7 @@ is_a: EFO:0009090 ! enrichment process
 [Term]
 id: PRIDE:0000586
 name: Enrichment method
-def: "Enrichment method Enrichment of specific post-translational modifications" [PRIDE:PRIDE]
+def: "Enrichment of specific post-translational modifications" [PRIDE:PRIDE]
 is_a: PRIDE:0000585 ! Enrichment
 
 [Term]
@@ -3857,19 +3875,19 @@ is_a: PRIDE:0000326 ! SILAC light
 id: PRIDE:0000615
 name: SILAC heavy R:13C(6)15N(4)
 def: "The heavy amino acid arginine used in SILAC experiments, using the following isotopes:13C(6)15N(4)" [PRIDE:PRIDE]
-is_a: PRIDE:0000325 !  SILAC heavy
+is_a: PRIDE:0000325 ! SILAC heavy
 
 [Term]
 id: PRIDE:0000616
 name: SILAC heavy L:13C(6)
 def: "The heavy amino acid leucine used in SILAC experiments, using the following isotopes: 13C(6)" [PRIDE:PRIDE]
-is_a: PRIDE:0000325 !  SILAC heavy
+is_a: PRIDE:0000325 ! SILAC heavy
 
 [Term]
 id: PRIDE:0000617
 name: SILAC heavy K:13C(6)15N(2)
 def: "The heavy amino acid lysine used in SILAC experiments, using the following isotopes:13C(6)15N(2)" [PRIDE:PRIDE]
-is_a: PRIDE:0000325 !  SILAC heavy
+is_a: PRIDE:0000325 ! SILAC heavy
 
 [Term]
 id: PRIDE:0000618
@@ -3884,21 +3902,101 @@ def: "The medium amino acid lysine used in SILAC experiments, using the followin
 is_a: PRIDE:0000327 ! SILAC medium
 
 [Term]
+id: PRIDE:0000879
+name: SILAC heavy P:13C(5)
+def: "The heavy amino acid proline used in SILAC experiments, using the following isotopes: 13C(5)" [PRIDE:PRIDE]
+is_a: PRIDE:0000325 ! SILAC heavy
+
+[Term]
+id: PRIDE:0000880
+name: SILAC medium L:13C(6)
+def: "The medium amino acid leucine used in SILAC experiments, using the following isotopes: 13C(6)" [PRIDE:PRIDE]
+is_a: PRIDE:0000327 ! SILAC medium
+
+[Term]
+id: PRIDE:0000881
+name: SILAC medium P:12C(5)2H(6)
+def: "The medium amino acid proline used in SILAC experiments, using the following isotopes: 12C(5)2H(6)" [PRIDE:PRIDE]
+is_a: PRIDE:0000327 ! SILAC medium
+
+[Term]
 id: PRIDE:0000620
 name: 15N
-def: "Metabolic label 15N" [PRIDE:PRIDE]
+def: "The 15N metabolic labeling quantification method uses the incorporation of nitrogen-15 stable isotope into proteins for relative quantification" [PRIDE:PRIDE]
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
 is_a: PRIDE:0000597 ! metabolic label
 
 [Term]
 id: PRIDE:0000621
 name: 13C
-def: "Metabolic label 13C" [PRIDE:PRIDE]
+def: "The 13C metabolic labeling quantification method uses the incorporation of carbon-13 stable isotope into proteins for relative quantification" [PRIDE:PRIDE]
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
 is_a: PRIDE:0000597 ! metabolic label
+
+[Term]
+id: PRIDE:0000884
+name: 15N heavy
+def: "The heavy labeled sample in a 15N metabolic labeling experiment, containing proteins with incorporated nitrogen-15" [PRIDE:PRIDE]
+is_a: PRIDE:0000620 ! 15N
+relationship: part_of PRIDE:0000890 ! 15N2PLEX
+
+[Term]
+id: PRIDE:0000885
+name: 15N light
+def: "The light unlabeled sample in a 15N metabolic labeling experiment, containing proteins with natural nitrogen-14" [PRIDE:PRIDE]
+is_a: PRIDE:0000620 ! 15N
+relationship: part_of PRIDE:0000890 ! 15N2PLEX
+
+[Term]
+id: PRIDE:0000886
+name: 13C heavy
+def: "The heavy labeled sample in a 13C metabolic labeling experiment, containing proteins with incorporated carbon-13" [PRIDE:PRIDE]
+is_a: PRIDE:0000621 ! 13C
+relationship: part_of PRIDE:0000891 ! 13C2PLEX
+
+[Term]
+id: PRIDE:0000887
+name: 13C light
+def: "The light unlabeled sample in a 13C metabolic labeling experiment, containing proteins with natural carbon-12" [PRIDE:PRIDE]
+is_a: PRIDE:0000621 ! 13C
+relationship: part_of PRIDE:0000891 ! 13C2PLEX
+
+[Term]
+id: PRIDE:0000888
+name: 18O heavy
+def: "The heavy labeled sample in an 18O labeling experiment, containing peptides with incorporated oxygen-18" [PRIDE:PRIDE]
+is_a: PRIDE:0000318 ! 18O
+relationship: part_of PRIDE:0000892 ! 18O2PLEX
+
+[Term]
+id: PRIDE:0000889
+name: 18O light
+def: "The light unlabeled sample in an 18O labeling experiment, containing peptides with natural oxygen-16" [PRIDE:PRIDE]
+is_a: PRIDE:0000318 ! 18O
+relationship: part_of PRIDE:0000892 ! 18O2PLEX
+
+[Term]
+id: PRIDE:0000890
+name: 15N2PLEX
+def: "15N 2-plex metabolic labeling has 2 channels (heavy, light)" [PRIDE:PRIDE]
+is_a: PRIDE:0000620 ! 15N
+
+[Term]
+id: PRIDE:0000891
+name: 13C2PLEX
+def: "13C 2-plex metabolic labeling has 2 channels (heavy, light)" [PRIDE:PRIDE]
+is_a: PRIDE:0000621 ! 13C
+
+[Term]
+id: PRIDE:0000892
+name: 18O2PLEX
+def: "18O 2-plex labeling has 2 channels (heavy, light)" [PRIDE:PRIDE]
+is_a: PRIDE:0000318 ! 18O
 
 [Term]
 id: PRIDE:0000623
 name: source name
-def: "Reference to the Sample. This term is use for cross-reference samples in SDRF for proteomics" [PRIDE:PRIDE]
+def: "Reference to the Sample. This term is used for cross-reference samples in SDRF for proteomics" [PRIDE:PRIDE]
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
@@ -4139,8 +4237,8 @@ is_a: PRIDE:0000551 ! Separation method
 id: PRIDE:0000662
 name: SelexION Separation Method
 def: "SelexION differential mobility separation device" [PRIDE:PRIDE]
-is_a: PRIDE:0000660 ! Ion Mobility Spectrometry
-is_a: PRIDE:0000661 ! Differential mobility spectrometry
+is_a: PRIDE:0000660 ! Ion Mobility Separation
+is_a: PRIDE:0000661 ! Differential mobility Separation
 
 [Term]
 id: PRIDE:0000663
@@ -4158,7 +4256,7 @@ is_a: PRIDE:0000663 ! technology type
 id: PRIDE:0000665
 name: Glycoproteomics
 def: "Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications" [PRIDE:PRIDE]
-is_a: PRIDE:0000457! Experiment Type
+is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
 id: PRIDE:0000666
@@ -5222,13 +5320,13 @@ is_a: PRIDE:0000470 ! File Properties
 [Term]
 id: PRIDE:0000835
 name: cellosaurus accession
-def: "An accession to a cellosaurus cell line that could be use to annotate SDRF samples" [PRIDE:PRIDE]
+def: "An accession to a cellosaurus cell line that could be used to annotate SDRF samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
 id: PRIDE:0000836
 name: cellosaurus name
-def: "A name to a cellosaurus cell line that could be use to annotate SDRF samples" [PRIDE:PRIDE]
+def: "A name to a cellosaurus cell line that could be used to annotate SDRF samples" [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
@@ -5258,12 +5356,14 @@ is_a: EFO:0009090 ! enrichment process
 id: PRIDE:0000839
 name: sdrf version
 def: "The version of the SDRF-Proteomics specification used to annotate the file, following semantic versioning format (e.g., v1.1.0)" [PRIDE:PRIDE]
+synonym: "sdrf_version" EXACT [PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
 id: PRIDE:0000840
 name: sdrf annotation tool
 def: "The software tool, script, or manual curation method used to generate or annotate SDRF metadata and column values" [PRIDE:PRIDE]
+synonym: "annotation_tool" EXACT [PRIDE]
 is_a: PRIDE:0000470 ! File Properties
 
 [Term]
