@@ -25,6 +25,12 @@ property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrar
 property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000829
 ontology: pride
 
+[Typedef]
+id: part_of
+name: part_of
+xref: BFO:0000050
+is_transitive: true
+
 [Term]
 id: EFO:0002755
 name: diet
@@ -2047,8 +2053,9 @@ is_a: PRIDE:0000309 ! Gel-free quantification method
 [Term]
 id: PRIDE:0000313
 name: iTRAQ
-def: "Quantification technique developed by Applied Biosystems using various reporter ions that can be detected at MS2 level" [PRIDE:PRIDE]
-is_a: PRIDE:0000317 ! MS2 based isotope labeling
+def: "OBSOLETE. Use ITRAQ (PRIDE:0000530) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000530
 
 [Term]
 id: PRIDE:0000314
@@ -2105,6 +2112,7 @@ name: ICPL
 def: "Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses" [PRIDE:PRIDE]
 synonym: "Isotope-coded protein label" EXACT [PRIDE]
 is_a: PRIDE:0000316 ! MS1 based isotope labeling
+is_a: PRIDE:0000514 ! Quantification channel label
 
 [Term]
 id: PRIDE:0000322
@@ -2131,34 +2139,33 @@ is_a: PRIDE:0000391 ! Quantification parameter
 id: PRIDE:0000325
 name: SILAC heavy
 def: "The heavy label used in SILAC experiments" [PRIDE:PRIDE]
-is_a: PRIDE:0000328 ! SILAC reagent
 is_a: PRIDE:0000315 ! SILAC
 
 [Term]
 id: PRIDE:0000326
 name: SILAC light
 def: "The light reagent used in SILAC experiments" [PRIDE:PRIDE]
-is_a: PRIDE:0000328 ! SILAC reagent
 is_a: PRIDE:0000315 ! SILAC
 
 [Term]
 id: PRIDE:0000327
 name: SILAC medium
 def: "The medium weight reagent used in SILAC experiments" [PRIDE:PRIDE]
-is_a: PRIDE:0000328 ! SILAC reagent
 is_a: PRIDE:0000315 ! SILAC
 
 [Term]
 id: PRIDE:0000328
 name: SILAC reagent
-def: "Reagent used in SILAC labeling" [PRIDE:PRIDE]
-is_a: PRIDE:0000433 ! Reagents used in Labeled Method
+def: "OBSOLETE. Use SILAC (PRIDE:0000315) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000315
 
 [Term]
 id: PRIDE:0000329
 name: iTRAQ reagent
-def: "Reagent used in iTRAQ experiments" [PRIDE:PRIDE]
-is_a: PRIDE:0000433 ! Reagents used in Labeled Method
+def: "OBSOLETE. Use ITRAQ (PRIDE:0000530) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000530
 
 [Term]
 id: PRIDE:0000330
@@ -2175,56 +2182,65 @@ is_a: PRIDE:0000330 ! Arbitrary quantification unit
 [Term]
 id: PRIDE:0000337
 name: TMT reagent
-def: "Reagent used in TMT experiments" [PRIDE:PRIDE]
-is_a: PRIDE:0000433 ! Reagents used in Labeled Method
+def: "OBSOLETE. Use TMT (PRIDE:0000314) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000314
 
 [Term]
 id: PRIDE:0000344
 name: ICAT reagent
-def: "Reagent used in ICAT experiments" [PRIDE:PRIDE]
-is_a: PRIDE:0000433 ! Reagents used in Labeled Method
+def: "OBSOLETE. Use ICAT (PRIDE:0000319) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000319
 
 [Term]
 id: PRIDE:0000345
 name: ICAT light reagent
-def: "The ICAT light reagent is a chemical reagent that labels proteins for comparison with heavy reagents" [PRIDE:PRIDE]
-is_a: PRIDE:0000344 ! ICAT reagent
+def: "OBSOLETE. Use ICAT light (PRIDE:0000542) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000542
 
 [Term]
 id: PRIDE:0000346
 name: ICAT heavy reagent
-def: "The ICAT heavy reagent is a chemical reagent used to label proteins for protein profiling" [PRIDE:PRIDE]
-is_a: PRIDE:0000344 ! ICAT reagent
+def: "OBSOLETE. Use ICAT heavy (PRIDE:0000541) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000541
 
 [Term]
 id: PRIDE:0000347
 name: ICPL reagent
-def: "Reagent used in ICPL experiments" [PRIDE:PRIDE]
-is_a: PRIDE:0000433 ! Reagents used in Labeled Method
+def: "OBSOLETE. Use ICPL (PRIDE:0000321) instead." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000321
 
 [Term]
 id: PRIDE:0000348
-name: ICPL 0 reagent
-def: "ICPL_0 reagent is a crucial component in the ICPL methodology, serving as the light isotopic label that provides a reference point for quantitative proteomic analyses" [PRIDE:PRIDE]
-is_a: PRIDE:0000347 ! ICPL reagent
+name: ICPL0
+def: "ICPL channel 0, the light isotopic label providing a reference point for quantitative proteomic analyses" [PRIDE:PRIDE]
+synonym: "ICPL 0 reagent" EXACT [PRIDE]
+is_a: PRIDE:0000321 ! ICPL
 
 [Term]
 id: PRIDE:0000349
-name: ICPL 4 reagent
-def: "ICPLn4 reagent is a specific labeling compound that incorporates four deuterium (^2H) atoms, resulting in a mass shift of approximately 4.0251 Da per labeled amino acid compared to the light ICPL_0 reagent" [PRIDE:PRIDE]
-is_a: PRIDE:0000347 ! ICPL reagent
+name: ICPL4
+def: "ICPL channel 4, mass shift of approximately 4.0251 Da per labeled amino acid compared to ICPL0" [PRIDE:PRIDE]
+synonym: "ICPL 4 reagent" EXACT [PRIDE]
+is_a: PRIDE:0000321 ! ICPL
 
 [Term]
 id: PRIDE:0000350
-name: ICPL 6 reagent
-def: "The ICPL 6 reagent is a labeling compounds, designed to introduce a mass shift of approximately 6.0204 Da per labeled amino group" [PRIDE:PRIDE]
-is_a: PRIDE:0000347 ! ICPL reagent
+name: ICPL6
+def: "ICPL channel 6, mass shift of approximately 6.0204 Da per labeled amino group" [PRIDE:PRIDE]
+synonym: "ICPL 6 reagent" EXACT [PRIDE]
+is_a: PRIDE:0000321 ! ICPL
 
 [Term]
 id: PRIDE:0000351
-name: ICPL 10 reagent
-def: "The ICPL 10 reagent is a labeling compounds, designed to introduce a mass shift of approximately 10 Da per labeled amino group" [PRIDE:PRIDE]
-is_a: PRIDE:0000347 ! ICPL reagent
+name: ICPL10
+def: "ICPL channel 10, mass shift of approximately 10 Da per labeled amino group" [PRIDE:PRIDE]
+synonym: "ICPL 10 reagent" EXACT [PRIDE]
+is_a: PRIDE:0000321 ! ICPL
 
 [Term]
 id: PRIDE:0000352
@@ -3114,212 +3130,237 @@ is_a: PRIDE:0000017 ! Sample description additional parameter
 id: PRIDE:0000516
 name: TMT126
 def: "TMT126" [PRIDE:PRIDE]
-is_a: PRIDE:0000666 ! TMT6PLEX
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000666 ! TMT6PLEX
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
 
 [Term]
 id: PRIDE:0000517
 name: TMT127
 def: "TMT127" [PRIDE:PRIDE]
-is_a: PRIDE:0000666 ! TMT6PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000666 ! TMT6PLEX
 
 [Term]
 id: PRIDE:0000518
 name: TMT127C
 def: "TMT127C" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000519
 name: TMT127N
 def: "TMT127N" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000520
 name: TMT128
 def: "TMT128" [PRIDE:PRIDE]
-is_a: PRIDE:0000666 ! TMT6PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000666 ! TMT6PLEX
 
 [Term]
 id: PRIDE:0000521
 name: TMT128C
 def: "TMT128C" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000522
 name: TMT128N
 def: "TMT128N" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000523
 name: TMT129
 def: "TMT129" [PRIDE:PRIDE]
-is_a: PRIDE:0000666 ! TMT6PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000666 ! TMT6PLEX
 
 [Term]
 id: PRIDE:0000524
 name: TMT129C
 def: "TMT129C" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000525
 name: TMT129N
 def: "TMT129N" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000526
 name: TMT130
 def: "TMT130" [PRIDE:PRIDE]
-is_a: PRIDE:0000666 ! TMT6PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000666 ! TMT6PLEX
 
 [Term]
 id: PRIDE:0000527
 name: TMT130C
 def: "TMT130C" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000528
 name: TMT130N
 def: "TMT130N" [PRIDE:PRIDE]
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000529
 name: TMT131
 def: "TMT131" [PRIDE:PRIDE]
-is_a: PRIDE:0000666 ! TMT6PLEX
-is_a: PRIDE:0000667 ! TMT10PLEX
-is_a: PRIDE:0000858 ! TMT11PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000666 ! TMT6PLEX
+relationship: part_of PRIDE:0000667 ! TMT10PLEX
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
 
 [Term]
 id: PRIDE:0000530
 name: ITRAQ
-def: "ITRAQ channel label" [PRIDE:PRIDE]
+def: "Isobaric Tags for Relative and Absolute Quantitation, an MS2 based isotope labeling quantification technique using reporter ions" [PRIDE:PRIDE]
+synonym: "iTRAQ" EXACT [PRIDE]
+synonym: "Isobaric Tags for Relative and Absolute Quantitation" EXACT [PRIDE]
+is_a: PRIDE:0000317 ! MS2 based isotope labeling
 is_a: PRIDE:0000514 ! Quantification channel label
 
 [Term]
 id: PRIDE:0000531
 name: ITRAQ113
 def: "ITRAQ113 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000532
 name: ITRAQ114
 def: "ITRAQ114 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000856 ! ITRAQ4PLEX
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000856 ! ITRAQ4PLEX
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000533
 name: ITRAQ115
 def: "ITRAQ115 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000856 ! ITRAQ4PLEX
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000856 ! ITRAQ4PLEX
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000534
 name: ITRAQ116
 def: "ITRAQ116 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000856 ! ITRAQ4PLEX
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000856 ! ITRAQ4PLEX
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000535
 name: ITRAQ117
 def: "ITRAQ117 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000856 ! ITRAQ4PLEX
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000856 ! ITRAQ4PLEX
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000536
 name: ITRAQ118
 def: "ITRAQ118 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000537
 name: ITRAQ119
 def: "ITRAQ119 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000538
 name: ITRAQ121
 def: "ITRAQ121 channel" [PRIDE:PRIDE]
-is_a: PRIDE:0000857 ! ITRAQ8PLEX
+is_a: PRIDE:0000530 ! ITRAQ
+relationship: part_of PRIDE:0000857 ! ITRAQ8PLEX
 
 [Term]
 id: PRIDE:0000541
 name: ICAT heavy
 def: "ICAT heavy" [PRIDE:PRIDE]
-is_a: PRIDE:0000319 ! ICAT channel label
+is_a: PRIDE:0000319 ! ICAT
 
 [Term]
 id: PRIDE:0000542
 name: ICAT light
 def: "ICAT light" [PRIDE:PRIDE]
-is_a: PRIDE:0000319 ! ICAT channel label
+is_a: PRIDE:0000319 ! ICAT
 
 [Term]
 id: PRIDE:0000543
@@ -3558,42 +3599,46 @@ is_a: PRIDE:0000514 ! Quantification channel label
 id: PRIDE:0000580
 name: TMT131N
 def: "TMT131N" [PRIDE:PRIDE]
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000581
 name: TMT131C
 def: "TMT131C" [PRIDE:PRIDE]
-is_a: PRIDE:0000858 ! TMT11PLEX
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000858 ! TMT11PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000582
 name: TMT132N
 def: "TMT132N" [PRIDE:PRIDE]
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000583
 name: TMT132C
 def: "TMT132C" [PRIDE:PRIDE]
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000584
@@ -3905,21 +3950,23 @@ is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
 id: PRIDE:0000632
 name: TMT133N
 def: "TMT133N" [PRIDE:PRIDE]
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000633
 name: TMT133C
 def: "TMT133C" [PRIDE:PRIDE]
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000634
@@ -3974,20 +4021,22 @@ is_a: PRIDE:0000639 ! Somalogic instrument model
 id: PRIDE:0000642
 name: TMT134C
 def: "TMT134C" [PRIDE:PRIDE]
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000643
 name: TMT134N
 def: "TMT134N" [PRIDE:PRIDE]
+is_a: PRIDE:0000314 ! TMT
 synonym: "TMT134" EXACT [PRIDE]
-is_a: PRIDE:0000668 ! TMT16PLEX
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+relationship: part_of PRIDE:0000668 ! TMT16PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000644
@@ -4139,9 +4188,10 @@ is_a: PRIDE:0000314 ! TMT
 id: PRIDE:0000670
 name: TMT135N
 def: "TMT135N" [PRIDE:PRIDE]
+is_a: PRIDE:0000314 ! TMT
 synonym: "TMT135" EXACT []
-is_a: PRIDE:0000669 ! TMT18PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+relationship: part_of PRIDE:0000669 ! TMT18PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000671
@@ -5263,54 +5313,62 @@ is_a: PRIDE:0000846 ! mTRAQ
 id: PRIDE:0000848
 name: DIMETHYL0
 def: "Dimethyl channel 0, base mass 28.0313 Da, delta 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000843 ! DIMETHYL2PLEX
-is_a: PRIDE:0000844 ! DIMETHYL3PLEX
-is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+relationship: part_of PRIDE:0000843 ! DIMETHYL2PLEX
+relationship: part_of PRIDE:0000844 ! DIMETHYL3PLEX
+relationship: part_of PRIDE:0000845 ! DIMETHYL5PLEX
 
 [Term]
 id: PRIDE:0000849
 name: DIMETHYL2
 def: "Dimethyl channel 2, delta +2.0126 Da from channel 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000843 ! DIMETHYL2PLEX
-is_a: PRIDE:0000844 ! DIMETHYL3PLEX
-is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+relationship: part_of PRIDE:0000843 ! DIMETHYL2PLEX
+relationship: part_of PRIDE:0000844 ! DIMETHYL3PLEX
+relationship: part_of PRIDE:0000845 ! DIMETHYL5PLEX
 
 [Term]
 id: PRIDE:0000850
 name: DIMETHYL4
 def: "Dimethyl channel 4, delta +4.0251 Da from channel 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000844 ! DIMETHYL3PLEX
-is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+relationship: part_of PRIDE:0000844 ! DIMETHYL3PLEX
+relationship: part_of PRIDE:0000845 ! DIMETHYL5PLEX
 
 [Term]
 id: PRIDE:0000851
 name: DIMETHYL6
 def: "Dimethyl channel 6, delta +6.0377 Da from channel 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+relationship: part_of PRIDE:0000845 ! DIMETHYL5PLEX
 
 [Term]
 id: PRIDE:0000852
 name: DIMETHYL8
 def: "Dimethyl channel 8, delta +8.0444 Da from channel 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000845 ! DIMETHYL5PLEX
+is_a: PRIDE:0000513 ! Dimethyl Labeling
+relationship: part_of PRIDE:0000845 ! DIMETHYL5PLEX
 
 [Term]
 id: PRIDE:0000853
 name: MTRAQ0
 def: "mTRAQ reagent channel 0, base mass 140.0950 Da, delta 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000847 ! MTRAQ3PLEX
+is_a: PRIDE:0000846 ! mTRAQ
+relationship: part_of PRIDE:0000847 ! MTRAQ3PLEX
 
 [Term]
 id: PRIDE:0000854
 name: MTRAQ4
 def: "mTRAQ reagent channel 4, delta +4.0071 Da from channel 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000847 ! MTRAQ3PLEX
+is_a: PRIDE:0000846 ! mTRAQ
+relationship: part_of PRIDE:0000847 ! MTRAQ3PLEX
 
 [Term]
 id: PRIDE:0000855
 name: MTRAQ8
 def: "mTRAQ reagent channel 8, delta +8.0142 Da from channel 0" [PRIDE:PRIDE]
-is_a: PRIDE:0000847 ! MTRAQ3PLEX
+is_a: PRIDE:0000846 ! mTRAQ
+relationship: part_of PRIDE:0000847 ! MTRAQ3PLEX
 
 [Term]
 id: PRIDE:0000856
@@ -5352,134 +5410,151 @@ is_a: PRIDE:0000314 ! TMT
 id: PRIDE:0000861
 name: TMT127D
 def: "TMTpro deuterated channel 127D" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000862
 name: TMT128ND
 def: "TMTpro deuterated channel 128ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000863
 name: TMT128CD
 def: "TMTpro deuterated channel 128CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000864
 name: TMT129ND
 def: "TMTpro deuterated channel 129ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000865
 name: TMT129CD
 def: "TMTpro deuterated channel 129CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000866
 name: TMT130ND
 def: "TMTpro deuterated channel 130ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000867
 name: TMT130CD
 def: "TMTpro deuterated channel 130CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000868
 name: TMT131ND
 def: "TMTpro deuterated channel 131ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000869
 name: TMT131CD
 def: "TMTpro deuterated channel 131CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000870
 name: TMT132ND
 def: "TMTpro deuterated channel 132ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000871
 name: TMT132CD
 def: "TMTpro deuterated channel 132CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000872
 name: TMT133ND
 def: "TMTpro deuterated channel 133ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000873
 name: TMT133CD
 def: "TMTpro deuterated channel 133CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000874
 name: TMT134ND
 def: "TMTpro deuterated channel 134ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000875
 name: TMT134CD
 def: "TMTpro deuterated channel 134CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000876
 name: TMT135ND
 def: "TMTpro deuterated channel 135ND" [PRIDE:PRIDE]
-is_a: PRIDE:0000859 ! TMT32PLEX
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000859 ! TMT32PLEX
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
 [Term]
 id: PRIDE:0000877
 name: TMT135CD
 def: "TMTpro deuterated channel 135CD" [PRIDE:PRIDE]
-is_a: PRIDE:0000878 ! TMT34PLEX
-is_a: PRIDE:0000860 ! TMT35PLEX
+is_a: PRIDE:0000314 ! TMT
+relationship: part_of PRIDE:0000878 ! TMT34PLEX
+relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
