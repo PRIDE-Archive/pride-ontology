@@ -2060,7 +2060,7 @@ replaced_by: PRIDE:0000530
 [Term]
 id: PRIDE:0000314
 name: TMT
-def: "Tandem Mass Tag is a MS2 based isotope labeling quantification technique" [PRIDE:PRIDE]
+def: "Tandem Mass Tag is an MSn based isobaric labeling quantification technique" [PRIDE:PRIDE]
 synonym: "Tandem Mass Tag" EXACT [PRIDE]
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 is_a: PRIDE:0000514 ! Label
@@ -3300,7 +3300,7 @@ relationship: part_of PRIDE:0000858 ! TMT11PLEX
 [Term]
 id: PRIDE:0000530
 name: ITRAQ
-def: "Isobaric Tags for Relative and Absolute Quantitation, an MS2 based isotope labeling quantification technique using reporter ions" [PRIDE:PRIDE]
+def: "Isobaric Tags for Relative and Absolute Quantitation, an MSn based isobaric labeling quantification technique using reporter ions" [PRIDE:PRIDE]
 synonym: "iTRAQ" EXACT [PRIDE]
 synonym: "Isobaric Tags for Relative and Absolute Quantitation" EXACT [PRIDE]
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
@@ -3936,42 +3936,42 @@ is_a: PRIDE:0000597 ! metabolic label
 [Term]
 id: PRIDE:0000884
 name: 15N heavy
-def: "The heavy labeled sample in a 15N metabolic labeling experiment, containing proteins with incorporated nitrogen-15" [PRIDE:PRIDE]
+def: "The heavy channel in a 15N metabolic labeling experiment, containing proteins with incorporated nitrogen-15" [PRIDE:PRIDE]
 is_a: PRIDE:0000620 ! 15N
 relationship: part_of PRIDE:0000890 ! 15N2PLEX
 
 [Term]
 id: PRIDE:0000885
 name: 15N light
-def: "The light unlabeled sample in a 15N metabolic labeling experiment, containing proteins with natural nitrogen-14" [PRIDE:PRIDE]
+def: "The light channel in a 15N metabolic labeling experiment, containing proteins with natural nitrogen-14" [PRIDE:PRIDE]
 is_a: PRIDE:0000620 ! 15N
 relationship: part_of PRIDE:0000890 ! 15N2PLEX
 
 [Term]
 id: PRIDE:0000886
 name: 13C heavy
-def: "The heavy labeled sample in a 13C metabolic labeling experiment, containing proteins with incorporated carbon-13" [PRIDE:PRIDE]
+def: "The heavy channel in a 13C metabolic labeling experiment, containing proteins with incorporated carbon-13" [PRIDE:PRIDE]
 is_a: PRIDE:0000621 ! 13C
 relationship: part_of PRIDE:0000891 ! 13C2PLEX
 
 [Term]
 id: PRIDE:0000887
 name: 13C light
-def: "The light unlabeled sample in a 13C metabolic labeling experiment, containing proteins with natural carbon-12" [PRIDE:PRIDE]
+def: "The light channel in a 13C metabolic labeling experiment, containing proteins with natural carbon-12" [PRIDE:PRIDE]
 is_a: PRIDE:0000621 ! 13C
 relationship: part_of PRIDE:0000891 ! 13C2PLEX
 
 [Term]
 id: PRIDE:0000888
 name: 18O heavy
-def: "The heavy labeled sample in an 18O labeling experiment, containing peptides with incorporated oxygen-18" [PRIDE:PRIDE]
+def: "The heavy channel in an 18O labeling experiment, containing peptides with incorporated oxygen-18" [PRIDE:PRIDE]
 is_a: PRIDE:0000318 ! 18O
 relationship: part_of PRIDE:0000892 ! 18O2PLEX
 
 [Term]
 id: PRIDE:0000889
 name: 18O light
-def: "The light unlabeled sample in an 18O labeling experiment, containing peptides with natural oxygen-16" [PRIDE:PRIDE]
+def: "The light channel in an 18O labeling experiment, containing peptides with natural oxygen-16" [PRIDE:PRIDE]
 is_a: PRIDE:0000318 ! 18O
 relationship: part_of PRIDE:0000892 ! 18O2PLEX
 
