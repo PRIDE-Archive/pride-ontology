@@ -5656,3 +5656,17 @@ is_a: PRIDE:0000314 ! TMT
 relationship: part_of PRIDE:0000878 ! TMT34PLEX
 relationship: part_of PRIDE:0000860 ! TMT35PLEX
 
+[Term]
+id: PRIDE:0000893
+name: MHC typing
+def: "MHC allelic composition of a biological sample following IPD-MHC nomenclature (https://www.ebi.ac.uk/ipd/mhc/). For human samples, use IPD-IMGT/HLA nomenclature (e.g. HLA-A*02:01)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+xref: NCIT:C71329
+
+[Term]
+id: PRIDE:0000894
+name: MHC typing method
+def: "Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing (NCIT:C101293), sequence-based typing (NCIT:C130180), PCR-SSO (NCIT:C130181), PCR-SSP (NCIT:C130179), PCR-based genotyping (NCIT:C17003), predicted from RNA-seq, inferred from mass spectrometry, or inbred strain (known genotype)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+xref: NCIT:C71329
+
