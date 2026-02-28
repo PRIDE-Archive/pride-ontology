@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-02-23/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-02-28/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000674"/>
@@ -52,7 +52,7 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>23:02:2026 10:00</oboInOwl:date>
+        <oboInOwl:date>28:02:2026 10:00</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>Yasset Perez-Riverol</oboInOwl:saved-by>
@@ -18578,7 +18578,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000893">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
-        <obo:IAO_0000115>MHC allelic composition of a biological sample following IPD-MHC nomenclature (https://www.ebi.ac.uk/ipd/mhc/). For human samples, use IPD-IMGT/HLA nomenclature (e.g. HLA-A*02:01).</obo:IAO_0000115>
+        <obo:IAO_0000115>MHC allelic composition of a biological sample following IPD-MHC nomenclature.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C71329</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000893</oboInOwl:id>
@@ -18587,7 +18587,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000893"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>MHC allelic composition of a biological sample following IPD-MHC nomenclature (https://www.ebi.ac.uk/ipd/mhc/). For human samples, use IPD-IMGT/HLA nomenclature (e.g. HLA-A*02:01).</owl:annotatedTarget>
+        <owl:annotatedTarget>MHC allelic composition of a biological sample following IPD-MHC nomenclature.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -18597,7 +18597,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000894">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
-        <obo:IAO_0000115>Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing (NCIT:C101293), sequence-based typing (NCIT:C130180), PCR-SSO (NCIT:C130181), PCR-SSP (NCIT:C130179), PCR-based genotyping (NCIT:C17003), predicted from RNA-seq, inferred from mass spectrometry, or inbred strain (known genotype).</obo:IAO_0000115>
+        <obo:IAO_0000115>Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing, sequence-based typing.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C71329</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000894</oboInOwl:id>
@@ -18606,7 +18606,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000894"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing (NCIT:C101293), sequence-based typing (NCIT:C130180), PCR-SSO (NCIT:C130181), PCR-SSP (NCIT:C130179), PCR-based genotyping (NCIT:C17003), predicted from RNA-seq, inferred from mass spectrometry, or inbred strain (known genotype).</owl:annotatedTarget>
+        <owl:annotatedTarget>Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing, sequence-based typing.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
