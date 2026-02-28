@@ -18571,6 +18571,44 @@
         <owl:annotatedTarget>18O 2-plex labeling has 2 channels (heavy, light)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000893 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000893">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
+        <obo:IAO_0000115>MHC allelic composition of a biological sample following IPD-MHC nomenclature (https://www.ebi.ac.uk/ipd/mhc/). For human samples, use IPD-IMGT/HLA nomenclature (e.g. HLA-A*02:01).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C71329</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000893</oboInOwl:id>
+        <rdfs:label>MHC typing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000893"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>MHC allelic composition of a biological sample following IPD-MHC nomenclature (https://www.ebi.ac.uk/ipd/mhc/). For human samples, use IPD-IMGT/HLA nomenclature (e.g. HLA-A*02:01).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000894 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000894">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
+        <obo:IAO_0000115>Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing (NCIT:C101293), sequence-based typing (NCIT:C130180), PCR-SSO (NCIT:C130181), PCR-SSP (NCIT:C130179), PCR-based genotyping (NCIT:C17003), predicted from RNA-seq, inferred from mass spectrometry, or inbred strain (known genotype).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C71329</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000894</oboInOwl:id>
+        <rdfs:label>MHC typing method</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000894"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing (NCIT:C101293), sequence-based typing (NCIT:C130180), PCR-SSO (NCIT:C130181), PCR-SSP (NCIT:C130179), PCR-based genotyping (NCIT:C17003), predicted from RNA-seq, inferred from mass spectrometry, or inbred strain (known genotype).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 
