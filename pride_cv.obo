@@ -6214,3 +6214,192 @@ name: nanoPOTS chip version
 def: "Version of the nanoPOTS (nanodroplet Processing in One pot for Trace Samples) chip used for single cell sample preparation (e.g., nanoPOTS v1, nanoPOTS v2, 9-well chip)." [PRIDE:PRIDE]
 is_a: PRIDE:0000980 ! single cell isolation instrument parameter
 
+[Term]
+id: PRIDE:0000986
+name: microbiome source
+def: "Source of the microbiome being studied in a metaproteomics experiment (e.g., gut microbiome, rhizosphere microbiome, oral microbiome, skin microbiome)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000987
+name: mock community
+def: "Identifier or name of the mock community standard used as a quality control reference in metaproteomics experiments (e.g., ZymoBIOMICS Microbial Community Standard, ATCC MSA-1000)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000988
+name: mock community composition
+def: "Description of the mock community composition including species and ratios used as a quality control reference in metaproteomics experiments (e.g., 8 bacteria + 2 yeasts at defined ratios)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000989
+name: expected organism list
+def: "Semicolon-separated list of organisms expected in a mock community or defined microbial mixture used in metaproteomics experiments (e.g., E. coli;B. subtilis;S. cerevisiae)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000990
+name: biomass estimation
+def: "Estimated microbial biomass in the sample used in metaproteomics experiments (e.g., 1e9 cells/g, high biomass, low biomass)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000991
+name: host contamination level
+def: "Level of host protein contamination in a metaproteomics sample, if known (e.g., low <5%, moderate 5-20%, high >20%)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000992
+name: contaminant database
+def: "Contaminant database(s) used in database search for metaproteomics experiments (e.g., cRAP, MaxQuant contaminants)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000993
+name: environmental sample type
+def: "Type of environmental sample analyzed in metaproteomics. Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. MIXS:0000014" [PRIDE:PRIDE]
+synonym: "env_medium" EXACT [GSCMIXS:0000014]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000994
+name: environmental medium
+def: "Environmental material from which the sample was obtained. Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. MIXS:0000014" [PRIDE:PRIDE]
+synonym: "env_medium" EXACT [GSCMIXS:0000014]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000995
+name: geographic location
+def: "The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list or the GAZ ontology. MIXS:0000010" [PRIDE:PRIDE]
+synonym: "geo_loc_name" EXACT [GSCMIXS:0000010]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000996
+name: collection date
+def: "The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated (ISO 8601 compliant). MIXS:0000011" [PRIDE:PRIDE]
+synonym: "collection_date" EXACT [GSCMIXS:0000011]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000997
+name: sample collection method
+def: "The method employed for collecting the sample. MIXS:0001225" [PRIDE:PRIDE]
+synonym: "samp_collect_method" EXACT [GSCMIXS:0001225]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0000998
+name: host organism
+def: "NCBI taxon id or name of the host organism from which a host-associated microbiome sample was collected (e.g. Homo sapiens, 9606). MIXS:0000250" [PRIDE:PRIDE]
+synonym: "host_taxid" EXACT [GSCMIXS:0000250]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+
+[Term]
+id: PRIDE:0000999
+name: host sex
+def: "Gender or physical sex of the host. MIXS:0000811" [PRIDE:PRIDE]
+synonym: "host_sex" EXACT [GSCMIXS:0000811]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+
+[Term]
+id: PRIDE:0001000
+name: antibiotic treatment
+def: "Information about treatment involving antibiotic administration; should include the name of antibiotic, amount administered, and treatment regimen. MIXS:0000553" [PRIDE:PRIDE]
+synonym: "host_antibiot_regm" EXACT [GSCMIXS:0000553]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+
+[Term]
+id: PRIDE:0001001
+name: soil type
+def: "Description of the soil type or classification. This field accepts terms under soil (ENVO:00001998). MIXS:0000332" [PRIDE:PRIDE]
+synonym: "soil_type" EXACT [GSCMIXS:0000332]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+
+[Term]
+id: PRIDE:0001002
+name: soil horizon
+def: "Specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath. MIXS:0001082" [PRIDE:PRIDE]
+synonym: "soil_horizon" EXACT [GSCMIXS:0001082]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+
+[Term]
+id: PRIDE:0001003
+name: vegetation
+def: "Dominant vegetation type at the sampling site in metaproteomics studies." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+
+[Term]
+id: PRIDE:0001004
+name: water body type
+def: "Type of water body from which the sample was collected (e.g. ocean, lake, river, estuary, pond)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001005
+name: sampling depth zone
+def: "Ecological depth zone of the aquatic sampling site (e.g. epipelagic, mesopelagic, bathypelagic, benthic, surface)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001006
+name: water current velocity
+def: "Water current velocity at the sampling site. Measured speed and direction of water flow. MIXS:0000051" [PRIDE:PRIDE]
+synonym: "current" EXACT [GSCMIXS:0000051]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001007
+name: total dissolved solids
+def: "Total dissolved solids (TDS) concentration in a water sample. Includes all inorganic and organic substances in solution." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+
