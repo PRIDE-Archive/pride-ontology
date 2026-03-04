@@ -6046,3 +6046,39 @@ name: metagenome accession
 def: "Accession number of the associated metagenomic database or assembly used for peptide identification in metaproteomics experiments (e.g., NCBI BioProject, MGnify, or custom metagenome-assembled genome accession)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
+[Term]
+id: PRIDE:0000980
+name: single cell isolation instrument parameter
+def: "A parameter describing the instrument or device configuration used for single cell isolation in single-cell proteomics experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000981
+name: FACS nozzle size
+def: "Nozzle diameter used for fluorescence-activated cell sorting (FACS) based single cell isolation, typically measured in micrometers (e.g., 70 um, 100 um, 130 um)." [PRIDE:PRIDE]
+is_a: PRIDE:0000980 ! single cell isolation instrument parameter
+
+[Term]
+id: PRIDE:0000982
+name: FACS sorting mode
+def: "Sorting mode used during fluorescence-activated cell sorting (FACS) for single cell isolation (e.g., single cell, purity, yield, 4-way purity)." [PRIDE:PRIDE]
+is_a: PRIDE:0000980 ! single cell isolation instrument parameter
+
+[Term]
+id: PRIDE:0000983
+name: microfluidics chip type
+def: "Type and manufacturer of the microfluidics chip used for single cell isolation and processing (e.g., Fluidigm C1, Cellenion cellenCHIP, nanowell chip)." [PRIDE:PRIDE]
+is_a: PRIDE:0000980 ! single cell isolation instrument parameter
+
+[Term]
+id: PRIDE:0000984
+name: LCM microscope model
+def: "Model of the laser capture microdissection (LCM) microscope used for single cell isolation from tissue sections (e.g., Leica LMD7, Zeiss PALM MicroBeam)." [PRIDE:PRIDE]
+is_a: PRIDE:0000980 ! single cell isolation instrument parameter
+
+[Term]
+id: PRIDE:0000985
+name: nanoPOTS chip version
+def: "Version of the nanoPOTS (nanodroplet Processing in One pot for Trace Samples) chip used for single cell sample preparation (e.g., nanoPOTS v1, nanoPOTS v2, 9-well chip)." [PRIDE:PRIDE]
+is_a: PRIDE:0000980 ! single cell isolation instrument parameter
+
