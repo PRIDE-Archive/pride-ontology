@@ -4099,21 +4099,21 @@ is_a: PRIDE:0000547 ! Instrument properties
 
 [Term]
 id: PRIDE:0000639
-name: Somalogic instrument model
-def: "Somalogic instrument model" [PRIDE:PRIDE]
-is_a: PRIDE:0000638 ! Instrument model
+name: Somalogic platform
+def: "Somalogic platform" [PRIDE:PRIDE]
+is_a: PRIDE:0000912 ! assay platform
 
 [Term]
 id: PRIDE:0000640
 name: SomaScan assay v4.0
 def: "SomaScan assay v4.0" [PRIDE:PRIDE]
-is_a: PRIDE:0000639 ! Somalogic instrument model
+is_a: PRIDE:0000639 ! Somalogic platform
 
 [Term]
 id: PRIDE:0000641
 name: SomaScan assay v4.1
 def: "SomaScan assay v4.1" [PRIDE:PRIDE]
-is_a: PRIDE:0000639 ! Somalogic instrument model
+is_a: PRIDE:0000639 ! Somalogic platform
 
 [Term]
 id: PRIDE:0000642
@@ -4187,9 +4187,9 @@ is_a: PRIDE:0000652 ! Relative quantification
 
 [Term]
 id: PRIDE:0000654
-name: Olink instrument model
-def: "Olink instrument model" [PRIDE:PRIDE]
-is_a: PRIDE:0000638 ! Instrument model
+name: Olink platform
+def: "Olink platform" [PRIDE:PRIDE]
+is_a: PRIDE:0000912 ! assay platform
 
 [Term]
 id: PRIDE:0000655
@@ -4295,13 +4295,13 @@ relationship: part_of PRIDE:0000860 ! TMT35PLEX
 id: PRIDE:0000671
 name: Olink Explore
 def: "Olink Explore is a high-throughput proteomics platform that quantifies protein biomarkers across multiple samples using proximity extension assay (PEA) technology" [PRIDE:PRIDE]
-is_a: PRIDE:0000654 ! Olink instrument model
+is_a: PRIDE:0000654 ! Olink platform
 
 [Term]
 id: PRIDE:0000672
 name: Olink Target
 def: "Olink Target is a proteomics platform designed for focused, customizable analysis of specific protein biomarker panels using proximity extension assay (PEA) technology" [PRIDE:PRIDE]
-is_a: PRIDE:0000654 ! Olink instrument model
+is_a: PRIDE:0000654 ! Olink platform
 
 [Term]
 id: PRIDE:0000673
@@ -5291,7 +5291,7 @@ is_a: ENVO:00002006 ! liquid water
 id: PRIDE:0000830
 name: Olink Reveal
 def: "Olink Reveal is an NGS-based proteomics platform that measures approximately 1,000 proteins with high sensitivity from just 4 µL of sample, using standard lab equipment, with a focus on immune and inflammation markers" [PRIDE:PRIDE]
-is_a: PRIDE:0000654 ! Olink instrument model
+is_a: PRIDE:0000654 ! Olink platform
 
 [Term]
 id: PRIDE:0000831
@@ -5669,4 +5669,380 @@ name: MHC typing method
 def: "Method used to determine MHC alleles of a biological sample. Common methods include NGS-based typing, sequence-based typing." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 xref: NCIT:C71329
+
+[Term]
+id: PRIDE:0000895
+name: sample type
+def: "Classification of the sample role in a proteomics experiment. Distinguishes experimental samples from controls, references, and other channel roles in multiplexed or plate-based experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+xref: NCIT:C210102
+
+[Term]
+id: PRIDE:0000897
+name: single cell
+def: "A sample consisting of a single isolated cell for single-cell proteomics analysis." [PRIDE:PRIDE]
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0000898
+name: multiplex sample
+def: "A sample role in multiplexed experiments (TMT, iTRAQ) or plate-based assays (Olink, SomaScan). Groups channel-specific roles like reference, bridge, carrier, pooled, and empty." [PRIDE:PRIDE]
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0000899
+name: reference
+def: "A reference sample used for normalization across multiplexed sets (TMT/iTRAQ batches) or plates. Provides a common baseline for quantitative comparison." [PRIDE:PRIDE]
+is_a: PRIDE:0000898 ! multiplex sample
+
+[Term]
+id: PRIDE:0000900
+name: bridge
+def: "A bridge sample shared across multiplexed sets or plates to enable cross-batch normalization and data integration." [PRIDE:PRIDE]
+is_a: PRIDE:0000898 ! multiplex sample
+
+[Term]
+id: PRIDE:0000901
+name: carrier
+def: "A carrier proteome sample used in carrier-assisted single-cell proteomics methods (e.g. SCoPE-MS) to boost peptide identification." [PRIDE:PRIDE]
+is_a: PRIDE:0000898 ! multiplex sample
+
+[Term]
+id: PRIDE:0000902
+name: pooled
+def: "A pooled sample created by combining material from multiple sources, used as a reference or normalization standard in multiplexed experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000898 ! multiplex sample
+
+[Term]
+id: PRIDE:0000903
+name: empty
+def: "An intentionally empty channel or well used for signal-to-noise assessment or as a blank in multiplexed experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000898 ! multiplex sample
+
+[Term]
+id: PRIDE:0000904
+name: quality control sample
+def: "A sample used for quality control purposes in a proteomics experiment. Groups various control sample types used to assess assay performance." [PRIDE:PRIDE]
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0000905
+name: negative control
+def: "A negative control sample containing no analyte of interest, used to assess background signal and non-specific binding." [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! quality control sample
+
+[Term]
+id: PRIDE:0000906
+name: positive control
+def: "A positive control sample with known analyte content, used to verify assay sensitivity and specificity." [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! quality control sample
+
+[Term]
+id: PRIDE:0000907
+name: bulk control
+def: "A bulk sample used as a control in single-cell proteomics experiments to benchmark single-cell measurements against bulk-level measurements." [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! quality control sample
+
+[Term]
+id: PRIDE:0000908
+name: standard
+def: "A calibration standard sample with known composition used for quantitative calibration of the assay." [PRIDE:PRIDE]
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0000909
+name: calibrator
+def: "An instrument or assay calibrator sample used to establish measurement accuracy and precision." [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! quality control sample
+
+[Term]
+id: PRIDE:0000910
+name: plate control
+def: "A plate-level control sample used in plate-based assays (Olink, SomaScan) to monitor intra-plate and inter-plate variability." [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! quality control sample
+
+[Term]
+id: PRIDE:0000911
+name: buffer control
+def: "A buffer-only control sample used to assess background signal from reagents and sample processing." [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! quality control sample
+
+[Term]
+id: PRIDE:0000912
+name: assay platform
+def: "The specific assay platform or instrument system used to perform a proteomics experiment, such as Olink Explore, SomaScan, or other affinity-based or mass-spectrometry-based platforms." [PRIDE:PRIDE]
+is_a: PRIDE:0000663 ! technology type
+
+[Term]
+id: PRIDE:0000913
+name: assay panel
+def: "A defined set of protein targets measured simultaneously in a proteomics assay, such as an Olink panel or SomaScan menu." [PRIDE:PRIDE]
+is_a: PRIDE:0000006 ! Experiment additional parameter
+
+[Term]
+id: PRIDE:0000914
+name: Olink panel
+def: "A panel of protein biomarkers measured using Olink proximity extension assay (PEA) technology." [PRIDE:PRIDE]
+is_a: PRIDE:0000913 ! assay panel
+
+[Term]
+id: PRIDE:0000915
+name: Olink Inflammation
+def: "Olink Target 96 Inflammation panel measuring 92 inflammation-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000916
+name: Olink Cardiovascular II
+def: "Olink Target 96 Cardiovascular II panel measuring 92 cardiovascular-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000917
+name: Olink Cardiovascular III
+def: "Olink Target 96 Cardiovascular III panel measuring 92 cardiovascular-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000918
+name: Olink Cardiometabolic
+def: "Olink Target 96 Cardiometabolic panel measuring 92 cardiometabolic-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000919
+name: Olink Immuno-Oncology
+def: "Olink Target 96 Immuno-Oncology panel measuring 92 immuno-oncology-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000920
+name: Olink Immune Response
+def: "Olink Target 96 Immune Response panel measuring 92 immune response-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000921
+name: Olink Neurology
+def: "Olink Target 96 Neurology panel measuring 92 neurology-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000922
+name: Olink Neuro Exploratory
+def: "Olink Target 96 Neuro Exploratory panel measuring 92 neurology-related protein biomarkers for exploratory research." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000923
+name: Olink Oncology II
+def: "Olink Target 96 Oncology II panel measuring 92 oncology-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000924
+name: Olink Oncology III
+def: "Olink Target 96 Oncology III panel measuring 92 oncology-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000925
+name: Olink Organ Damage
+def: "Olink Target 96 Organ Damage panel measuring 92 organ damage-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000926
+name: Olink Development
+def: "Olink Target 96 Development panel measuring 92 developmental biology-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000927
+name: Olink Metabolism
+def: "Olink Target 96 Metabolism panel measuring 92 metabolism-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000928
+name: Olink Cell Regulation
+def: "Olink Target 96 Cell Regulation panel measuring 92 cell regulation-related protein biomarkers." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000929
+name: Olink Mouse Exploratory
+def: "Olink Target 96 Mouse Exploratory panel measuring 92 mouse protein biomarkers for exploratory research." [PRIDE:PRIDE]
+is_a: PRIDE:0000914 ! Olink panel
+
+[Term]
+id: PRIDE:0000930
+name: SomaScan panel
+def: "A panel (menu) of protein targets measured using SomaLogic SomaScan aptamer-based proteomics technology." [PRIDE:PRIDE]
+is_a: PRIDE:0000913 ! assay panel
+
+[Term]
+id: PRIDE:0000931
+name: SomaScan 1.3K
+def: "SomaScan 1.3K assay menu measuring approximately 1,300 protein targets using SOMAmer reagents." [PRIDE:PRIDE]
+is_a: PRIDE:0000930 ! SomaScan panel
+
+[Term]
+id: PRIDE:0000932
+name: SomaScan Select 3.7K
+def: "SomaScan Select 3.7K assay menu measuring approximately 3,700 protein targets using SOMAmer reagents." [PRIDE:PRIDE]
+is_a: PRIDE:0000930 ! SomaScan panel
+
+[Term]
+id: PRIDE:0000933
+name: SomaScan 5K
+def: "SomaScan 5K assay menu (v4.0) measuring approximately 5,000 protein targets using SOMAmer reagents." [PRIDE:PRIDE]
+is_a: PRIDE:0000930 ! SomaScan panel
+
+[Term]
+id: PRIDE:0000934
+name: SomaScan 7K
+def: "SomaScan 7K assay menu (v4.1) measuring 7,288 protein targets using SOMAmer reagents." [PRIDE:PRIDE]
+is_a: PRIDE:0000930 ! SomaScan panel
+
+[Term]
+id: PRIDE:0000935
+name: SomaScan 11K
+def: "SomaScan 11K assay menu (v5.0) measuring 10,776 protein targets using SOMAmer reagents." [PRIDE:PRIDE]
+is_a: PRIDE:0000930 ! SomaScan panel
+
+[Term]
+id: PRIDE:0000936
+name: flow cytometry parameter
+def: "A parameter measured during flow cytometry or fluorescence-activated cell sorting (FACS) that describes a physical or optical property of individual cells." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000937
+name: forward scatter
+def: "Forward scatter (FSC) measurement from flow cytometry, representing the amount of laser light scattered at small angles as a cell passes through the beam. Used as a proxy for cell size in FACS-based single-cell isolation." [PRIDE:PRIDE]
+is_a: PRIDE:0000936 ! flow cytometry parameter
+
+[Term]
+id: PRIDE:0000938
+name: side scatter
+def: "Side scatter (SSC) measurement from flow cytometry, representing the amount of laser light scattered at approximately 90 degrees as a cell passes through the beam. Used as a proxy for cell granularity and internal complexity in FACS-based single-cell isolation." [PRIDE:PRIDE]
+is_a: PRIDE:0000936 ! flow cytometry parameter
+
+[Term]
+id: PRIDE:0000939
+name: spatial coordinates
+def: "X,Y coordinates describing the physical location of a cell or region of interest within a tissue section, used in spatially resolved single-cell proteomics experiments such as laser capture microdissection (LCM)." [PRIDE:PRIDE]
+is_a: PRIDE:0000006 ! Experiment additional parameter
+
+[Term]
+id: PRIDE:0000940
+name: enrichment marker
+def: "Markers used for cell sorting or enrichment in single-cell proteomics experiments, including surface markers, fluorescent proteins, and viability dyes with optional intensity values (e.g., CD45+, GFP+, CD34:APC-Cy7-A=276.0, PI-)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000941
+name: environmental sample
+def: "An environmental sample analyzed in metaproteomics experiments, such as soil, water, sediment, air, or biofilm collected from a natural or engineered environment." [PRIDE:PRIDE]
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0000942
+name: crosslinking sample property
+def: "A property describing experimental conditions of a chemical crosslinking reaction applied to a sample in crosslinking mass spectrometry (XL-MS) experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000943
+name: reaction time
+def: "Duration of a chemical reaction applied to a sample during sample preparation (e.g., crosslinking, labeling, digestion)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000944
+name: reaction temperature
+def: "Temperature at which a chemical reaction is carried out on a sample during sample preparation (e.g., crosslinking, labeling, digestion)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000945
+name: reagent concentration
+def: "Concentration of a chemical reagent used in sample preparation (e.g., crosslinker, labeling reagent, protease)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000946
+name: reagent to protein ratio
+def: "Molar ratio of a chemical reagent to protein in a sample preparation reaction (e.g., crosslinker-to-protein ratio, labeling reagent-to-protein ratio)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000947
+name: quenching reagent
+def: "Reagent used to stop or quench a chemical reaction during sample preparation (e.g., Tris, glycine, ammonium bicarbonate for crosslinking; hydroxylamine for TMT labeling)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000948
+name: crosslink distance
+def: "Spacer arm length of a chemical crosslinker in angstroms, defining the maximum distance between crosslinked residues." [PRIDE:PRIDE]
+synonym: "spacer arm length" EXACT []
+is_a: PRIDE:0000942 ! crosslinking sample property
+
+[Term]
+id: PRIDE:0000949
+name: crosslinking reaction time
+def: "Duration of the crosslinking reaction applied to a sample in crosslinking mass spectrometry (XL-MS) experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000942 ! crosslinking sample property
+is_a: PRIDE:0000943 ! reaction time
+
+[Term]
+id: PRIDE:0000950
+name: crosslinking temperature
+def: "Temperature during the crosslinking reaction in crosslinking mass spectrometry (XL-MS) experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000942 ! crosslinking sample property
+is_a: PRIDE:0000944 ! reaction temperature
+
+[Term]
+id: PRIDE:0000951
+name: crosslinker concentration
+def: "Concentration of crosslinking reagent used in crosslinking mass spectrometry (XL-MS) experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000942 ! crosslinking sample property
+is_a: PRIDE:0000945 ! reagent concentration
+
+[Term]
+id: PRIDE:0000952
+name: crosslinker to protein ratio
+def: "Molar ratio of crosslinker to protein in crosslinking mass spectrometry (XL-MS) experiments." [PRIDE:PRIDE]
+is_a: PRIDE:0000942 ! crosslinking sample property
+is_a: PRIDE:0000946 ! reagent to protein ratio
+
+[Term]
+id: PRIDE:0000953
+name: crosslinking quenching reagent
+def: "Reagent used to quench the crosslinking reaction (e.g., Tris, glycine, ammonium bicarbonate)." [PRIDE:PRIDE]
+is_a: PRIDE:0000942 ! crosslinking sample property
+is_a: PRIDE:0000947 ! quenching reagent
+
+[Term]
+id: PRIDE:0000954
+name: antibody enrichment
+def: "Antibody used for enrichment in proteomics experiments, such as immunoprecipitation (IP), immunoaffinity purification, or immunopeptidomics (e.g., anti-HLA antibody for MHC peptide isolation)." [PRIDE:PRIDE]
+synonym: "antibody used" EXACT []
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000955
+name: cell line authentication
+def: "Method used to authenticate the identity of a cell line, such as STR (Short Tandem Repeat) profiling, SNP analysis, karyotyping, or isoenzyme analysis." [PRIDE:PRIDE]
+synonym: "cell line authentication method" EXACT []
+synonym: "authentication method" EXACT []
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000956
+name: metagenome accession
+def: "Accession number of the associated metagenomic database or assembly used for peptide identification in metaproteomics experiments (e.g., NCBI BioProject, MGnify, or custom metagenome-assembled genome accession)." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
 
