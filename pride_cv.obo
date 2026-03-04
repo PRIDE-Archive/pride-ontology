@@ -3390,7 +3390,7 @@ is_a: PRIDE:0000457 ! Experiment Type
 id: PRIDE:0000544
 name: Quality Control Sample
 def: "Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings" [PRIDE:PRIDE]
-is_a: PRIDE:0000017 ! Sample description additional parameter
+is_a: PRIDE:0000895 ! sample type
 
 [Term]
 id: PRIDE:0000545
