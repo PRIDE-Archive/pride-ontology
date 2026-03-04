@@ -5720,28 +5720,22 @@ def: "An intentionally empty channel or well used for signal-to-noise assessment
 is_a: PRIDE:0000898 ! multiplex sample
 
 [Term]
-id: PRIDE:0000904
-name: quality control sample
-def: "A sample used for quality control purposes in a proteomics experiment. Groups various control sample types used to assess assay performance." [PRIDE:PRIDE]
-is_a: PRIDE:0000895 ! sample type
-
-[Term]
 id: PRIDE:0000905
 name: negative control
 def: "A negative control sample containing no analyte of interest, used to assess background signal and non-specific binding." [PRIDE:PRIDE]
-is_a: PRIDE:0000904 ! quality control sample
+is_a: PRIDE:0000544 ! Quality Control Sample
 
 [Term]
 id: PRIDE:0000906
 name: positive control
 def: "A positive control sample with known analyte content, used to verify assay sensitivity and specificity." [PRIDE:PRIDE]
-is_a: PRIDE:0000904 ! quality control sample
+is_a: PRIDE:0000544 ! Quality Control Sample
 
 [Term]
 id: PRIDE:0000907
 name: bulk control
 def: "A bulk sample used as a control in single-cell proteomics experiments to benchmark single-cell measurements against bulk-level measurements." [PRIDE:PRIDE]
-is_a: PRIDE:0000904 ! quality control sample
+is_a: PRIDE:0000544 ! Quality Control Sample
 
 [Term]
 id: PRIDE:0000908
@@ -5753,19 +5747,19 @@ is_a: PRIDE:0000895 ! sample type
 id: PRIDE:0000909
 name: calibrator
 def: "An instrument or assay calibrator sample used to establish measurement accuracy and precision." [PRIDE:PRIDE]
-is_a: PRIDE:0000904 ! quality control sample
+is_a: PRIDE:0000544 ! Quality Control Sample
 
 [Term]
 id: PRIDE:0000910
 name: plate control
 def: "A plate-level control sample used in plate-based assays (Olink, SomaScan) to monitor intra-plate and inter-plate variability." [PRIDE:PRIDE]
-is_a: PRIDE:0000904 ! quality control sample
+is_a: PRIDE:0000544 ! Quality Control Sample
 
 [Term]
 id: PRIDE:0000911
 name: buffer control
 def: "A buffer-only control sample used to assess background signal from reagents and sample processing." [PRIDE:PRIDE]
-is_a: PRIDE:0000904 ! quality control sample
+is_a: PRIDE:0000544 ! Quality Control Sample
 
 [Term]
 id: PRIDE:0000912
@@ -6045,6 +6039,144 @@ id: PRIDE:0000956
 name: metagenome accession
 def: "Accession number of the associated metagenomic database or assembly used for peptide identification in metaproteomics experiments (e.g., NCBI BioProject, MGnify, or custom metagenome-assembled genome accession)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0000957
+name: DIA-NN score
+def: "A score or metric produced by the DIA-NN software for data-independent acquisition proteomics data processing." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000958
+name: DIA-NN:CScore
+def: "DIA-NN confidence score combining multiple scoring features. Higher values indicate better confidence." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000959
+name: DIA-NN:Evidence
+def: "DIA-NN co-elution evidence score measuring the agreement between observed and expected chromatographic elution profiles. Higher values indicate better evidence." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000960
+name: DIA-NN:Decoy.CScore
+def: "DIA-NN confidence score for the paired decoy match. Used for target-decoy FDR estimation. Higher values indicate better decoy confidence." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000961
+name: DIA-NN:Decoy.Evidence
+def: "DIA-NN evidence score for the paired decoy match. Used for target-decoy FDR estimation. Higher values indicate better decoy evidence." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000962
+name: DIA-NN:Mass.Evidence
+def: "DIA-NN mass accuracy scoring contribution reflecting the agreement between observed and theoretical precursor masses. Higher values indicate better mass accuracy." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000963
+name: DIA-NN:Averagine
+def: "DIA-NN isotope pattern fit score against the Averagine model. Measures how well the observed isotope envelope matches the theoretical pattern. Higher values indicate better fit." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000964
+name: DIA-NN:Ms1.Profile.Corr
+def: "DIA-NN correlation between MS1 and MS2 chromatographic elution profiles. Measures how well the precursor and fragment ion traces co-elute. Higher values indicate better correlation." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000965
+name: DIA-NN:Quantity.Quality
+def: "DIA-NN quantification quality score calculated as 1/(1+SD) where SD is the standard deviation of fragment ion ratios. Higher values indicate more consistent quantification." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000966
+name: DIA-NN:Translated.Quality
+def: "DIA-NN plexDIA translation quality score measuring the quality of multiplexed DIA quantification. Higher values indicate better translation quality." [PRIDE:PRIDE]
+is_a: PRIDE:0000957 ! DIA-NN score
+
+[Term]
+id: PRIDE:0000967
+name: DIA-NN q-value
+def: "A q-value calculated by DIA-NN for false discovery rate estimation." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000968
+name: DIA-NN:Q.Value
+def: "DIA-NN run-level precursor q-value for false discovery rate estimation at the precursor level within a single run. Lower values indicate higher confidence." [PRIDE:PRIDE]
+is_a: PRIDE:0000967 ! DIA-NN q-value
+
+[Term]
+id: PRIDE:0000969
+name: DIA-NN:Global.Q.Value
+def: "DIA-NN global q-value for false discovery rate estimation at the experiment level across all runs. Lower values indicate higher confidence." [PRIDE:PRIDE]
+is_a: PRIDE:0000967 ! DIA-NN q-value
+
+[Term]
+id: PRIDE:0000970
+name: DIA-NN:Translated.Q.Value
+def: "DIA-NN plexDIA translated q-value for false discovery rate estimation in multiplexed DIA experiments. Lower values indicate higher confidence." [PRIDE:PRIDE]
+is_a: PRIDE:0000967 ! DIA-NN q-value
+
+[Term]
+id: PRIDE:0000971
+name: MSFragger score
+def: "A score or metric produced by the MSFragger search engine for peptide identification." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000972
+name: MSFragger:Expectation
+def: "MSFragger expectation value representing the expected number of peptides with a score equal to or better than the observed score by chance. Lower values indicate better matches." [PRIDE:PRIDE]
+is_a: PRIDE:0000971 ! MSFragger score
+
+[Term]
+id: PRIDE:0000973
+name: MSFragger:Hyperscore
+def: "MSFragger hyperscore combining the number and intensity of matched fragment ions. Higher values indicate better peptide-spectrum matches." [PRIDE:PRIDE]
+is_a: PRIDE:0000971 ! MSFragger score
+
+[Term]
+id: PRIDE:0000974
+name: Sage score
+def: "A score or metric produced by the Sage search engine for peptide identification." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000975
+name: Sage:hyperscore
+def: "Sage search engine hyperscore measuring the quality of a peptide-spectrum match. Higher values indicate better matches." [PRIDE:PRIDE]
+is_a: PRIDE:0000974 ! Sage score
+
+[Term]
+id: PRIDE:0000976
+name: MaxLFQ intensity
+def: "Label-free quantification intensity calculated using the MaxLFQ algorithm in MaxQuant. Represents protein abundance estimated by delayed normalization and maximal peptide ratio extraction." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000977
+name: consensus support
+def: "The number of search engines that support a given peptide identification in a consensus or multi-engine search strategy. Higher values indicate broader agreement." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000978
+name: parent ion fraction
+def: "The fraction of target peak intensity relative to the total intensity within the precursor isolation window. Higher values indicate less co-fragmentation interference." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
+
+[Term]
+id: PRIDE:0000979
+name: precursor quantification score
+def: "A score reflecting the confidence of precursor-level quantification, typically derived from QuantUMS or similar algorithms. Higher values indicate more reliable quantification." [PRIDE:PRIDE]
+is_a: PRIDE:0000049 ! Peptide search engine output parameter
 
 [Term]
 id: PRIDE:0000980
