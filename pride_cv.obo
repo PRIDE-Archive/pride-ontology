@@ -4101,6 +4101,7 @@ is_a: PRIDE:0000547 ! Instrument properties
 id: PRIDE:0000639
 name: Somalogic platform
 def: "Somalogic platform" [PRIDE:PRIDE]
+synonym: "Somalogic instrument model" EXACT []
 is_a: PRIDE:0000912 ! assay platform
 
 [Term]
@@ -4189,6 +4190,7 @@ is_a: PRIDE:0000652 ! Relative quantification
 id: PRIDE:0000654
 name: Olink platform
 def: "Olink platform" [PRIDE:PRIDE]
+synonym: "Olink instrument model" EXACT []
 is_a: PRIDE:0000912 ! assay platform
 
 [Term]
