@@ -4666,9 +4666,10 @@ relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000724
-name: soil horizon
-def: "Specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath MIXS:0001082" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+name: obsolete soil horizon
+def: "OBSOLETE. Use soil horizon (PRIDE:0001002) instead. Was incorrectly linked to Water environment." [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0001002
 
 [Term]
 id: PRIDE:0000725
@@ -6283,7 +6284,7 @@ relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
 id: PRIDE:0000993
 name: environmental sample type
 def: "Type of environmental sample analyzed in metaproteomics. Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. MIXS:0000014" [PRIDE:PRIDE]
-synonym: "env_medium" EXACT [GSCMIXS:0000014]
+synonym: "env_sample_type" EXACT []
 is_a: PRIDE:0000017 ! Sample description additional parameter
 relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
 relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
