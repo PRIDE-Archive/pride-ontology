@@ -58,11 +58,6 @@ def: "The distinguishing qualities or prominent aspect of a person, object, acti
 is_a: NCIT:C20189 ! Property or Attribute
 
 [Term]
-id: NCIT:C25507
-name: Data Field
-def: "An area of database record, or graphical user interface form, into which a particular item of data is entered." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
-
-[Term]
 id: NCIT:C25162
 name: Code
 def: "A symbol or combination of symbols which is assigned to the members of a collection." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
@@ -4361,7 +4356,7 @@ is_a: UBERON:0005409 ! gastrointestinal system
 id: PRIDE:0000675
 name: sample name
 def: "A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. MIXS:0001107" [PRIDE:PRIDE]
-is_a: NCIT:C25507 ! Data Field
+xref: NCIT:C25507
 is_a: PRIDE:0000674 ! Human gut
 is_a: PRIDE:0000828 ! Soil
 is_a: PRIDE:0000829 ! Water
@@ -4370,7 +4365,7 @@ is_a: PRIDE:0000829 ! Water
 id: PRIDE:0000676
 name: project name
 def: "Name of the project within which the sequencing was organized. MIXS:0000092" [PRIDE:PRIDE]
-is_a: NCIT:C25507 ! Data Field
+xref: NCIT:C25507
 is_a: PRIDE:0000674 ! Human gut
 is_a: PRIDE:0000828 ! Soil
 is_a: PRIDE:0000829 ! Water
@@ -4400,7 +4395,7 @@ is_a: PRIDE:0000674 ! Human gut
 id: PRIDE:0000680
 name: host subject id
 def: "A unique identifier by which each subject can be referred to, de-identified. MIXS:0000861" [PRIDE:PRIDE]
-is_a: NCIT:C25507 ! Data Field
+xref: NCIT:C25507
 is_a: PRIDE:0000674 ! Human gut
 
 [Term]
@@ -4408,7 +4403,7 @@ id: PRIDE:0000681
 name: host age
 def: "Age of host at the time of sampling; relevant scale depends on species and study, e.g. Could be seconds for amoebae or centuries for trees. MIXS:0000255" [PRIDE:PRIDE]
 synonym: "host age slot" EXACT []
-is_a: NCIT:C25507 ! Data Field
+xref: NCIT:C25507
 is_a: PRIDE:0000674 ! Human gut
 
 [Term]
@@ -4416,7 +4411,7 @@ id: PRIDE:0000682
 name: host disease status
 def: "List of diseases with which the host has been diagnosed; can include multiple diagnoses. MIXS:0000031" [PRIDE:PRIDE]
 synonym: "host disease slot" EXACT []
-is_a: NCIT:C25507 ! Data Field
+xref: NCIT:C25507
 is_a: PRIDE:0000674 ! Human gut
 
 [Term]
