@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 04:03:2026 10:00
-data-version: releases/2026-03-04
+date: 05:03:2026 10:00
+data-version: releases/2026-03-05
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -4130,22 +4130,22 @@ is_a: PRIDE:0000547 ! Instrument properties
 
 [Term]
 id: PRIDE:0000639
-name: Somalogic platform
-def: "Somalogic platform" [PRIDE:PRIDE]
-synonym: "Somalogic instrument model" EXACT []
+name: SomaLogic platform
+def: "SomaLogic platform" [PRIDE:PRIDE]
+synonym: "SomaLogic instrument model" EXACT []
 is_a: PRIDE:0000912 ! assay platform
 
 [Term]
 id: PRIDE:0000640
 name: SomaScan assay v4.0
 def: "SomaScan assay v4.0" [PRIDE:PRIDE]
-is_a: PRIDE:0000639 ! Somalogic platform
+is_a: PRIDE:0000639 ! SomaLogic platform
 
 [Term]
 id: PRIDE:0000641
 name: SomaScan assay v4.1
 def: "SomaScan assay v4.1" [PRIDE:PRIDE]
-is_a: PRIDE:0000639 ! Somalogic platform
+is_a: PRIDE:0000639 ! SomaLogic platform
 
 [Term]
 id: PRIDE:0000642
