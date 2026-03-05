@@ -83,11 +83,6 @@ name: Meal
 def: "Any of the occasions for eating food that occur by custom or habit at more or less fixed times." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
 
 [Term]
-id: NCIT:C25206
-name: Temperature
-def: "A measure of the average kinetic energy of a system of particles." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
-
-[Term]
 id: NCIT:C19160
 name: Occupation or Discipline
 def: "A grouping of occupations and fields of study." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
@@ -272,6 +267,7 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 id: PRIDE:0000027
 name: Mass spectrometry
 def: "This is a measuring method consisting of turning elements in a sample into ions, isolating them according to the ratio between the mass and charge numbers and detecting it electrically" [PRIDE:PRIDE]
+xref: MS:1003350
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -380,6 +376,7 @@ is_a: PRIDE:0000004 ! Identification additional parameter
 id: PRIDE:0000045
 name: Sequest
 def: "Sequest is one of the earliest and most widely used search engines for protein identification in mass spectrometry-based proteomics" [PRIDE:PRIDE]
+xref: MS:1001208
 is_a: PRIDE:0000044 ! Search algorithm
 is_a: PRIDE:0000573 ! Identification software
 
@@ -387,6 +384,7 @@ is_a: PRIDE:0000573 ! Identification software
 id: PRIDE:0000046
 name: Mascot
 def: "Mascot is a widely used search engine for protein identification in mass spectrometry-based proteomics" [PRIDE:PRIDE]
+xref: MS:1001207
 is_a: PRIDE:0000044 ! Search algorithm
 is_a: PRIDE:0000571 ! Quantification Software
 is_a: PRIDE:0000573 ! Identification software
@@ -395,6 +393,7 @@ is_a: PRIDE:0000573 ! Identification software
 id: PRIDE:0000047
 name: X!Tandem
 def: "X!Tandem is an open-source search engine for protein identification in mass spectrometry-based proteomics" [PRIDE:PRIDE]
+xref: MS:1001476
 is_a: PRIDE:0000044 ! Search algorithm
 is_a: PRIDE:0000573 ! Identification software
 
@@ -457,6 +456,7 @@ is_a: PRIDE:0000045 ! Sequest
 id: PRIDE:0000056
 name: Bioworks
 def: "A companion tool often used for processing and analyzing mass spectrometry data" [PRIDE:PRIDE]
+xref: MS:1000533
 is_a: PRIDE:0000045 ! Sequest
 is_a: PRIDE:0000573 ! Identification software
 
@@ -540,6 +540,7 @@ is_a: PRIDE:0000000 ! Reference additional parameter
 id: PRIDE:0000069
 name: Mascot score
 def: "Score as defined for the Mascot search algorithm" [PRIDE:PRIDE]
+xref: MS:1001171
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 is_a: PRIDE:0000046 ! Mascot
 
@@ -730,6 +731,7 @@ is_a: PRIDE:0000102 ! ProteinProphet
 id: PRIDE:0000101
 name: PeptideProphet
 def: "The PeptideProphet algorithm" [PRIDE:PRIDE]
+xref: MS:1002287
 is_a: PRIDE:0000044 ! Search algorithm
 
 [Term]
@@ -868,6 +870,9 @@ replaced_by: PRIDE:0000535
 id: PRIDE:0000122
 name: Two Dimensional Polyacrylamide Gel Electrophoresis
 def: "A type of gel electrophoresis in which proteins are first separated by charge and then by molecular weight, enabling the analysis of complex protein mixtures" [PRIDE:PRIDE]
+synonym: "2-DE" EXACT []
+synonym: "two-dimensional gel electrophoresis" EXACT []
+xref: CHMO:0001106
 is_a: PRIDE:0000022 ! Separation
 
 
@@ -882,6 +887,7 @@ is_a: PRIDE:0000568 ! 2D PAGE
 id: PRIDE:0000124
 name: Sodium dodecyl sulfate polyacrylamide gel electrophoresis
 def: "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE" [PRIDE:PRIDE]
+xref: CHMO:0001027
 is_a: PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
 is_a: PRIDE:0000568 ! 2D PAGE
 
@@ -1073,7 +1079,7 @@ is_a: PRIDE:0000145 ! PepSplice
 [Term]
 id: PRIDE:0000155
 name: Unmappable
-def: "Unsucessful mapping" [PRIDE:PRIDE]
+def: "Unsuccessful mapping" [PRIDE:PRIDE]
 is_a: PRIDE:0000136 ! Mapping status
 
 [Term]
@@ -1279,6 +1285,7 @@ is_a: PRIDE:0000003 ! Peptide item additional parameter
 id: PRIDE:0000188
 name: product ion m/z
 def: "Mass" [PRIDE:PRIDE]
+xref: MS:1001225
 synonym: "Fragment ion mass" EXACT [PRIDE]
 is_a: PRIDE:0000187 ! Fragment Ion Annotation
 
@@ -1286,6 +1293,7 @@ is_a: PRIDE:0000187 ! Fragment Ion Annotation
 id: PRIDE:0000189
 name: product ion intensity
 def: "Intensity" [PRIDE]
+xref: MS:1001226
 synonym: "Fragment ion intensity" EXACT [PRIDE]
 is_a: PRIDE:0000187 ! Fragment Ion Annotation
 
@@ -1314,6 +1322,7 @@ is_a: PRIDE:0000187 ! Fragment Ion Annotation
 id: PRIDE:0000193
 name: y ion
 def: "Y ion type" [PRIDE:PRIDE]
+xref: MS:1001220
 synonym: "y fragment ion" EXACT [PRIDE]
 is_a: PRIDE:0000192 ! product ion type
 
@@ -1321,6 +1330,7 @@ is_a: PRIDE:0000192 ! product ion type
 id: PRIDE:0000194
 name: b ion
 def: "B ion type" [PRIDE:PRIDE]
+xref: MS:1001224
 synonym: "b fragment ion" EXACT [PRIDE]
 is_a: PRIDE:0000192 ! product ion type
 
@@ -1499,6 +1509,7 @@ is_a: PRIDE:0000202 ! Parent Ion Annotation
 id: PRIDE:0000227
 name: x ion
 def: "X ion type" [PRIDE:PRIDE]
+xref: MS:1001228
 synonym: "x fragment ion" EXACT [PRIDE]
 is_a: PRIDE:0000192 ! product ion type
 
@@ -1520,6 +1531,7 @@ is_a: PRIDE:0000227 ! x ion
 id: PRIDE:0000230
 name: z ion
 def: "Z ion type" [PRIDE:PRIDE]
+xref: MS:1001230
 synonym: "z fragment ion" EXACT [PRIDE]
 is_a: PRIDE:0000192 ! product ion type
 
@@ -1541,6 +1553,7 @@ is_a: PRIDE:0000230 ! z ion
 id: PRIDE:0000233
 name: a ion
 def: "A ion type" [PRIDE:PRIDE]
+xref: MS:1001229
 synonym: "a fragment ion" EXACT [PRIDE]
 is_a: PRIDE:0000192 ! product ion type
 
@@ -1562,6 +1575,7 @@ is_a: PRIDE:0000233 ! a ion
 id: PRIDE:0000236
 name: c ion
 def: "C ion type" [PRIDE:PRIDE]
+xref: MS:1001231
 synonym: "c fragment ion" EXACT [PRIDE]
 is_a: PRIDE:0000192 ! product ion type
 
@@ -1589,6 +1603,7 @@ is_a: PRIDE:0000192 ! product ion type
 id: PRIDE:0000240
 name: immonium A
 def: "Immonium ion type for alanine" [PRIDE:PRIDE]
+xref: MS:1001239
 is_a: PRIDE:0000239 ! immonium ion
 
 [Term]
@@ -2040,14 +2055,19 @@ is_a: PRIDE:0000309 ! Gel-free quantification method
 
 [Term]
 id: PRIDE:0000311
-name: Selected Reaction Monitoring
-def: "Describes quantification techniques based on selected / multiple reaction monitoring" [PRIDE:PRIDE]
-is_a: PRIDE:0000309 ! Gel-free quantification method
+name: obsolete Selected Reaction Monitoring
+def: "OBSOLETE. Describes quantification techniques based on selected / multiple reaction monitoring" [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000630
 
 [Term]
 id: PRIDE:0000312
 name: Label free
 def: "Describes label free quantification techniques" [PRIDE:PRIDE]
+synonym: "LFQ" EXACT []
+synonym: "label-free quantification" EXACT []
+xref: MS:1001834
+xref: MS:1001835
 is_a: PRIDE:0000309 ! Gel-free quantification method
 
 [Term]
@@ -2062,6 +2082,7 @@ id: PRIDE:0000314
 name: TMT
 def: "Tandem Mass Tag is an MSn based isobaric labeling quantification technique" [PRIDE:PRIDE]
 synonym: "Tandem Mass Tag" EXACT [PRIDE]
+xref: MS:1002615
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 is_a: PRIDE:0000514 ! Label
 
@@ -2596,6 +2617,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 id: PRIDE:0000427
 name: Top-down proteomics
 def: "A mass spectrometry-based approach that analyzes intact proteins rather than digesting them into peptides (as in bottom-up proteomics)" [PRIDE:PRIDE]
+xref: MS:1003351
 is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
 is_a: PRIDE:0000457 ! Experiment Type
 
@@ -2603,6 +2625,8 @@ is_a: PRIDE:0000457 ! Experiment Type
 id: PRIDE:0000428
 name: Bottom-up proteomics
 def: "Proteins go through proteolytic digestion yielding peptides before entering the mass spectrometer" [PRIDE:PRIDE]
+synonym: "shotgun proteomics" EXACT []
+xref: MS:1003355
 is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
 is_a: PRIDE:0000457 ! Experiment Type
 
@@ -2616,6 +2640,8 @@ is_a: PRIDE:0000428 ! Bottom-up proteomics
 id: PRIDE:0000430
 name: Chemical cross-linking coupled with mass spectrometry proteomics
 def: "Chemical cross-linking of proteins coupled with mass spectrometry analysis to provide information about protein folding and protein-protein interaction" [PRIDE:PRIDE]
+synonym: "XL-MS" EXACT []
+synonym: "CLMS" EXACT []
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 
 [Term]
@@ -2740,6 +2766,8 @@ is_a: PRIDE:0000577 ! file uri
 id: PRIDE:0000450
 name: Data-independent acquisition
 def: "Predefined m/z ranges are interrogated either by fragmenting all ions entering the mass spectrometer at every single point in chromatographic time; or by dividing the m/z range into smaller m/z ranges for isolation and fragmentation. See review in PMID:24281846" [PRIDE:PRIDE]
+synonym: "DIA" EXACT []
+xref: MS:1003215
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
@@ -2821,7 +2849,7 @@ is_a: PRIDE:0000450 ! Data-independent acquisition
 id: PRIDE:0000463
 name: PRM
 def: "Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis" [PRIDE:PRIDE]
-is_a: PRIDE:0000311 ! Selected Reaction Monitoring
+is_a: PRIDE:0000630 ! Selected reaction monitoring
 
 [Term]
 id: PRIDE:0000464
@@ -3303,6 +3331,7 @@ name: ITRAQ
 def: "Isobaric Tags for Relative and Absolute Quantitation, an MSn based isobaric labeling quantification technique using reporter ions" [PRIDE:PRIDE]
 synonym: "iTRAQ" EXACT [PRIDE]
 synonym: "Isobaric Tags for Relative and Absolute Quantitation" EXACT [PRIDE]
+xref: MS:1002622
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 is_a: PRIDE:0000514 ! Label
 
@@ -3420,12 +3449,14 @@ is_a: PRIDE:0000547 ! Instrument properties
 id: PRIDE:0000548
 name: MS1 mass analyzer
 def: "MS1 mass analyzer" [PRIDE:PRIDE]
+is_a: PRIDE:0000547 ! Instrument properties
 is_a: MS:1000451 ! mass analyzer
 
 [Term]
 id: PRIDE:0000549
 name: MS2 mass analyzer
 def: "MS2 mass analyzer" [PRIDE:PRIDE]
+is_a: PRIDE:0000547 ! Instrument properties
 is_a: MS:1000451 ! mass analyzer
 
 [Term]
@@ -3555,7 +3586,7 @@ is_a: PRIDE:0000567 ! Gel electrophoresis
 id: PRIDE:0000571
 name: Quantification software
 def: "A software that perform protein quantification using mass spectrometry data" [PRIDE:PRIDE]
-is_a: BFO:0000001 ! entity
+is_a: MS:1001456 ! analysis software
 
 [Term]
 id: PRIDE:0000572
@@ -3568,7 +3599,7 @@ is_a: PRIDE:0000573 ! Identification software
 id: PRIDE:0000573
 name: Identification software
 def: "A software that perform peptide/protein identification using mass spectrometry data" [PRIDE:PRIDE]
-is_a: BFO:0000001 ! entity
+is_a: MS:1001456 ! analysis software
 
 [Term]
 id: PRIDE:0000574
@@ -4021,6 +4052,8 @@ is_a: PRIDE:0000049 ! Peptide search engine output parameter
 id: PRIDE:0000627
 name: Data-dependent acquisition
 def: "Data-dependent acquisition" [PRIDE:PRIDE]
+synonym: "DDA" EXACT []
+xref: MS:1003221
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
@@ -4035,6 +4068,9 @@ is_a: PRIDE:0000659 ! Proteomics data acquisition method
 id: PRIDE:0000630
 name: Selected reaction monitoring
 def: "Selected reaction monitoring (SRM)" [PRIDE:PRIDE]
+synonym: "SRM" EXACT []
+synonym: "MRM" EXACT []
+xref: MS:1000206
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
@@ -4141,18 +4177,21 @@ relationship: part_of PRIDE:0000860 ! TMT35PLEX
 id: PRIDE:0000644
 name: MS2 dissociation method
 def: "Fragmentation method used for dissociation or fragmentation for MS2" [PRIDE:PRIDE]
+is_a: PRIDE:0000547 ! Instrument properties
 is_a: MS:1000044 ! dissociation method
 
 [Term]
 id: PRIDE:0000645
 name: MS3 dissociation method
 def: "Fragmentation method used for dissociation or fragmentation for MS3" [PRIDE:PRIDE]
+is_a: PRIDE:0000547 ! Instrument properties
 is_a: MS:1000044 ! dissociation method
 
 [Term]
 id: PRIDE:0000646
 name: MS3 mass analyzer
 def: "MS3 mass analyzer" [PRIDE:PRIDE]
+is_a: PRIDE:0000547 ! Instrument properties
 is_a: MS:1000451 ! mass analyzer
 
 [Term]
@@ -4315,6 +4354,7 @@ is_a: PRIDE:0000671 ! Olink Explore
 id: PRIDE:0000674
 name: human gut
 def: "A collection of terms appropriate when collecting samples and sequencing samples obtained from a person to examine their gut-associated microbiome." [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! metaproteomics sample
 is_a: UBERON:0005409 ! gastrointestinal system
 
 [Term]
@@ -4322,46 +4362,46 @@ id: PRIDE:0000675
 name: sample name
 def: "A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. MIXS:0001107" [PRIDE:PRIDE]
 is_a: NCIT:C25507 ! Data Field
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000676
 name: project name
 def: "Name of the project within which the sequencing was organized. MIXS:0000092" [PRIDE:PRIDE]
 is_a: NCIT:C25507 ! Data Field
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000677
 name: gastrointestinal tract disorder
 def: "History of gastrointestinal tract disorders; can include multiple disorders. MIXS:0000280" [PRIDE:PRIDE]
 is_a: MONDO:0000001 ! Disease
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000678
 name: liver disorder
 def: "History of liver disorders; can include multiple disorders. MIXS:0000282" [PRIDE:PRIDE]
 is_a: MONDO:0000001 ! Disease
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000679
 name: special diet
 def: "Specification of special diet; can include multiple special diets. MIXS:0000905" [PRIDE:PRIDE]
 is_a: EFO:0002755 ! Diet
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000680
 name: host subject id
 def: "A unique identifier by which each subject can be referred to, de-identified. MIXS:0000861" [PRIDE:PRIDE]
 is_a: NCIT:C25507 ! Data Field
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000681
@@ -4369,7 +4409,7 @@ name: host age
 def: "Age of host at the time of sampling; relevant scale depends on species and study, e.g. Could be seconds for amoebae or centuries for trees. MIXS:0000255" [PRIDE:PRIDE]
 synonym: "host age slot" EXACT []
 is_a: NCIT:C25507 ! Data Field
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000682
@@ -4377,43 +4417,43 @@ name: host disease status
 def: "List of diseases with which the host has been diagnosed; can include multiple diagnoses. MIXS:0000031" [PRIDE:PRIDE]
 synonym: "host disease slot" EXACT []
 is_a: NCIT:C25507 ! Data Field
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000683
 name: IHMC medication code
 def: "Can include multiple medication codes. MIXS:0000884" [PRIDE:PRIDE]
 is_a: NCIT:C25162 ! Code
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000684
 name: chemical administration
 def: "List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. MIXS:0000751" [PRIDE:PRIDE]
 is_a: PECO:0007086 ! chemical fertilizer exposure
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000685
 name: host body site
 def: "Name of body site where the sample was obtained from, such as a specific organ or tissue (tongue, lung etc.).  MIXS:0000867" [PRIDE:PRIDE]
 is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000686
 name: host body product
 def: "Substance produced by the body, e.g. Stool, mucus, where the sample was obtained from.  MIXS:0000888" [PRIDE:PRIDE]
 is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000687
 name: host total mass
 def: "Total mass of the host at collection, the unit depends on host. MIXS:0000263" [PRIDE:PRIDE]
 is_a: OBA:2045413 ! anatomical entity mass
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000688
@@ -4421,21 +4461,21 @@ name: host height
 def: "The height of subject. MIXS:0000264" [PRIDE:PRIDE]
 synonym: "body height" EXACT []
 is_a: NCIT:C25347 ! Height
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000689
 name: host diet
 def: "Type of diet depending on the host, for animals omnivore, herbivore etc., for humans high-fat, meditteranean etc.; can include multiple diet types. MIXS:0000869" [PRIDE:PRIDE]
 is_a: EFO:0002755 ! Diet
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000690
 name: host last meal
 def: "Content of last meal and time since feeding; can include multiple values. MIXS:0000870" [PRIDE:PRIDE]
 is_a: NCIT:C80248 ! Meal
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000691
@@ -4443,226 +4483,226 @@ name: host family relationship
 def: "Relationships to other hosts in the same study; can include multiple relationships. MIXS:0000872" [PRIDE:PRIDE]
 synonym: "family relationship" EXACT []
 is_a: BFO:0000016 ! disposition
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000692
 name: host genotype
 def: "Observed genotype MIXS:0000365" [PRIDE:PRIDE]
 is_a: EFO:0004554 ! genomic measurement
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000693
 name: host phenotype
 def: "Phenotype of human or other host. Use terms from the phenotypic quality ontology (pato) or the Human Phenotype Ontology (HP). MIXS:0000274" [PRIDE:PRIDE]
 is_a: BFO:0000019 ! quality
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000694
 name: host body temperature
 def: "Core body temperature of the host when sample was collected. MIXS:0000874" [PRIDE:PRIDE]
-is_a: NCIT:C25206 ! Temperature
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000695
 name: host body-mass index
 def: "Body mass index, calculated as weight/(height)squared. MIXS:0000317" [PRIDE:PRIDE]
 is_a: EFO:0004324 ! body weights and measurements
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000696
 name: ethnicity
 def: "A category of people who identify with each other, usually on the basis of presumed similarities such as a common language, ancestry, history, society, culture, nation or social treatment within their residing area. MIXS:0000895" [PRIDE:PRIDE]
 is_a: BFO:0000019 ! quality
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000697
 name: host occupation
 def: "Most frequent job performed by subject. MIXS:0000896" [PRIDE:PRIDE]
 is_a: NCIT:C19160 ! Occupation or Discipline
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000698
 name: medical history performed
 def: "Whether full medical history was collected. MIXS:0000897" [PRIDE:PRIDE]
 is_a: NCIT:C16205 ! Healthcare activity
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000699
 name: host pulse
 def: "Resting pulse, measured as beats per minutes. MIXS:0000333" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000700
 name: perturbation
 def: "Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types. MIXS:0000754" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000701
 name: salinity
 def: "The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater. MIXS:0000183" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000702
 name: oxygenation status of sample
 def: "Oxygenation status of the sample. MIXS:0000753" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000703
 name: temperature
 def: "Temperature of the sample at the time of sampling. MIXS:0000113" [PRIDE:PRIDE]
+xref: NCIT:C25206
 is_a: NCIT:C25447! Characteristic
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000704
 name: organism count
 def: "Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr). MIXS:0000103" [PRIDE:PRIDE]
 is_a: MMO:0000222 ! isolated cell method
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000705
 name: sample storage temperature
 def: "Temperature at which sample was stored, e.g. -80 degree Celsius. MIXS:0000110" [PRIDE:PRIDE]
 is_a: NCIT:C45279 ! Log
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000706
 name: sample volume or weight for DNA extraction
 def: "Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term Sample Size (MIXS:0000001). MIXS:0000111" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000707
 name: sample storage duration
 def: "Duration for which the sample was stored. Indicate the duration for which the sample was stored written in ISO 8601 format. MIXS:0000116" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000708
 name: observed host symbionts
 def: "The taxonomic name of the organism(s) found living in mutualistic, commensalistic, or parasitic symbiosis with the specific host. The sampled symbiont can have its own symbionts. For example, parasites may have hyperparasites (=parasites of the parasite). MIXS:0001298" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000709
 name: sample storage location
 def: "Location at which sample was stored, usually name of a specific freezer/room. MIXS:0000755" [PRIDE:PRIDE]
 is_a: GENEPIO:0100586 ! data field
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000710
 name: miscellaneous parameter
 def: "Any other measurement performed or parameter collected, that is not listed here. MIXS:0000752" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000711
 name: depth
 def: "The vertical distance below local surface. For sediment or soil samples depth is measured from sediment or soil surface, respectively. Depth can be reported as an interval for subsurface samples MIXS:0000018" [PRIDE:PRIDE]
 is_a: NCIT:C25447 ! Characteristic
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000712
 name: elevation
 def: "Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit MIXS:0000093" [PRIDE:PRIDE]
 is_a: PATO:0000140 ! Position
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000713
 name: current land use
 def: "Present state of sample site MIXS:0001080" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000714
 name: current vegetation
 def: "Vegetation classification from one or more standard classification systems, or agricultural crop MIXS:0000312" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000715
 name: current vegetation method
 def: "Reference or method used in vegetation classification MIXS:0000314" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000716
 name: history of previous land use
 def: "Previous land use and dates MIXS:0000315" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000717
 name: history of previous land use method
 def: "Reference or method used in determining previous land use and dates MIXS:0000316" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000718
 name: history of crop rotation
 def: "Whether or not crop is rotated, and if yes, rotation schedule MIXS:0000318" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000719
 name: history of agrochemical additions
 def: "Addition of fertilizers, pesticides, etc. - amount and time of applications MIXS:0000639" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000720
 name: history of tillage
 def: "Note method(s) used for tilling MIXS:0001081" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000721
 name: history of fire
 def: "Historical and/or physical evidence of fire MIXS:0001086" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000722
 name: history of flooding
 def: "Historical and/or physical evidence of flooding MIXS:0000319" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000723
 name: history of extreme event
 def: "Unusual physical events that may have affected microbial populations MIXS:0000320" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000724
@@ -4675,619 +4715,623 @@ replaced_by: PRIDE:0001002
 id: PRIDE:0000725
 name: horizon method
 def: "Reference or method used in determining the horizon MIXS:0000321" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000726
 name: sieving
 def: "Collection design of pooled samples and/or sieve size and amount of sample sieved MIXS:0000322" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000727
 name: water content
 def: "Water content measurement MIXS:0000185" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000728
 name: water content method
 def: "Reference or method used in determining the water content of soil MIXS:0000323" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000729
 name: pooling of DNA extracts
 def: "Indicate whether multiple DNA extractions were mixed. If the answer yes, the number of extracts that were pooled should be given MIXS:0000325" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000730
 name: storage conditions
 def: "Explain how and for how long the soil sample was stored before DNA extraction (fresh/frozen/other) MIXS:0000327" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000731
 name: link to climate information
 def: "Link to climate resource MIXS:0000328" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000732
 name: mean annual temperature
 def: "Mean annual temperature MIXS:0000642" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000733
 name: mean seasonal temperature
 def: "Mean seasonal temperature MIXS:0000643" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000734
 name: mean annual precipitation
 def: "The average of all annual precipitation values known, or an estimated equivalent value derived by such methods as regional indexes or Isohyetal maps MIXS:0000644" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000735
 name: mean seasonal precipitation
 def: "The average of all seasonal precipitation values known, or an estimated equivalent value derived by such methods as regional indexes or Isohyetal maps MIXS:0000645" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000736
 name: link to classification information
 def: "Link to digitized soil maps or other soil classification information MIXS:0000329" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000737
 name: soil taxonomic of FAO classification
 def: "Soil classification from the FAO World soil distribution from International Soil Reference and Information Centre (ISRIC). The list of available soil classifications can be found at https://www.isric.org/explore/world-soil-distribution MIXS:0001083" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000738
 name: soil taxonomic of local classification
 def: "Soil classification based on local soil classification system MIXS:0000330" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000739
 name: soil taxonomic of local classification method
 def: "Reference or method used in determining the local soil classification MIXS:0000331" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000740
 name: slope gradient
 def: "Commonly called 'slope'. The angle between ground surface and a horizontal line (in percent). This is the direction that overland water would flow. This measure is usually taken with a hand level meter or clinometer MIXS:0000646" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000741
 name: slope aspect
 def: "The direction a slope faces. While looking down a slope use a compass to record the direction you are facing (direction or degrees); e.g., nw or 315 degrees. This measure provides an indication of sun and wind exposure that will influence soil temperature and evapotranspiration MIXS:0000647" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000742
 name: profile position
 def: "Cross-sectional position in the hillslope where sample was collected.sample area position in relation to surrounding areas MIXS:0001084" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000743
 name: drainage classification
 def: "Drainage classification from a standard system such as the USDA system MIXS:0001085" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000744
 name: soil texture
 def: "The relative proportion of different grain sizes of mineral particles in a soil, as described using a standard system; express as % sand (50 um to 2 mm), silt (2 um to 50 um), and clay (<2 um) with textural name (e.g., silty clay loam) optional MIXS:0000335" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000745
 name: soil texture method
 def: "Reference or method used in determining soil texture MIXS:0000336" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000746
 name: pH
 def: "Ph measurement of the sample, or liquid portion of sample, or aqueous phase of the fluid MIXS:0001001" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000747
 name: pH method
 def: "Reference or method used in determining pH MIXS:0001106" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000748
 name: organic matter
 def: "Concentration of organic matter MIXS:0000204" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000749
 name: total organic carbon
 def: "Total organic carbon content MIXS:0000533" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000750
 name: total organic carbon method
 def: "Reference or method used in determining total organic carbon MIXS:0000337" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000751
 name: total nitrogen content
 def: "Total nitrogen content of the sample MIXS:0000530" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000752
 name: total nitrogen content method
 def: "Reference or method used in determining the total nitrogen MIXS:0000338" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000753
 name: microbial biomass
 def: "The part of the organic matter in the soil that constitutes living microorganisms smaller than 5-10 micrometer. If you keep this, you would need to have correction factors used for conversion to the final units MIXS:0000650" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000754
 name: microbial biomass method
 def: "Reference or method used in determining microbial biomass MIXS:0000339" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000755
 name: links to additional analysis
 def: "Link to additional analysis results performed on the sample MIXS:0000340" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000756
 name: extreme unusual properties of heavy metals
 def: "Heavy metals present in the sequenced sample and their concentrations. For multiple heavy metals and concentrations, add multiple copies of this field MIXS:0000652" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000757
 name: extreme unusual properties of heavy metals method
 def: "Reference or method used in determining heavy metals MIXS:0000343" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000758
 name: extreme unusual properties of AI saturation
 def: "Aluminum saturation (esp. For tropical soils) MIXS:0000607" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000759
 name: extreme unusual properties of AI saturation method
 def: "Reference or method used in determining Al saturation MIXS:0000324" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000760
 name: alkalinity
 def: "Alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate MIXS:0000421" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000761
 name: alkalinity method
 def: "Method used for alkalinity measurement MIXS:0000298" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000762
 name: alkyl diethers
 def: "Concentration of alkyl diethers MIXS:0000490" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000763
 name: aminopeptidase activity
 def: "Measurement of aminopeptidase activity MIXS:0000172" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000764
 name: ammonium
 def: "Concentration of ammonium in the sample MIXS:0000427" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000765
 name: atmospheric data
 def: "Measurement of atmospheric data; can include multiple data MIXS:0001097" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000766
 name: bacterial carbon production
 def: "Measurement of bacterial carbon production MIXS:0000173" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000767
 name: bacterial production
 def: "Bacterial production in the water column measured by isotope uptake MIXS:0000683" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000768
 name: bacterial respiration
 def: "Measurement of bacterial respiration in the water column MIXS:0000684" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000769
 name: biomass
 def: "Amount of biomass; should include the name for the part of biomass measured, e.g. Microbial, total. Can include multiple measurements MIXS:0000174" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000770
 name: bishomohopanol
 def: "Concentration of bishomohopanol MIXS:0000175" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000771
 name: bromide
 def: "Concentration of bromide MIXS:0000176" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000772
 name: calcium
 def: "Concentration of calcium in the sample MIXS:0000432" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000773
 name: carbon nitrogen ratio
 def: "Ratio of amount or concentrations of carbon to nitrogen MIXS:0000310" [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
 id: PRIDE:0000774
 name: chloride
 def: "Concentration of chloride in the sample MIXS:0000429" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000775
 name: chlorophyll
 def: "Concentration of chlorophyll MIXS:0000177" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000776
 name: conductivity
 def: "Electrical conductivity of water MIXS:0000692" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000777
 name: density
 def: "Density of the sample, which is its mass per unit volume (aka volumetric mass density) MIXS:0000435" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000778
 name: diether lipids
 def: "Concentration of diether lipids; can include multiple types of diether lipids MIXS:0000178" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000779
 name: dissolved carbon dioxide
 def: "Concentration of dissolved carbon dioxide in the sample or liquid portion of the sample MIXS:0000436" [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
 id: PRIDE:0000780
 name: dissolved hydrogen
 def: "Concentration of dissolved hydrogen MIXS:0000179" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000781
 name: dissolved inorganic carbon
 def: "Dissolved inorganic carbon concentration in the sample, typically measured after filtering the sample using a 0.45 micrometer filter MIXS:0000434" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000784
 name: dissolved inorganic nitrogen
 def: "Concentration of dissolved inorganic nitrogen MIXS:0000698" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000785
 name: dissolved inorganic phosphorus
 def: "Concentration of dissolved inorganic phosphorus in the sample MIXS:0000106" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000786
 name: dissolved organic carbon
 def: "Concentration of dissolved organic carbon in the sample, liquid portion of the sample, or aqueous phase of the fluid MIXS:0000433" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000787
 name: dissolved organic nitrogen
 def: "Dissolved organic nitrogen concentration measured as; total dissolved nitrogen - NH4 - NO3 - NO2 MIXS:0000162" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000788
 name: dissolved oxygen
 def: "Concentration of dissolved oxygen MIXS:0000119" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000789
 name: downward PAR
 def: "Visible waveband radiance and irradiance measurements in the water column MIXS:0000703" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000790
 name: fluorescence
 def: "Raw or converted fluorescence of water MIXS:0000704" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000791
 name: glucosidase activity
 def: "Measurement of glucosidase activity MIXS:0000137" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000792
 name: light intensity
 def: "Measurement of light intensity MIXS:0000706" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000793
 name: magnesium
 def: "Concentration of magnesium in the sample MIXS:0000431" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000794
 name: mean friction velocity
 def: "Measurement of mean friction velocity MIXS:0000498" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000795
 name: mean peak friction velocity
 def: "Measurement of mean peak friction velocity MIXS:0000502" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000796
 name: nitrate
 def: "Concentration of nitrate in the sample MIXS:0000425" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000797
 name: nitrite
 def: "Concentration of nitrite in the sample MIXS:0000426" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000798
 name: nitrogen
 def: "Concentration of nitrogen (total) MIXS:0000504" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000799
 name: organic carbon
 def: "Concentration of organic carbon MIXS:0000508" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000800
 name: organic nitrogen
 def: "Concentration of organic nitrogen MIXS:0000205" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000801
 name: particulate organic carbon
 def: "Concentration of particulate organic carbon MIXS:0000515" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000802
 name: particulate organic nitrogen
 def: "Concentration of particulate organic nitrogen MIXS:0000719" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000803
 name: petroleum hydrocarbon
 def: "Concentration of petroleum hydrocarbon MIXS:0000516" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000804
 name: phaeopigments
 def: "Concentration of phaeopigments; can include multiple phaeopigments MIXS:0000180" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000805
 name: phosphate
 def: "Concentration of phosphate MIXS:0000505" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000806
 name: phospholipid fatty acid
 def: "Concentration of phospholipid fatty acids; can include multiple values MIXS:0000181" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000807
 name: photon flux
 def: "Measurement of photon flux MIXS:0000725" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000808
 name: potassium
 def: "Concentration of potassium in the sample MIXS:0000430" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000809
 name: pressure
 def: "Pressure to which the sample is subject to, in atmospheres MIXS:0000412" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000810
 name: primary production
 def: "Measurement of primary production, generally measured as isotope uptake MIXS:0000728" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000811
 name: redox potential
 def: "Redox potential, measured relative to a hydrogen cell, indicating oxidation or reduction potential MIXS:0000182" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000812
 name: silicate
 def: "Concentration of silicate MIXS:0000184" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000813
 name: size-fraction lower threshold
 def: "Refers to the mesh/pore size used to pre-filter/pre-sort the sample. Materials smaller than the size threshold are excluded from the sample MIXS:0000735" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000814
 name: size-fraction upper threshold
 def: "Mesh or pore size of the device used to retain the sample. Materials larger than the size threshold are excluded from the sample MIXS:0000736" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000815
 name: sodium
 def: "Sodium concentration in the sample MIXS:0000428" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000816
 name: soluble reactive phosphorus
 def: "Concentration of soluble reactive phosphorus MIXS:0000738" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000817
 name: sulfate
 def: "Concentration of sulfate in the sample MIXS:0000423" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000818
 name: sulfide
 def: "Concentration of sulfide in the sample MIXS:0000424" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000819
 name: suspended particulate matter
 def: "Concentration of suspended particulate matter MIXS:0000741" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000820
 name: tidal stage
 def: "Stage of tide MIXS:0000750" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000821
 name: total depth of water column
 def: "Measurement of total depth of water column MIXS:0000634" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000822
 name: total dissolved nitrogen
 def: "Total dissolved nitrogen concentration, reported as nitrogen, measured by: total dissolved nitrogen = NH4 + NO3NO2 + dissolved organic nitrogen MIXS:0000744" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000823
 name: total inorganic nitrogen
 def: "Total inorganic nitrogen content MIXS:0000745" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000824
 name: total nitrogen concentration
 def: "Total nitrogen concentration of water samples, calculated by: total nitrogen = total dissolved nitrogen + particulate nitrogen. Can also be measured without filtering, reported as nitrogen MIXS:0000102" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000825
 name: total particulate carbon
 def: "Total particulate carbon content MIXS:0000747" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000826
 name: total phosphorus
 def: "Total phosphorus concentration in the sample, calculated by: total phosphorus = total dissolved phosphorus + particulate phosphorus MIXS:0000117" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000827
 name: turbidity
 def: "Measure of the amount of cloudiness or haziness in water caused by individual particles MIXS:0000191" [PRIDE:PRIDE]
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000828
 name: soil
 def: "A collection of terms appropriate when collecting samples and sequencing samples obtained from the uppermost layer of Earth's crust, contributed by the Terragenome Consortium" [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! metaproteomics sample
 is_a: ENVO:00010483 ! environmental material
 
 [Term]
 id: PRIDE:0000829
 name: water
 def: "A collection of terms appropriate when collecting samples and sequencing water samples obtained from any aquatic environment" [PRIDE:PRIDE]
+is_a: PRIDE:0000904 ! metaproteomics sample
 is_a: ENVO:00002006 ! liquid water
 
 [Term]
@@ -5351,6 +5395,7 @@ is_a: EFO:0009090 ! enrichment process
 id: PRIDE:0000838
 name: enrichment of cross-linked peptides
 def: "A sample enrichment process where peptides containing chemical cross-links are selectively enriched prior to mass spectrometry analysis. Cross-linked peptides are typically enriched using size exclusion chromatography, strong cation exchange chromatography, or other separation techniques that exploit the larger size and higher charge of cross-linked species." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
 is_a: EFO:0009090 ! enrichment process
 
 [Term]
@@ -5721,6 +5766,12 @@ id: PRIDE:0000903
 name: empty
 def: "An intentionally empty channel or well used for signal-to-noise assessment or as a blank in multiplexed experiments." [PRIDE:PRIDE]
 is_a: PRIDE:0000898 ! multiplex sample
+
+[Term]
+id: PRIDE:0000904
+name: metaproteomics sample
+def: "A sample collected for metaproteomics analysis. Groups metaproteomics-specific metadata collections such as human gut, soil, and water." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
 id: PRIDE:0000905
@@ -6161,7 +6212,7 @@ is_a: PRIDE:0000974 ! Sage score
 id: PRIDE:0000976
 name: MaxLFQ intensity
 def: "Label-free quantification intensity calculated using the MaxLFQ algorithm in MaxQuant. Represents protein abundance estimated by delayed normalization and maximal peptide ratio extraction." [PRIDE:PRIDE]
-is_a: PRIDE:0000049 ! Peptide search engine output parameter
+is_a: PRIDE:0000391 ! Quantification parameter
 
 [Term]
 id: PRIDE:0000977
@@ -6173,13 +6224,13 @@ is_a: PRIDE:0000049 ! Peptide search engine output parameter
 id: PRIDE:0000978
 name: parent ion fraction
 def: "The fraction of target peak intensity relative to the total intensity within the precursor isolation window. Higher values indicate less co-fragmentation interference." [PRIDE:PRIDE]
-is_a: PRIDE:0000049 ! Peptide search engine output parameter
+is_a: PRIDE:0000391 ! Quantification parameter
 
 [Term]
 id: PRIDE:0000979
 name: precursor quantification score
 def: "A score reflecting the confidence of precursor-level quantification, typically derived from QuantUMS or similar algorithms. Higher values indicate more reliable quantification." [PRIDE:PRIDE]
-is_a: PRIDE:0000049 ! Peptide search engine output parameter
+is_a: PRIDE:0000391 ! Quantification parameter
 
 [Term]
 id: PRIDE:0000980
@@ -6222,73 +6273,73 @@ id: PRIDE:0000986
 name: microbiome source
 def: "Source of the microbiome being studied in a metaproteomics experiment (e.g., gut microbiome, rhizosphere microbiome, oral microbiome, skin microbiome)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000987
 name: mock community
 def: "Identifier or name of the mock community standard used as a quality control reference in metaproteomics experiments (e.g., ZymoBIOMICS Microbial Community Standard, ATCC MSA-1000)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000988
 name: mock community composition
 def: "Description of the mock community composition including species and ratios used as a quality control reference in metaproteomics experiments (e.g., 8 bacteria + 2 yeasts at defined ratios)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000989
 name: expected organism list
 def: "Semicolon-separated list of organisms expected in a mock community or defined microbial mixture used in metaproteomics experiments (e.g., E. coli;B. subtilis;S. cerevisiae)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000990
 name: biomass estimation
 def: "Estimated microbial biomass in the sample used in metaproteomics experiments (e.g., 1e9 cells/g, high biomass, low biomass)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000991
 name: host contamination level
 def: "Level of host protein contamination in a metaproteomics sample, if known (e.g., low <5%, moderate 5-20%, high >20%)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000992
 name: contaminant database
 def: "Contaminant database(s) used in database search for metaproteomics experiments (e.g., cRAP, MaxQuant contaminants)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000993
 name: environmental sample type
-def: "Type of environmental sample analyzed in metaproteomics. Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. MIXS:0000014" [PRIDE:PRIDE]
+def: "Type of environmental sample analyzed in metaproteomics, such as soil, water, or sediment. Classifies the sample by its environmental origin." [PRIDE:PRIDE]
 synonym: "env_sample_type" EXACT []
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000994
@@ -6296,9 +6347,9 @@ name: environmental medium
 def: "Environmental material from which the sample was obtained. Report the environmental material(s) immediately surrounding the sample or specimen at the time of sampling. MIXS:0000014" [PRIDE:PRIDE]
 synonym: "env_medium" EXACT [GSCMIXS:0000014]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000995
@@ -6306,9 +6357,9 @@ name: geographic location
 def: "The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list or the GAZ ontology. MIXS:0000010" [PRIDE:PRIDE]
 synonym: "geo_loc_name" EXACT [GSCMIXS:0000010]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000996
@@ -6316,9 +6367,9 @@ name: collection date
 def: "The time of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated (ISO 8601 compliant). MIXS:0000011" [PRIDE:PRIDE]
 synonym: "collection_date" EXACT [GSCMIXS:0000011]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000997
@@ -6326,9 +6377,9 @@ name: sample collection method
 def: "The method employed for collecting the sample. MIXS:0001225" [PRIDE:PRIDE]
 synonym: "samp_collect_method" EXACT [GSCMIXS:0001225]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000828 ! Soil
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0000998
@@ -6336,7 +6387,7 @@ name: host organism
 def: "NCBI taxon id or name of the host organism from which a host-associated microbiome sample was collected (e.g. Homo sapiens, 9606). MIXS:0000250" [PRIDE:PRIDE]
 synonym: "host_taxid" EXACT [GSCMIXS:0000250]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0000999
@@ -6344,7 +6395,7 @@ name: host sex
 def: "Gender or physical sex of the host. MIXS:0000811" [PRIDE:PRIDE]
 synonym: "host_sex" EXACT [GSCMIXS:0000811]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0001000
@@ -6352,7 +6403,7 @@ name: antibiotic treatment
 def: "Information about treatment involving antibiotic administration; should include the name of antibiotic, amount administered, and treatment regimen. MIXS:0000553" [PRIDE:PRIDE]
 synonym: "host_antibiot_regm" EXACT [GSCMIXS:0000553]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000674 ! Human gut
+is_a: PRIDE:0000674 ! Human gut
 
 [Term]
 id: PRIDE:0001001
@@ -6360,7 +6411,7 @@ name: soil type
 def: "Description of the soil type or classification. This field accepts terms under soil (ENVO:00001998). MIXS:0000332" [PRIDE:PRIDE]
 synonym: "soil_type" EXACT [GSCMIXS:0000332]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0001002
@@ -6368,28 +6419,28 @@ name: soil horizon
 def: "Specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath. MIXS:0001082" [PRIDE:PRIDE]
 synonym: "soil_horizon" EXACT [GSCMIXS:0001082]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0001003
 name: vegetation
 def: "Dominant vegetation type at the sampling site in metaproteomics studies." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000828 ! Soil
+is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0001004
 name: water body type
 def: "Type of water body from which the sample was collected (e.g. ocean, lake, river, estuary, pond)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0001005
 name: sampling depth zone
 def: "Ecological depth zone of the aquatic sampling site (e.g. epipelagic, mesopelagic, bathypelagic, benthic, surface)." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0001006
@@ -6397,12 +6448,12 @@ name: water current velocity
 def: "Water current velocity at the sampling site. Measured speed and direction of water flow. MIXS:0000051" [PRIDE:PRIDE]
 synonym: "current" EXACT [GSCMIXS:0000051]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0001007
 name: total dissolved solids
 def: "Total dissolved solids (TDS) concentration in a water sample. Includes all inorganic and organic substances in solution." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
-relationship: http://purl.obolibrary.org/obo/BFO_0000050 PRIDE:0000829 ! Water
+is_a: PRIDE:0000829 ! Water
 
