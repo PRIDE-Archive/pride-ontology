@@ -4565,7 +4565,7 @@ id: PRIDE:0000703
 name: temperature
 def: "Temperature of the sample at the time of sampling. MIXS:0000113" [PRIDE:PRIDE]
 xref: NCIT:C25206
-is_a: NCIT:C25447! Characteristic
+is_a: NCIT:C25447 ! Characteristic
 is_a: PRIDE:0000674 ! Human gut
 is_a: PRIDE:0000828 ! Soil
 is_a: PRIDE:0000829 ! Water
