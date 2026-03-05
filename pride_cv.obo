@@ -207,7 +207,7 @@ is_a: BFO:0000001 ! entity
 [Term]
 id: PRIDE:0000018
 name: Disease free
-def: "Term to describe the fact that the sample derives from an organism which has been positively shown to be free of disease, e.g. as the consequence of a broad-spectrum screen.  NOTE: A request has been made to have this concept added to MeSH.  Once this has been achieved, this term will be dropped from the PRIDE CV and all uses of the this term will be updated to the appropriate MeSH concept" [PRIDE:PRIDE]
+def: "The sample derives from an organism positively shown to be free of disease, e.g. as the consequence of a broad-spectrum screen." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 
 [Term]
@@ -881,7 +881,7 @@ is_a: PRIDE:0000568 ! 2D PAGE
 [Term]
 id: PRIDE:0000124
 name: Sodium dodecyl sulfate polyacrylamide gel electrophoresis
-def: "A type of polyacrylamide gel electrophoresis in which the anionic detergent sodium dodecyl sulfate (SDS) is used to denature the sample proteins into linear monomers, rendering their charge proportional to their length so that migration is a function of size. Abbreviated SDS-polyacrylamide gel electrophoresis or SDS-PAGE" [PRIDE:PRIDE]
+def: "Polyacrylamide gel electrophoresis using sodium dodecyl sulfate (SDS) to denature proteins into linear monomers, so that migration is a function of molecular size." [PRIDE:PRIDE]
 xref: CHMO:0001027
 is_a: PRIDE:0000122 ! Two Dimensional Polyacrylamide Gel Electrophoresis
 is_a: PRIDE:0000568 ! 2D PAGE
@@ -1012,7 +1012,7 @@ is_a: PRIDE:0000573 ! Identification software
 [Term]
 id: PRIDE:0000146
 name: PepSplice precision
-def: "PepSplice precision refers to the accuracy of peptide-spectrum matches (PSMs) produced by the PepSplice search engine, a specialized tool used for the identification of peptides, particularly for novel or unexpected peptide sequences. Precision is a key metric used to assess the quality and reliability of search results in proteomics" [PRIDE:PRIDE]
+def: "Precision metric for peptide-spectrum matches produced by the PepSplice search engine, measuring the proportion of correct identifications among reported results." [PRIDE:PRIDE]
 is_a: PRIDE:0000145 ! PepSplice
 is_a: PRIDE:0000145 ! PepSplice
 
@@ -1099,7 +1099,7 @@ is_a: PRIDE:0000157 ! Search type
 [Term]
 id: PRIDE:0000159
 name: MS/MS search
-def: "MS/MS Search refers to the process of identifying molecules (typically proteins, peptides, metabolites, or small molecules) using tandem mass spectrometry (MS/MS) data. Unlike simple mass spectrometry (MS1), MS/MS involves fragmenting precursor ions into smaller product ions, generating a detailed fragmentation pattern or spectra that can be used to identify the structure or sequence of the molecule" [PRIDE:PRIDE]
+def: "Identification of peptides or proteins by matching tandem mass spectrometry (MS/MS) fragmentation spectra against a sequence database or spectral library." [PRIDE:PRIDE]
 is_a: PRIDE:0000157 ! Search type
 
 [Term]
@@ -1876,7 +1876,7 @@ is_a: PRIDE:0000002 ! ModificationItem additional parameter
 [Term]
 id: PRIDE:0000284
 name: Sf
-def: "The Sf score for each peptide is calculated by a neural network algorithm that incorporates teh Xcorr, DeltaCn, Sp, RSp, peptide mass, charge state, and the number of matched peptides for the search. The protein Sf score is the sum of peptide Sf scores for all the peptides associated with that protein" [PRIDE:PRIDE]
+def: "SEQUEST Sf score calculated by a neural network combining Xcorr, DeltaCn, Sp, RSp, peptide mass, charge state, and number of matched peptides. Protein Sf is the sum of its peptide Sf scores." [PRIDE:PRIDE]
 is_a: PRIDE:0000049 ! Peptide search engine output parameter
 is_a: PRIDE:0000045 ! Sequest
 
@@ -2726,7 +2726,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 [Term]
 id: PRIDE:0000445
 name: PRIDE Cluster score
-def: "It is an integer that gives an indication about the quality of a peptide spectrum match in PRIDE-Q. It uses the PRIDE-Cluster algorithm (described in PMID: 23361086) and different criteria to assign it (number of spectra in a cluster, ratio of the predominant peptide identification in the cluster, etc)" [PRIDE:PRIDE]
+def: "Integer quality score for a peptide-spectrum match in PRIDE-Q, derived from the PRIDE-Cluster algorithm using cluster size and predominant identification ratio (PMID:23361086)." [PRIDE:PRIDE]
 is_a: PRIDE:0000003 ! Peptide item additional parameter
 
 [Term]
@@ -2738,7 +2738,7 @@ is_a: PRIDE:0000003 ! Peptide item additional parameter
 [Term]
 id: PRIDE:0000447
 name: SWATH MS
-def: "ABsciex Data Independent Acquisition method that consists of unfractionated samples acquisition by using duty cycles adapted to HPLC chromatography, acquiring sequential wide fragment ions spectra, typically covering the precursor mass space from 400 m/z to 1200 m/z on each duty cycle. Acquired data is interrogated by using libraries of peptide coordinates (normalised elution time, fragment ion masses and intensities). It is described in PMID:22261725" [PRIDE:PRIDE]
+def: "ABSciex data-independent acquisition method using sequential wide precursor isolation windows (typically 400-1200 m/z) per duty cycle, with peptide identification via spectral libraries. Described in PMID:22261725." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 
 [Term]
@@ -2781,13 +2781,13 @@ is_a: PRIDE:0000450 ! Data-independent acquisition
 [Term]
 id: PRIDE:0000453
 name: PAcIFIC
-def: "Precursor Acquisition Independent From Ion Count. A Data Independent Acquisition method performed in ion traps that consists of the acquisition of 2.5 m/z width sequential windows over several injections of the same material, until a precursor m/z range of about 400 to 1200 m/z is covered. It is described in PMID: 21341720" [PRIDE:PRIDE]
+def: "Precursor Acquisition Independent From Ion Count. A DIA method using 2.5 m/z sequential windows across multiple injections to cover the 400-1200 m/z precursor range in ion traps (PMID:21341720)." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 
 [Term]
 id: PRIDE:0000454
 name: All-ion fragmentation
-def: "MS Data Independent Acquisition performed in Thermo Orbitrap instruments. It consists of the acquisition of cycles of two spectra, a precursor mass MS1 spectrum, and a fragment ions MS2 spectrum where a wide mass filter (typically over 800 m/z) is applied to the precursors. It is described in PMID: 20610777" [PRIDE:PRIDE]
+def: "DIA method on Thermo Orbitrap instruments acquiring alternating MS1 and MS2 scans with a wide precursor isolation window (typically over 800 m/z). Described in PMID:20610777." [PRIDE:PRIDE]
 is_a: PRIDE:0000450 ! Data-independent acquisition
 
 [Term]
@@ -4537,14 +4537,14 @@ is_a: PRIDE:0000674 ! Human gut
 [Term]
 id: PRIDE:0000700
 name: perturbation
-def: "Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types. MIXS:0000754" [PRIDE:PRIDE]
+def: "Type and regimen of perturbation applied to the sample (e.g. chemical administration, physical disturbance), including frequency, duration, and timing. MIXS:0000754" [PRIDE:PRIDE]
 is_a: PRIDE:0000674 ! Human gut
 is_a: PRIDE:0000828 ! Soil
 
 [Term]
 id: PRIDE:0000701
 name: salinity
-def: "The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater. MIXS:0000183" [PRIDE:PRIDE]
+def: "Total concentration of all dissolved salts in a liquid or solid sample, typically derived from conductivity measurements (practical salinity). MIXS:0000183" [PRIDE:PRIDE]
 is_a: PRIDE:0000674 ! Human gut
 is_a: PRIDE:0000828 ! Soil
 
@@ -4568,7 +4568,7 @@ is_a: PRIDE:0000829 ! Water
 [Term]
 id: PRIDE:0000704
 name: organism count
-def: "Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr). MIXS:0000103" [PRIDE:PRIDE]
+def: "Total cell count of any organism per gram, volume, or area of sample, including organism name, count, and enumeration method (e.g. qPCR, ATP, MPN). MIXS:0000103" [PRIDE:PRIDE]
 is_a: MMO:0000222 ! isolated cell method
 is_a: PRIDE:0000674 ! Human gut
 is_a: PRIDE:0000828 ! Soil
@@ -4628,7 +4628,7 @@ is_a: PRIDE:0000829 ! Water
 [Term]
 id: PRIDE:0000712
 name: elevation
-def: "Elevation of the sampling site is its height above a fixed reference point, most commonly the mean sea level. Elevation is mainly used when referring to points on the earth's surface, while altitude is used for points above the surface, such as an aircraft in flight or a spacecraft in orbit MIXS:0000093" [PRIDE:PRIDE]
+def: "Height of the sampling site above mean sea level. MIXS:0000093" [PRIDE:PRIDE]
 is_a: PATO:0000140 ! Position
 is_a: PRIDE:0000828 ! Soil
 is_a: PRIDE:0000829 ! Water
@@ -5389,7 +5389,7 @@ is_a: EFO:0009090 ! enrichment process
 [Term]
 id: PRIDE:0000838
 name: enrichment of cross-linked peptides
-def: "A sample enrichment process where peptides containing chemical cross-links are selectively enriched prior to mass spectrometry analysis. Cross-linked peptides are typically enriched using size exclusion chromatography, strong cation exchange chromatography, or other separation techniques that exploit the larger size and higher charge of cross-linked species." [PRIDE:PRIDE]
+def: "Selective enrichment of cross-linked peptides prior to mass spectrometry analysis, typically using size exclusion or strong cation exchange chromatography." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 is_a: EFO:0009090 ! enrichment process
 
