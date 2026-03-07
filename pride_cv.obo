@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 05:03:2026 10:00
-data-version: releases/2026-03-05
+date: 07:03:2026 10:00
+data-version: releases/2026-03-07
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -6451,4 +6451,46 @@ name: total dissolved solids
 def: "Total dissolved solids (TDS) concentration in a water sample. Includes all inorganic and organic substances in solution." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001008
+name: MS1 scan range
+def: "m/z scan range for MS1 spectra, expressed as an interval (e.g., 400m/z-1200m/z)." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001009
+name: MS2 scan range
+def: "m/z scan range for MS2 spectra, expressed as an interval (e.g., 100m/z-2000m/z)." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001010
+name: MS3 scan range
+def: "m/z scan range for MS3 spectra, expressed as an interval (e.g., 100m/z-1500m/z)." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001011
+name: MS2 min MZ
+def: "Minimum product ion mass to charge setting for MS2 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001012
+name: MS2 max MZ
+def: "Maximum product ion mass to charge setting for MS2 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001013
+name: MS3 min MZ
+def: "Minimum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001014
+name: MS3 max MZ
+def: "Maximum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
 
