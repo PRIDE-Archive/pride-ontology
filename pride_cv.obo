@@ -1,5 +1,5 @@
 format-version: 1.4
-date: 05:03:2026 10:00
+date: 26:03:2026 11:32
 data-version: releases/2026-03-05
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
@@ -6451,4 +6451,10 @@ name: total dissolved solids
 def: "Total dissolved solids (TDS) concentration in a water sample. Includes all inorganic and organic substances in solution." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001008
+name: Peptidomics
+def: "It comprises the comprehensive qualitative and quantitative analysis of the suite of peptides in a biological sample" [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
 
