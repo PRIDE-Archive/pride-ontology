@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 05:03:2026 10:00
-data-version: releases/2026-03-05
-saved-by: Yasset Perez-Riverol
+date: 27:04:2026 11:00
+data-version: releases/2026-04-27
+saved-by: Nithu Sara John
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
@@ -20,9 +20,6 @@ property_value: dce:creator "Deepti Jaiswal Kundu" xsd:string
 property_value: dce:creator "Nithu Sara John" xsd:string
 property_value: dce:creator "Yasset Perez-Riverol" xsd:string
 property_value: dce:homepage https://github.com/PRIDE-Archive/pride-ontology
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000674
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000828
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000829
 ontology: pride
 
 [Typedef]
@@ -6451,4 +6448,17 @@ name: total dissolved solids
 def: "Total dissolved solids (TDS) concentration in a water sample. Includes all inorganic and organic substances in solution." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001008
+name: n-alkanes
+def: "Concentration of n-alkanes (MIXS:0000503)" [PRIDE:PRIDE]
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001009
+name: soil type method 
+def: "Reference or method used in determining soil series name or other lower-level classification (MIXS:0000334)" [PRIDE:PRIDE]
+is_a: PRIDE:0000828 ! Soil
+
 
