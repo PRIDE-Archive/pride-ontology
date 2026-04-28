@@ -7591,7 +7591,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000403</oboInOwl:id>
-        <rdfs:label>Associated file URI</rdfs:label>
+        <rdfs:label>associated file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000403"/>
@@ -19948,6 +19948,31 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Reference or method used in determining soil series name or other lower-level classification (MIXS:0000334)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000006"/>
+        <obo:IAO_0000115>Name of an additional data file required to interpret the primary data file (e.g. an AB Sciex .wiff.scan companion to a .wiff file). Used in SDRF as comment[associated data file].</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001010</oboInOwl:id>
+        <rdfs:label>associated data file</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Name of an additional data file required to interpret the primary data file (e.g. an AB Sciex .wiff.scan companion to a .wiff file). Used in SDRF as comment[associated data file].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:string</owl:annotatedTarget>
+        <rdfs:comment>The allowed value-type for this CV term</rdfs:comment>
     </owl:Axiom>
 </rdf:RDF>
 
