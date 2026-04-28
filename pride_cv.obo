@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 27:04:2026 11:00
-data-version: releases/2026-04-27
+date: 28:04:2026 12:00
+data-version: releases/2026-04-28
 saved-by: Nithu Sara John
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -2443,17 +2443,17 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000403
-name: Associated file URI
+name: associated file uri
 def: "URI of one external file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000404
-name: Associated raw file URI
+name: associated raw file uri
 def: "URI of a raw data file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2471,10 +2471,10 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000407
-name: Result file URI
+name: result file uri
 def: "URI of one file labeled as 'Result', associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2482,15 +2482,15 @@ id: PRIDE:0000408
 name: Search engine output file URI
 def: "URI of one search engine output file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
 id: PRIDE:0000409
-name: Peak list file URI
+name: peak list file uri
 def: "URI of one of one search engine output file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2498,7 +2498,7 @@ id: PRIDE:0000410
 name: 'Other' type file URI
 def: "URI of one file labeled as 'Other', associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2743,7 +2743,7 @@ id: PRIDE:0000448
 name: Additional associated raw file URI
 def: "Additional URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission). The URI is provided via an additional resource to PRIDE" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2751,7 +2751,7 @@ id: PRIDE:0000449
 name: Gel image file URI
 def: "URI of one gel image file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -3685,7 +3685,7 @@ relationship: part_of PRIDE:0000860 ! TMT35PLEX
 id: PRIDE:0000584
 name: Experimental design file URI
 def: "Experimental design file URI" [PRIDE:PRIDE]
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -6457,8 +6457,15 @@ is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0001009
-name: soil type method 
+name: soil type method
 def: "Reference or method used in determining soil series name or other lower-level classification (MIXS:0000334)" [PRIDE:PRIDE]
 is_a: PRIDE:0000828 ! Soil
+
+[Term]
+id: PRIDE:0001010
+name: associated data file
+def: "Name of an additional data file required to interpret the primary data file (e.g. an AB Sciex .wiff.scan companion to a .wiff file). Used in SDRF as comment[associated data file]." [PRIDE:PRIDE]
+xref: value-type:xsd\:string "The allowed value-type for this CV term"
+is_a: PRIDE:0000006 ! Experiment additional parameter
 
 

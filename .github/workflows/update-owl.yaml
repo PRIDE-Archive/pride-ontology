@@ -60,7 +60,7 @@ jobs:
           merge-method: squash
       - name: GitHub Tag
         id: new_tag
-        uses: mathieudutour/github-tag-action@v5.6
+        uses: mathieudutour/github-tag-action@v6.2
         with:
           github_token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           pre_release_branches: test-tag
