@@ -2450,7 +2450,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000404
-name: Associated raw file URI
+name: associated raw file uri
 def: "URI of a raw data file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000403 ! associated file uri
@@ -2471,7 +2471,7 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000407
-name: Result file URI
+name: result file uri
 def: "URI of one file labeled as 'Result', associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000403 ! associated file uri
@@ -2487,7 +2487,7 @@ is_a: PRIDE:0000577 ! file uri
 
 [Term]
 id: PRIDE:0000409
-name: Peak list file URI
+name: peak list file uri
 def: "URI of one of one search engine output file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000403 ! associated file uri

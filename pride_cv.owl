@@ -7617,7 +7617,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000404</oboInOwl:id>
-        <rdfs:label>Associated raw file URI</rdfs:label>
+        <rdfs:label>associated raw file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000404"/>
@@ -7686,7 +7686,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000407</oboInOwl:id>
-        <rdfs:label>Result file URI</rdfs:label>
+        <rdfs:label>result file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000407"/>
@@ -7738,7 +7738,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000409</oboInOwl:id>
-        <rdfs:label>Peak list file URI</rdfs:label>
+        <rdfs:label>peak list file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000409"/>
