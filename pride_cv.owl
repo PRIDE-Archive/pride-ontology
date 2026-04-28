@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-04-27/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-04-28/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <dce:creator>Deepti Jaiswal Kundu</dce:creator>
@@ -49,7 +49,7 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>27:04:2026 11:00</oboInOwl:date>
+        <oboInOwl:date>28:04:2026 12:00</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>Nithu Sara John</oboInOwl:saved-by>
@@ -7591,7 +7591,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000403</oboInOwl:id>
-        <rdfs:label>Associated file URI</rdfs:label>
+        <rdfs:label>associated file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000403"/>
@@ -7617,7 +7617,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000404</oboInOwl:id>
-        <rdfs:label>Associated raw file URI</rdfs:label>
+        <rdfs:label>associated raw file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000404"/>
@@ -7686,7 +7686,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000407</oboInOwl:id>
-        <rdfs:label>Result file URI</rdfs:label>
+        <rdfs:label>result file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000407"/>
@@ -7738,7 +7738,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000409</oboInOwl:id>
-        <rdfs:label>Peak list file URI</rdfs:label>
+        <rdfs:label>peak list file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000409"/>
@@ -19948,6 +19948,31 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Reference or method used in determining soil series name or other lower-level classification (MIXS:0000334)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000006"/>
+        <obo:IAO_0000115>Name of an additional data file required to interpret the primary data file (e.g. an AB Sciex .wiff.scan companion to a .wiff file). Used in SDRF as comment[associated data file].</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001010</oboInOwl:id>
+        <rdfs:label>associated data file</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Name of an additional data file required to interpret the primary data file (e.g. an AB Sciex .wiff.scan companion to a .wiff file). Used in SDRF as comment[associated data file].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:string</owl:annotatedTarget>
+        <rdfs:label>The allowed value-type for this CV term</rdfs:label>
     </owl:Axiom>
 </rdf:RDF>
 
