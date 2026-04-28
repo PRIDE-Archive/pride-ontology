@@ -13,7 +13,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Extract version from OBO
         run: |
           CV_VERSION=`grep data-version pride_cv.obo | grep -oP "(\d+.\d+.\d+)"`
@@ -35,7 +35,7 @@ jobs:
           rm tmp_unimod.obo
       - name: Create pull request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           commit-message: Update PRIDE OWL file
@@ -53,7 +53,7 @@ jobs:
           number: ${{ steps.cpr.outputs.pull-request-number }}
       - name: Merge pull request
         if: (steps.cpr.outputs.pull-request-operation == 'created' ||	steps.cpr.outputs.pull-request-operation == 'updated')
-        uses: peter-evans/enable-pull-request-automerge@v2
+        uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
