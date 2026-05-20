@@ -1,5 +1,5 @@
 format-version: 1.4
-date: 28:04:2026 12:00
+date: 20:05:2026 09:15
 data-version: releases/2026-04-28
 saved-by: Nithu Sara John
 default-namespace: PRIDE
@@ -12,6 +12,7 @@ remark: URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo
 idspace: dce http://purl.org/dc/elements/1.1/
 idspace: dcterms http://purl.org/dc/terms/
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl#
+idspace: ols http://www.ebi.ac.uk/ols/vocabulary/
 property_value: dce:description "Proteomics Identification Database Ontology, terms describing proteomics data and experimental metadata" xsd:string
 property_value: dce:title "Proteomics Identification Database Ontology" xsd:string
 property_value: dce:license https://creativecommons.org/licenses/by/4.0/
@@ -20,6 +21,20 @@ property_value: dce:creator "Deepti Jaiswal Kundu" xsd:string
 property_value: dce:creator "Nithu Sara John" xsd:string
 property_value: dce:creator "Yasset Perez-Riverol" xsd:string
 property_value: dce:homepage https://github.com/PRIDE-Archive/pride-ontology
+property_value: ols:hasPreferredRootTerm PRIDE:0000000
+property_value: ols:hasPreferredRootTerm PRIDE:0000001
+property_value: ols:hasPreferredRootTerm PRIDE:0000002
+property_value: ols:hasPreferredRootTerm PRIDE:0000003
+property_value: ols:hasPreferredRootTerm PRIDE:0000004
+property_value: ols:hasPreferredRootTerm PRIDE:0000005
+property_value: ols:hasPreferredRootTerm PRIDE:0000006
+property_value: ols:hasPreferredRootTerm PRIDE:0000017
+property_value: ols:hasPreferredRootTerm PRIDE:0000278
+property_value: ols:hasPreferredRootTerm PRIDE:0000391
+property_value: ols:hasPreferredRootTerm PRIDE:0000457
+property_value: ols:hasPreferredRootTerm PRIDE:0000470
+property_value: ols:hasPreferredRootTerm PRIDE:0000484
+property_value: ols:hasPreferredRootTerm PRIDE:0000547
 ontology: pride
 
 [Typedef]
