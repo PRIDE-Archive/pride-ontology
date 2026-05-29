@@ -4,6 +4,7 @@
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:ols="http://www.ebi.ac.uk/ols/vocabulary/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,7 +15,7 @@
      xmlns:efo4="http://www.ebi.ac.uk/efo/#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obo1="http://purl.obolibrary.org/obo#"
-     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
@@ -31,7 +32,6 @@
      xmlns:chemrof="https://w3id.org/chemrof/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:patterns="http://www.co-ode.org/patterns#"
@@ -40,6 +40,20 @@
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-04-28/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000000"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000001"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000002"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000003"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000004"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000005"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000006"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000017"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000278"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000391"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000457"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000470"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000484"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000547"/>
         <dce:creator>Deepti Jaiswal Kundu</dce:creator>
         <dce:creator>Nithu Sara John</dce:creator>
         <dce:creator>Yasset Perez-Riverol</dce:creator>
@@ -49,7 +63,7 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>28:04:2026 12:00</oboInOwl:date>
+        <oboInOwl:date>20:05:2026 09:15</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>Nithu Sara John</oboInOwl:saved-by>
