@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 20:05:2026 09:15
-data-version: releases/2026-04-28
+date: 01:06:2026 10:00
+data-version: releases/2026-06-01
 saved-by: Nithu Sara John
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
