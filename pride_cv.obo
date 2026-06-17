@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 01:06:2026 10:00
-data-version: releases/2026-06-01
+date: 17:06:2026 10:00
+data-version: releases/2026-06-17
 saved-by: Nithu Sara John
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -3424,21 +3424,27 @@ is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
 id: PRIDE:0000544
-name: Quality Control Sample
-def: "Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings" [PRIDE:PRIDE]
-is_a: PRIDE:0000895 ! sample type
+name: quality control sample
+def: "Control sample run to monitor assay, batch, or instrument performance and stability over time, without primarily serving as the quantitative calibration anchor." [PRIDE:PRIDE]
+is_a: PRIDE:0001012 ! control sample
 
 [Term]
 id: PRIDE:0000545
 name: QC1 sample
 def: "QC1 sample as described in 10.1371/journal.pone.0189209" [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+comment: Historically used for low-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]
+is_a: PRIDE:0000544 ! quality control sample
+is_obsolete: true
+replaced_by: PRIDE:0000544 ! quality control sample
 
 [Term]
 id: PRIDE:0000546
 name: QC2 sample
 def: "QC2 sample as described in 10.1371/journal.pone.0189209" [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+comment: Historically used for high-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]
+is_a: PRIDE:0000544 ! quality control sample
+is_obsolete: true
+replaced_by: PRIDE:0000544 ! quality control sample
 
 [Term]
 id: PRIDE:0000547
@@ -5728,9 +5734,17 @@ xref: NCIT:C71329
 [Term]
 id: PRIDE:0000895
 name: sample type
-def: "Classification of the sample role in a proteomics experiment. Distinguishes experimental samples from controls, references, and other channel roles in multiplexed or plate-based experiments." [PRIDE:PRIDE]
+def: "Classification of the sample role in a proteomics experiment. Distinguishes study samples under investigation from controls, references, and other channel roles in multiplexed or plate-based experiments." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 xref: NCIT:C210102
+
+[Term]
+id: PRIDE:0001011
+name: study sample
+def: "Biological or experimental sample representing a unit under investigation in the study, as opposed to control, reference, calibration, or quality-monitoring materials." [PRIDE:PRIDE]
+synonym: "experimental sample" EXACT []
+synonym: "analyte sample" RELATED []
+is_a: PRIDE:0000895 ! sample type
 
 [Term]
 id: PRIDE:0000897
@@ -5784,43 +5798,43 @@ is_a: PRIDE:0000017 ! Sample description additional parameter
 id: PRIDE:0000905
 name: negative control
 def: "A negative control sample containing no analyte of interest, used to assess background signal and non-specific binding." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001012 ! control sample
 
 [Term]
 id: PRIDE:0000906
 name: positive control
 def: "A positive control sample with known analyte content, used to verify assay sensitivity and specificity." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001012 ! control sample
 
 [Term]
 id: PRIDE:0000907
 name: bulk control
 def: "A bulk sample used as a control in single-cell proteomics experiments to benchmark single-cell measurements against bulk-level measurements." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001012 ! control sample
 
 [Term]
 id: PRIDE:0000908
 name: standard
-def: "A calibration standard sample with known composition used for quantitative calibration of the assay." [PRIDE:PRIDE]
-is_a: PRIDE:0000895 ! sample type
+def: "A calibration sample with well-characterized known composition used as a reference material for quantification or method benchmarking (e.g. digested proteome standards in mass spectrometry workflows)." [PRIDE:PRIDE]
+is_a: PRIDE:0001013 ! calibration sample
 
 [Term]
 id: PRIDE:0000909
 name: calibrator
-def: "An instrument or assay calibrator sample used to establish measurement accuracy and precision." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+def: "Calibration sample used during assay or instrument processing to set or correct measurement values (e.g. Olink Calibrator, SomaScan Calibrator Control)." [PRIDE:PRIDE]
+is_a: PRIDE:0001013 ! calibration sample
 
 [Term]
 id: PRIDE:0000910
 name: plate control
 def: "A plate-level control sample used in plate-based assays (Olink, SomaScan) to monitor intra-plate and inter-plate variability." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001012 ! control sample
 
 [Term]
 id: PRIDE:0000911
 name: buffer control
 def: "A buffer-only control sample used to assess background signal from reagents and sample processing." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001012 ! control sample
 
 [Term]
 id: PRIDE:0000912
@@ -6482,5 +6496,17 @@ name: associated data file
 def: "Name of an additional data file required to interpret the primary data file (e.g. an AB Sciex .wiff.scan companion to a .wiff file). Used in SDRF as comment[associated data file]." [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
+
+[Term]
+id: PRIDE:0001012
+name: control sample
+def: "Sample included in an experiment or assay plate to validate performance, establish measurement scale, or monitor stability, as opposed to study samples under investigation." [PRIDE:PRIDE]
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0001013
+name: calibration sample
+def: "Control sample with known or assigned reference values used to establish, adjust, or verify the quantitative measurement scale of an assay or instrument." [PRIDE:PRIDE]
+is_a: PRIDE:0001012 ! control sample
 
 
