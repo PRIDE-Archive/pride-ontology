@@ -6483,4 +6483,17 @@ def: "Name of an additional data file required to interpret the primary data fil
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
+[Term]
+id: PRIDE:0001011
+name: broad-scale environmental context
+def: "Report the major environmental system the sample or specimen came from (MIXS:0000012)." [PRIDE:PRIDE]
+is_a: PRIDE:0000458 ! Metaproteomics
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0001012
+name: local environmental context
+def: "Report the entity or entities which are in the sample or specimen s local vicinity and which you believe have significant causal influences on your sample or specimen (MIXS:0000013)." [PRIDE:PRIDE]
+is_a: PRIDE:0000458 ! Metaproteomics
+is_a: PRIDE:0000017 ! Sample description additional parameter
 
