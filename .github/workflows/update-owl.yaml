@@ -65,4 +65,3 @@ jobs:
           github_token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           pre_release_branches: test-tag
           custom_tag: ${{ env.CV_VERSION }}
-          skip_existing_tags: true
