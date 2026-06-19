@@ -6509,6 +6509,7 @@ name: calibration sample
 def: "Control sample with known or assigned reference values used to establish, adjust, or verify the quantitative measurement scale of an assay or instrument." [PRIDE:PRIDE]
 is_a: PRIDE:0001012 ! control sample
 
+[Term]
 id: PRIDE:0001011
 name: broad-scale environmental context
 def: "Report the major environmental system the sample or specimen came from (MIXS:0000012)." [PRIDE:PRIDE]
