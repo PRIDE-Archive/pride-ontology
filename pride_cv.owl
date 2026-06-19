@@ -19988,6 +19988,44 @@
         <owl:annotatedTarget>value-type:xsd:string</owl:annotatedTarget>
         <rdfs:label>The allowed value-type for this CV term</rdfs:label>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000458"/>
+        <obo:IAO_0000115>Report the major environmental system the sample or specimen came from (MIXS:0000012).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001011</oboInOwl:id>
+        <rdfs:label>broad-scale environmental context</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Report the major environmental system the sample or specimen came from (MIXS:0000012).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000458"/>
+        <obo:IAO_0000115>Report the entity or entities which are in the sample or specimen s local vicinity and which you believe have significant causal influences on your sample or specimen (MIXS:0000013).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001012</oboInOwl:id>
+        <rdfs:label>local environmental context</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Report the entity or entities which are in the sample or specimen s local vicinity and which you believe have significant causal influences on your sample or specimen (MIXS:0000013).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 
