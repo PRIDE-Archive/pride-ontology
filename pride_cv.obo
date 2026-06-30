@@ -3433,7 +3433,6 @@ id: PRIDE:0000545
 name: QC1 sample
 def: "QC1 sample as described in 10.1371/journal.pone.0189209" [PRIDE:PRIDE]
 comment: Historically used for low-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! quality control sample
 is_obsolete: true
 replaced_by: PRIDE:0000544 ! quality control sample
 
@@ -3442,7 +3441,6 @@ id: PRIDE:0000546
 name: QC2 sample
 def: "QC2 sample as described in 10.1371/journal.pone.0189209" [PRIDE:PRIDE]
 comment: Historically used for high-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! quality control sample
 is_obsolete: true
 replaced_by: PRIDE:0000544 ! quality control sample
 
