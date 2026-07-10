@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-06-01/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-06-19/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE:0000000"/>
@@ -63,10 +63,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>01:06:2026 10:00</oboInOwl:date>
+        <oboInOwl:date>17:06:2026 14:30</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Nithu Sara John</oboInOwl:saved-by>
+        <oboInOwl:saved-by>Asier Larrea</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -192,6 +192,12 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
         <rdfs:label>shorthand</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     
 
 
@@ -10796,16 +10802,16 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000544 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000544">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000895"/>
-        <obo:IAO_0000115>Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
+        <obo:IAO_0000115>Control sample run to monitor assay, batch, or instrument performance and stability over time, without primarily serving as the quantitative calibration anchor.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000544</oboInOwl:id>
-        <rdfs:label>Quality Control Sample</rdfs:label>
+        <rdfs:label>quality control sample</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings</owl:annotatedTarget>
+        <owl:annotatedTarget>Control sample run to monitor assay, batch, or instrument performance and stability over time, without primarily serving as the quantitative calibration anchor.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -10814,11 +10820,13 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000545 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000545">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <obo:IAO_0000115>QC1 sample as described in 10.1371/journal.pone.0189209</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000545</oboInOwl:id>
+        <rdfs:comment>Historically used for low-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]</rdfs:comment>
         <rdfs:label>QC1 sample</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000545"/>
@@ -10832,11 +10840,13 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000546 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000546">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <obo:IAO_0000115>QC2 sample as described in 10.1371/journal.pone.0189209</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000546</oboInOwl:id>
+        <rdfs:comment>Historically used for high-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]</rdfs:comment>
         <rdfs:label>QC2 sample</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000546"/>
@@ -17791,7 +17801,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000895">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
-        <obo:IAO_0000115>Classification of the sample role in a proteomics experiment. Distinguishes experimental samples from controls, references, and other channel roles in multiplexed or plate-based experiments.</obo:IAO_0000115>
+        <obo:IAO_0000115>Classification of the sample role in a proteomics experiment. Distinguishes study samples under investigation from controls, references, and other channel roles in multiplexed or plate-based experiments.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C210102</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000895</oboInOwl:id>
@@ -17800,7 +17810,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000895"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Classification of the sample role in a proteomics experiment. Distinguishes experimental samples from controls, references, and other channel roles in multiplexed or plate-based experiments.</owl:annotatedTarget>
+        <owl:annotatedTarget>Classification of the sample role in a proteomics experiment. Distinguishes study samples under investigation from controls, references, and other channel roles in multiplexed or plate-based experiments.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -17953,7 +17963,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000905 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000905">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
         <obo:IAO_0000115>A negative control sample containing no analyte of interest, used to assess background signal and non-specific binding.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000905</oboInOwl:id>
@@ -17971,7 +17981,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000906 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000906">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
         <obo:IAO_0000115>A positive control sample with known analyte content, used to verify assay sensitivity and specificity.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000906</oboInOwl:id>
@@ -17989,7 +17999,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000907 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000907">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
         <obo:IAO_0000115>A bulk sample used as a control in single-cell proteomics experiments to benchmark single-cell measurements against bulk-level measurements.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000907</oboInOwl:id>
@@ -18007,8 +18017,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000908 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000908">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000895"/>
-        <obo:IAO_0000115>A calibration standard sample with known composition used for quantitative calibration of the assay.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001015"/>
+        <obo:IAO_0000115>A calibration sample with well-characterized known composition used as a reference material for quantification or method benchmarking (e.g. digested proteome standards in mass spectrometry workflows).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000908</oboInOwl:id>
         <rdfs:label>standard</rdfs:label>
@@ -18016,7 +18026,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000908"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A calibration standard sample with known composition used for quantitative calibration of the assay.</owl:annotatedTarget>
+        <owl:annotatedTarget>A calibration sample with well-characterized known composition used as a reference material for quantification or method benchmarking (e.g. digested proteome standards in mass spectrometry workflows).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -18025,8 +18035,8 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000909 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000909">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
-        <obo:IAO_0000115>An instrument or assay calibrator sample used to establish measurement accuracy and precision.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001015"/>
+        <obo:IAO_0000115>Calibration sample used during assay or instrument processing to set or correct measurement values (e.g. Olink Calibrator, SomaScan Calibrator Control).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000909</oboInOwl:id>
         <rdfs:label>calibrator</rdfs:label>
@@ -18034,7 +18044,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000909"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An instrument or assay calibrator sample used to establish measurement accuracy and precision.</owl:annotatedTarget>
+        <owl:annotatedTarget>Calibration sample used during assay or instrument processing to set or correct measurement values (e.g. Olink Calibrator, SomaScan Calibrator Control).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -18043,7 +18053,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000910 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000910">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
         <obo:IAO_0000115>A plate-level control sample used in plate-based assays (Olink, SomaScan) to monitor intra-plate and inter-plate variability.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000910</oboInOwl:id>
@@ -18061,7 +18071,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000911 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000911">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
         <obo:IAO_0000115>A buffer-only control sample used to assess background signal from reagents and sample processing.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000911</oboInOwl:id>
@@ -20024,6 +20034,62 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Report the entity or entities which are in the sample or specimen s local vicinity and which you believe have significant causal influences on your sample or specimen (MIXS:0000013).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000895"/>
+        <obo:IAO_0000115>Biological or experimental sample representing a unit under investigation in the study, as opposed to control, reference, calibration, or quality-monitoring materials.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>experimental sample</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>analyte sample</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001013</oboInOwl:id>
+        <rdfs:label>study sample</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biological or experimental sample representing a unit under investigation in the study, as opposed to control, reference, calibration, or quality-monitoring materials.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000895"/>
+        <obo:IAO_0000115>Sample included in an experiment or assay plate to validate performance, establish measurement scale, or monitor stability, as opposed to study samples under investigation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001014</oboInOwl:id>
+        <rdfs:label>control sample</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sample included in an experiment or assay plate to validate performance, establish measurement scale, or monitor stability, as opposed to study samples under investigation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
+        <obo:IAO_0000115>Control sample with known or assigned reference values used to establish, adjust, or verify the quantitative measurement scale of an assay or instrument.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001015</oboInOwl:id>
+        <rdfs:label>calibration sample</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Control sample with known or assigned reference values used to establish, adjust, or verify the quantitative measurement scale of an assay or instrument.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
