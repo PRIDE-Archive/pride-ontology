@@ -6526,3 +6526,78 @@ id: PRIDE:0001016
 name: blank
 def: "A sample or analytical run lacking the intended analyte and used to characterize background or contamination associated with an experimental workflow." [PRIDE:PRIDE]
 is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0001017
+name: NULISA affinity proteomics
+def: "Refers to technologies like NULISA (NUcleic acid-Linked Immuno-Sandwich Assay) that use pairs of DNA-barcoded antibodies as the binding agents for protein detection. A dual immunocomplex capture and release step suppresses background, and ligated reporter DNA is quantified by qPCR or next-generation sequencing." [PRIDE:PRIDE]
+synonym: "NUcleic acid-Linked Immuno-Sandwich Assay" EXACT []
+is_a: PRIDE:0000635 ! Affinity proteomics
+
+[Term]
+id: PRIDE:0001018
+name: NULISA platform
+def: "Alamar Biosciences NULISA platform" [PRIDE:PRIDE]
+synonym: "Alamar Biosciences NULISA" EXACT []
+synonym: "NULISA instrument model" EXACT []
+is_a: PRIDE:0000912 ! assay platform
+
+[Term]
+id: PRIDE:0001019
+name: NULISAseq
+def: "Multiplex NULISA assay in which the ARGO HT instrument produces a pooled reporter DNA library that is sequenced on an Illumina sequencer; sequencing counts are processed into NPQ values." [PRIDE:PRIDE]
+is_a: PRIDE:0001018 ! NULISA platform
+
+[Term]
+id: PRIDE:0001020
+name: NULISA panel
+def: "A panel (menu) of protein targets measured using Alamar Biosciences NULISA technology." [PRIDE:PRIDE]
+is_a: PRIDE:0000913 ! assay panel
+
+[Term]
+id: PRIDE:0001021
+name: NULISAseq Inflammation Panel 250
+def: "NULISAseq multiplex panel measuring approximately 250 inflammation-related proteins, mainly cytokines and chemokines (Alamar part no. 800103)." [PRIDE:PRIDE]
+synonym: "200-plex Inflammation v1" RELATED []
+is_a: PRIDE:0001022 ! NULISA panel
+
+[Term]
+id: PRIDE:0001022
+name: NULISAseq Inflammation Panel AQ
+def: "NULISAseq multiplex panel providing absolute quantification of over 150 inflammation-related proteins (Alamar part no. 800154)." [PRIDE:PRIDE]
+is_a: PRIDE:0001022 ! NULISA panel
+
+[Term]
+id: PRIDE:0001023
+name: NULISAseq CNS Disease Panel 120
+def: "NULISAseq multiplex panel measuring 120 neuro-specific and inflammatory proteins in plasma or CSF (Alamar part no. 800104)." [PRIDE:PRIDE]
+is_a: PRIDE:0001022 ! NULISA panel
+
+[Term]
+id: PRIDE:0001024
+name: NULISAseq Neuro 220
+def: "NULISAseq multiplex panel extending the CNS Disease Panel 120 with approximately 100 additional neurology-related proteins (Alamar part no. 800471)." [PRIDE:PRIDE]
+synonym: "NULISAseq Neuro 220 Panel" EXACT []
+is_a: PRIDE:0001022 ! NULISA panel
+
+[Term]
+id: PRIDE:0001025
+name: NULISAseq Immune 340 Panel
+def: "NULISAseq multiplex panel measuring 336 immune proteins across immuno-oncology, autoimmunity, chronic inflammation and systemic immunology pathways (Alamar part no. 800472)." [PRIDE:PRIDE]
+is_a: PRIDE:0001022 ! NULISA panel
+
+[Term]
+id: PRIDE:0001026
+name: NPQ
+def: "NULISA Protein Quantification: a normalized, log2-scale measure of relative protein abundance, derived from sequencing counts after internal control and inter-plate control normalization." [PRIDE:PRIDE]
+synonym: "NULISA Protein Quantification" EXACT []
+is_a: PRIDE:0000652 ! Relative quantification
+
+[Term]
+id: PRIDE:0001027
+name: RFU
+def: "Relative Fluorescence Units: the signal intensity reported by SomaLogic SomaScan assays as a relative measure of protein abundance." [PRIDE:PRIDE]
+synonym: "Relative Fluorescence Units" EXACT []
+is_a: PRIDE:0000652 ! Relative quantification
+
+
