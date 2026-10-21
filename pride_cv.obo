@@ -6600,4 +6600,10 @@ def: "Relative Fluorescence Units: the signal intensity reported by SomaLogic So
 synonym: "Relative Fluorescence Units" EXACT []
 is_a: PRIDE:0000652 ! Relative quantification
 
+[Term]
+id: PRIDE:0001028
+name: alamar ARGO HT system
+def: "The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows." [PRIDE:PRIDE]
+synonym: "ARGO HT; ARGO™ HT System" EXACT []
+is_a: PRIDE:0000912 ! assay platform
 
