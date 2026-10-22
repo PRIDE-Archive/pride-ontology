@@ -63,7 +63,7 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>22:09:2026 10:38</oboInOwl:date>
+        <oboInOwl:date>21:10:2026 11:50</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>Nithu Sara John</oboInOwl:saved-by>
@@ -20108,6 +20108,230 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A sample or analytical run lacking the intended analyte and used to characterize background or contamination associated with an experimental workflow.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000635"/>
+        <obo:IAO_0000115>Refers to technologies like NULISA (NUcleic acid-Linked Immuno-Sandwich Assay) that use pairs of DNA-barcoded antibodies as the binding agents for protein detection. A dual immunocomplex capture and release step suppresses background, and ligated reporter DNA is quantified by qPCR or next-generation sequencing.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NUcleic acid-Linked Immuno-Sandwich Assay</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001017</oboInOwl:id>
+        <rdfs:label>NULISA affinity proteomics</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001017"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Refers to technologies like NULISA (NUcleic acid-Linked Immuno-Sandwich Assay) that use pairs of DNA-barcoded antibodies as the binding agents for protein detection. A dual immunocomplex capture and release step suppresses background, and ligated reporter DNA is quantified by qPCR or next-generation sequencing.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000912"/>
+        <obo:IAO_0000115>Alamar Biosciences NULISA platform</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Alamar Biosciences NULISA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NULISA instrument model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001018</oboInOwl:id>
+        <rdfs:label>NULISA platform</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001018"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Alamar Biosciences NULISA platform</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001018"/>
+        <obo:IAO_0000115>Multiplex NULISA assay in which the ARGO HT instrument produces a pooled reporter DNA library that is sequenced on an Illumina sequencer; sequencing counts are processed into NPQ values.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001019</oboInOwl:id>
+        <rdfs:label>NULISAseq</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Multiplex NULISA assay in which the ARGO HT instrument produces a pooled reporter DNA library that is sequenced on an Illumina sequencer; sequencing counts are processed into NPQ values.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000913"/>
+        <obo:IAO_0000115>A panel (menu) of protein targets measured using Alamar Biosciences NULISA technology.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001020</oboInOwl:id>
+        <rdfs:label>NULISA panel</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001020"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A panel (menu) of protein targets measured using Alamar Biosciences NULISA technology.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <obo:IAO_0000115>NULISAseq multiplex panel measuring approximately 250 inflammation-related proteins, mainly cytokines and chemokines (Alamar part no. 800103).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>200-plex Inflammation v1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001021</oboInOwl:id>
+        <rdfs:label>NULISAseq Inflammation Panel 250</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>NULISAseq multiplex panel measuring approximately 250 inflammation-related proteins, mainly cytokines and chemokines (Alamar part no. 800103).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <obo:IAO_0000115>NULISAseq multiplex panel providing absolute quantification of over 150 inflammation-related proteins (Alamar part no. 800154).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001022</oboInOwl:id>
+        <rdfs:label>NULISAseq Inflammation Panel AQ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>NULISAseq multiplex panel providing absolute quantification of over 150 inflammation-related proteins (Alamar part no. 800154).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <obo:IAO_0000115>NULISAseq multiplex panel measuring 120 neuro-specific and inflammatory proteins in plasma or CSF (Alamar part no. 800104).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001023</oboInOwl:id>
+        <rdfs:label>NULISAseq CNS Disease Panel 120</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001023"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>NULISAseq multiplex panel measuring 120 neuro-specific and inflammatory proteins in plasma or CSF (Alamar part no. 800104).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <obo:IAO_0000115>NULISAseq multiplex panel extending the CNS Disease Panel 120 with approximately 100 additional neurology-related proteins (Alamar part no. 800471).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NULISAseq Neuro 220 Panel</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001024</oboInOwl:id>
+        <rdfs:label>NULISAseq Neuro 220</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001024"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>NULISAseq multiplex panel extending the CNS Disease Panel 120 with approximately 100 additional neurology-related proteins (Alamar part no. 800471).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <obo:IAO_0000115>NULISAseq multiplex panel measuring 336 immune proteins across immuno-oncology, autoimmunity, chronic inflammation and systemic immunology pathways (Alamar part no. 800472).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001025</oboInOwl:id>
+        <rdfs:label>NULISAseq Immune 340 Panel</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001025"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>NULISAseq multiplex panel measuring 336 immune proteins across immuno-oncology, autoimmunity, chronic inflammation and systemic immunology pathways (Alamar part no. 800472).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000652"/>
+        <obo:IAO_0000115>NULISA Protein Quantification: a normalized, log2-scale measure of relative protein abundance, derived from sequencing counts after internal control and inter-plate control normalization.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NULISA Protein Quantification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001026</oboInOwl:id>
+        <rdfs:label>NPQ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001026"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>NULISA Protein Quantification: a normalized, log2-scale measure of relative protein abundance, derived from sequencing counts after internal control and inter-plate control normalization.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000652"/>
+        <obo:IAO_0000115>Relative Fluorescence Units: the signal intensity reported by SomaLogic SomaScan assays as a relative measure of protein abundance.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Relative Fluorescence Units</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001027</oboInOwl:id>
+        <rdfs:label>RFU</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001027"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Relative Fluorescence Units: the signal intensity reported by SomaLogic SomaScan assays as a relative measure of protein abundance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000912"/>
+        <obo:IAO_0000115>The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ARGO HT; ARGO™ HT System</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001028</oboInOwl:id>
+        <rdfs:label>Alamar ARGO HT System</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001028"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
