@@ -63,7 +63,7 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>21:10:2026 11:50</oboInOwl:date>
+        <oboInOwl:date>26:10:2026 13:50</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>Nithu Sara John</oboInOwl:saved-by>
@@ -20100,6 +20100,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000895"/>
         <obo:IAO_0000115>A sample or analytical run lacking the intended analyte and used to characterize background or contamination associated with an experimental workflow.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>solvent blank; instrument blank; carryover blank</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0001016</oboInOwl:id>
         <rdfs:label>blank</rdfs:label>
