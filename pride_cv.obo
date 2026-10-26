@@ -1,5 +1,5 @@
 format-version: 1.4
-date: 21:10:2026 11:50
+date: 26:10:2026 13:50
 data-version: releases/2026-09-22
 saved-by: Nithu Sara John
 default-namespace: PRIDE
@@ -6525,6 +6525,7 @@ is_a: PRIDE:0001014 ! control sample
 id: PRIDE:0001016
 name: blank
 def: "A sample or analytical run lacking the intended analyte and used to characterize background or contamination associated with an experimental workflow." [PRIDE:PRIDE]
+synonym: "solvent blank; instrument blank; carryover blank" EXACT []
 is_a: PRIDE:0000895 ! sample type
 
 [Term]
