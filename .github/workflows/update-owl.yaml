@@ -6,8 +6,10 @@ on:
 
 jobs:
   generate-owl:
-    if: "! contains(github.event.head_commit.message, 'Update PRIDE OWL file')"
+    if: ${{ !contains(github.event.head_commit.message, 'Update PRIDE OWL file') && !contains(github.event.head_commit.message, 'Update OWL file') }}
     runs-on: ubuntu-latest
+    outputs:
+      pull-request-operation: ${{ steps.cpr.outputs.pull-request-operation }}
     permissions:
       contents: write
       pull-requests: write
@@ -58,8 +60,36 @@ jobs:
           token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: squash
+
+  # The generated OWL lands in a follow-up commit. Tag that commit, once.
+  tag-release:
+    needs: generate-owl
+    if: ${{ always() && !cancelled() && (needs.generate-owl.result == 'success' || needs.generate-owl.result == 'skipped') && needs.generate-owl.outputs.pull-request-operation != 'created' && needs.generate-owl.outputs.pull-request-operation != 'updated' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Extract version from OBO
+        run: |
+          CV_VERSION=`grep data-version pride_cv.obo | grep -oP "(\d+.\d+.\d+)"`
+          echo CV_VERSION=${CV_VERSION}
+          echo "CV_VERSION=${CV_VERSION}" >> $GITHUB_ENV
+      - name: Check if release tag exists
+        id: check_tag
+        run: |
+          TAG="v${CV_VERSION}"
+          refs=$(git ls-remote --tags origin "refs/tags/${TAG}" | awk '{print $2}')
+          if printf '%s\n' "$refs" | grep -Fxq "refs/tags/${TAG}" || printf '%s\n' "$refs" | grep -Fxq "refs/tags/${TAG}^{}"; then
+            echo "Tag ${TAG} already exists; leaving it in place."
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: GitHub Tag
         id: new_tag
+        if: steps.check_tag.outputs.exists == 'false'
         uses: mathieudutour/github-tag-action@v6.2
         with:
           github_token: ${{ secrets.PRIDE_CV_GITHUB_TOKEN }}
