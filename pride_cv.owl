@@ -20192,7 +20192,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0001021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001020"/>
         <obo:IAO_0000115>NULISAseq multiplex panel measuring approximately 250 inflammation-related proteins, mainly cytokines and chemokines (Alamar part no. 800103).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>200-plex Inflammation v1</oboInOwl:hasRelatedSynonym>
@@ -20211,7 +20211,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0001022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001020"/>
         <obo:IAO_0000115>NULISAseq multiplex panel providing absolute quantification of over 150 inflammation-related proteins (Alamar part no. 800154).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0001022</oboInOwl:id>
@@ -20229,7 +20229,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0001023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001020"/>
         <obo:IAO_0000115>NULISAseq multiplex panel measuring 120 neuro-specific and inflammatory proteins in plasma or CSF (Alamar part no. 800104).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0001023</oboInOwl:id>
@@ -20247,7 +20247,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0001024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001020"/>
         <obo:IAO_0000115>NULISAseq multiplex panel extending the CNS Disease Panel 120 with approximately 100 additional neurology-related proteins (Alamar part no. 800471).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>NULISAseq Neuro 220 Panel</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
@@ -20266,7 +20266,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0001025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001020"/>
         <obo:IAO_0000115>NULISAseq multiplex panel measuring 336 immune proteins across immuno-oncology, autoimmunity, chronic inflammation and systemic immunology pathways (Alamar part no. 800472).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0001025</oboInOwl:id>
@@ -20322,7 +20322,7 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0001028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000912"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000638"/>
         <obo:IAO_0000115>The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ARGO HT; ARGO™ HT System</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
