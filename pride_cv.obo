@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 07:03:2026 10:00
-data-version: releases/2026-03-07
+date: 11:11:2026 19:10
+data-version: releases/2026-11-11
 saved-by: Yasset Perez-Riverol
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -12,6 +12,7 @@ remark: URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo
 idspace: dce http://purl.org/dc/elements/1.1/
 idspace: dcterms http://purl.org/dc/terms/
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl#
+idspace: ols http://www.ebi.ac.uk/ols/vocabulary/
 property_value: dce:description "Proteomics Identification Database Ontology, terms describing proteomics data and experimental metadata" xsd:string
 property_value: dce:title "Proteomics Identification Database Ontology" xsd:string
 property_value: dce:license https://creativecommons.org/licenses/by/4.0/
@@ -20,9 +21,20 @@ property_value: dce:creator "Deepti Jaiswal Kundu" xsd:string
 property_value: dce:creator "Nithu Sara John" xsd:string
 property_value: dce:creator "Yasset Perez-Riverol" xsd:string
 property_value: dce:homepage https://github.com/PRIDE-Archive/pride-ontology
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000674
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000828
-property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000829
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000000
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000001
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000002
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000003
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000004
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000005
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000006
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000017
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000278
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000391
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000457
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000470
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000484
+property_value: http://purl.obolibrary.org/obo/IAO_0000700 http://purl.obolibrary.org/obo/PRIDE_0000547
 ontology: pride
 
 [Typedef]
@@ -2449,17 +2461,17 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000403
-name: Associated file URI
+name: associated file uri
 def: "URI of one external file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
 is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000404
-name: Associated raw file URI
+name: associated raw file uri
 def: "URI of a raw data file associated to the PRIDE experiment (maybe through a PX submission)" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2477,10 +2489,10 @@ is_a: PRIDE:0000006 ! Experiment additional parameter
 
 [Term]
 id: PRIDE:0000407
-name: Result file URI
+name: result file uri
 def: "URI of one file labeled as 'Result', associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2488,15 +2500,15 @@ id: PRIDE:0000408
 name: Search engine output file URI
 def: "URI of one search engine output file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
 id: PRIDE:0000409
-name: Peak list file URI
+name: peak list file uri
 def: "URI of one of one search engine output file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2504,7 +2516,7 @@ id: PRIDE:0000410
 name: 'Other' type file URI
 def: "URI of one file labeled as 'Other', associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2749,7 +2761,7 @@ id: PRIDE:0000448
 name: Additional associated raw file URI
 def: "Additional URI of one raw data file associated to the PRIDE experiment (maybe through a PX submission). The URI is provided via an additional resource to PRIDE" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -2757,7 +2769,7 @@ id: PRIDE:0000449
 name: Gel image file URI
 def: "URI of one gel image file associated to one PX submission" [PRIDE:PRIDE]
 xref: value-type:xsd\:string "The allowed value-type for this CV term"
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -3417,21 +3429,25 @@ is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
 id: PRIDE:0000544
-name: Quality Control Sample
-def: "Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings" [PRIDE:PRIDE]
-is_a: PRIDE:0000895 ! sample type
+name: quality control sample
+def: "Control sample run to monitor assay, batch, or instrument performance and stability over time, without primarily serving as the quantitative calibration anchor." [PRIDE:PRIDE]
+is_a: PRIDE:0001014 ! control sample
 
 [Term]
 id: PRIDE:0000545
 name: QC1 sample
 def: "QC1 sample as described in 10.1371/journal.pone.0189209" [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+comment: Historically used for low-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000544 ! quality control sample
 
 [Term]
 id: PRIDE:0000546
 name: QC2 sample
 def: "QC2 sample as described in 10.1371/journal.pone.0189209" [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+comment: Historically used for high-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]
+is_obsolete: true
+replaced_by: PRIDE:0000544 ! quality control sample
 
 [Term]
 id: PRIDE:0000547
@@ -3705,7 +3721,7 @@ relationship: part_of PRIDE:0000860 ! TMT35PLEX
 id: PRIDE:0000584
 name: Experimental design file URI
 def: "Experimental design file URI" [PRIDE:PRIDE]
-is_a: PRIDE:0000403 ! Associated file URI
+is_a: PRIDE:0000403 ! associated file uri
 is_a: PRIDE:0000577 ! file uri
 
 [Term]
@@ -5734,9 +5750,17 @@ xref: NCIT:C71329
 [Term]
 id: PRIDE:0000895
 name: sample type
-def: "Classification of the sample role in a proteomics experiment. Distinguishes experimental samples from controls, references, and other channel roles in multiplexed or plate-based experiments." [PRIDE:PRIDE]
+def: "Classification of the sample role in a proteomics experiment. Distinguishes study samples under investigation from controls, references, and other channel roles in multiplexed or plate-based experiments." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
 xref: NCIT:C210102
+
+[Term]
+id: PRIDE:0001013
+name: study sample
+def: "Biological or experimental sample representing a unit under investigation in the study, as opposed to control, reference, calibration, or quality-monitoring materials." [PRIDE:PRIDE]
+synonym: "experimental sample" EXACT []
+synonym: "analyte sample" RELATED []
+is_a: PRIDE:0000895 ! sample type
 
 [Term]
 id: PRIDE:0000897
@@ -5790,43 +5814,43 @@ is_a: PRIDE:0000017 ! Sample description additional parameter
 id: PRIDE:0000905
 name: negative control
 def: "A negative control sample containing no analyte of interest, used to assess background signal and non-specific binding." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001014 ! control sample
 
 [Term]
 id: PRIDE:0000906
 name: positive control
 def: "A positive control sample with known analyte content, used to verify assay sensitivity and specificity." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001014 ! control sample
 
 [Term]
 id: PRIDE:0000907
 name: bulk control
 def: "A bulk sample used as a control in single-cell proteomics experiments to benchmark single-cell measurements against bulk-level measurements." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001014 ! control sample
 
 [Term]
 id: PRIDE:0000908
 name: standard
-def: "A calibration standard sample with known composition used for quantitative calibration of the assay." [PRIDE:PRIDE]
-is_a: PRIDE:0000895 ! sample type
+def: "A calibration sample with well-characterized known composition used as a reference material for quantification or method benchmarking (e.g. digested proteome standards in mass spectrometry workflows)." [PRIDE:PRIDE]
+is_a: PRIDE:0001015 ! calibration sample
 
 [Term]
 id: PRIDE:0000909
 name: calibrator
-def: "An instrument or assay calibrator sample used to establish measurement accuracy and precision." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+def: "Calibration sample used during assay or instrument processing to set or correct measurement values (e.g. Olink Calibrator, SomaScan Calibrator Control)." [PRIDE:PRIDE]
+is_a: PRIDE:0001015 ! calibration sample
 
 [Term]
 id: PRIDE:0000910
 name: plate control
 def: "A plate-level control sample used in plate-based assays (Olink, SomaScan) to monitor intra-plate and inter-plate variability." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001014 ! control sample
 
 [Term]
 id: PRIDE:0000911
 name: buffer control
 def: "A buffer-only control sample used to assess background signal from reagents and sample processing." [PRIDE:PRIDE]
-is_a: PRIDE:0000544 ! Quality Control Sample
+is_a: PRIDE:0001014 ! control sample
 
 [Term]
 id: PRIDE:0000912
@@ -6472,42 +6496,174 @@ is_a: PRIDE:0000829 ! Water
 
 [Term]
 id: PRIDE:0001008
+name: n-alkanes
+def: "Concentration of n-alkanes (MIXS:0000503)" [PRIDE:PRIDE]
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001009
+name: soil type method
+def: "Reference or method used in determining soil series name or other lower-level classification (MIXS:0000334)" [PRIDE:PRIDE]
+is_a: PRIDE:0000828 ! Soil
+
+[Term]
+id: PRIDE:0001010
+name: associated data file
+def: "Name of an additional data file required to interpret the primary data file (e.g. an AB Sciex .wiff.scan companion to a .wiff file). Used in SDRF as comment[associated data file]." [PRIDE:PRIDE]
+xref: value-type:xsd\:string "The allowed value-type for this CV term"
+is_a: PRIDE:0000006 ! Experiment additional parameter
+
+[Term]
+id: PRIDE:0001011
+name: broad-scale environmental context
+def: "Report the major environmental system the sample or specimen came from (MIXS:0000012)." [PRIDE:PRIDE]
+is_a: PRIDE:0000458 ! Metaproteomics
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0001012
+name: local environmental context
+def: "Report the entity or entities which are in the sample or specimen s local vicinity and which you believe have significant causal influences on your sample or specimen (MIXS:0000013)." [PRIDE:PRIDE]
+is_a: PRIDE:0000458 ! Metaproteomics
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0001014
+name: control sample
+def: "Sample included in an experiment or assay plate to validate performance, establish measurement scale, or monitor stability, as opposed to study samples under investigation." [PRIDE:PRIDE]
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0001015
+name: calibration sample
+def: "Control sample with known or assigned reference values used to establish, adjust, or verify the quantitative measurement scale of an assay or instrument." [PRIDE:PRIDE]
+is_a: PRIDE:0001014 ! control sample
+
+[Term]
+id: PRIDE:0001016
+name: blank
+def: "A sample or analytical run lacking the intended analyte and used to characterize background or contamination associated with an experimental workflow." [PRIDE:PRIDE]
+synonym: "solvent blank; instrument blank; carryover blank" EXACT []
+is_a: PRIDE:0000895 ! sample type
+
+[Term]
+id: PRIDE:0001017
+name: NULISA affinity proteomics
+def: "Refers to technologies like NULISA (NUcleic acid-Linked Immuno-Sandwich Assay) that use pairs of DNA-barcoded antibodies as the binding agents for protein detection. A dual immunocomplex capture and release step suppresses background, and ligated reporter DNA is quantified by qPCR or next-generation sequencing." [PRIDE:PRIDE]
+synonym: "NUcleic acid-Linked Immuno-Sandwich Assay" EXACT []
+is_a: PRIDE:0000635 ! Affinity proteomics
+
+[Term]
+id: PRIDE:0001018
+name: NULISA platform
+def: "Alamar Biosciences NULISA platform" [PRIDE:PRIDE]
+synonym: "Alamar Biosciences NULISA" EXACT []
+synonym: "NULISA instrument model" EXACT []
+is_a: PRIDE:0000912 ! assay platform
+
+[Term]
+id: PRIDE:0001019
+name: NULISAseq
+def: "Multiplex NULISA assay in which the ARGO HT instrument produces a pooled reporter DNA library that is sequenced on an Illumina sequencer; sequencing counts are processed into NPQ values." [PRIDE:PRIDE]
+is_a: PRIDE:0001018 ! NULISA platform
+
+[Term]
+id: PRIDE:0001020
+name: NULISA panel
+def: "A panel (menu) of protein targets measured using Alamar Biosciences NULISA technology." [PRIDE:PRIDE]
+is_a: PRIDE:0000913 ! assay panel
+
+[Term]
+id: PRIDE:0001021
+name: NULISAseq Inflammation Panel 250
+def: "NULISAseq multiplex panel measuring approximately 250 inflammation-related proteins, mainly cytokines and chemokines (Alamar part no. 800103)." [PRIDE:PRIDE]
+synonym: "200-plex Inflammation v1" RELATED []
+is_a: PRIDE:0001020 ! NULISA panel
+
+[Term]
+id: PRIDE:0001022
+name: NULISAseq Inflammation Panel AQ
+def: "NULISAseq multiplex panel providing absolute quantification of over 150 inflammation-related proteins (Alamar part no. 800154)." [PRIDE:PRIDE]
+is_a: PRIDE:0001020 ! NULISA panel
+
+[Term]
+id: PRIDE:0001023
+name: NULISAseq CNS Disease Panel 120
+def: "NULISAseq multiplex panel measuring 120 neuro-specific and inflammatory proteins in plasma or CSF (Alamar part no. 800104)." [PRIDE:PRIDE]
+is_a: PRIDE:0001020 ! NULISA panel
+
+[Term]
+id: PRIDE:0001024
+name: NULISAseq Neuro 220
+def: "NULISAseq multiplex panel extending the CNS Disease Panel 120 with approximately 100 additional neurology-related proteins (Alamar part no. 800471)." [PRIDE:PRIDE]
+synonym: "NULISAseq Neuro 220 Panel" EXACT []
+is_a: PRIDE:0001020 ! NULISA panel
+
+[Term]
+id: PRIDE:0001025
+name: NULISAseq Immune 340 Panel
+def: "NULISAseq multiplex panel measuring 336 immune proteins across immuno-oncology, autoimmunity, chronic inflammation and systemic immunology pathways (Alamar part no. 800472)." [PRIDE:PRIDE]
+is_a: PRIDE:0001020 ! NULISA panel
+
+[Term]
+id: PRIDE:0001026
+name: NPQ
+def: "NULISA Protein Quantification: a normalized, log2-scale measure of relative protein abundance, derived from sequencing counts after internal control and inter-plate control normalization." [PRIDE:PRIDE]
+synonym: "NULISA Protein Quantification" EXACT []
+is_a: PRIDE:0000652 ! Relative quantification
+
+[Term]
+id: PRIDE:0001027
+name: RFU
+def: "Relative Fluorescence Units: the signal intensity reported by SomaLogic SomaScan assays as a relative measure of protein abundance." [PRIDE:PRIDE]
+synonym: "Relative Fluorescence Units" EXACT []
+is_a: PRIDE:0000652 ! Relative quantification
+
+[Term]
+id: PRIDE:0001028
+name: Alamar ARGO HT System
+def: "The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows." [PRIDE:PRIDE]
+synonym: "ARGO HT; ARGO™ HT System" EXACT []
+is_a: PRIDE:0000638 ! Instrument model
+
+[Term]
+id: PRIDE:0001029
 name: MS1 scan range
 def: "m/z scan range for MS1 spectra, expressed as an interval (e.g., 400m/z-1200m/z)." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
-id: PRIDE:0001009
+id: PRIDE:0001030
 name: MS2 scan range
 def: "m/z scan range for MS2 spectra, expressed as an interval (e.g., 100m/z-2000m/z)." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
-id: PRIDE:0001010
+id: PRIDE:0001031
 name: MS3 scan range
 def: "m/z scan range for MS3 spectra, expressed as an interval (e.g., 100m/z-1500m/z)." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
-id: PRIDE:0001011
+id: PRIDE:0001032
 name: MS2 min MZ
 def: "Minimum product ion mass to charge setting for MS2 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
-id: PRIDE:0001012
+id: PRIDE:0001033
 name: MS2 max MZ
 def: "Maximum product ion mass to charge setting for MS2 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
-id: PRIDE:0001013
+id: PRIDE:0001034
 name: MS3 min MZ
 def: "Minimum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
-id: PRIDE:0001014
+id: PRIDE:0001035
 name: MS3 max MZ
 def: "Maximum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties

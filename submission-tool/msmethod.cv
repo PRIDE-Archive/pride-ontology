@@ -1,0 +1,22 @@
+PRIDE	PRIDE:0000427	Top-down proteomics	Top-down proteomics
+PRIDE	PRIDE:0000428	Bottom-up proteomics	Bottom-up proteomics
+PRIDE	PRIDE:0000627	Data-dependent acquisition	Data-dependent acquisition
+PRIDE	PRIDE:0000450	Data-independent acquisition	Data-independent acquisition
+PRIDE	PRIDE:0000430	Chemical cross-linking coupled with mass spectrometry proteomics	Cross-linking (CX-MS)
+PRIDE	PRIDE:0000447	SWATH MS	SWATH MS
+PRIDE	PRIDE:0000451	MSE	MSE
+PRIDE	PRIDE:0000452	HDMSE	HDMSE
+PRIDE	PRIDE:0000453	PAcIFIC	PAcIFIC
+PRIDE	PRIDE:0000454	All-ion fragmentation	All-ion fragmentation
+PRIDE	PRIDE:0000650	diaPASEF	diaPASEF
+PRIDE	PRIDE:0000433	Affinity purification coupled with mass spectrometry proteomics	Affinity purification (AP-MS)
+PRIDE	PRIDE:0000311	SRM/MRM	SRM/MRM
+PRIDE	PRIDE:0000512	RNA mass spectrometry	RNA mass spectrometry
+PRIDE	PRIDE:0000636	SomaScan affinity proteomics	SomaScan affinity proteomics
+PRIDE	PRIDE:0000637	Olink affinity proteomics	Olink affinity proteomics
+PRIDE	PRIDE:0000647	Proteogenomics	Proteogenomics
+PRIDE	PRIDE:0000648	Metaproteomics	Metaproteomics
+PRIDE	PRIDE:0000649	Immunopeptidomics	Immunopeptidomics
+MS	MS:1002521	Mass spectrometry imaging	MS imaging
+PRIDE	PRIDE:0000305	Gel-based experiment	Gel-based proteomics
+PRIDE	PRIDE:0000665	Glycoproteomics	Glycoproteomics

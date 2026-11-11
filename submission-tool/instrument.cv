@@ -1,0 +1,37 @@
+MS	MS:1000447	LTQ	Thermo Finnigan LTQ
+MS	MS:1002523	Q Exactive HF	Q Exactive HF
+MS	MS:1000449	LTQ Orbitrap	Thermo Finnigan LTQ Orbitrap
+MS	MS:1000448	LTQ FT	Thermo Finnigan LTQ FT
+MS	MS:1001742	LTQ Orbitrap Velos	Thermo Finnigan LTQ Orbitrap Velos
+MS	MS:1000168	LCQ Classic	Thermo Finnigan LCQ Classic
+MS	MS:1001910	LTQ Orbitrap Elite	Thermo Scientific  LTQ Orbitrap Elite
+MS	MS:1001911	Q Exactive	Thermo Scientific Q Exactive
+MS	MS:1000140	4700 Proteomics Analyzer	AB SCIEX 4700 Proteomics Analyzer
+MS	MS:1000658	4800 Proteomics Analyzer	AB SCIEX 4800 Proteomics Analyzer
+MS	MS:1000932	TripleTOF 5600	AB SCIEX TripleTOF 5600
+MS	MS:1000190	QSTAR	AB SCIEX QSTAR
+MS	MS:1000187	Q TRAP	AB SCIEX Q TRAP
+MS	MS:1001555	autoflex	Bruker Daltonics' autoflex
+MS	MS:1000201	ultraflex	Bruker Daltonics' ultraflex
+MS	MS:1001541	maXis	Bruker Daltonics' maXis
+MS	MS:1000477	6410 Triple Quadrupole LC/MS	Agilent 6410 Triple Quadrupole LC/MS
+MS	MS:1000677	6520 Quadrupole Time-of-Flight LC/MS	Agilent 6520 Quadrupole Time-of-Flight LC/MS
+MS	MS:1000476	6340 Ion Trap LC/MS	Agilent 6340 Ion Trap LC/MS
+MS	MS:1000675	6220 Time-of-Flight LC/MS	Agilent 6220 Time-of-Flight LC/MS
+MS	MS:1001776	MALDI Synapt MS	Waters MALDI Synapt
+MS	MS:1001782	Synapt MS	Waters Synapt
+MS	MS:1000189	Q-Tof Ultima	Waters Q-Tof Ultima
+MS	MS:1002416	Orbitrap Fusion	Thermo Scientific Orbitrap Fusion
+MS	MS:1002732	Orbitrap Fusion Lumos	Thermo Scientific Orbitrap Fusion Lumos
+PRIDE	PRIDE:0000640	SomaScan assay v4.0	SomaScan assay v4.0
+PRIDE	PRIDE:0000641	SomaScan assay v4.1	SomaScan assay v4.1
+PRIDE	PRIDE:0000654	Olink instrument model	Olink instrument model
+PRIDE	PRIDE:0000655	Olink Target 96	Olink Target 96
+PRIDE	PRIDE:0000656	Olink Explore 1536	Olink Target 1536
+PRIDE	PRIDE:0000657	Olink Explore 3072/384	Olink Target 3072/384
+PRIDE	PRIDE:0000658	Olink Explore 384	Olink Target 384
+PRIDE	PRIDE:0000671	Olink Explore	Olink Explore
+PRIDE	PRIDE:0000672	Olink Target	Olink Target
+PRIDE	PRIDE:0000673	Olink Explore HT	Olink Explore HT
+
+

@@ -1,0 +1,45 @@
+PRIDE	PRIDE:0000398	No PTMs are included in the dataset	No PTMs
+MOD	MOD:00394	acetylated residue	Acetylation
+MOD	MOD:00674	amidated residue	Amidation
+MOD	MOD:01885	biotinylated residue	Biotinylation
+MOD	MOD:00696	phosphorylated residue	Phosphorylation
+MOD	MOD:00397	iodoacetamide derivatized residue	Carbamidomethyl
+MOD	MOD:00398	carbamoylated residue	Carbamylation
+MOD	MOD:00399	iodoacetic acid derivatized residue	Carboxymethyl
+MOD	MOD:00400	deamidated residue	Deamidation
+MOD	MOD:00403	homoserine	Homoserine
+MOD	MOD:00404	homoserine lactone	Homoserine lactone
+MOD	MOD:00410	S-(N-isopropylcarboxamidomethyl)-L-cysteine	NIPCAM(C)
+MOD	MOD:00704	dehydrated residue	Dehydratation
+MOD	MOD:00417	S-carboxamidoethyl-L-cysteine	Propionamide(C)
+MOD	MOD:00419	(R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid	Pyro-carbamidomethyl
+MOD	MOD:00425	monohydroxylated residue	Oxidation
+MOD	MOD:01160	deaminated residue	Deamination
+MOD	MOD:01813	morpholine-2-acetylated residue	SMA
+MOD	MOD:00423	monosodium salt	Cation:Na
+MOD	MOD:00424	S-pyridylethyl-L-cysteine	Pyridylethyl
+MOD	MOD:00599	monomethylated residue	Monomethylation
+MOD	MOD:01153	methylthiolated residue	Methylthio
+MOD	MOD:00695	sulfated residue	Sulfo
+MOD	MOD:00127	N6-lipoyl-L-lysine	Lipoyl
+MOD	MOD:00437	farnesylated residue	Farnesylation
+MOD	MOD:00438	myristoylated residue	Myristoylation
+MOD	MOD:00128	N6-pyridoxal phosphate-L-lysine	Pyridoxal phosphate
+MOD	MOD:00440	palmitoylated residue	Palmitoylation
+MOD	MOD:00441	geranylgeranylated residue	Geranyl-geranyl
+MOD	MOD:00159	O-phosphopantetheine-L-serine	Phosphopantetheine
+MOD	MOD:00697	flavin modified residue	Flavin adenine dinucleotide
+MOD	MOD:00445	L-homoarginine	Guanidination
+MOD	MOD:00493	formylated residue	Formylation
+MOD	MOD:00405	Applied Biosystems original ICAT(TM) d8 modified cysteine	ICAT-D:2H(8)
+MOD	MOD:00406	Applied Biosystems original ICAT(TM) d0 modified cysteine	ICAT-D
+MOD	MOD:00480	Applied Biosystems cleavable ICAT(TM) light	ICAT-C
+MOD	MOD:00481	Applied Biosystems cleavable ICAT(TM) heavy	ICAT-C:13C(9)
+MOD	MOD:00544	6x(13)C labeled residue	13C(6) Silac label
+MOD	MOD:00546	(18)O label at both C-terminal oxygens	Label:18O(2)
+MOD	MOD:01152	carboxylated residue	Carboxylation
+MOD	MOD:00428	dihydroxylated residue	Dioxidation
+MOD	MOD:01499	iTRAQ4plex-116 reporter+balance reagent acylated residue	iTRAQ4plex
+MOD	MOD:01549	iTRAQ8plex-116 reporter+balance reagent acylated residue	iTRAQ8plex
+MOD	MOD:01720	TMT6plex-126 reporter+balance reagent acylated residue	TMT6plex
+MOD	MOD:00752	adenosine diphosphoribosyl (ADP-ribosyl) modified residue	ADP-ribosylation
