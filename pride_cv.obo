@@ -256,6 +256,7 @@ is_a: PRIDE:0000001 ! Protocol step description additional parameter
 id: PRIDE:0000024
 name: Enzyme digestion
 def: "The fragmentation of proteins into peptides through the use of an enzyme such as Trypsin" [PRIDE:PRIDE]
+xref: CHMO:0001494
 is_a: PRIDE:0000001 ! Protocol step description additional parameter
 
 [Term]
@@ -2147,6 +2148,7 @@ id: PRIDE:0000322
 name: emPAI
 def: "The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result" [PRIDE:PRIDE]
 synonym: "Exponentially Modified Protein Abundance Index" EXACT [PRIDE]
+xref: MS:1001905
 is_a: PRIDE:0000312 ! Label free
 
 [Term]
@@ -2358,6 +2360,7 @@ is_a: PRIDE:0000352 ! Quantification value
 id: PRIDE:0000363
 name: emPAI value
 def: "The emPAI for the protein" [PRIDE:PRIDE]
+xref: MS:1001905
 is_a: PRIDE:0000004 ! Identification additional parameter
 is_a: PRIDE:0000362 ! Other quantification value
 
@@ -2824,6 +2827,7 @@ is_a: BFO:0000001 ! entity
 id: PRIDE:0000458
 name: Metaproteomics
 def: "Studying all protein samples of diverse host environments like the human body, soil or sea water" [PRIDE:PRIDE]
+xref: EDAM:4060
 is_a: PRIDE:0000457 ! Experiment Type
 synonym: "Community Proteomics" EXACT [PRIDE]
 synonym: "Environmental Proteomics" RELATED [PRIDE:PRIDE]
@@ -2844,6 +2848,7 @@ is_a: PRIDE:0000457 ! Experiment Type
 id: PRIDE:0000461
 name: Multi-omics study
 def: "Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples" [PRIDE:PRIDE]
+xref: EDAM:4021
 is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
@@ -3492,54 +3497,65 @@ is_a: PRIDE:0000550 ! Fractionation method
 id: PRIDE:0000553
 name: Isoelectric focusing
 def: "An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient" [PRIDE:PRIDE]
+xref: CHMO:0001026
 is_a: PRIDE:0000550 ! Fractionation method
 
 [Term]
 id: PRIDE:0000554
 name: Hydrophilic interaction chromatography (HILIC)
 def: "Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity" [PRIDE:PRIDE]
+xref: CHMO:0002262
+xref: MS:1003584
 is_a: PRIDE:0000562 ! Normal-phase liquid chromatography (NP)
 
 [Term]
 id: PRIDE:0000555
 name: ERLIC
 def: "Electrostatic repulsion hydrophilic interaction chromatography (ERLIC). Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic" [PRIDE:PRIDE]
+xref: CHMO:0002270
 is_a: PRIDE:0000562 ! Normal-phase liquid chromatography (NP)
 
 [Term]
 id: PRIDE:0000556
-name: Ion-exchange chromatography 
+name: Ion-exchange chromatography
 def: "A chromatography method where the separation is caused by differences in ion-exchange affinity" [PRIDE:PRIDE]
+xref: MS:1003579
 is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000557
 name: Size-exclusion chromatography (SEC)
 def: "A chromatography method where the separation is caused by differences in molecular size" [PRIDE:PRIDE]
+xref: CHMO:0001013
+xref: MS:1003580
 is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
 id: PRIDE:0000558
 name: Strong anion-exchange chromatography (SAX)
 def: "A chromatography method with the stationary phase being a strong anion exchanger" [PRIDE:PRIDE]
+xref: CHMO:0002258
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000559
 name: Weak anion-exchange chromatography (WAX)
 def: "A chromatography method with the stationary phase being a weak anion exchanger" [PRIDE:PRIDE]
+xref: CHMO:0002259
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000560
 name: Weak cation-exchange chromatography (WCX)
 def: "A chromatography method with the stationary phase being a weak cation exchanger" [PRIDE:PRIDE]
+xref: CHMO:0002261
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
 id: PRIDE:0000561
 name: Strong cation-exchange chromatography (SCX)
 def: "A chromatography method with the stationary phase being a strong cation exchanger" [PRIDE:PRIDE]
+xref: CHMO:0002260
 is_a: PRIDE:0000556 ! Ion-exchange chromatography
 
 [Term]
@@ -3552,6 +3568,7 @@ is_a: PRIDE:0000565 ! High-performance liquid chromatography
 id: PRIDE:0000563
 name: Reversed-phase chromatography (RP)
 def: "Liquid chromatography where the mobile phase is significantly more polar than the stationary phase" [PRIDE:PRIDE]
+xref: CHMO:0001050
 is_a: PRIDE:0000565 ! High-performance liquid chromatography
 
 [Term]
@@ -4072,6 +4089,7 @@ is_a: PRIDE:0000659 ! Proteomics data acquisition method
 id: PRIDE:0000629
 name: Parallel reaction monitoring
 def: "Parallel Reaction Monitoring (PRM)" [PRIDE:PRIDE]
+xref: MS:1003907
 is_a: PRIDE:0000428 ! Bottom-up proteomics
 is_a: PRIDE:0000659 ! Proteomics data acquisition method
 
@@ -6607,3 +6625,43 @@ name: Alamar ARGO HT System
 def: "The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows." [PRIDE:PRIDE]
 synonym: "ARGO HT; ARGO™ HT System" EXACT []
 is_a: PRIDE:0000638 ! Instrument model
+name: MS1 scan range
+def: "m/z scan range for MS1 spectra, expressed as an interval (e.g., 400m/z-1200m/z)." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001009
+name: MS2 scan range
+def: "m/z scan range for MS2 spectra, expressed as an interval (e.g., 100m/z-2000m/z)." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001010
+name: MS3 scan range
+def: "m/z scan range for MS3 spectra, expressed as an interval (e.g., 100m/z-1500m/z)." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001011
+name: MS2 min MZ
+def: "Minimum product ion mass to charge setting for MS2 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001012
+name: MS2 max MZ
+def: "Maximum product ion mass to charge setting for MS2 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001013
+name: MS3 min MZ
+def: "Minimum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001014
+name: MS3 max MZ
+def: "Maximum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
+is_a: PRIDE:0000471 ! MS File Properties
+
