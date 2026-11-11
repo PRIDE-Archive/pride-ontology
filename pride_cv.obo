@@ -6560,32 +6560,32 @@ id: PRIDE:0001021
 name: NULISAseq Inflammation Panel 250
 def: "NULISAseq multiplex panel measuring approximately 250 inflammation-related proteins, mainly cytokines and chemokines (Alamar part no. 800103)." [PRIDE:PRIDE]
 synonym: "200-plex Inflammation v1" RELATED []
-is_a: PRIDE:0001022 ! NULISA panel
+is_a: PRIDE:0001020 ! NULISA panel
 
 [Term]
 id: PRIDE:0001022
 name: NULISAseq Inflammation Panel AQ
 def: "NULISAseq multiplex panel providing absolute quantification of over 150 inflammation-related proteins (Alamar part no. 800154)." [PRIDE:PRIDE]
-is_a: PRIDE:0001022 ! NULISA panel
+is_a: PRIDE:0001020 ! NULISA panel
 
 [Term]
 id: PRIDE:0001023
 name: NULISAseq CNS Disease Panel 120
 def: "NULISAseq multiplex panel measuring 120 neuro-specific and inflammatory proteins in plasma or CSF (Alamar part no. 800104)." [PRIDE:PRIDE]
-is_a: PRIDE:0001022 ! NULISA panel
+is_a: PRIDE:0001020 ! NULISA panel
 
 [Term]
 id: PRIDE:0001024
 name: NULISAseq Neuro 220
 def: "NULISAseq multiplex panel extending the CNS Disease Panel 120 with approximately 100 additional neurology-related proteins (Alamar part no. 800471)." [PRIDE:PRIDE]
 synonym: "NULISAseq Neuro 220 Panel" EXACT []
-is_a: PRIDE:0001022 ! NULISA panel
+is_a: PRIDE:0001020 ! NULISA panel
 
 [Term]
 id: PRIDE:0001025
 name: NULISAseq Immune 340 Panel
 def: "NULISAseq multiplex panel measuring 336 immune proteins across immuno-oncology, autoimmunity, chronic inflammation and systemic immunology pathways (Alamar part no. 800472)." [PRIDE:PRIDE]
-is_a: PRIDE:0001022 ! NULISA panel
+is_a: PRIDE:0001020 ! NULISA panel
 
 [Term]
 id: PRIDE:0001026
@@ -6606,4 +6606,4 @@ id: PRIDE:0001028
 name: Alamar ARGO HT System
 def: "The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows." [PRIDE:PRIDE]
 synonym: "ARGO HT; ARGO™ HT System" EXACT []
-is_a: PRIDE:0000912 ! assay platform
+is_a: PRIDE:0000638 ! Instrument model
