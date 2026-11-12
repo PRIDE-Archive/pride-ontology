@@ -4331,7 +4331,7 @@ is_a: PRIDE:0000457 ! Experiment Type
 [Term]
 id: PRIDE:0001036
 name: Single-cell proteomics
-def: "A mass spectrometry proteomics strategy that identifies or quantifies proteins in individual cells. Each cell is a separate sample during preparation and measurement. A project can contain single-cell and bulk measurements. For sample-level single-cell annotation, use PRIDE:0000897 (single cell)." [PRIDE:PRIDE]
+def: "A mass spectrometry proteomics strategy that identifies or quantifies proteins in individual cells. Each cell is a separate sample during preparation. Multiplexed designs can measure many cells together if the results of each cell stay distinguishable. A project can contain single-cell and bulk measurements. For sample-level single-cell annotation, use PRIDE:0000897 (single cell)." [PRIDE:PRIDE]
 synonym: "SCP" EXACT [PRIDE:PRIDE]
 synonym: "single cell proteomics" EXACT [PRIDE:PRIDE]
 synonym: "single-cell mass spectrometry proteomics" RELATED [PRIDE:PRIDE]
