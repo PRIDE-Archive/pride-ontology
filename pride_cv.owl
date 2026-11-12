@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-10-26/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-11-11/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000000"/>
@@ -63,10 +63,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>26:10:2026 13:50</oboInOwl:date>
+        <oboInOwl:date>11:11:2026 19:10</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Nithu Sara John</oboInOwl:saved-by>
+        <oboInOwl:saved-by>Yasset Perez-Riverol</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -1067,6 +1067,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000001"/>
         <obo:IAO_0000115>The fragmentation of proteins into peptides through the use of an enzyme such as Trypsin</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0001494</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000024</oboInOwl:id>
         <rdfs:label>Enzyme digestion</rdfs:label>
@@ -6692,6 +6693,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000322">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000312"/>
         <obo:IAO_0000115>The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MS:1001905</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Exponentially Modified Protein Abundance Index</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000322</oboInOwl:id>
@@ -7309,6 +7311,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000362"/>
         <obo:IAO_0000115>The emPAI for the protein</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MS:1001905</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000363</oboInOwl:id>
         <rdfs:label>emPAI value</rdfs:label>
@@ -8734,6 +8737,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000457"/>
         <obo:IAO_0000115>Studying all protein samples of diverse host environments like the human body, soil or sea water</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EDAM:4060</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Community Proteomics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Environmental Proteomics</oboInOwl:hasRelatedSynonym>
@@ -8802,6 +8806,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000461">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000457"/>
         <obo:IAO_0000115>Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EDAM:4021</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000461</oboInOwl:id>
         <rdfs:label>Multi-omics study</rdfs:label>
@@ -10972,6 +10977,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000553">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000550"/>
         <obo:IAO_0000115>An electrophoresis method for the separation of amphoteric analytes according to their isoelectric points by the application of an electric field along a pH gradient</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0001026</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000553</oboInOwl:id>
         <rdfs:label>Isoelectric focusing</rdfs:label>
@@ -10990,6 +10996,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000554">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000562"/>
         <obo:IAO_0000115>Liquid chromatography where the stationary phase is hydrophilic, the mobile phase is organic and separation is achieved based on polarity</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0002262</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MS:1003584</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000554</oboInOwl:id>
         <rdfs:label>Hydrophilic interaction chromatography (HILIC)</rdfs:label>
@@ -11008,6 +11016,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000555">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000562"/>
         <obo:IAO_0000115>Electrostatic repulsion hydrophilic interaction chromatography (ERLIC). Hydrophilic interaction chromatography where the chromatography column is an ion-exchange column and the mobile phase is predominantly organic</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0002270</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000555</oboInOwl:id>
         <rdfs:label>ERLIC</rdfs:label>
@@ -11026,6 +11035,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000556">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000565"/>
         <obo:IAO_0000115>A chromatography method where the separation is caused by differences in ion-exchange affinity</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MS:1003579</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000556</oboInOwl:id>
         <rdfs:label>Ion-exchange chromatography</rdfs:label>
@@ -11044,6 +11054,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000557">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000565"/>
         <obo:IAO_0000115>A chromatography method where the separation is caused by differences in molecular size</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0001013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MS:1003580</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000557</oboInOwl:id>
         <rdfs:label>Size-exclusion chromatography (SEC)</rdfs:label>
@@ -11062,6 +11074,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000558">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000556"/>
         <obo:IAO_0000115>A chromatography method with the stationary phase being a strong anion exchanger</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0002258</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000558</oboInOwl:id>
         <rdfs:label>Strong anion-exchange chromatography (SAX)</rdfs:label>
@@ -11080,6 +11093,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000559">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000556"/>
         <obo:IAO_0000115>A chromatography method with the stationary phase being a weak anion exchanger</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0002259</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000559</oboInOwl:id>
         <rdfs:label>Weak anion-exchange chromatography (WAX)</rdfs:label>
@@ -11098,6 +11112,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000560">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000556"/>
         <obo:IAO_0000115>A chromatography method with the stationary phase being a weak cation exchanger</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0002261</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000560</oboInOwl:id>
         <rdfs:label>Weak cation-exchange chromatography (WCX)</rdfs:label>
@@ -11116,6 +11131,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000561">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000556"/>
         <obo:IAO_0000115>A chromatography method with the stationary phase being a strong cation exchanger</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0002260</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000561</oboInOwl:id>
         <rdfs:label>Strong cation-exchange chromatography (SCX)</rdfs:label>
@@ -11152,6 +11168,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000563">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000565"/>
         <obo:IAO_0000115>Liquid chromatography where the mobile phase is significantly more polar than the stationary phase</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0001050</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000563</oboInOwl:id>
         <rdfs:label>Reversed-phase chromatography (RP)</rdfs:label>
@@ -12444,6 +12461,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000428"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000659"/>
         <obo:IAO_0000115>Parallel Reaction Monitoring (PRM)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MS:1003907</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000629</oboInOwl:id>
         <rdfs:label>Parallel reaction monitoring</rdfs:label>
@@ -20333,6 +20351,132 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001028"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The ARGO HT analytical instrument system manufactured by Alamar Biosciences for automated high-throughput protein biomarker analysis workflows.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>m/z scan range for MS1 spectra, expressed as an interval (e.g., 400m/z-1200m/z).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001029</oboInOwl:id>
+        <rdfs:label>MS1 scan range</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>m/z scan range for MS1 spectra, expressed as an interval (e.g., 400m/z-1200m/z).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>m/z scan range for MS2 spectra, expressed as an interval (e.g., 100m/z-2000m/z).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001030</oboInOwl:id>
+        <rdfs:label>MS2 scan range</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>m/z scan range for MS2 spectra, expressed as an interval (e.g., 100m/z-2000m/z).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>m/z scan range for MS3 spectra, expressed as an interval (e.g., 100m/z-1500m/z).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001031</oboInOwl:id>
+        <rdfs:label>MS3 scan range</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>m/z scan range for MS3 spectra, expressed as an interval (e.g., 100m/z-1500m/z).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>Minimum product ion mass to charge setting for MS2 spectra.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001032</oboInOwl:id>
+        <rdfs:label>MS2 min MZ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Minimum product ion mass to charge setting for MS2 spectra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>Maximum product ion mass to charge setting for MS2 spectra.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001033</oboInOwl:id>
+        <rdfs:label>MS2 max MZ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Maximum product ion mass to charge setting for MS2 spectra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>Minimum product ion mass to charge setting for MS3 spectra.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001034</oboInOwl:id>
+        <rdfs:label>MS3 min MZ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Minimum product ion mass to charge setting for MS3 spectra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>Maximum product ion mass to charge setting for MS3 spectra.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001035</oboInOwl:id>
+        <rdfs:label>MS3 max MZ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001035"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Maximum product ion mass to charge setting for MS3 spectra.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
