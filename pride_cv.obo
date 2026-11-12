@@ -4329,6 +4329,17 @@ def: "Study of proteins that identifies, catalogs, and characterizes those prote
 is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
+id: PRIDE:0001036
+name: Single-cell proteomics
+def: "A mass spectrometry proteomics strategy that identifies or quantifies proteins in individual cells. Each cell is a separate sample during preparation and measurement. A project can contain single-cell and bulk measurements. For sample-level single-cell annotation, use PRIDE:0000897 (single cell)." [PRIDE:PRIDE]
+synonym: "SCP" EXACT [PRIDE:PRIDE]
+synonym: "single cell proteomics" EXACT [PRIDE:PRIDE]
+synonym: "single-cell mass spectrometry proteomics" RELATED [PRIDE:PRIDE]
+xref: EFO:0920124
+is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
 id: PRIDE:0000666
 name: TMT6PLEX
 def: "TMT 6-plex labeling kit has 6 channels" [PRIDE:PRIDE]
