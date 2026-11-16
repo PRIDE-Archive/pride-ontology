@@ -6680,14 +6680,6 @@ def: "Maximum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
 [Term]
-id: PRIDE:0001036
-name: dissolved iron concentration
-def: "Concentration of dissolved iron in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Fe_D." [PRIDE:PRIDE]
-synonym: "dFe" EXACT []
-synonym: "Fe_D" RELATED []
-is_a: PRIDE:0000829 ! Water
-
-[Term]
 id: PRIDE:0001037
 name: dissolved zinc concentration
 def: "Concentration of dissolved zinc in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Zn_D." [PRIDE:PRIDE]
@@ -6733,5 +6725,13 @@ name: dissolved manganese concentration
 def: "Concentration of dissolved manganese in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Mn_D." [PRIDE:PRIDE]
 synonym: "dMn" EXACT []
 synonym: "Mn_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001043
+name: dissolved iron concentration
+def: "Concentration of dissolved iron in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Fe_D." [PRIDE:PRIDE]
+synonym: "dFe" EXACT []
+synonym: "Fe_D" RELATED []
 is_a: PRIDE:0000829 ! Water
 
