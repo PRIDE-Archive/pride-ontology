@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-11-11/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-11-16/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000000"/>
@@ -63,10 +63,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>11:11:2026 19:10</oboInOwl:date>
+        <oboInOwl:date>16:11:2026 10:12</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Yasset Perez-Riverol</oboInOwl:saved-by>
+        <oboInOwl:saved-by>Justin Sing</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -20477,6 +20477,47 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001035"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Maximum product ion mass to charge setting for MS3 spectra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000426"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000457"/>
+        <obo:IAO_0000115>A mass spectrometry proteomics strategy that identifies or quantifies proteins in individual cells. Each cell is a separate sample during preparation. Multiplexed designs can measure many cells together if the results of each cell stay distinguishable. A project can contain single-cell and bulk measurements. For sample-level single-cell annotation, use PRIDE:0000897 (single cell).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>EFO:0920124</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SCP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single cell proteomics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-cell mass spectrometry proteomics</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001036</oboInOwl:id>
+        <rdfs:label>Single-cell proteomics</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001036"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A mass spectrometry proteomics strategy that identifies or quantifies proteins in individual cells. Each cell is a separate sample during preparation. Multiplexed designs can measure many cells together if the results of each cell stay distinguishable. A project can contain single-cell and bulk measurements. For sample-level single-cell annotation, use PRIDE:0000897 (single cell).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001036"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SCP</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001036"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>single cell proteomics</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001036"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>single-cell mass spectrometry proteomics</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
