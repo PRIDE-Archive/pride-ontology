@@ -6679,3 +6679,59 @@ name: MS3 max MZ
 def: "Maximum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
 
+[Term]
+id: PRIDE:0001036
+name: dissolved iron concentration
+def: "Concentration of dissolved iron in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Fe_D." [PRIDE:PRIDE]
+synonym: "dFe" EXACT []
+synonym: "Fe_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001037
+name: dissolved zinc concentration
+def: "Concentration of dissolved zinc in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Zn_D." [PRIDE:PRIDE]
+synonym: "dZn" EXACT []
+synonym: "Zn_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001038
+name: dissolved cobalt concentration
+def: "Concentration of dissolved cobalt in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Co_D." [PRIDE:PRIDE]
+synonym: "dCo" EXACT []
+synonym: "Co_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001039
+name: dissolved copper concentration
+def: "Concentration of dissolved copper in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Cu_D." [PRIDE:PRIDE]
+synonym: "dCu" EXACT []
+synonym: "Cu_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001040
+name: dissolved cadmium concentration
+def: "Concentration of dissolved cadmium in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Cd_D." [PRIDE:PRIDE]
+synonym: "dCd" EXACT []
+synonym: "Cd_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001041
+name: dissolved nickel concentration
+def: "Concentration of dissolved nickel in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Ni_D." [PRIDE:PRIDE]
+synonym: "dNi" EXACT []
+synonym: "Ni_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001042
+name: dissolved manganese concentration
+def: "Concentration of dissolved manganese in a water sample, as defined by the sample filtration and analytical protocol. GEOTRACES parameter: Mn_D." [PRIDE:PRIDE]
+synonym: "dMn" EXACT []
+synonym: "Mn_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
