@@ -63,10 +63,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>16:11:2026 10:12</oboInOwl:date>
+        <oboInOwl:date>16:11:2026 14:11</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Justin Sing</oboInOwl:saved-by>
+        <oboInOwl:saved-by>Nandana Madhusoodanan</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -20518,6 +20518,146 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001036"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>single-cell mass spectrometry proteomics</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000115>Zinc present in the dissolved fraction of a water sample.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dZn</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Zn_D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001037</oboInOwl:id>
+        <rdfs:label>total dissolved zinc concentration</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Zinc present in the dissolved fraction of a water sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000115>The availability of zinc (Zn) in the dissolved fraction of a water sample.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dCo</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Co_D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001038</oboInOwl:id>
+        <rdfs:label>total dissolved cobalt concentration</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The availability of zinc (Zn) in the dissolved fraction of a water sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000115>Concentration of copper (Cu) present in the dissolved fraction of a water sample, including dissolved inorganic and organic copper species.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dCu</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Cu_D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001039</oboInOwl:id>
+        <rdfs:label>total dissolved copper concentration</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Concentration of copper (Cu) present in the dissolved fraction of a water sample, including dissolved inorganic and organic copper species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000115>Concentration of cadmium (Cd) present in the dissolved fraction of a water sample, including dissolved inorganic and organic cadmium species.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dCd</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Cd_D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001040</oboInOwl:id>
+        <rdfs:label>total dissolved cadmium concentration</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Concentration of cadmium (Cd) present in the dissolved fraction of a water sample, including dissolved inorganic and organic cadmium species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000115>Concentration of nickel (Ni) present in the dissolved fraction of a water sample, including dissolved inorganic and organic nickel species..</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dNi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Ni_D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001041</oboInOwl:id>
+        <rdfs:label>total dissolved nickel concentration</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Concentration of nickel (Ni) present in the dissolved fraction of a water sample, including dissolved inorganic and organic nickel species..</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000115>Concentration of manganese (Mn) present in the dissolved fraction of a water sample, including dissolved inorganic and organic manganese species.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dMn</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Mn_D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001042</oboInOwl:id>
+        <rdfs:label>total dissolved manganese concentration</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001042"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Concentration of manganese (Mn) present in the dissolved fraction of a water sample, including dissolved inorganic and organic manganese species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000115>Concentration of iron (Fe) present in the dissolved fraction of a water sample, including dissolved inorganic and organic iron species.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dFe</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Fe_D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001043</oboInOwl:id>
+        <rdfs:label>total dissolved iron concentration</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001043"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Concentration of iron (Fe) present in the dissolved fraction of a water sample, including dissolved inorganic and organic iron species.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
