@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 16:11:2026 10:12
+date: 16:11:2026 14:11
 data-version: releases/2026-11-16
-saved-by: Justin Sing
+saved-by: Nandana Madhusoodanan
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
@@ -6678,4 +6678,60 @@ id: PRIDE:0001035
 name: MS3 max MZ
 def: "Maximum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
+
+[Term]
+id: PRIDE:0001037
+name: total dissolved zinc concentration
+def: "Zinc present in the dissolved fraction of a water sample." [PRIDE:PRIDE]
+synonym: "dZn" EXACT []
+synonym: "Zn_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001038
+name: total dissolved cobalt concentration
+def: "The availability of zinc (Zn) in the dissolved fraction of a water sample." [PRIDE:PRIDE]
+synonym: "dCo" EXACT []
+synonym: "Co_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001039
+name: total dissolved copper concentration
+def: "Concentration of copper (Cu) present in the dissolved fraction of a water sample, including dissolved inorganic and organic copper species." [PRIDE:PRIDE]
+synonym: "dCu" EXACT []
+synonym: "Cu_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001040
+name: total dissolved cadmium concentration
+def: "Concentration of cadmium (Cd) present in the dissolved fraction of a water sample, including dissolved inorganic and organic cadmium species." [PRIDE:PRIDE]
+synonym: "dCd" EXACT []
+synonym: "Cd_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001041
+name: total dissolved nickel concentration
+def: "Concentration of nickel (Ni) present in the dissolved fraction of a water sample, including dissolved inorganic and organic nickel species.." [PRIDE:PRIDE]
+synonym: "dNi" EXACT []
+synonym: "Ni_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001042
+name: total dissolved manganese concentration
+def: "Concentration of manganese (Mn) present in the dissolved fraction of a water sample, including dissolved inorganic and organic manganese species." [PRIDE:PRIDE]
+synonym: "dMn" EXACT []
+synonym: "Mn_D" RELATED []
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001043
+name: total dissolved iron concentration
+def: "Concentration of iron (Fe) present in the dissolved fraction of a water sample, including dissolved inorganic and organic iron species." [PRIDE:PRIDE]
+synonym: "dFe" EXACT []
+synonym: "Fe_D" RELATED []
+is_a: PRIDE:0000829 ! Water
 
