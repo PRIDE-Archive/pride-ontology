@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 16:11:2026 14:11
-data-version: releases/2026-11-16
-saved-by: Nandana Madhusoodanan
+date: 20:11:2026 13:20
+data-version: releases/2026-11-20
+saved-by: Justin Sing
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
@@ -4337,6 +4337,13 @@ synonym: "single cell proteomics" EXACT [PRIDE:PRIDE]
 synonym: "single-cell mass spectrometry proteomics" RELATED [PRIDE:PRIDE]
 xref: EFO:0920124
 is_a: PRIDE:0000426 ! Mass spectrometry proteomics experimental strategy
+
+[Term]
+id: PRIDE:0001044
+name: Benchmark proteomics dataset
+def: "A proteomics dataset deposited to evaluate, compare, or validate mass spectrometry acquisition, quantification, identification, or analysis methods. A project can contain benchmark and non-benchmark data." [PRIDE:PRIDE]
+synonym: "Proteomics benchmark dataset" EXACT [PRIDE:PRIDE]
+synonym: "Benchmark dataset" RELATED [PRIDE:PRIDE]
 is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
@@ -6678,7 +6685,6 @@ id: PRIDE:0001035
 name: MS3 max MZ
 def: "Maximum product ion mass to charge setting for MS3 spectra." [PRIDE:PRIDE]
 is_a: PRIDE:0000471 ! MS File Properties
-
 [Term]
 id: PRIDE:0001037
 name: total dissolved zinc concentration
@@ -6734,4 +6740,3 @@ def: "Concentration of iron (Fe) present in the dissolved fraction of a water sa
 synonym: "dFe" EXACT []
 synonym: "Fe_D" RELATED []
 is_a: PRIDE:0000829 ! Water
-
