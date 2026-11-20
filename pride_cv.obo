@@ -6972,7 +6972,7 @@ name: solvent
 def: "The solvent which was used to pick up the analyte from the surface of the imaging object." [IMS:1001211]
 synonym: "DESI solvent" RELATED [PRIDE:PRIDE]
 xref: IMS:1001211
-is_a: PRIDE:0001044 ! Mass spectrometry imaging acquisition parameter
+is_a: PRIDE:0001086 ! DESI parameter
 
 [Term]
 id: PRIDE:0001076
@@ -7046,3 +7046,61 @@ name: sample condition
 def: "Description of whether the sample is wildtype, diseased, control." [IMS:1006007]
 xref: IMS:1006007
 is_a: PRIDE:0001045 ! Mass spectrometry imaging sample preparation parameter
+
+[Term]
+id: PRIDE:0001086
+name: DESI parameter
+def: "Parameters describing DESI sources." [IMS:1000121]
+xref: IMS:1000121
+is_a: PRIDE:0001044 ! Mass spectrometry imaging acquisition parameter
+
+[Term]
+id: PRIDE:0001087
+name: spray voltage
+def: "Voltage applied to the DESI source to get ions moving into the direction of the inlet of the mass spectrometer." [IMS:1001212]
+xref: IMS:1001212
+is_a: PRIDE:0001086 ! DESI parameter
+
+[Term]
+id: PRIDE:0001088
+name: solvent flowrate
+def: "Rate with which the solvent is flowing on the surface of the imaging object." [IMS:1001213]
+synonym: "solvent flow rate" EXACT [PRIDE:PRIDE]
+xref: IMS:1001213
+is_a: PRIDE:0001086 ! DESI parameter
+
+[Term]
+id: PRIDE:0001089
+name: SIMS parameter
+def: "Parameters describing SIMS sources." [IMS:1000120]
+xref: IMS:1000120
+is_a: PRIDE:0001044 ! Mass spectrometry imaging acquisition parameter
+
+[Term]
+id: PRIDE:0001090
+name: primary ion gun species
+def: "Describes the species of ions used for ionizing the sample." [IMS:1001201]
+synonym: "primary ion species" EXACT [PRIDE:PRIDE]
+xref: IMS:1001201
+is_a: PRIDE:0001089 ! SIMS parameter
+
+[Term]
+id: PRIDE:0001091
+name: beam energy
+def: "Energy of the shot of the primary ion gun species in electronvolt." [IMS:1001202]
+xref: IMS:1001202
+is_a: PRIDE:0001089 ! SIMS parameter
+
+[Term]
+id: PRIDE:0001092
+name: beam current
+def: "Number of charges per second shot at the surface of the analyte." [IMS:1001203]
+xref: IMS:1001203
+is_a: PRIDE:0001089 ! SIMS parameter
+
+[Term]
+id: PRIDE:0001093
+name: primary ion dose density
+def: "Density of the primary ions." [IMS:1001207]
+xref: IMS:1001207
+is_a: PRIDE:0001089 ! SIMS parameter
