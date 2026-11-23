@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-11-16/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-11-20/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000000"/>
@@ -63,10 +63,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>16:11:2026 14:11</oboInOwl:date>
+        <oboInOwl:date>20:11:2026 19:11</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Nandana Madhusoodanan</oboInOwl:saved-by>
+        <oboInOwl:saved-by>Lisa Boatner</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -12501,7 +12501,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000631">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000426"/>
-        <obo:IAO_0000115>Mass spectrometry imaging</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000663"/>
+        <obo:IAO_0000115>A technique in which mass spectra are acquired in a spatially resolved manner across a sample surface, producing images of analyte distributions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MS:1002521</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MSI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>imaging mass spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000631</oboInOwl:id>
         <rdfs:label>Mass spectrometry imaging</rdfs:label>
@@ -12509,7 +12513,19 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000631"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry imaging</owl:annotatedTarget>
+        <owl:annotatedTarget>A technique in which mass spectra are acquired in a spatially resolved manner across a sample surface, producing images of analyte distributions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MS:1002521</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000631"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MSI</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000631"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>imaging mass spectrometry</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -20659,6 +20675,1074 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Concentration of iron (Fe) present in the dissolved fraction of a water sample, including dissolved inorganic and organic iron species.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>Acquisition parameter specific to mass spectrometry imaging, as recorded in imzML scanSettings or fileContent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001044</oboInOwl:id>
+        <rdfs:label>Mass spectrometry imaging acquisition parameter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Acquisition parameter specific to mass spectrometry imaging, as recorded in imzML scanSettings or fileContent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000006"/>
+        <obo:IAO_0000115>Sample preparation parameter specific to mass spectrometry imaging of tissue sections and other surfaces.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001045</oboInOwl:id>
+        <rdfs:label>Mass spectrometry imaging sample preparation parameter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sample preparation parameter specific to mass spectrometry imaging of tissue sections and other surfaces.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000631"/>
+        <obo:IAO_0000115>Mass spectrometry imaging in which ions are generated by matrix-assisted laser desorption ionization.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0000054</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MALDI imaging mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MALDI-MSI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001046</oboInOwl:id>
+        <rdfs:label>MALDI mass spectrometry imaging</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mass spectrometry imaging in which ions are generated by matrix-assisted laser desorption ionization.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001046"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MALDI imaging mass spectrometry</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001046"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MALDI-MSI</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000631"/>
+        <obo:IAO_0000115>Mass spectrometry imaging in which ions are generated by desorption electrospray ionization.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>DESI imaging mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DESI-MSI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001047</oboInOwl:id>
+        <rdfs:label>DESI mass spectrometry imaging</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001047"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mass spectrometry imaging in which ions are generated by desorption electrospray ionization.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001047"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>DESI imaging mass spectrometry</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001047"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>DESI-MSI</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000631"/>
+        <obo:IAO_0000115>Mass spectrometry imaging in which ions are generated by a primary ion beam (secondary ion mass spectrometry).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CHMO:0000055</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SIMS imaging mass spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>secondary ion mass spectrometry imaging</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001048</oboInOwl:id>
+        <rdfs:label>SIMS mass spectrometry imaging</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001048"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mass spectrometry imaging in which ions are generated by a primary ion beam (secondary ion mass spectrometry).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001048"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SIMS imaging mass spectrometry</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001048"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>secondary ion mass spectrometry imaging</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000471"/>
+        <obo:IAO_0000115>Acquisition in which the scan polarity alternates between positive and negative within a single run, producing one data file containing both polarities.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MS:1000465</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001049</oboInOwl:id>
+        <rdfs:label>polarity switching</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001049"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Acquisition in which the scan polarity alternates between positive and negative within a single run, producing one data file containing both polarities.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Describes the length of a pixel in the x dimension. If no pixel size y (IMS:1000047) is explicitly specified, then this also describes the length of a pixel in the y dimension.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000046</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>pixel size x</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001050</oboInOwl:id>
+        <rdfs:label>pixel size (x)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001050"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Describes the length of a pixel in the x dimension. If no pixel size y (IMS:1000047) is explicitly specified, then this also describes the length of a pixel in the y dimension.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000046</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001050"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>pixel size x</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Describes the length of a pixel in the y dimension.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000047</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001051</oboInOwl:id>
+        <rdfs:label>pixel size y</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001051"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Describes the length of a pixel in the y dimension.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000047</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Describes the type of the binary (ibd) file.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001052</oboInOwl:id>
+        <rdfs:label>ibd binary type</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001052"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Describes the type of the binary (ibd) file.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000003</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001052"/>
+        <obo:IAO_0000115>Way of saving spectra in an imzML binary data file (ibd). The m/z values for all spectra are saved at the beginning of the ibd file. Then the spectral values follow.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000030</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001053</oboInOwl:id>
+        <rdfs:label>continuous</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001053"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Way of saving spectra in an imzML binary data file (ibd). The m/z values for all spectra are saved at the beginning of the ibd file. Then the spectral values follow.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000030</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001052"/>
+        <obo:IAO_0000115>Way of saving spectra in an imzML binary data file (ibd). Every spectrum is saved with its own m/z and intensity values.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000031</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001054</oboInOwl:id>
+        <rdfs:label>processed</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Way of saving spectra in an imzML binary data file (ibd). Every spectrum is saved with its own m/z and intensity values.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000031</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Description of the pattern how the image was scanned.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000041</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001055</oboInOwl:id>
+        <rdfs:label>scan pattern</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001055"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Description of the pattern how the image was scanned.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000041</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001055"/>
+        <obo:IAO_0000115>The scanning happens in a nonstop way. As soon as the end of the sample is reached, the scanning direction will be switched and the scanning is continued. There is no new positioning neccessary.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000410</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001056</oboInOwl:id>
+        <rdfs:label>meandering</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001056"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The scanning happens in a nonstop way. As soon as the end of the sample is reached, the scanning direction will be switched and the scanning is continued. There is no new positioning neccessary.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000410</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001055"/>
+        <obo:IAO_0000115>The scanning points are randomly chosen and do not follow a pattern.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000412</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001057</oboInOwl:id>
+        <rdfs:label>random access</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001057"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The scanning points are randomly chosen and do not follow a pattern.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000412</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001055"/>
+        <obo:IAO_0000115>The scanning always happens in the same direction. As soon as the end of the sample is reached, the stage is positioned at the starting edge to begin the next run.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000413</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>fly back</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001058</oboInOwl:id>
+        <rdfs:label>flyback</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001058"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The scanning always happens in the same direction. As soon as the end of the sample is reached, the stage is positioned at the starting edge to begin the next run.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000413</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001058"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>fly back</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Description of the direction of the succession of the assembling of the linescans.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000040</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001059</oboInOwl:id>
+        <rdfs:label>linescan sequence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001059"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Description of the direction of the succession of the assembling of the linescans.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000040</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001059"/>
+        <obo:IAO_0000115>A line scan sequence in which successive scan lines are acquired from the top toward the bottom of the sample, along the y-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000401</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001060</oboInOwl:id>
+        <rdfs:label>top down</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001060"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan sequence in which successive scan lines are acquired from the top toward the bottom of the sample, along the y-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000401</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001059"/>
+        <obo:IAO_0000115>A line scan sequence in which successive scan lines are acquired from the bottom toward the top of the sample, along the y-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000400</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001061</oboInOwl:id>
+        <rdfs:label>bottom up</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001061"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan sequence in which successive scan lines are acquired from the bottom toward the top of the sample, along the y-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000400</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001059"/>
+        <obo:IAO_0000115>A line scan sequence in which successive scan lines are acquired from the left toward the right of the sample, along the x-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000402</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001062</oboInOwl:id>
+        <rdfs:label>left right</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan sequence in which successive scan lines are acquired from the left toward the right of the sample, along the x-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000402</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001059"/>
+        <obo:IAO_0000115>A line scan sequence in which successive scan lines are acquired from the right toward the left of the sample, along the x-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000403</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001063</oboInOwl:id>
+        <rdfs:label>right left</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001063"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan sequence in which successive scan lines are acquired from the right toward the left of the sample, along the x-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000403</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Shows the direction in which the lines were scanned.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000048</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>line scan orientation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001064</oboInOwl:id>
+        <rdfs:label>scan type</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001064"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Shows the direction in which the lines were scanned.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000048</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001064"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>line scan orientation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001064"/>
+        <obo:IAO_0000115>The scanning line is a horizontal one.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000480</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001065</oboInOwl:id>
+        <rdfs:label>horizontal line scan</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001065"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The scanning line is a horizontal one.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000480</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001064"/>
+        <obo:IAO_0000115>The scanning line is a vertical one.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000481</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001066</oboInOwl:id>
+        <rdfs:label>vertical line scan</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001066"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The scanning line is a vertical one.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000481</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Description in which direction the lines of the sample were scanned.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000049</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001067</oboInOwl:id>
+        <rdfs:label>line scan direction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001067"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Description in which direction the lines of the sample were scanned.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000049</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001067"/>
+        <obo:IAO_0000115>A line scan direction in which acquisition within a single scan line proceeds from right to left along the x-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000490</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001068</oboInOwl:id>
+        <rdfs:label>linescan right left</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001068"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan direction in which acquisition within a single scan line proceeds from right to left along the x-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000490</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001067"/>
+        <obo:IAO_0000115>A line scan direction in which acquisition within a single scan line proceeds from left to right along the x-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000491</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001069</oboInOwl:id>
+        <rdfs:label>linescan left right</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001069"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan direction in which acquisition within a single scan line proceeds from left to right along the x-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000491</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001067"/>
+        <obo:IAO_0000115>A line scan direction in which acquisition within a single scan line proceeds from bottom to top along the y-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000492</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001070</oboInOwl:id>
+        <rdfs:label>linescan bottom up</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan direction in which acquisition within a single scan line proceeds from bottom to top along the y-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000492</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001067"/>
+        <obo:IAO_0000115>A line scan direction in which acquisition within a single scan line proceeds from top to bottom along the y-axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000493</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001071</oboInOwl:id>
+        <rdfs:label>linescan top down</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001071"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A line scan direction in which acquisition within a single scan line proceeds from top to bottom along the y-axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000493</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Describes the number of laser pulses interrogating the sample to generate a single spectrum.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1006001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MS:1000841</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001072</oboInOwl:id>
+        <rdfs:label>laser shots per spectrum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001072"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Describes the number of laser pulses interrogating the sample to generate a single spectrum.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1006001</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Describes the number of pulses per second when a laser is operating in pulsed mode.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1006000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MS:1000841</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>laser repetition rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001073</oboInOwl:id>
+        <rdfs:label>repetition rate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001073"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Describes the number of pulses per second when a laser is operating in pulsed mode.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1006000</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001073"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>laser repetition rate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Uniform resource identifier (URI) for the location of the optical image corresponding to the sample.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1006008</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>optical image file</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001074</oboInOwl:id>
+        <rdfs:label>optical image location</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001074"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Uniform resource identifier (URI) for the location of the optical image corresponding to the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1006008</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001074"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>optical image file</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001086"/>
+        <obo:IAO_0000115>The solvent which was used to pick up the analyte from the surface of the imaging object.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1001211</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>DESI solvent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001075</oboInOwl:id>
+        <rdfs:label>solvent</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001075"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The solvent which was used to pick up the analyte from the surface of the imaging object.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1001211</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001075"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>DESI solvent</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <obo:IAO_0000115>Storage condition of the sample prior to analysis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002010</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>sample stabilization</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001076</oboInOwl:id>
+        <rdfs:label>sample storage condition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001076"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Storage condition of the sample prior to analysis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002010</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>sample stabilization</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001076"/>
+        <obo:IAO_0000115>Sample has been frozen.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002012</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001077</oboInOwl:id>
+        <rdfs:label>fresh frozen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001077"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Sample has been frozen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002012</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <obo:IAO_0000115>Additional treatment of the sample, such as enzymatic digestion or derivatisation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002500</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>tissue modification</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001078</oboInOwl:id>
+        <rdfs:label>on-sample chemistry</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Additional treatment of the sample, such as enzymatic digestion or derivatisation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002500</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001078"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>tissue modification</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <obo:IAO_0000115>Describes the material the target is made of.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000202</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001079</oboInOwl:id>
+        <rdfs:label>target material</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001079"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Describes the material the target is made of.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000202</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <obo:IAO_0000115>Measured thickness of the sample after sectioning.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002107</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001080</oboInOwl:id>
+        <rdfs:label>section thickness</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001080"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Measured thickness of the sample after sectioning.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002107</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <obo:IAO_0000115>Description of the method used to mount the sample onto the target.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002200</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001081</oboInOwl:id>
+        <rdfs:label>mounting method</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001081"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Description of the method used to mount the sample onto the target.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002200</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001081"/>
+        <obo:IAO_0000115>Mounting the sample onto the target by warming the reverse of the target.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002201</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001082</oboInOwl:id>
+        <rdfs:label>thaw mounting</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mounting the sample onto the target by warming the reverse of the target.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002201</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001081"/>
+        <obo:IAO_0000115>Mounting the sample onto the target using tape.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002202</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001083</oboInOwl:id>
+        <rdfs:label>tape mounting</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001083"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Mounting the sample onto the target using tape.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002202</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <obo:IAO_0000115>Method used to perform washing of the sample.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1002402</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>washing method</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001084</oboInOwl:id>
+        <rdfs:label>sample washing method</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001084"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Method used to perform washing of the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1002402</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001084"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>washing method</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001045"/>
+        <obo:IAO_0000115>Description of whether the sample is wildtype, diseased, control.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1006007</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001085</oboInOwl:id>
+        <rdfs:label>sample condition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001085"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Description of whether the sample is wildtype, diseased, control.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1006007</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Parameters describing DESI sources.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000121</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001086</oboInOwl:id>
+        <rdfs:label>DESI parameter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001086"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Parameters describing DESI sources.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000121</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001086"/>
+        <obo:IAO_0000115>Voltage applied to the DESI source to get ions moving into the direction of the inlet of the mass spectrometer.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1001212</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001087</oboInOwl:id>
+        <rdfs:label>spray voltage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001087"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Voltage applied to the DESI source to get ions moving into the direction of the inlet of the mass spectrometer.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1001212</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001086"/>
+        <obo:IAO_0000115>Rate with which the solvent is flowing on the surface of the imaging object.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1001213</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>solvent flow rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001088</oboInOwl:id>
+        <rdfs:label>solvent flowrate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001088"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Rate with which the solvent is flowing on the surface of the imaging object.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1001213</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001088"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>solvent flow rate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001044"/>
+        <obo:IAO_0000115>Parameters describing SIMS sources.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1000120</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001089</oboInOwl:id>
+        <rdfs:label>SIMS parameter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001089"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Parameters describing SIMS sources.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1000120</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001089"/>
+        <obo:IAO_0000115>Describes the species of ions used for ionizing the sample.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1001201</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>primary ion species</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001090</oboInOwl:id>
+        <rdfs:label>primary ion gun species</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001090"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Describes the species of ions used for ionizing the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1001201</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary ion species</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001089"/>
+        <obo:IAO_0000115>Energy of the shot of the primary ion gun species in electronvolt.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1001202</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001091</oboInOwl:id>
+        <rdfs:label>beam energy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001091"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Energy of the shot of the primary ion gun species in electronvolt.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1001202</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001089"/>
+        <obo:IAO_0000115>Number of charges per second shot at the surface of the analyte.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1001203</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001092</oboInOwl:id>
+        <rdfs:label>beam current</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001092"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Number of charges per second shot at the surface of the analyte.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1001203</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001089"/>
+        <obo:IAO_0000115>Density of the primary ions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IMS:1001207</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0001093</oboInOwl:id>
+        <rdfs:label>primary ion dose density</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001093"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Density of the primary ions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IMS:1001207</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
