@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 20:11:2026 19:11
-data-version: releases/2026-11-20
-saved-by: Lisa Boatner
+date: 23:11:2026 13:11
+data-version: releases/2026-11-23
+saved-by: Justin Sing
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
