@@ -37,7 +37,7 @@
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-11-20/pride.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-11-23/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000000"/>
@@ -63,10 +63,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>20:11:2026 19:11</oboInOwl:date>
+        <oboInOwl:date>23:11:2026 13:11</oboInOwl:date>
         <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Lisa Boatner</oboInOwl:saved-by>
+        <oboInOwl:saved-by>Justin Sing</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -21744,6 +21744,7 @@
         <owl:annotatedTarget>Density of the primary ions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>IMS:1001207</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/PRIDE_0001094 -->
