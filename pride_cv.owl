@@ -21744,6 +21744,37 @@
         <owl:annotatedTarget>Density of the primary ions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>IMS:1001207</oboInOwl:hasDbXref>
     </owl:Axiom>
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0001094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0001094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000457"/>
+        <obo:IAO_0000115>A proteomics dataset deposited to evaluate, compare, or validate mass spectrometry acquisition, quantification, identification, or analysis methods. A project can contain benchmark and non-benchmark data.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Proteomics benchmark dataset</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Benchmark dataset</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PRIDE:0001094</oboInOwl:id>
+        <rdfs:label>Benchmark proteomics dataset</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001094"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A proteomics dataset deposited to evaluate, compare, or validate mass spectrometry acquisition, quantification, identification, or analysis methods. A project can contain benchmark and non-benchmark data.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001094"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Proteomics benchmark dataset</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001094"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Benchmark dataset</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 
