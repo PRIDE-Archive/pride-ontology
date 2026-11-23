@@ -6859,28 +6859,28 @@ is_a: PRIDE:0001044 ! Mass spectrometry imaging acquisition parameter
 [Term]
 id: PRIDE:0001060
 name: top down
-def: "The starting point is at the top of the sample and the scanning happens in bottom direction (parallel to the y-axis)." [IMS:1000401]
+def: "A line scan sequence in which successive scan lines are acquired from the top toward the bottom of the sample, along the y-axis." [IMS:1000401]
 xref: IMS:1000401
 is_a: PRIDE:0001059 ! linescan sequence
 
 [Term]
 id: PRIDE:0001061
 name: bottom up
-def: "The starting point is at the bottom of the sample and the scanning happens in up direction (parallel to the y-axis)." [IMS:1000400]
+def: "A line scan sequence in which successive scan lines are acquired from the bottom toward the top of the sample, along the y-axis." [IMS:1000400]
 xref: IMS:1000400
 is_a: PRIDE:0001059 ! linescan sequence
 
 [Term]
 id: PRIDE:0001062
 name: left right
-def: "The starting point is at the left of the sample and the scanning happens in right direction (parallel to the x-axis)." [IMS:1000402]
+def: "A line scan sequence in which successive scan lines are acquired from the left toward the right of the sample, along the x-axis." [IMS:1000402]
 xref: IMS:1000402
 is_a: PRIDE:0001059 ! linescan sequence
 
 [Term]
 id: PRIDE:0001063
 name: right left
-def: "The starting point is at the right of the sample and the scanning happens in left direction. (parallel to the x-axis)." [IMS:1000403]
+def: "A line scan sequence in which successive scan lines are acquired from the right toward the left of the sample, along the x-axis." [IMS:1000403]
 xref: IMS:1000403
 is_a: PRIDE:0001059 ! linescan sequence
 
@@ -6916,28 +6916,28 @@ is_a: PRIDE:0001044 ! Mass spectrometry imaging acquisition parameter
 [Term]
 id: PRIDE:0001068
 name: linescan right left
-def: "The starting point is at the right of the sample and the scanning happens in left direction. (parallel to the x-axis)." [IMS:1000490]
+def: "A line scan direction in which acquisition within a single scan line proceeds from right to left along the x-axis." [IMS:1000490]
 xref: IMS:1000490
 is_a: PRIDE:0001067 ! line scan direction
 
 [Term]
 id: PRIDE:0001069
 name: linescan left right
-def: "The starting point is at the left of the sample and the scanning happens in right direction (parallel to the x-axis)." [IMS:1000491]
+def: "A line scan direction in which acquisition within a single scan line proceeds from left to right along the x-axis." [IMS:1000491]
 xref: IMS:1000491
 is_a: PRIDE:0001067 ! line scan direction
 
 [Term]
 id: PRIDE:0001070
 name: linescan bottom up
-def: "The starting point is at the bottom of the sample and the scanning happens in up direction (parallel to the y-axis)." [IMS:1000492]
+def: "A line scan direction in which acquisition within a single scan line proceeds from bottom to top along the y-axis." [IMS:1000492]
 xref: IMS:1000492
 is_a: PRIDE:0001067 ! line scan direction
 
 [Term]
 id: PRIDE:0001071
 name: linescan top down
-def: "The starting point is at the top of the sample and the scanning happens in bottom direction (parallel to the y-axis)." [IMS:1000493]
+def: "A line scan direction in which acquisition within a single scan line proceeds from top to bottom along the y-axis." [IMS:1000493]
 xref: IMS:1000493
 is_a: PRIDE:0001067 ! line scan direction
 
