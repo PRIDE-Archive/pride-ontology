@@ -6735,3 +6735,14 @@ synonym: "dFe" EXACT []
 synonym: "Fe_D" RELATED []
 is_a: PRIDE:0000829 ! Water
 
+[Term]
+id: PRIDE:0001045
+name: capillary microsampling
+def: "A sampling method in which a capillary is used to aspirate a defined amount of cellular or subcellular material from an identified biological source for downstream proteomics analysis." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0001046
+name: microwell-chip single-cell transfer
+def: "A single-cell sampling method in which an identified cell is handled or transferred using a microwell chip for downstream proteomics analysis." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
