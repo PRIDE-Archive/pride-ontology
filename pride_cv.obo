@@ -1,6 +1,6 @@
 format-version: 1.4
-date: 23:11:2026 13:11
-data-version: releases/2026-11-23
+date: 26:11:2026 23:15
+data-version: releases/2026-11-26
 saved-by: Justin Sing
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
@@ -7112,3 +7112,15 @@ name: primary ion dose density
 def: "Density of the primary ions." [IMS:1001207]
 xref: IMS:1001207
 is_a: PRIDE:0001089 ! SIMS parameter
+
+[Term]
+id: PRIDE:0001095
+name: capillary microsampling
+def: "A sampling method in which a capillary is used to aspirate a defined amount of cellular or subcellular material from an identified biological source for downstream proteomics analysis." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0001096
+name: microwell-chip single-cell transfer
+def: "A single-cell sampling method in which an identified cell is handled or transferred using a microwell chip for downstream proteomics analysis." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
