@@ -1,7 +1,7 @@
 format-version: 1.4
-date: 26:11:2026 23:15
-data-version: releases/2026-11-26
-saved-by: Justin Sing
+date: 27:11:2026 10:52
+data-version: releases/2026-11-27
+saved-by: Nithu Sara John
 default-namespace: PRIDE
 namespace-id-rule: * PRIDE:$sequence(7,0,9999999)$
 import: http://purl.obolibrary.org/obo/chmo.owl
@@ -7124,3 +7124,25 @@ id: PRIDE:0001096
 name: microwell-chip single-cell transfer
 def: "A single-cell sampling method in which an identified cell is handled or transferred using a microwell chip for downstream proteomics analysis." [PRIDE:PRIDE]
 is_a: PRIDE:0000017 ! Sample description additional parameter
+
+[Term]
+id: PRIDE:0001097
+name: filter type
+def: "The material and format of the filter used to retain the sample." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001098
+name: prefilter type
+def: "The material and format of each upstream filter used before the collection filter." [PRIDE:PRIDE]
+comment: Allow one entry per upstream filter when multiple prefilters are used.
+is_a: PRIDE:0000017 ! Sample description additional parameter
+is_a: PRIDE:0000829 ! Water
+
+[Term]
+id: PRIDE:0001099
+name: filter size
+def: "The pore size of the filter used to collect particulate material from a sample." [PRIDE:PRIDE]
+is_a: PRIDE:0000017 ! Sample description additional parameter
+is_a: PRIDE:0000829 ! Water
